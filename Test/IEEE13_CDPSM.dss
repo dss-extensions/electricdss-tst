@@ -12,7 +12,7 @@ new circuit.IEEE13Nodeckt
 // This adds an unloaded tertiary winding, but note GridLAB-D only supports 2 windings
 New Transformer.Sub3 Phases=3 Windings=3   XHL=0.01 XHT=0.025 XLT=0.025
 ~ wdg=1 bus=SourceBus  conn=delta  kv=115  kva=5000   %r=(.5 1000 /)
-~ wdg=2 bus=650        conn=wye    kv=4.16 kva=5000   %r=(.5 1000 /)
+~ wdg=2 bus=650   Rneut=0     conn=wye    kv=4.16 kva=5000   %r=(.5 1000 /)
 ~ wdg=3 bus=650z       conn=wye    kv=13.2 kva=1000   %r=(.5 1000 /)
 
 New Transformer.Reg1 phases=1 xhl=0.01 kvas=[1666 1666] kvs=[2.4 2.4] %LoadLoss=0.01 Bank=Reg Buses=[650.1 RG60.1]
@@ -24,8 +24,8 @@ new regcontrol.Reg2  transformer=Reg2 winding=2  vreg=122  band=2  ptratio=20 ct
 new regcontrol.Reg3  transformer=Reg3 winding=2  vreg=122  band=2  ptratio=20 ctprim=700  R=3   X=9 
 
 New Transformer.XFM1  Phases=3   Windings=2  XHL=2
-~ wdg=1 bus=633   conn=Wye kv=4.16    kva=500    %r=.55
-~ wdg=2 bus=634   conn=Wye kv=0.480   kva=500    %r=.55
+~ wdg=1 bus=633 Rneut=0  conn=Wye kv=4.16    kva=500    %r=.55
+~ wdg=2 bus=634 Rneut=0  conn=Wye kv=0.480   kva=500    %r=.55
 
 // these are local matrix line codes
 New linecode.mtx601 nphases=3 BaseFreq=60 
