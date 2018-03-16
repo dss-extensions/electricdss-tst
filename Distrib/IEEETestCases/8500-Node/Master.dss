@@ -8,17 +8,17 @@ New Circuit.IEEE8500
 ! Make the source stiff with small impedance
 ~ pu=1.05  r1=0  x1=0.001  r0=0  x0=0.001  
 
-Redirect  LineCodes2.dss
+Redirect  LineCodes2.DSS
 Redirect  Triplex_Linecodes.dss
 
 Redirect  Lines.dss
 Redirect  Transformers.dss
 //Redirect  LoadXfmrs.dss    ! Load Transformers
 Redirect  LoadXfmrCodes.dss  ! Referencing XfmrCodes
-Redirect  Triplex_Lines.dss
+Redirect  Triplex_Lines.DSS
 Redirect  Loads.dss     ! Balanced Loads
 Redirect  Capacitors.dss
-Redirect  CapControls.dss
+Redirect  CapControls.DSS
 Redirect  Regulators.dss
 
 ! Let DSS estimate the voltage bases
