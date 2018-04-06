@@ -20,6 +20,7 @@
 !-----------------------------------------------------First Script (change PPM_Antifloat value) -----------------------------------------------------------
 !----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 clear
+Set DefaultBaseFrequency=60
 
 ! IEEE 4-bus test case   Open Y - Open Delta Stepdown Balanced
 ! Based on a script developed by Alan Dunn and Steve Sparling for the YY-Balanced case

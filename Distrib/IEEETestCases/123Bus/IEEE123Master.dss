@@ -6,6 +6,7 @@
 ! You should always do a "Clear" before making a new circuit:
 
 Clear
+Set DefaultBaseFrequency=60
 
 ! INSTANTIATE A NEW CIRCUIT AND DEFINE A STIFF 4160V SOURCE
 ! The new circuit is called "ieee123"

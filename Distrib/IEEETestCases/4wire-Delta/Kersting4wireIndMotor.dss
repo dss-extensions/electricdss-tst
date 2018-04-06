@@ -1,4 +1,5 @@
 Clear
+Set DefaultBaseFrequency=60
 
 // Ungrounded-Y/4-wire delta with 3-phase Induction machine
 

@@ -1,4 +1,5 @@
 Clear
+Set DefaultBaseFrequency=60
 
 New object=circuit.ieee37
 ~ basekv=230 pu=1.00 

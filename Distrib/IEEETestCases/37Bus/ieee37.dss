@@ -1,4 +1,5 @@
 Clear
+Set DefaultBaseFrequency=60
 
 ! Note that this is a 3-wire delta system. 
 ! Node voltages in OpenDSS are normally line-ground and may give strange-looking results
