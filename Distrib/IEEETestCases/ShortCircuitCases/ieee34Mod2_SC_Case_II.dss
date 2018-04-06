@@ -4,6 +4,7 @@
 ! only at buses.  Therefore, midpoint buses are created in this example.
 
 Clear
+Set DefaultBaseFrequency=60
 
 New object=circuit.ieee34-2
 ~ basekv=69 pu=1.00 angle=30 

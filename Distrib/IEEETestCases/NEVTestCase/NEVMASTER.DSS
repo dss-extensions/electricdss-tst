@@ -1,4 +1,6 @@
 Clear
+Set DefaultBaseFrequency=60
+
 New circuit.NEV
 ~ Basekv=138 pu=1.05
 

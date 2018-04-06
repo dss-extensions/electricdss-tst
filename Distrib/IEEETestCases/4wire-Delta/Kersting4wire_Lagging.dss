@@ -1,4 +1,6 @@
 Clear
+Set DefaultBaseFrequency=60
+
 New Circuit.Kersting4wire_Lag
 !  define a really stiff source
 ~ basekv=12.47077  pu=1.00  MVAsc1=1e6  MVAsc3=1e6

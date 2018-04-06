@@ -1,4 +1,6 @@
 clear
+Set DefaultBaseFrequency=60
+
 new circuit.DGProtFdr bus1=Bx basekv=34.5 pu=1.0475 angle=0 frequency=60 phases=3 MVAsc3=36.61 MVAsc1=10.64 x1r1=4 x0r0=3
 
 new WireData.336_ACSR_Linnet  gmrunits=ft radunits=in runits=mi rac=0.306 diam=0.721 gmrac=0.0244  normamps=530

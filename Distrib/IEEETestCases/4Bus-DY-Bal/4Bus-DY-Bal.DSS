@@ -1,4 +1,5 @@
 clear
+Set DefaultBaseFrequency=60
 
 ! IEEE 4-bus test case   D-Y Stepdown Balanced
 ! Based on script developed by Alan Dunn and Steve Sparling

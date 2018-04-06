@@ -1,5 +1,6 @@
 
 Clear   ! always have this as the first line before defining a new circuit
+Set DefaultBaseFrequency=60
 
 New Circuit.IEEE_30
 

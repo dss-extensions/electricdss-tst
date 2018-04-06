@@ -2,6 +2,7 @@
 // Balanced Load Case
 
 Clear
+Set DefaultBaseFrequency=60
 
 New Circuit.IEEE8500  
 
