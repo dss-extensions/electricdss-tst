@@ -10,16 +10,16 @@ New line.temp1 bus1=temp2 bus2=AggLD switch=yes enabled=yes phases=3 normamps=99
 New line.temp2 bus1=temp2 bus2=0x0089F0C8 switch=yes enabled=yes phases=3 normamps=99999 emergamps=99999
 
 Redirect Sub_Xfmr.dss
-Redirect Linecodes.dss
-Redirect WireData.dss
-Redirect LineGeom.dss
-Redirect  Lines.dss
-Redirect  Capacitors.dss
-Redirect  Switches.dss
-Redirect Loadshapes.dss
-Redirect  Loads_Only.dss
-Redirect  Xfmr_Only.dss
-Redirect  2nd_ckt.dss
+Redirect LineCodes.dss
+Redirect WireData.DSS
+Redirect LineGeom.DSS
+Redirect Lines.dss
+Redirect Capacitors.dss
+Redirect Switches.dss
+Redirect loadshapes.dss
+Redirect Loads_Only.dss
+Redirect Xfmr_Only.dss
+Redirect 2nd_ckt.dss
 
 Set voltagebases=[66 12.47,  0.480, 0.416, 0.208]
 Calcv
