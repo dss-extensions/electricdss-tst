@@ -1,6 +1,8 @@
 clearAll
 
-! get numcpu numcores
+/*
+get numcpu numcores
+*/
 
 compile "C:\Users\prdu001\OpenDSS\Parallel_Version\Distrib\EPRITestCircuits\ckt5\Master_ckt5.dss"
 New Monitor.MS2 vsource.source mode=5
