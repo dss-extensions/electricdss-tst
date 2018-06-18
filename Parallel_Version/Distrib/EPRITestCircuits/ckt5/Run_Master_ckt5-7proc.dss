@@ -109,7 +109,7 @@ set stepsize=1h
 set number=1143
 set hour = (1143 6 *)
 
-
+set parallel=yes
 
 set activeActor=1
 Set totaltime=0
@@ -139,7 +139,7 @@ set activeActor=7
 Set totaltime=0
 solve
 
-Get actorprog
+// Get actorprog
 
 Wait
 set activeActor=1
