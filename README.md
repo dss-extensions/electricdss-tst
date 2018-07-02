@@ -1,5 +1,5 @@
 # electricdss-tst
-This includes a filtered copy of the [OpenDSS SVN repository](https://svn.code.sf.net/p/electricdss/code/trunk), including only the most relevant sample DSS scripts (examples and tests) for the [dss_capi](https://github.com/PMeira/dss_capi/) and [dss_capi](https://github.com/PMeira/dss_python/) projects.
+This includes a filtered copy of the [OpenDSS SVN repository](https://svn.code.sf.net/p/electricdss/code/trunk), including only the most relevant sample DSS scripts (examples and tests) for the [dss_capi](https://github.com/PMeira/dss_capi/) and [dss_python](https://github.com/PMeira/dss_python/) projects.
 
 The upstream copy is on branch `opendss-official-svn`, while the `master` branch will contain specific modifications.
 
