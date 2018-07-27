@@ -5,7 +5,7 @@ DSSText.Command =   'ClearAll';             % Clears all instances of OpenDSS-PM
 DSSText.Command =   'Set Parallel=Yes';             % Clears all instances of OpenDSS-PM
 
 DSSParallel     =   DSSCircuit.Parallel;    % Habdler for Parallel processing functions
-CPUs            =   DSSParallel.NumCPUs;    % Gets how many CPUs this PC has
+CPUs            =   DSSParallel.NumCPUs-1;    % Gets how many CPUs this PC has
 % By default one actor is created by default, if you want more than one
 % parallel instance you will have to create them. Try to leave at least
 % One CPU available to handle the rest of windows, otherwise will block
