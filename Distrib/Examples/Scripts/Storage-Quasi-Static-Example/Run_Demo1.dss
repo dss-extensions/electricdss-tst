@@ -5,10 +5,10 @@
 !
 Compile "C:\Users\prdu001\OpenDSS\Distrib\EPRITestCircuits\ckt5\Master_ckt5.dss"
 
+CD "C:\Users\prdu001\Projects\EPRI\National Grid\StorageDemo"  ! back to demo folder
+
 ! Add Storage
-
-CD "C:\Users\prdu001\Projects\EPRI\National Grid\StorageDemo"
-
+! --------------------------------------------------------------------------------------------
 ! dispatch loadshape
 New Loadshape.DispatchShape npts=96 minterval=15 mult=[file=StorageDispatch.csv]
 
@@ -17,6 +17,7 @@ New Storage.Battery phases=3 Bus1=39764  conn=delta
 ~ kV=12.47 kW=1000 
 ~ kWrated=2000 kWhrated=2000   ! 1-h battery
 ~ dispmode=follow daily=DispatchShape  yearly=DispatchShape
+!-------------------------------------------------------------------------------------------
 
 set voltagebase=[12.47]
 calcv
@@ -28,12 +29,10 @@ AddBusMarker Bus=39764 code=15 color=Red size=5
 plot circuit Power max=2000 n n C1=$00FF0000 1ph=3
 ***************/
 
-
 // Define Monitors
 new monitor.VI    storage.battery 1 ppolar=no mode=0  ! volts and amps
 new monitor.PQ   storage.battery 1 ppolar=no mode=1  ! kW, kvar
 new monitor.Vars storage.battery 1 mode=3  ! watch state vars in Storage element
-
 
 solve mode=Yearly step=7.5m number=(2 96 *)  ! Do 1 day @ 7.5 min time step (2 per 15 min interval)
 CloseDI
@@ -44,13 +43,11 @@ show mon PQ
 show mon vars
 *****/
 
+Plot monitor object= vars channels=(1 3 )    ! SOC + Discharge kW
+Plot monitor object= vars channels=(1 )      ! State of Charge
 
-Plot monitor object= vars channels=(1 3 4 )
-Plot monitor object= vars channels=(1 )   ! State of Charge
-
-Plot monitor object= vi channels=(1)  bases=[7200 7200 7200]
-plot circuit Power max=2000 n n C1=$00FF0000
+Plot monitor object= vi channels=(1)  bases=[7200 7200 7200]  ! Voltage phase A
 
 plot Loadshape Object=DispatchShape
-
-help
+plot Loadshape Object=COMMERCIAL_MD
+plot Loadshape Object=RESIDENTIAL
