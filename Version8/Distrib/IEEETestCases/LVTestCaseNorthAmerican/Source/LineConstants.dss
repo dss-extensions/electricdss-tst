@@ -1,0 +1,20 @@
+clear
+ 
+new circuit.ieee390 basekv=230 pu=1.05 bus1=P1
+ 
+new LineSpacing.101 nconds=3 nphases=3 units=ft x=[0,10,20] h=[50,50,50]
+new LineSpacing.102 nconds=3 nphases=3 units=in x=[0,3,6] h=[-48,-48,-48]
+new LineSpacing.103 nconds=4 nphases=3 units=in x=[-2.1213,0,2.1213,0] h=[50.1213,48,50.1213,52.2426]
+ 
+new WireData.397AA gmr=0.0277 rac=0.0477 diam=0.806 gmrunits=ft radunits=in runits=mi normamps=594
+new CNData.1000AA gmrac=0.04683 rac=0.1214 diam=1.124 gmrunits=ft runits=mi radunits=in normamps=615
+~ diacable=2.08 k=21 gmrstrand=0.00417 rstrand=0.1809 diastrand=0.1285
+~ inslayer=0.25 diains=1.64
+new WireData.UG500Cu gmr=0.026 rac=0.206 diam=0.814 gmrunits=ft radunits=in runits=mi normamps=430
+ 
+new LineGeometry.Trans nconds=3 nphases=3 spacing=101 wires=[397AA 397AA 397AA]
+new LineGeometry.Pri nconds=3 nphases=3 spacing=102 cncables=[1000AA 1000AA 1000AA]
+new LineGeometry.Sec nconds=4 nphases=3 reduce=y spacing=103 wires=[UG500Cu UG500Cu UG500Cu UG500Cu]
+
+show lineconstants 60 kft 100
+ 
