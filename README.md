@@ -9,7 +9,7 @@ Since the official SVN repository is partially corrupted from revisions 2142 to 
 If you need to clone the official SVN to reproduce the `opendss-official-svn` branch, you can use [`git-svn`](https://git-scm.com/docs/git-svn) like this:
 
 ```
-git svn clone -r1:2141 --include-paths="^((License\.txt)|Test|((Parallel_Version\/)*Distrib\/(IEEETestCases\/|EPRITestCircuits\/|Examples\/|License\.txt))).*" --ignore-paths="(x64\.zip)|(x86.zip)|(.*\.(avi|pdf|ocx|ppt|doc|exe|user|suo|7z|zip|obj|AVI|PDF|OCX|PPT|DOC|EXE|USER|SUO|7Z|ZIP|OBJ))|(.*\/(Debug|Excel|bin|obj|Release|Direct_DLL))" https://svn.code.sf.net/p/electricdss/code/trunk electricdss-tst
+git svn clone -r1:2141 --include-paths="^((License\.txt)|Test|((Version7\/)*(Version8\/)*(Parallel_Version\/)*Distrib\/(IEEETestCases\/|EPRITestCircuits\/|Examples\/|License\.txt))).*" --ignore-paths="(x64\.zip)|(x86.zip)|(.*\.(avi|pdf|ocx|ppt|doc|exe|user|suo|7z|zip|obj|AVI|PDF|OCX|PPT|DOC|EXE|USER|SUO|7Z|ZIP|OBJ))|(.*\/(Debug|Excel|bin|obj|Release|Direct_DLL))" https://svn.code.sf.net/p/electricdss/code/trunk electricdss-tst
 cd electricdss-tst
 git svn fetch -r2162:HEAD
 ```
