@@ -1,5 +1,6 @@
 
 Clear
+Set DefaultBaseFrequency=60
 
 New Circuit.ckt5  pu=1.05  r1=0  x1=0.001  r0=0  x0=0.001  
 

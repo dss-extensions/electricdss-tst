@@ -20,6 +20,8 @@ Set Maxiterations=20     ! Sometimes the solution takes more than the default 15
 
 Solve
 
+Get totaltime
+
 Show Voltage LN Nodes
 Show Currents Elem Resid
 Show Powers kVA elem
@@ -29,7 +31,7 @@ Export Currents
 Export Powers
 Export voltages
 
-// *********************** Plotting *****************************
+/*********************** Plotting *****************************
 
 Set markCapacitors=yes  CapMarkersize=3
 Set markRegulators=yes  RegMarkersize=5
@@ -42,6 +44,8 @@ plot circuit Losses Max=50 dots=n labels=n subs=y C1=Blue
 
 plot profile ph=all
 plot profile ph=1
+
+**************************************************************/
 
 summary
 
