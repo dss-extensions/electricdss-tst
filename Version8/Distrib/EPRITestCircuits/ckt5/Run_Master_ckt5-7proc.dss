@@ -2,47 +2,49 @@ clearAll
 
 set parallel=No
 
+var @myfilename="C:\Program Files\OpenDSS\EPRITestCircuits\ckt5\Master_ckt5.dss"
+
 /*
 get numcpu numcores
 */
 
-compile "C:\Program Files\OpenDSS\EPRITestCircuits\ckt5\Master_ckt5.dss"
+compile @myfilename
 New Monitor.MS2 vsource.source mode=5
 set CPU=0
 Solve
 
 NewActor
-compile "C:\Program Files\OpenDSS\EPRITestCircuits\ckt5\Master_ckt5.dss"
+compile @myfilename
 New Monitor.MS2 vsource.source mode=5
 set CPU=1
 Solve
 
 NewActor
-compile "C:\Program Files\OpenDSS\EPRITestCircuits\ckt5\Master_ckt5.dss"
+compile @myfilename
 New Monitor.MS2 vsource.source mode=5
 set CPU=2
 Solve
 
 NewActor
-compile "C:\Program Files\OpenDSS\EPRITestCircuits\ckt5\Master_ckt5.dss"
+compile @myfilename
 New Monitor.MS2 vsource.source mode=5
 set CPU=3
 Solve
 
 NewActor
-compile "C:\Program Files\OpenDSS\EPRITestCircuits\ckt5\Master_ckt5.dss"
+compile @myfilename
 New Monitor.MS2 vsource.source mode=5
 set CPU=4
 Solve
 
 NewActor
-compile "C:\Program Files\OpenDSS\EPRITestCircuits\ckt5\Master_ckt5.dss"
+compile @myfilename
 New Monitor.MS2 vsource.source mode=5
 set CPU=5
 Solve
 
 NewActor
-compile "C:\Program Files\OpenDSS\EPRITestCircuits\ckt5\Master_ckt5.dss"
+compile @myfilename
 New Monitor.MS2 vsource.source mode=5
 set CPU=6
 Solve
