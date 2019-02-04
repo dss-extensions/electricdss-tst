@@ -1,0 +1,84 @@
+// 
+
+clear
+
+New circuit.UPFC3-1 bus1=SOURCE_BUS.1.0 phases=1
+~ BasekV=7.2 pu=1 angle=0
+~ mvasc3=2000000 mvasc=20000000
+
+New XYCurve.Losses npts=3 xarray=[0.9 1 1.1] yarray=[1.0143 1.008 1.0143]
+New XFMRCode.QuasiIdeal Phases=1 windings=2 XHL=0.01 %LoadLoss=.01 kVAs=[100 100] kVs=[.24 .24] conns=[delta delta] ppm=0
+
+New Loadshape.Load1   npts=37438 minterval=1 pmult=[file=load1kW.csv]  qmult=[file=load1kvar.csv] Action=Normalize
+New Loadshape.Load2   npts=37438 minterval=1 pmult=[file=load2kW.csv]  qmult=[file=load2kvar.csv] Action=Normalize
+New Loadshape.Vsource npts=37438 minterval=1 mult= [file=Vpucurve.csv]  
+Vsource.source.daily=Vsource
+
+
+New  XfmrCode.1-ph50kVA  phases=1  Windings=3 ppm=0	
+~ Xhl=2.04   Xht=2.04   Xlt=1.36  %noloadloss=.02
+~ kVs=[7.2  0.12  0.12]     ! ratings of windings
+~ kVAs=[50 50 50]
+~ %Rs = [0.6  1.2  1.2]
+~ conns=[wye wye wye]    ! default
+
+// 2 winding model
+New  XfmrCode.1-ph50kVA-2  phases=1  Windings=2 ppm=0
+~ Xhl=2.04   %noloadloss=.02
+~ kVs=[7.2  0.24]     ! ratings of windings
+~ kVAs=[50 50 ]
+~ %Rs = [0.9 0.9]
+~ conns=[wye  wye]    ! default
+
+
+//  low-impedance transformer for interconnecting the UPFC to the system
+New  XfmrCode.UPFCInterface  phases=1  Windings=3 ppm=0	
+~ Xhl=.0204   Xht=.0204   Xlt=.0136  %noloadloss=.01
+~ kVs=[0.24 0.12  0.12]     ! ratings of windings
+~ kVAs=[50 50 50]
+~ %Rs = [0.006  .012  .012]
+~ conns=[wye wye wye]    ! default
+
+New Transformer.Service50kVA Xfmrcode=1-ph50kVA-2 Buses=[Source_Bus.1.0  UPFC_Input.1]
+
+// New upfc.TEST phases=1 bus1=UPFC_Input.1 bus2=UPFC_Output.1 refkV=0.242 mode=3 losscurve=Losses TOL1=0.005  Xs=0.02
+New upfc.TEST phases=1 bus1=UPFC_Input.1 bus2=UPFC_Output.1 refkV=0.242 mode=1 losscurve=Losses TOL1=0.005  Xs=0.02
+
+
+New Transformer.TUPFCout XfmrCode=UPFCInterface Buses=[UPFC_output.1.0   LOAD_BUS.1.0   LOAD_BUS.0.2]
+
+New load.LOAD120A phases=1 model=1 bus1=LOAD_BUS.1.0 kv=0.12 kw=14.98 kvar=10.08 Daily=Load1
+New load.LOAD120B phases=1 model=1 bus1=LOAD_BUS.2.0 kv=0.12 kw=12.38 kvar=1.71  Daily=Load2
+
+Set voltagebases= [12.47 .415 0.208]
+Calcv
+
+new monitor.VIin UPFC.TEST 1 mode=0 vipolar=y
+new monitor.VIout Transformer.TUPFCOut 1  mode=0 vipolar=y
+new monitor.VIoutU UPFC.TEST 2  mode=0 vipolar=y
+
+New monitor.State UPFC.Test 1 mode=3
+
+solve
+
+set mode=daily number=3700  ! 37438 
+solve
+
+!/**************************
+
+show monitor VIout
+show monitor VIoutu
+show monitor VIin
+show monitor state
+
+
+Plot monitor object= viout channels=(1 )
+
+Plot monitor object= viin channels=(1 )
+
+select upfc.test 1
+losses
+
+!***********/
+
+
