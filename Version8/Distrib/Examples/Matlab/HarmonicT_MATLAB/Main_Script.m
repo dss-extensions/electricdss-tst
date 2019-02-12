@@ -6,13 +6,11 @@
     return
     end
    %Generates random loadprofiles for each load (3 loads total)
-    LS_L3   =   zeros(24,1);
-    LS_L2   =   zeros(24,1);
-    LS_Linear   =   zeros(24,1);
+    LS_LD   =   zeros(24,3);
     for i=1:24,
-        LS_L3(i)   =   rand;
-        LS_L2(i)   =   rand;
-        LS_Linear(i)   =   rand;        
+        for j=1:3,
+            LS_LD(i,j)   =   rand;
+        end;
     end
   
     DSSText     = DSSObj.Text; 
@@ -37,7 +35,7 @@
      %sets the load value for each load
          DSSLoad.First;
          for j=1:3,
-             DSSLoad.kw  =   LS_L3(i)*LD_P(j);   
+             DSSLoad.kw  =   LS_LD(i,j)*LD_P(j);   
              DSSLoad.Next;
          end;
          DSSSolution.Solve;
