@@ -13,41 +13,7 @@ New Monitor.MS2 vsource.source mode=5
 set CPU=0
 Solve
 
-NewActor
-compile @myfilename
-New Monitor.MS2 vsource.source mode=5
-set CPU=1
-Solve
-
-NewActor
-compile @myfilename
-New Monitor.MS2 vsource.source mode=5
-set CPU=2
-Solve
-
-NewActor
-compile @myfilename
-New Monitor.MS2 vsource.source mode=5
-set CPU=3
-Solve
-
-NewActor
-compile @myfilename
-New Monitor.MS2 vsource.source mode=5
-set CPU=4
-Solve
-
-NewActor
-compile @myfilename
-New Monitor.MS2 vsource.source mode=5
-set CPU=5
-Solve
-
-NewActor
-compile @myfilename
-New Monitor.MS2 vsource.source mode=5
-set CPU=6
-Solve
+Clone 6  ! Clones the active circuit 6 more times
 
 set activeActor=* 
 set mode=time stepsize=1h  number=1143 hour = 0
