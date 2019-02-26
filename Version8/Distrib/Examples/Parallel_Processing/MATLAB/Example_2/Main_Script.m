@@ -1,3 +1,4 @@
+% This example works with OpenDSS version 8.5.4.1 and later
 clc;
 [DSSStartOK, DSSObj, DSSText] = DSSStartup;
 DSSCircuit      =   DSSObj.ActiveCircuit;
@@ -6,19 +7,19 @@ DSSText.Command =   'Set Parallel=No';      % Deactivates parallel processing
 
 DSSParallel     =   DSSCircuit.Parallel;    % Habdler for Parallel processing functions
 CPUs            =   DSSParallel.NumCPUs-1;    % Gets how many CPUs this PC has
-% By default one actor is created by default, if you want more than one
+% By default one actor is created, if you want more than one
 % parallel instance you will have to create them. Try to leave at least
 % One CPU available to handle the rest of windows, otherwise will block
 % Everything
 % Prepares everything for a yearly simulation using temporal parallelization
 YDelta  =   8760/(CPUs-1);
 disp('Compiling and creating Actors');
+DSSText.Command =   'compile (C:\Program Files\OpenDSS\EPRITestCircuits\ckt7\Master_ckt7.DSS)';
+DSSCircuit.Solution.Solve;
+DSSText.Command =   ['Clone ',int2str(CPUs-2)]; %Creates the other actors completing #CPUs-1 actors
+
 for i=1:CPUs-1,
-    if i ~= 1,
-        DSSParallel.CreateActor; % Creates additonal actors
-    end;
-    DSSText.Command =   'compile (C:\Program Files\OpenDSS\EPRITestCircuits\ckt7\Master_ckt7.DSS)';
-    DSSCircuit.Solution.Solve;    
+    DSSParallel.ActiveActor=i;
     if i == (CPUs-1),
         YDelta = 8760 - (CPUs-2)*YDelta;
     end;
