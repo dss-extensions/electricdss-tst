@@ -5,35 +5,7 @@ compile "C:\Program Files\OpenDSS\EPRITestCircuits\ckt5\Master_ckt5.dss"
 set CPU=0 
 Solve
 
-NewActor
-compile "C:\Program Files\OpenDSS\EPRITestCircuits\ckt5\Master_ckt5.dss"
-set CPU=1
-Solve
-
-NewActor
-compile "C:\Program Files\OpenDSS\EPRITestCircuits\ckt5\Master_ckt5.dss"
-set CPU=2
-Solve
-
-NewActor
-compile "C:\Program Files\OpenDSS\EPRITestCircuits\ckt5\Master_ckt5.dss"
-set CPU=3
-Solve
-
-NewActor
-compile "C:\Program Files\OpenDSS\EPRITestCircuits\ckt5\Master_ckt5.dss"
-set CPU=4
-Solve
-
-NewActor
-compile "C:\Program Files\OpenDSS\EPRITestCircuits\ckt5\Master_ckt5.dss"
-set CPU=5
-Solve
-
-NewActor
-compile "C:\Program Files\OpenDSS\EPRITestCircuits\ckt5\Master_ckt5.dss"
-set CPU=6
-Solve
+Clone 6 ! Clones the active Circuit 6 more times
 
 set parallel=Yes
 
