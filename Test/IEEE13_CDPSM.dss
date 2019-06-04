@@ -103,7 +103,7 @@ New Line.671692    Phases=3 Bus1=671  Bus2=692  Switch=y r1=1e-4 r0=1e-4 x1=0 x0
 New Line.Brkr1     Phases=3 Bus1=650    Bus2=BRKR   Switch=y r1=1e-4 r0=1e-4 x1=0 x0=0 c1=0 c0=0
 New Relay.Brkr1    MonitoredObj=Line.Brkr1 Type=Current PhaseTrip=1200.0 GroundTrip=600.0 Delay=0.1
 New Line.Fuse1     Phases=3 Bus1=633    Bus2=XF1    Switch=y r1=1e-4 r0=1e-4 x1=0 x0=0 c1=0 c0=0
-New Fuse.Fuse1     MonitoredObj=Line.Fuse1 RatedCurrent=65.0
+New Fuse.Fuse1     MonitoredObj=Line.Fuse1 RatedCurrent=100.0
 New Line.Rec1      Phases=3 Bus1=632    Bus2=MID    Switch=y r1=1e-4 r0=1e-4 x1=0 x0=0 c1=0 c0=0
 New Recloser.Rec1  MonitoredObj=Line.Rec1 PhaseTrip=1200.0 GroundTrip=400.0
 New Line.Sect1     Phases=1 Bus1=684.3  Bus2=TAP.3  Switch=y rmatrix=(1e-4) xmatrix=(0) cmatrix=(0)
