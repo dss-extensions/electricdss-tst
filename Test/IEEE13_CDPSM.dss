@@ -123,7 +123,7 @@ New Storage.House  phases=2 bus1=House.1.2 kv=0.208 conn=wye kWRated=5 kWhRated=
 Set Voltagebases=[115, 4.16, 13.2, 0.48, 0.208]
 calcv
 Solve
-BusCoords IEEE13Node_BusXY.csv
+BusCoords IEEE13NodeExtra_BusXY.csv
 
 Transformer.Reg1.Taps=[1.0 1.0625]
 Transformer.Reg2.Taps=[1.0 1.0500]
