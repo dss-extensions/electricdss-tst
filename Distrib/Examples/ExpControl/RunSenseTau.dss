@@ -1,0 +1,71 @@
+
+Clear
+New Circuit.Clear300
+compile SystemPCC.dss
+edit pvsystem.pv1 daily=Clear
+New ExpControl.pv1 pvsystemlist=(pv1) deltaQ_factor=0.3 vreg=1.00 slope=22 vregtau=300 Tresponse=5 PreferQ=yes // EventLog=Yes
+compile SolveAndExportMonitors.dss
+
+Clear
+New Circuit.Cloud300
+compile SystemPCC.dss
+edit pvsystem.pv1 daily=Cloud
+New ExpControl.pv1 pvsystemlist=(pv1) deltaQ_factor=0.3 vreg=1.00 slope=22 vregtau=300 Tresponse=5 PreferQ=yes // EventLog=Yes
+compile SolveAndExportMonitors.dss
+
+Clear
+New Circuit.Clear600
+compile SystemPCC.dss
+edit pvsystem.pv1 daily=Clear
+New ExpControl.pv1 pvsystemlist=(pv1) deltaQ_factor=0.3 vreg=1.00 slope=22 vregtau=600 Tresponse=5 PreferQ=yes // EventLog=Yes
+compile SolveAndExportMonitors.dss
+
+Clear
+New Circuit.Cloud600
+compile SystemPCC.dss
+edit pvsystem.pv1 daily=Cloud
+New ExpControl.pv1 pvsystemlist=(pv1) deltaQ_factor=0.3 vreg=1.00 slope=22 vregtau=600 Tresponse=5 PreferQ=yes // EventLog=Yes
+compile SolveAndExportMonitors.dss
+
+Clear
+New Circuit.Clear1200
+compile SystemPCC.dss
+edit pvsystem.pv1 daily=Clear
+New ExpControl.pv1 pvsystemlist=(pv1) deltaQ_factor=0.3 vreg=1.00 slope=22 vregtau=1200 Tresponse=5 PreferQ=yes // EventLog=Yes
+compile SolveAndExportMonitors.dss
+
+Clear
+New Circuit.Cloud1200
+compile SystemPCC.dss
+edit pvsystem.pv1 daily=Cloud
+New ExpControl.pv1 pvsystemlist=(pv1) deltaQ_factor=0.3 vreg=1.00 slope=22 vregtau=1200 Tresponse=5 PreferQ=yes // EventLog=Yes
+compile SolveAndExportMonitors.dss
+
+Clear
+New Circuit.Clear2400
+compile SystemPCC.dss
+edit pvsystem.pv1 daily=Clear
+New ExpControl.pv1 pvsystemlist=(pv1) deltaQ_factor=0.3 vreg=1.00 slope=22 vregtau=2400 Tresponse=5 PreferQ=yes // EventLog=Yes
+compile SolveAndExportMonitors.dss
+
+Clear
+New Circuit.Cloud2400
+compile SystemPCC.dss
+edit pvsystem.pv1 daily=Cloud
+New ExpControl.pv1 pvsystemlist=(pv1) deltaQ_factor=0.3 vreg=1.00 slope=22 vregtau=2400 Tresponse=5 PreferQ=yes // EventLog=Yes
+compile SolveAndExportMonitors.dss
+
+Clear
+New Circuit.Clear5000
+compile SystemPCC.dss
+edit pvsystem.pv1 daily=Clear
+New ExpControl.pv1 pvsystemlist=(pv1) deltaQ_factor=0.3 vreg=1.00 slope=22 vregtau=5000 Tresponse=5 PreferQ=yes // EventLog=Yes
+compile SolveAndExportMonitors.dss
+
+Clear
+New Circuit.Cloud5000
+compile SystemPCC.dss
+edit pvsystem.pv1 daily=Cloud
+New ExpControl.pv1 pvsystemlist=(pv1) deltaQ_factor=0.3 vreg=1.00 slope=22 vregtau=5000 Tresponse=5 PreferQ=yes // EventLog=Yes
+compile SolveAndExportMonitors.dss
+

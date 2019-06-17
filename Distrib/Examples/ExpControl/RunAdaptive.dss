@@ -1,0 +1,130 @@
+// a
+Clear
+New Circuit.NoneUnity
+compile SystemPCC.dss
+edit pvsystem.pv1 pmpp=0.285
+compile SolveAndExportMonitors.dss
+
+Clear
+New Circuit.ClearUnity
+compile SystemPCC.dss
+edit pvsystem.pv1 daily=Clear
+compile SolveAndExportMonitors.dss
+
+Clear
+New Circuit.CloudUnity
+compile SystemPCC.dss
+edit pvsystem.pv1 daily=Cloud
+compile SolveAndExportMonitors.dss
+
+// b
+Clear
+New Circuit.ClearLead
+compile SystemPCC.dss
+edit pvsystem.pv1 daily=Clear pf=-0.95
+compile SolveAndExportMonitors.dss
+
+Clear
+New Circuit.CloudLead
+compile SystemPCC.dss
+edit pvsystem.pv1 daily=Cloud pf=-0.95
+compile SolveAndExportMonitors.dss
+
+// c
+Clear
+New Circuit.ClearInv
+compile SystemPCC.dss
+edit pvsystem.pv1 daily=Clear
+New InvControl.pv1 pvsystemlist=(pv1) mode=VOLTVAR deltaQ_factor=0.1 // rateofchangemode=lpf lpftau=4 eventlog=yes
+~ voltage_curvex_ref=rated vvc_curve1=vv100k22
+compile SolveAndExportMonitors.dss
+
+Clear
+New Circuit.CloudInv
+compile SystemPCC.dss
+edit pvsystem.pv1 daily=Cloud
+New InvControl.pv1 pvsystemlist=(pv1) mode=VOLTVAR deltaQ_factor=0.1 // rateofchangemode=lpf lpftau=4 eventlog=yes
+~ voltage_curvex_ref=rated vvc_curve1=vv100k22
+compile SolveAndExportMonitors.dss
+
+// d
+Clear
+New Circuit.ClearIEEE
+compile SystemPCC.dss
+edit pvsystem.pv1 daily=Clear
+New InvControl.pv1 pvsystemlist=(pv1) mode=VOLTVAR deltaQ_factor=0.2 // rateofchangemode=lpf lpftau=4 eventlog=yes
+~ voltage_curvex_ref=rated vvc_curve1=vvIEEE100
+compile SolveAndExportMonitors.dss
+
+Clear
+New Circuit.CloudIEEE
+compile SystemPCC.dss
+edit pvsystem.pv1 daily=Cloud
+New InvControl.pv1 pvsystemlist=(pv1) mode=VOLTVAR deltaQ_factor=0.2 // rateofchangemode=lpf lpftau=4 eventlog=yes
+~ voltage_curvex_ref=rated vvc_curve1=vvIEEE100
+compile SolveAndExportMonitors.dss
+
+// e
+Clear
+New Circuit.ClearInvAvg
+compile SystemPCC.dss
+edit pvsystem.pv1 daily=Clear
+New InvControl.pv1 pvsystemlist=(pv1) mode=VOLTVAR deltaQ_factor=0.2 // rateofchangemode=lpf lpftau=4 eventlog=yes
+~ voltage_curvex_ref=avg avgwindowlen=300 vvc_curve1=vv100k22
+compile SolveAndExportMonitors.dss
+
+Clear
+New Circuit.CloudInvAvg
+compile SystemPCC.dss
+edit pvsystem.pv1 daily=Cloud
+New InvControl.pv1 pvsystemlist=(pv1) mode=VOLTVAR deltaQ_factor=0.2 // rateofchangemode=lpf lpftau=4 eventlog=yes
+~ voltage_curvex_ref=avg avgwindowlen=300 vvc_curve1=vv100k22
+compile SolveAndExportMonitors.dss
+
+// f
+Clear
+New Circuit.ClearDRC
+compile SystemPCC.dss
+edit pvsystem.pv1 daily=Clear
+New InvControl.pv1 pvsystemlist=(pv1) mode=DYNAMICREACCURR DbVMin=1 DbVMax=1 ArGraLowV=22 ArGraHiV=22 deltaQ_factor=0.2 // EventLog=yes
+~ DynReacavgwindowlen=300s
+compile SolveAndExportMonitors.dss
+
+Clear
+New Circuit.CloudDRC
+compile SystemPCC.dss
+edit pvsystem.pv1 daily=Cloud
+New InvControl.pv1 pvsystemlist=(pv1) mode=DYNAMICREACCURR DbVMin=1 DbVMax=1 ArGraLowV=22 ArGraHiV=22 deltaQ_factor=0.2 // EventLog=yes
+~ DynReacavgwindowlen=300s
+compile SolveAndExportMonitors.dss
+
+// g
+Clear
+New Circuit.ClearAdap
+compile SystemPCC.dss
+edit pvsystem.pv1 daily=Clear
+New ExpControl.pv1 pvsystemlist=(pv1) deltaQ_factor=0.3 vreg=1.0 slope=22 vregtau=300 Tresponse=5 // EventLog=Yes
+compile SolveAndExportMonitors.dss
+
+Clear
+New Circuit.CloudAdap
+compile SystemPCC.dss
+edit pvsystem.pv1 daily=Cloud
+New ExpControl.pv1 pvsystemlist=(pv1) deltaQ_factor=0.3 vreg=1.0 slope=22 vregtau=300 Tresponse=5 // EventLog=Yes
+compile SolveAndExportMonitors.dss
+
+// h
+Clear
+New Circuit.ClearAdapQ
+compile SystemPCC.dss
+edit pvsystem.pv1 daily=Clear
+New ExpControl.pv1 pvsystemlist=(pv1) deltaQ_factor=0.3 vreg=1.0 slope=22 vregtau=300 Tresponse=5 Qbias=-0.3 // EventLog=Yes
+compile SolveAndExportMonitors.dss
+
+Clear
+New Circuit.CloudAdapQ
+compile SystemPCC.dss
+edit pvsystem.pv1 daily=Cloud
+New ExpControl.pv1 pvsystemlist=(pv1) deltaQ_factor=0.3 vreg=1.0 slope=22 vregtau=300 Tresponse=5 Qbias=-0.3 // EventLog=Yes
+compile SolveAndExportMonitors.dss
+

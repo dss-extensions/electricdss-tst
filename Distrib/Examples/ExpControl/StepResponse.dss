@@ -1,0 +1,64 @@
+Clear
+New Circuit.Step  pu=1.02 R1=0.0134 X1=0.0088 bus1=1 basekv=.240 phases=1
+
+New Loadshape.Vstep npts=4 interval=0 hour=[0.0 1.0 1.0003 2.0] mult=[1.0 1.0 0.995 0.995]
+
+// PVSystems
+New Vsource.Vth1 bus1=2a basekv=.240 R1=0.00001 X1=0.00001 phases=1 daily=Vstep
+New line.line1   bus1=2a bus2=3a switch=yes phases=1
+New PVSystem.PV1 bus1=3a phases=1 kV=.240 irradiance=1 pmpp=285 kVA=300 kvarlimit=132
+
+New Vsource.Vth2 bus1=2b basekv=.240 R1=0.00001 X1=0.00001 phases=1 daily=Vstep
+New line.line2   bus1=2b bus2=3b switch=yes phases=1
+New PVSystem.PV2 bus1=3b phases=1 kV=.240 irradiance=1 pmpp=285 kVA=300 kvarlimit=132
+
+New Vsource.Vth3 bus1=2c basekv=.240 R1=0.00001 X1=0.00001 phases=1 daily=Vstep
+New line.line3   bus1=2c bus2=3c switch=yes phases=1
+New PVSystem.PV3 bus1=3c phases=1 kV=.240 irradiance=1 pmpp=285 kVA=300 kvarlimit=132
+
+New ExpControl.pv1 pvsystemlist=(pv1) deltaQ_factor=0.2 vreg = 1.005
+~ slope=10 vregtau=300 Tresponse=5 PreferQ=yes
+
+New XYcurve.generic npts=4 Yarray=[0.44,0.44,-0.44,-0.44] Xarray=[.5,.956,1.044,1.5] // slope = 10, center on 1 pu for Vavg
+New InvControl.pv2 pvsystemlist=(pv2) mode=VOLTVAR
+~ voltage_curvex_ref=avg avgwindowlen=300 vvc_curve1=generic deltaQ_factor=0.2
+
+New InvControl.pv3 pvsystemlist=(pv3) mode=DYNAMICREACCURR 
+~ DbVMin=1 DbVMax=1
+~ ArGraLowV=10 ArGraHiV=10 
+~ DynReacavgwindowlen=300s
+~ deltaQ_factor=0.2 // Vreg=1.0211
+
+// PV system state variables: 1=irradiance
+// 2 = panel kW, 3 = Power temperature factor, 4 = efficiency,
+// 5 = Vreg from the parent ExpControl or InvControl
+new monitor.expv  element=line.line1   terminal=2 mode=96
+new monitor.exppq element=PVSystem.PV1 terminal=1 mode=65 PPolar=NO
+new monitor.expst element=PVSystem.PV1 terminal=1 mode=3
+
+new monitor.avgv  element=line.line2   terminal=2 mode=96
+new monitor.avgpq element=PVSystem.PV2 terminal=1 mode=65 PPolar=NO
+new monitor.avgst element=PVSystem.PV2 terminal=1 mode=3
+
+new monitor.drcv  element=line.line3   terminal=2 mode=96
+new monitor.drcpq element=PVSystem.PV3 terminal=1 mode=65 PPolar=NO
+new monitor.drcst element=PVSystem.PV3 terminal=1 mode=3
+
+set controlmode=static
+set maxcontroliter=1000
+set voltagebases=[.415692]
+
+CalcV
+solve mode=snapshot
+solve mode=daily number=7200 stepsize=1s
+
+export monitors expv
+export monitors exppq
+export monitors expst
+export monitors avgv
+export monitors avgpq
+export monitors avgst
+export monitors drcv
+export monitors drcpq
+export monitors drcst
+

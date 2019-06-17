@@ -1,0 +1,9 @@
+solve mode=daily number=86400 stepsize=1s
+
+export monitors pv1v
+export monitors pv1pq
+export monitors pv1st
+
+
+
+
