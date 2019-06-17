@@ -1,0 +1,29 @@
+These are examples from the PVSC-46 paper by McDermott and Abate, "Adaptive Voltage Regulation for Solar Power Inverters on Distribution Systems"
+
+Directory of files:
+
+- clean.bat and clean.sh: remove the output files
+
+- Hours.csv: 1-minute sample intervals for Vshape*.csv
+
+- pclear.csv: clear-day solar output at 1-second intervals
+
+- pcould.csv: cloudy-day solar output at 1-second intervals
+
+- RunAdaptive.dss: produce data for Fig. 5 - Fig. 8
+
+- RunSenseK.dss: produce data for Fig. 10
+
+- RunSenseQbias.dss: produce data for Fig. 9
+
+- RunSenseTau.dss: produce data for Fig. 11
+
+- SolveAndExportMonitors.dss: include file for the solution options and monitor export
+
+- StepResponse.dss: runs the simulations for step responses of AVR, VVAvg and DRC in Fig. 3. Note that voltage base had to be in high precision for accurate Vsys and Vref plots.
+
+- SystemPCC.dss: include file for the single-phase test harness in Fig. 4, along with monitor definitions and XY curve definitions
+
+- VshapeHi_dss.csv: no-solar grid voltage averging 1.02 pu
+
+- Vshape_dss.csv: no-solar grid voltage averaging 1.01 pu

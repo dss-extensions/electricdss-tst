@@ -1,0 +1,34 @@
+// variations in the grid voltage
+//New Loadshape.Vshape npts=1441 interval=0 hour=(file=Hours.csv) mult=(file=Vshape_dss.csv)
+New Loadshape.Vshape npts=1441 interval=0 hour=(file=Hours.csv) mult=(file=VshapeHi_dss.csv)
+
+// variations in solar power output
+New Loadshape.Cloud npts=86401 sinterval=1 csvfile=pcloud.csv action=normalize
+New Loadshape.Clear npts=86401 sinterval=1 csvfile=pclear.csv action=normalize
+
+New XYcurve.vvIEEE102 npts=6 Yarray=[0.44,0.44,0,0,-0.44,-0.44] Xarray=[.5,0.94,1.00,1.04,1.10,1.5] // 1547 default, slope=7.33, to 1.02
+New XYcurve.vvIEEE100 npts=6 Yarray=[0.44,0.44,0,0,-0.44,-0.44] Xarray=[.5,0.92,0.98,1.02,1.08,1.5] // 1547 default, slope=7.33
+New XYcurve.vv102k100 npts=4 Yarray=[0.44,0.44,-0.44,-0.44]     Xarray=[.5,1.0156,1.0244,1.5] // slope = 100, center on 1.02 pu for Vrated
+New XYcurve.vv100k100 npts=4 Yarray=[0.44,0.44,-0.44,-0.44]     Xarray=[.5,0.9956,1.0044,1.5] // slope = 100, center on 1 pu for Vavg
+New XYcurve.vv100k50  npts=4 Yarray=[0.44,0.44,-0.44,-0.44]    Xarray=[.5,0.9912,1.0088,1.5] // slope =  50, center on 1 pu for Vavg
+New XYcurve.vv100k22  npts=4 Yarray=[0.44,0.44,-0.44,-0.44]    Xarray=[.5,0.98,1.02,1.5] // slope =  22, center on 1 pu for Vavg
+
+// PVSystem
+//New Vsource.Vth1 bus1=2a basekv=.240 R1=0.0134 X1=0.0088 phases=1 daily=Vshape
+New Vsource.Vth1 bus1=2a basekv=.240 R1=0.0083 X1=0.0215 phases=1 daily=Vshape
+New line.line1   bus1=2a bus2=3a switch=yes phases=1
+New PVSystem.PV1 bus1=3a phases=1 kV=.240 irradiance=1 pmpp=285 kVA=300 
+~ daily=Cloud %cutin=0.1 %cutout=0.1 varfollowinverter=true kvarlimit=132
+
+// PV system state variables: 1=irradiance
+// 2 = panel kW, 3 = Power temperature factor, 4 = efficiency,
+// 5 = Vreg from the parent ExpControl or InvControl
+new monitor.pv1v  element=line.line1   terminal=2 mode=96
+new monitor.pv1pq element=PVSystem.PV1 terminal=1 mode=65 PPolar=NO
+new monitor.pv1st element=PVSystem.PV1 terminal=1 mode=3
+
+set controlmode=static
+set maxcontroliter=1000
+set voltagebases=[.415692]
+CalcV
+
