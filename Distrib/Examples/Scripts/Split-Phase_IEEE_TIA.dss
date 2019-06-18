@@ -1,0 +1,33 @@
+!Secondary Low-Voltage Circuit Models—How Good is Good Enough?
+!IEEE Transactions on Industry Applications
+!OpenDSS Example of Split-Phase Model
+
+clear
+
+New circuit.equiv_stiff MVAsc1=100000000 MVAsc3=100000000 basekv = 7.2 bus1=1 angle=-30
+
+New Transformer.center_tapped phases=1 windings=3   xhl=2.16 xht=2.16 xlt=1.44  %Rs=(0.55 1.1 1.1) ppm_antifloat=0
+~ wdg=1 bus=1.1.2   conn=delta  kV=7.2  kVA=50 
+~ wdg=2 bus=2.1.0   conn=wye    kV=0.12  kVA=50 
+~ wdg=3 bus=2.0.2   conn=wye    kV=0.12  kVA=50
+
+New Linecode.2/0_AATriplex nphases=2 units=kft
+~ rmatrix=[ 0.0237  0.0091 | 0.0091   0.0237 ]
+~ xmatrix=[  0.0155   0.0085 |  0.0085   0.0155 ]
+~ cmatrix=[  0  0 | 0   0 ]
+
+New Line.Tpx138265A0_orig     Bus1=2.1.2  Bus2=3.1.2   linecode=2/0_AATriplex  length=1 units=kft 
+
+New load.1ph_1 kV =0.12 phases=1 bus1=3.1.0 kVA=5 pf = 0.95  model=1 
+New load.1ph_2 kV =0.12 phases=1 bus1=3.2.0 kVA=10 pf = 0.90 model=1 
+New load.1ph_12 kV =0.24 phases=1 bus1=3.1.2 kVA=25 pf = 0.85  model=1
+
+Set voltagebases=[7.2, 0.24 ]
+Calcvoltagebases
+
+solve
+
+dump transformer.center_tapped debug
+Show Currents Elements
+Show Voltage LN Nodes
+Show Powers kva Elements
