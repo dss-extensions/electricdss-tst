@@ -3,21 +3,13 @@ Clear
 new circuit.HWPLL 
 ~ basekv=4.16 pu=1.0 angle=0 phases=3 bus1=SourceBus r1=0.029 x1=0.058 r0=0.014 x0=0.029
 
-New XYcurve.bp1_pll npts=2
-~ xarray=[-1.0 1.0]
-~ yarray=[-1.0 1.0]
-
-New XYcurve.bp2_pll npts=2
-~ xarray=[-1.0  1.0]
-~ yarray=[ 1.0 -1.0]
-
 New XYcurve.z_pll npts=3
 ~ xarray=[ 1.0000 -1.9852  0.9853] // denominator
 ~ yarray=[ 0.0000  0.0148 -0.0147] // numerator
 
 New vccs.pv Phases=1 Bus1=SourceBus.1 Prated=125e3 Vrated=2400 Ppct=100 
 ~ filter='z_pll' fsample=10000 rmsmode=true imaxpu=1.15
-~ bp1='bp1_pll' bp2='bp2_pll' 
+~ vrmstau=0.01 irmstau=0.05
 
 new fault.flt bus1=Sourcebus.1 phases=1 r=0.001 temporary=yes ontime=0.1 //ontime=0.0821 // ontime=0.0768
 
@@ -39,8 +31,8 @@ set number=2500     // 2500 matches fsample
 Solve
 
 plot type=monitor obj=invvi channels=[1 3] bases=[2400 52.083]
-plot type=monitor obj=invpq channels=[1 2] bases=[125 180]
-plot type=monitor obj=invst channels=[1 2 3 4 5 6]
+//plot type=monitor obj=invpq channels=[1 2] bases=[125 180]
+plot type=monitor obj=invst channels=[1 2 3 4]
 
 //export monitors invvi
 //export monitors invpq

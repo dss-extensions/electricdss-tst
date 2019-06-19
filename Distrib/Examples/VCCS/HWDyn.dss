@@ -28,6 +28,9 @@ set stepsize=0.0001 // 0.0001 matches fsample
 set number=2500     // 2500 matches fsample
 Solve
 
+plot monitor object=invst channels=[1]
+plot monitor object=invst channels=[2 3 4 5 6]
+
 export monitors invvi
 export monitors invpq
 export monitors invst
