@@ -1,0 +1,1157 @@
+New "Line.333" bus1=ckt7 bus2=318412 length=0.0001 units=none r1=0 r0=0 x1=0.0001 x0=0.0001 normamps=600 emergamps=600
+New "Line.215299" bus1=318412.1.2.3 bus2=253843.1.2.3 length=98.80038 linecode=144 normamps=634 emergamps=701 units=m enabled=true phases=3
+New "Line.254077" bus1=253842.1.2.3 bus2=253843.1.2.3 length=0.001 linecode=99 normamps=500 emergamps=550 Switch=True units=m enabled=true phases=3
+New "Line.246180" bus1=253842.1.2.3 bus2=243936.1.2.3 length=89.03033 linecode=144 normamps=634 emergamps=701 units=m enabled=true phases=3
+New "Line.246178" bus1=243936.1.2.3 bus2=243937.1.2.3 length=0.001 linecode=99 normamps=500 emergamps=550 Switch=True units=m enabled=true phases=3
+New "Line.239739" bus1=243937.1.2.3 bus2=202181.1.2.3 length=89.62034 linecode=45 normamps=637 emergamps=700 units=m enabled=true phases=3
+New "Line.202135" bus1=202181.1.2.3 bus2=165442.1.2.3 length=5.790021 linecode=45 normamps=637 emergamps=700 units=m enabled=true phases=3
+New "Line.s_1000663-da1" bus1=x_1000663.1 bus2=s1x_1000663.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000663-db1" bus1=x_1000663.2 bus2=s1x_1000663.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000663-dc1" bus1=x_1000663.3 bus2=s1x_1000663.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.157109" bus1=165442.1.2.3 bus2=298160.1.2.3 length=227.5909 linecode=45 normamps=637 emergamps=700 units=m enabled=true phases=3
+New "Line.298361" bus1=298159.1.2.3 bus2=298160.1.2.3 length=0.001 linecode=99 normamps=500 emergamps=550 Switch=True units=m enabled=true phases=3
+New "Line.298366" bus1=298159.1.2.3 bus2=298162.1.2.3 length=158.9606 linecode=147 normamps=606 emergamps=667 units=m enabled=true phases=3
+New "Line.298362" bus1=298161.1.2.3 bus2=298162.1.2.3 length=0.001 linecode=99 normamps=500 emergamps=550 Switch=True units=m enabled=true phases=3
+New "Line.298367" bus1=298161.1.2.3 bus2=165448.1.2.3 length=33.08012 linecode=45 normamps=637 emergamps=700 units=m enabled=true phases=3
+New "Line.s_1000252-db1" bus1=x_1000252.2 bus2=s1x_1000252.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.157115" bus1=165448.1.2.3 bus2=275354.1.2.3 length=325.4212 linecode=45 normamps=637 emergamps=700 units=m enabled=true phases=3
+New "Line.s_1003133-db1" bus1=x_1003133.2 bus2=s1x_1003133.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.274465" bus1=275354.1.2.3 bus2=165449.1.2.3 length=25.0801 linecode=45 normamps=637 emergamps=700 units=m enabled=true phases=3
+New "Line.157116" bus1=165449.1.2.3 bus2=165450.1.2.3 length=51.07019 linecode=40 normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.157119" bus1=165449.1.2.3 bus2=165451.1.2.3 length=86.07032 linecode=45 normamps=637 emergamps=700 units=m enabled=true phases=3
+New "Line.157132" bus1=165451.1.2.3 bus2=165467.1.2.3 length=51.53019 linecode=40 normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.s_1000672-da1" bus1=x_1000672.1 bus2=s1x_1000672.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.157133" bus1=165467.1.2.3 bus2=165468.1.2.3 length=28.48011 linecode=45 normamps=637 emergamps=700 units=m enabled=true phases=3
+New "Line.157142" bus1=165468.1.2.3 bus2=165469.1.2.3 length=28.2101 linecode=45 normamps=637 emergamps=700 units=m enabled=true phases=3
+New "Line.157143" bus1=165469.1.2.3 bus2=165480.1.2.3 length=42.86016 linecode=45 normamps=637 emergamps=700 units=m enabled=true phases=3
+New "Line.157145" bus1=165480.1.2.3 bus2=165478.1.2.3 length=29.72011 linecode=45 normamps=637 emergamps=700 units=m enabled=true phases=3
+New "Line.157144" bus1=165478.1.2.3 bus2=165479.1.2.3 length=31.57012 linecode=45 normamps=637 emergamps=700 units=m enabled=true phases=3
+New "Line.157150" bus1=165479.1.2.3 bus2=165486.1.2.3 length=45.86017 linecode=40 normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.s_1001822-da1" bus1=x_1001822.1 bus2=s1x_1001822.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001822-db1" bus1=x_1001822.2 bus2=s1x_1001822.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001822-dc1" bus1=x_1001822.3 bus2=s1x_1001822.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.157151" bus1=165486.1.2.3 bus2=165485.1.2.3 length=18.35007 linecode=40 normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.s_1001823-da1" bus1=x_1001823.1 bus2=s1x_1001823.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.157152" bus1=165479.1.2.3 bus2=165487.1.2.3 length=46.28017 linecode=45 normamps=637 emergamps=700 units=m enabled=true phases=3
+New "Line.157160" bus1=165487.1.2.3 bus2=283952.1.2.3 length=51.7402 linecode=45 normamps=637 emergamps=700 units=m enabled=true phases=3
+New "Line.282435" bus1=283952.1.2.3 bus2=165495.1.2.3 length=104.7904 linecode=45 normamps=637 emergamps=700 units=m enabled=true phases=3
+New "Line.157165" bus1=165495.1.2.3 bus2=165500.1.2.3 length=12.82005 linecode=40 normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.157163" bus1=165500.1.2.3 bus2=165501.1.2.3 length=7.470027 linecode=99 normamps=500 emergamps=550 units=m enabled=true phases=3
+New "Line.157167" bus1=165501.1.2.3 bus2=165503.1.2.3 length=54.6002 linecode=186 normamps=214 emergamps=235 units=m enabled=true phases=3
+New "Line.s_1001567-da1" bus1=x_1001567.1.2.3 bus2=s1x_1001567.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001567-da2" bus1=x_1001567.1.2.3 bus2=s2x_1001567.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001567-da3" bus1=x_1001567.1.2.3 bus2=s3x_1001567.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.157168" bus1=165495.1.2.3 bus2=165504.1.2.3 length=292.5211 linecode=40 normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.175049" bus1=181968.1.2.3 bus2=165504.1.2.3 length=147.7505 linecode=45 normamps=637 emergamps=700 units=m enabled=true phases=3
+New "Line.175037" bus1=181942.1.2.3 bus2=181968.1.2.3 length=42.58016 linecode=45 normamps=637 emergamps=700 units=m enabled=true phases=3
+New "Line.175008" bus1=181945.1.2.3 bus2=181942.1.2.3 length=40.63015 linecode=45 normamps=637 emergamps=700 units=m enabled=true phases=3
+New "Line.175007" bus1=181932.1.2.3 bus2=181945.1.2.3 length=39.28015 linecode=45 normamps=637 emergamps=700 units=m enabled=true phases=3
+New "Line.174999" bus1=181936.1.2.3 bus2=181932.1.2.3 length=34.30013 linecode=45 normamps=637 emergamps=700 units=m enabled=true phases=3
+New "Line.s_1000198-da1" bus1=x_1000198.1 bus2=s1x_1000198.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.174998" bus1=181929.1.2.3 bus2=181936.1.2.3 length=45.21017 linecode=45 normamps=637 emergamps=700 units=m enabled=true phases=3
+New "Line.174995" bus1=255317.1.2.3 bus2=181929.1.2.3 length=82.40031 linecode=45 normamps=637 emergamps=700 units=m enabled=true phases=3
+New "Line.255376" bus1=255317.1.2.3 bus2=255318.1.2.3 length=0.001 linecode=99 normamps=500 emergamps=550 Switch=True units=m enabled=true phases=3
+New "Line.255377" bus1=181919.1.2.3 bus2=255318.1.2.3 length=41.80016 linecode=104 normamps=500 emergamps=550 units=m enabled=true phases=3
+New "Line.174983" bus1=181918.1.2.3 bus2=181919.1.2.3 length=33.13012 linecode=45 normamps=637 emergamps=700 units=m enabled=true phases=3
+New "Line.174982" bus1=181917.1.2.3 bus2=181918.1.2.3 length=15.92006 linecode=45 normamps=637 emergamps=700 units=m enabled=true phases=3
+New "Line.174980" bus1=181883.1.2.3 bus2=181917.1.2.3 length=413.6915 linecode=45 normamps=637 emergamps=700 units=m enabled=true phases=3
+New "Line.174945" bus1=181883.1.2.3 bus2=158676.1.2.3 length=574.9122 linecode=45 normamps=637 emergamps=700 units=m enabled=true phases=3
+New "Line.262345" bus1=255322.1.2.3 bus2=181883.1.2.3 length=42.23016 linecode=40 normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.255381" bus1=255322.1.2.3 bus2=181884.1.2.3 length=20.13007 linecode=40 normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.174950" bus1=181884.1.2.3 bus2=181886.1.2.3 length=14.66006 linecode=40 normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.174951" bus1=181886.1.2.3 bus2=181889.1.2.3 length=6.460024 linecode=40 normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.174947" bus1=181889.1.2.3 bus2=181890.1.2.3 length=8.000031 linecode=99 normamps=500 emergamps=550 units=m enabled=true phases=3
+New "Line.174956" bus1=181890.1.2.3 bus2=181893.1.2.3 length=6.460024 linecode=186 normamps=214 emergamps=235 units=m enabled=true phases=3
+New "Line.s_1000569-da1" bus1=x_1000569.1.2.3 bus2=s1x_1000569.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1000569-da2" bus1=x_1000569.1.2.3 bus2=s2x_1000569.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1000569-da3" bus1=x_1000569.1.2.3 bus2=s3x_1000569.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.174952" bus1=181886.1.2.3 bus2=181888.1.2.3 length=45.45017 linecode=40 normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.174953" bus1=181888.1.2.3 bus2=181885.1.2.3 length=46.11017 linecode=109 normamps=225 emergamps=265 units=m enabled=true phases=3
+New "Line.s_1000233-db1" bus1=x_1000233.2 bus2=s1x_1000233.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.174954" bus1=181885.1.2.3 bus2=181887.1.2.3 length=5.790021 linecode=109 normamps=225 emergamps=265 units=m enabled=true phases=3
+New "Line.174955" bus1=181887.1.2.3 bus2=181891.1.2.3 length=16.82006 linecode=109 normamps=225 emergamps=265 units=m enabled=true phases=3
+New "Line.174948" bus1=181891.1.2.3 bus2=181892.1.2.3 length=7.530029 linecode=99 normamps=500 emergamps=550 units=m enabled=true phases=3
+New "Line.174961" bus1=181892.1 bus2=181898.1 length=76.16029 linecode=181 normamps=213 emergamps=234 units=m enabled=true phases=1
+New "Line.s_1000608-da1" bus1=x_1000608.1 bus2=s1x_1000608.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000608-da2" bus1=x_1000608.1 bus2=s2x_1000608.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000608-da3" bus1=x_1000608.1 bus2=s3x_1000608.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000608-da4" bus1=x_1000608.1 bus2=s4x_1000608.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000608-da5" bus1=x_1000608.1 bus2=s5x_1000608.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000608-da6" bus1=x_1000608.1 bus2=s6x_1000608.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000608-da7" bus1=x_1000608.1 bus2=s7x_1000608.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000608-da8" bus1=x_1000608.1 bus2=s8x_1000608.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.174962" bus1=181898.1 bus2=181899.1 length=68.65026 linecode=181 normamps=213 emergamps=234 units=m enabled=true phases=1
+New "Line.s_1000609-da1" bus1=x_1000609.1 bus2=s1x_1000609.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000609-da2" bus1=x_1000609.1 bus2=s2x_1000609.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000609-da3" bus1=x_1000609.1 bus2=s3x_1000609.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000609-da4" bus1=x_1000609.1 bus2=s4x_1000609.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000609-da5" bus1=x_1000609.1 bus2=s5x_1000609.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000609-da6" bus1=x_1000609.1 bus2=s6x_1000609.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000609-da7" bus1=x_1000609.1 bus2=s7x_1000609.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000609-da8" bus1=x_1000609.1 bus2=s8x_1000609.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000609-da9" bus1=x_1000609.1 bus2=s9x_1000609.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000609-da10" bus1=x_1000609.1 bus2=s10x_1000609.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000609-da11" bus1=x_1000609.1 bus2=s11x_1000609.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.174963" bus1=181899.1 bus2=181900.1 length=20.43008 linecode=181 normamps=213 emergamps=234 units=m enabled=true phases=1
+New "Line.s_1000610-da1" bus1=x_1000610.1 bus2=s1x_1000610.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000610-da2" bus1=x_1000610.1 bus2=s2x_1000610.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000610-da3" bus1=x_1000610.1 bus2=s3x_1000610.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000610-da4" bus1=x_1000610.1 bus2=s4x_1000610.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000610-da5" bus1=x_1000610.1 bus2=s5x_1000610.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000610-da6" bus1=x_1000610.1 bus2=s6x_1000610.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000610-da7" bus1=x_1000610.1 bus2=s7x_1000610.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000610-da8" bus1=x_1000610.1 bus2=s8x_1000610.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000610-da9" bus1=x_1000610.1 bus2=s9x_1000610.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000610-da10" bus1=x_1000610.1 bus2=s10x_1000610.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000610-da11" bus1=x_1000610.1 bus2=s11x_1000610.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.174964" bus1=181900.1 bus2=181901.1 length=34.78013 linecode=181 normamps=213 emergamps=234 units=m enabled=true phases=1
+New "Line.s_1000611-da1" bus1=x_1000611.1 bus2=s1x_1000611.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000611-da2" bus1=x_1000611.1 bus2=s2x_1000611.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000611-da3" bus1=x_1000611.1 bus2=s3x_1000611.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000611-da4" bus1=x_1000611.1 bus2=s4x_1000611.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000611-da5" bus1=x_1000611.1 bus2=s5x_1000611.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.174965" bus1=181901.1 bus2=181902.1 length=53.0702 linecode=181 normamps=213 emergamps=234 units=m enabled=true phases=1
+New "Line.s_1000612-da1" bus1=x_1000612.1 bus2=s1x_1000612.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000612-da2" bus1=x_1000612.1 bus2=s2x_1000612.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000612-da3" bus1=x_1000612.1 bus2=s3x_1000612.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000612-da4" bus1=x_1000612.1 bus2=s4x_1000612.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000612-da5" bus1=x_1000612.1 bus2=s5x_1000612.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000612-da6" bus1=x_1000612.1 bus2=s6x_1000612.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000612-da7" bus1=x_1000612.1 bus2=s7x_1000612.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000612-da8" bus1=x_1000612.1 bus2=s8x_1000612.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.174966" bus1=181892.3 bus2=181908.3 length=24.72009 linecode=181 normamps=213 emergamps=234 units=m enabled=true phases=1
+New "Line.174967" bus1=181908.3 bus2=181903.3 length=5.800022 linecode=181 normamps=213 emergamps=234 units=m enabled=true phases=1
+New "Line.s_1000598-dc1" bus1=x_1000598.3 bus2=s1x_1000598.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000598-dc2" bus1=x_1000598.3 bus2=s2x_1000598.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000598-dc3" bus1=x_1000598.3 bus2=s3x_1000598.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000598-dc4" bus1=x_1000598.3 bus2=s4x_1000598.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000598-dc5" bus1=x_1000598.3 bus2=s5x_1000598.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000598-dc6" bus1=x_1000598.3 bus2=s6x_1000598.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000598-dc7" bus1=x_1000598.3 bus2=s7x_1000598.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000598-dc8" bus1=x_1000598.3 bus2=s8x_1000598.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000598-dc9" bus1=x_1000598.3 bus2=s9x_1000598.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.174968" bus1=181908.3 bus2=181904.3 length=21.39008 linecode=181 normamps=213 emergamps=234 units=m enabled=true phases=1
+New "Line.s_1000599-dc1" bus1=x_1000599.3 bus2=s1x_1000599.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000599-dc2" bus1=x_1000599.3 bus2=s2x_1000599.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000599-dc3" bus1=x_1000599.3 bus2=s3x_1000599.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000599-dc4" bus1=x_1000599.3 bus2=s4x_1000599.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000599-dc5" bus1=x_1000599.3 bus2=s5x_1000599.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000599-dc6" bus1=x_1000599.3 bus2=s6x_1000599.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000599-dc7" bus1=x_1000599.3 bus2=s7x_1000599.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000599-dc8" bus1=x_1000599.3 bus2=s8x_1000599.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000599-dc9" bus1=x_1000599.3 bus2=s9x_1000599.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000599-dc10" bus1=x_1000599.3 bus2=s10x_1000599.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000599-dc11" bus1=x_1000599.3 bus2=s11x_1000599.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.174969" bus1=181908.3 bus2=181905.3 length=50.91019 linecode=181 normamps=213 emergamps=234 units=m enabled=true phases=1
+New "Line.s_1000600-dc1" bus1=x_1000600.3 bus2=s1x_1000600.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000600-dc2" bus1=x_1000600.3 bus2=s2x_1000600.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000600-dc3" bus1=x_1000600.3 bus2=s3x_1000600.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000600-dc4" bus1=x_1000600.3 bus2=s4x_1000600.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000600-dc5" bus1=x_1000600.3 bus2=s5x_1000600.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000600-dc6" bus1=x_1000600.3 bus2=s6x_1000600.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000600-dc7" bus1=x_1000600.3 bus2=s7x_1000600.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000600-dc8" bus1=x_1000600.3 bus2=s8x_1000600.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000600-dc9" bus1=x_1000600.3 bus2=s9x_1000600.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.174970" bus1=181905.3 bus2=181909.3 length=20.51008 linecode=181 normamps=213 emergamps=234 units=m enabled=true phases=1
+New "Line.174971" bus1=181909.3 bus2=181907.3 length=9.150034 linecode=181 normamps=213 emergamps=234 units=m enabled=true phases=1
+New "Line.s_1000601-dc1" bus1=x_1000601.3 bus2=s1x_1000601.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000601-dc2" bus1=x_1000601.3 bus2=s2x_1000601.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000601-dc3" bus1=x_1000601.3 bus2=s3x_1000601.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000601-dc4" bus1=x_1000601.3 bus2=s4x_1000601.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000601-dc5" bus1=x_1000601.3 bus2=s5x_1000601.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000601-dc6" bus1=x_1000601.3 bus2=s6x_1000601.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000601-dc7" bus1=x_1000601.3 bus2=s7x_1000601.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000601-dc8" bus1=x_1000601.3 bus2=s8x_1000601.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.174972" bus1=181909.3 bus2=181906.3 length=15.99006 linecode=181 normamps=213 emergamps=234 units=m enabled=true phases=1
+New "Line.s_1000602-dc1" bus1=x_1000602.3 bus2=s1x_1000602.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000602-dc2" bus1=x_1000602.3 bus2=s2x_1000602.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000602-dc3" bus1=x_1000602.3 bus2=s3x_1000602.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000602-dc4" bus1=x_1000602.3 bus2=s4x_1000602.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000602-dc5" bus1=x_1000602.3 bus2=s5x_1000602.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000602-dc6" bus1=x_1000602.3 bus2=s6x_1000602.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000602-dc7" bus1=x_1000602.3 bus2=s7x_1000602.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000602-dc8" bus1=x_1000602.3 bus2=s8x_1000602.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.174973" bus1=181892.2 bus2=181910.2 length=178.4707 linecode=181 normamps=213 emergamps=234 units=m enabled=true phases=1
+New "Line.s_1000603-db1" bus1=x_1000603.2 bus2=s1x_1000603.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000603-db2" bus1=x_1000603.2 bus2=s2x_1000603.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000603-db3" bus1=x_1000603.2 bus2=s3x_1000603.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000603-db4" bus1=x_1000603.2 bus2=s4x_1000603.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000603-db5" bus1=x_1000603.2 bus2=s5x_1000603.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000603-db6" bus1=x_1000603.2 bus2=s6x_1000603.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000603-db7" bus1=x_1000603.2 bus2=s7x_1000603.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.174974" bus1=181910.2 bus2=181911.2 length=39.85015 linecode=181 normamps=213 emergamps=234 units=m enabled=true phases=1
+New "Line.s_1000604-db1" bus1=x_1000604.2 bus2=s1x_1000604.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000604-db2" bus1=x_1000604.2 bus2=s2x_1000604.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000604-db3" bus1=x_1000604.2 bus2=s3x_1000604.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000604-db4" bus1=x_1000604.2 bus2=s4x_1000604.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000604-db5" bus1=x_1000604.2 bus2=s5x_1000604.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000604-db6" bus1=x_1000604.2 bus2=s6x_1000604.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000604-db7" bus1=x_1000604.2 bus2=s7x_1000604.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000604-db8" bus1=x_1000604.2 bus2=s8x_1000604.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000604-db9" bus1=x_1000604.2 bus2=s9x_1000604.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000604-db10" bus1=x_1000604.2 bus2=s10x_1000604.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000604-db11" bus1=x_1000604.2 bus2=s11x_1000604.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000604-db12" bus1=x_1000604.2 bus2=s12x_1000604.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000604-db13" bus1=x_1000604.2 bus2=s13x_1000604.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000604-db14" bus1=x_1000604.2 bus2=s14x_1000604.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000604-db15" bus1=x_1000604.2 bus2=s15x_1000604.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.174975" bus1=181911.2 bus2=181916.2 length=59.36022 linecode=181 normamps=213 emergamps=234 units=m enabled=true phases=1
+New "Line.174976" bus1=181916.2 bus2=181915.2 length=48.19018 linecode=181 normamps=213 emergamps=234 units=m enabled=true phases=1
+New "Line.s_1000607-db1" bus1=x_1000607.2 bus2=s1x_1000607.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000607-db2" bus1=x_1000607.2 bus2=s2x_1000607.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000607-db3" bus1=x_1000607.2 bus2=s3x_1000607.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000607-db4" bus1=x_1000607.2 bus2=s4x_1000607.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000607-db5" bus1=x_1000607.2 bus2=s5x_1000607.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000607-db6" bus1=x_1000607.2 bus2=s6x_1000607.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000607-db7" bus1=x_1000607.2 bus2=s7x_1000607.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000607-db8" bus1=x_1000607.2 bus2=s8x_1000607.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.174977" bus1=181916.2 bus2=181912.2 length=22.28008 linecode=181 normamps=213 emergamps=234 units=m enabled=true phases=1
+New "Line.s_1000605-db1" bus1=x_1000605.2 bus2=s1x_1000605.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000605-db2" bus1=x_1000605.2 bus2=s2x_1000605.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000605-db3" bus1=x_1000605.2 bus2=s3x_1000605.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000605-db4" bus1=x_1000605.2 bus2=s4x_1000605.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000605-db5" bus1=x_1000605.2 bus2=s5x_1000605.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000605-db6" bus1=x_1000605.2 bus2=s6x_1000605.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000605-db7" bus1=x_1000605.2 bus2=s7x_1000605.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000605-db8" bus1=x_1000605.2 bus2=s8x_1000605.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000605-db9" bus1=x_1000605.2 bus2=s9x_1000605.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000605-db10" bus1=x_1000605.2 bus2=s10x_1000605.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000605-db11" bus1=x_1000605.2 bus2=s11x_1000605.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.174978" bus1=181912.2 bus2=181913.2 length=47.26017 linecode=181 normamps=213 emergamps=234 units=m enabled=true phases=1
+New "Line.s_1000606-db1" bus1=x_1000606.2 bus2=s1x_1000606.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000606-db2" bus1=x_1000606.2 bus2=s2x_1000606.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000606-db3" bus1=x_1000606.2 bus2=s3x_1000606.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000606-db4" bus1=x_1000606.2 bus2=s4x_1000606.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000606-db5" bus1=x_1000606.2 bus2=s5x_1000606.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000606-db6" bus1=x_1000606.2 bus2=s6x_1000606.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000606-db7" bus1=x_1000606.2 bus2=s7x_1000606.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000606-db8" bus1=x_1000606.2 bus2=s8x_1000606.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000606-db9" bus1=x_1000606.2 bus2=s9x_1000606.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000606-db10" bus1=x_1000606.2 bus2=s10x_1000606.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000606-db11" bus1=x_1000606.2 bus2=s11x_1000606.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000606-db12" bus1=x_1000606.2 bus2=s12x_1000606.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.174979" bus1=181913.2 bus2=181914.2 length=5.790021 linecode=181 normamps=213 emergamps=234 units=m enabled=true phases=1
+New "Line.174957" bus1=181887.1.2.3 bus2=181894.1.2.3 length=90.93034 linecode=109 normamps=225 emergamps=265 units=m enabled=true phases=3
+New "Line.s_1000746-da1" bus1=x_1000746.1.2.3 bus2=s1x_1000746.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1000746-da2" bus1=x_1000746.1.2.3 bus2=s2x_1000746.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1000746-da3" bus1=x_1000746.1.2.3 bus2=s3x_1000746.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.174959" bus1=181894.1.2.3 bus2=181895.1.2.3 length=36.05014 linecode=109 normamps=225 emergamps=265 units=m enabled=true phases=3
+New "Line.174958" bus1=181895.1.2.3 bus2=181896.1.2.3 length=7.620028 linecode=99 normamps=500 emergamps=550 units=m enabled=true phases=3
+New "Line.174960" bus1=181896.1.2.3 bus2=181897.1.2.3 length=13.11005 linecode=186 normamps=214 emergamps=235 units=m enabled=true phases=3
+New "Line.174981" bus1=181917.1.2.3 bus2=181920.1.2.3 length=10.67004 linecode=45 normamps=637 emergamps=700 units=m enabled=true phases=3
+New "Line.174987" bus1=181918.1.2.3 bus2=181925.1.2.3 length=56.17021 linecode=45 normamps=637 emergamps=700 units=m enabled=true phases=3
+New "Line.174988" bus1=181925.1.2.3 bus2=181926.1.2.3 length=7.020026 linecode=45 normamps=637 emergamps=700 units=m enabled=true phases=3
+New "Line.174989" bus1=181926.1.2.3 bus2=181927.1.2.3 length=8.250031 linecode=45 normamps=637 emergamps=700 units=m enabled=true phases=3
+New "Line.175002" bus1=181927.1.2.3 bus2=181937.1.2.3 length=8.24003 linecode=40 normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.s_1000548-da1" bus1=x_1000548.1 bus2=s1x_1000548.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.175003" bus1=181937.1.2.3 bus2=181938.1.2.3 length=58.45022 linecode=40 normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.s_1000069-da1" bus1=x_1000069.1.2.3 bus2=s1x_1000069.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1000069-da2" bus1=x_1000069.1.2.3 bus2=s2x_1000069.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1000069-da3" bus1=x_1000069.1.2.3 bus2=s3x_1000069.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1000069-da4" bus1=x_1000069.1.2.3 bus2=s4x_1000069.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1000069-da5" bus1=x_1000069.1.2.3 bus2=s5x_1000069.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1000069-da6" bus1=x_1000069.1.2.3 bus2=s6x_1000069.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.175004" bus1=181938.1.2.3 bus2=181940.1.2.3 length=22.44008 linecode=40 normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.175001" bus1=181939.1.2.3 bus2=181940.1.2.3 length=7.720029 linecode=99 normamps=500 emergamps=550 units=m enabled=true phases=3
+New "Line.175005" bus1=181939.1.2.3 bus2=181941.1.2.3 length=6.130023 linecode=186 normamps=214 emergamps=235 units=m enabled=true phases=3
+New "Line.175060" bus1=181926.1.2.3 bus2=181993.1.2.3 length=118.6904 linecode=45 normamps=637 emergamps=700 units=m enabled=true phases=3
+New "Line.175061" bus1=181993.1.2.3 bus2=181994.1.2.3 length=220.5308 linecode=104 normamps=500 emergamps=550 units=m enabled=true phases=3
+New "Line.175062" bus1=181994.1.2.3 bus2=181995.1.2.3 length=72.69027 linecode=104 normamps=500 emergamps=550 units=m enabled=true phases=3
+New "Line.175063" bus1=181995.1.2.3 bus2=181996.1.2.3 length=66.30025 linecode=104 normamps=500 emergamps=550 units=m enabled=true phases=3
+New "Line.175064" bus1=181996.1.2.3 bus2=181997.1.2.3 length=64.11024 linecode=104 normamps=500 emergamps=550 units=m enabled=true phases=3
+New "Line.175067" bus1=181997.1.2.3 bus2=182001.1.2.3 length=8.24003 linecode=104 normamps=500 emergamps=550 units=m enabled=true phases=3
+New "Line.175066" bus1=182000.1.2.3 bus2=182001.1.2.3 length=15.14006 linecode=99 normamps=500 emergamps=550 units=m enabled=true phases=3
+New "Line.175068" bus1=182000.1.2.3 bus2=182002.1.2.3 length=7.340027 linecode=104 normamps=500 emergamps=550 units=m enabled=true phases=3
+New "Line.175071" bus1=181997.1.2.3 bus2=182004.1.2.3 length=42.44016 linecode=104 normamps=500 emergamps=550 units=m enabled=true phases=3
+New "Line.175074" bus1=182004.1.2.3 bus2=182005.1.2.3 length=6.690025 linecode=40 normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.175072" bus1=182005.1.2.3 bus2=182006.1.2.3 length=15.24006 linecode=99 normamps=500 emergamps=550 units=m enabled=true phases=3
+New "Line.175075" bus1=182006.1.2.3 bus2=210023.1.2.3 length=6.250023 linecode=40 normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.211128" bus1=210023.1.2.3 bus2=182007.1.2.3 length=19.85007 linecode=40 normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.s_1002055-da1" bus1=x_1002055.1 bus2=s1x_1002055.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1002055-db1" bus1=x_1002055.2 bus2=s1x_1002055.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1002055-dc1" bus1=x_1002055.3 bus2=s1x_1002055.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.223584" bus1=221728.1.2.3 bus2=182007.1.2.3 length=25.5801 linecode=40 normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.223551" bus1=221728.1.2.3 bus2=221729.1.2.3 length=15.62006 linecode=99 normamps=500 emergamps=550 units=m enabled=true phases=3
+New "Line.223585" bus1=221729.1.2.3 bus2=221730.1.2.3 length=39.11015 linecode=185 normamps=213 emergamps=234 units=m enabled=true phases=3
+New "Line.s_1001637-da1" bus1=x_1001637.1.2.3 bus2=s1x_1001637.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001637-da2" bus1=x_1001637.1.2.3 bus2=s2x_1001637.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001637-da3" bus1=x_1001637.1.2.3 bus2=s3x_1001637.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001637-da4" bus1=x_1001637.1.2.3 bus2=s4x_1001637.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001637-da5" bus1=x_1001637.1.2.3 bus2=s5x_1001637.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001637-da6" bus1=x_1001637.1.2.3 bus2=s6x_1001637.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.175080" bus1=182004.1.2.3 bus2=182011.1.2.3 length=79.3603 linecode=40 normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.175081" bus1=182012.1.2.3 bus2=182011.1.2.3 length=10.37004 linecode=40 normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.175078" bus1=182012.1.2.3 bus2=182013.1.2.3 length=0.001 linecode=99 normamps=500 emergamps=550 Switch=True units=m enabled=true phases=3
+New "Line.255389" bus1=182013.1.2.3 bus2=255334.1.2.3 length=65.87025 linecode=141 normamps=519 emergamps=617 units=m enabled=true phases=3
+New "Line.255390" bus1=255334.1.2.3 bus2=255335.1.2.3 length=50.17019 linecode=141 normamps=519 emergamps=617 units=m enabled=true phases=3
+New "Line.255391" bus1=255335.1.2.3 bus2=247590.1.2.3 length=139.2705 linecode=141 normamps=519 emergamps=617 units=m enabled=true phases=3
+New "Line.249319" bus1=247589.1.2.3 bus2=247590.1.2.3 length=0.001 linecode=99 normamps=500 emergamps=550 Switch=True units=m enabled=true phases=3
+New "Line.175098" bus1=247589.1.2.3 bus2=182030.1.2.3 length=45.92017 linecode=40 normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.175082" bus1=182011.1.2.3 bus2=182014.1.2.3 length=19.51007 linecode=40 normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.175083" bus1=182014.1.2.3 bus2=182016.1.2.3 length=19.53008 linecode=40 normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.175079" bus1=182015.1.2.3 bus2=182016.1.2.3 length=15.24006 linecode=99 normamps=500 emergamps=550 units=m enabled=true phases=3
+New "Line.175084" bus1=182015.1.2.3 bus2=182018.1.2.3 length=7.320028 linecode=40 normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.175085" bus1=182018.1.2.3 bus2=182019.1.2.3 length=18.90007 linecode=40 normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.s_1000538-da1" bus1=x_1000538.1 bus2=s1x_1000538.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000538-db1" bus1=x_1000538.2 bus2=s1x_1000538.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000538-dc1" bus1=x_1000538.3 bus2=s1x_1000538.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.175086" bus1=182019.1.2.3 bus2=182020.1.2.3 length=67.37025 linecode=40 normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.s_1000087-da1" bus1=x_1000087.1 bus2=s1x_1000087.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000087-db1" bus1=x_1000087.2 bus2=s1x_1000087.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000087-dc1" bus1=x_1000087.3 bus2=s1x_1000087.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.175087" bus1=182020.1.2.3 bus2=182017.1.2.3 length=53.9502 linecode=40 normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.175088" bus1=182017.1.2.3 bus2=182022.1.2.3 length=39.03015 linecode=40 normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.s_1000071-da1" bus1=x_1000071.1 bus2=s1x_1000071.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000071-db1" bus1=x_1000071.2 bus2=s1x_1000071.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000071-dc1" bus1=x_1000071.3 bus2=s1x_1000071.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.175089" bus1=182022.1.2.3 bus2=182021.1.2.3 length=15.24006 linecode=40 normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.s_1000070-db1" bus1=x_1000070.2 bus2=s1x_1000070.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000070-db2" bus1=x_1000070.2 bus2=s2x_1000070.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000070-db3" bus1=x_1000070.2 bus2=s3x_1000070.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000070-db4" bus1=x_1000070.2 bus2=s4x_1000070.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000070-db5" bus1=x_1000070.2 bus2=s5x_1000070.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.175091" bus1=182017.1.2.3 bus2=182023.1.2.3 length=44.50016 linecode=40 normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.175092" bus1=182023.1.2.3 bus2=182024.1.2.3 length=15.64006 linecode=40 normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.175090" bus1=182024.1.2.3 bus2=182025.1.2.3 length=15.06006 linecode=99 normamps=500 emergamps=550 units=m enabled=true phases=3
+New "Line.175094" bus1=182025.1.2.3 bus2=182027.1.2.3 length=57.25022 linecode=186 normamps=214 emergamps=235 units=m enabled=true phases=3
+New "Line.s_1002001-da1" bus1=x_1002001.1.2.3 bus2=s1x_1002001.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1002001-da2" bus1=x_1002001.1.2.3 bus2=s2x_1002001.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1002001-da3" bus1=x_1002001.1.2.3 bus2=s3x_1002001.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1002001-da4" bus1=x_1002001.1.2.3 bus2=s4x_1002001.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1002001-da5" bus1=x_1002001.1.2.3 bus2=s5x_1002001.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1002001-da6" bus1=x_1002001.1.2.3 bus2=s6x_1002001.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1002001-da7" bus1=x_1002001.1.2.3 bus2=s7x_1002001.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1002001-da8" bus1=x_1002001.1.2.3 bus2=s8x_1002001.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1002001-da9" bus1=x_1002001.1.2.3 bus2=s9x_1002001.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1002001-da10" bus1=x_1002001.1.2.3 bus2=s10x_1002001.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1002001-da11" bus1=x_1002001.1.2.3 bus2=s11x_1002001.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1002001-da12" bus1=x_1002001.1.2.3 bus2=s12x_1002001.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1002001-da13" bus1=x_1002001.1.2.3 bus2=s13x_1002001.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1002001-da14" bus1=x_1002001.1.2.3 bus2=s14x_1002001.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1002001-da15" bus1=x_1002001.1.2.3 bus2=s15x_1002001.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1002001-da16" bus1=x_1002001.1.2.3 bus2=s16x_1002001.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1002001-da17" bus1=x_1002001.1.2.3 bus2=s17x_1002001.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1002001-da18" bus1=x_1002001.1.2.3 bus2=s18x_1002001.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.175093" bus1=182023.1.2.3 bus2=215930.1.2.3 length=56.71021 linecode=40 normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.216919" bus1=215930.2 bus2=233811.2 length=11.89005 linecode=62 normamps=160 emergamps=190 units=m enabled=true phases=1
+New "Line.236614" bus1=233811.2 bus2=233812.2 length=15.24006 linecode=251 normamps=500 emergamps=550 units=m enabled=true phases=1
+New "Line.223586" bus1=233812.2 bus2=182026.2 length=89.63033 linecode=62 normamps=160 emergamps=190 units=m enabled=true phases=1
+New "Line.s_1000119-db1" bus1=x_1000119.2 bus2=s1x_1000119.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000119-db2" bus1=x_1000119.2 bus2=s2x_1000119.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.216925" bus1=215932.1.2.3 bus2=215930.1.2.3 length=103.0304 linecode=40 normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.182909" bus1=182152.1.2.3 bus2=215932.1.2.3 length=59.16022 linecode=110 normamps=355 emergamps=418 units=m enabled=true phases=3
+New "Line.182907" bus1=182153.1.2.3 bus2=182152.1.2.3 length=65.91025 linecode=110 normamps=355 emergamps=418 units=m enabled=true phases=3
+New "Line.s_1000330-dc1" bus1=x_1000330.3 bus2=s1x_1000330.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000330-dc2" bus1=x_1000330.3 bus2=s2x_1000330.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000330-dc3" bus1=x_1000330.3 bus2=s3x_1000330.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000330-dc4" bus1=x_1000330.3 bus2=s4x_1000330.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000330-dc5" bus1=x_1000330.3 bus2=s5x_1000330.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.275695" bus1=182149.1.2.3 bus2=182153.1.2.3 length=51.21019 linecode=110 normamps=355 emergamps=418 units=m enabled=true phases=3
+New "Line.182901" bus1=182148.1.2.3 bus2=182149.1.2.3 length=15.24006 linecode=99 normamps=500 emergamps=550 units=m enabled=true phases=3
+New "Line.182911" bus1=182148.1.2.3 bus2=182157.1.2.3 length=130.9505 linecode=186 normamps=214 emergamps=235 units=m enabled=true phases=3
+New "Line.182912" bus1=182157.1.2.3 bus2=182158.1.2.3 length=18.92007 linecode=186 normamps=214 emergamps=235 units=m enabled=true phases=3
+New "Line.182914" bus1=182158.1.2.3 bus2=182160.1.2.3 length=37.78014 linecode=186 normamps=214 emergamps=235 units=m enabled=true phases=3
+New "Line.s_1001522-da1" bus1=x_1001522.1.2.3 bus2=s1x_1001522.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001522-da2" bus1=x_1001522.1.2.3 bus2=s2x_1001522.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001522-da3" bus1=x_1001522.1.2.3 bus2=s3x_1001522.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001522-da4" bus1=x_1001522.1.2.3 bus2=s4x_1001522.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001522-da5" bus1=x_1001522.1.2.3 bus2=s5x_1001522.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001522-da6" bus1=x_1001522.1.2.3 bus2=s6x_1001522.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001522-da7" bus1=x_1001522.1.2.3 bus2=s7x_1001522.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001522-da8" bus1=x_1001522.1.2.3 bus2=s8x_1001522.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001522-da9" bus1=x_1001522.1.2.3 bus2=s9x_1001522.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001522-da10" bus1=x_1001522.1.2.3 bus2=s10x_1001522.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001522-da11" bus1=x_1001522.1.2.3 bus2=s11x_1001522.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001522-da12" bus1=x_1001522.1.2.3 bus2=s12x_1001522.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001522-da13" bus1=x_1001522.1.2.3 bus2=s13x_1001522.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001522-da14" bus1=x_1001522.1.2.3 bus2=s14x_1001522.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001522-da15" bus1=x_1001522.1.2.3 bus2=s15x_1001522.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001522-da16" bus1=x_1001522.1.2.3 bus2=s16x_1001522.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001522-da17" bus1=x_1001522.1.2.3 bus2=s17x_1001522.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001522-da18" bus1=x_1001522.1.2.3 bus2=s18x_1001522.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001522-da19" bus1=x_1001522.1.2.3 bus2=s19x_1001522.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001522-da20" bus1=x_1001522.1.2.3 bus2=s20x_1001522.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001522-da21" bus1=x_1001522.1.2.3 bus2=s21x_1001522.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001522-da22" bus1=x_1001522.1.2.3 bus2=s22x_1001522.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001522-da23" bus1=x_1001522.1.2.3 bus2=s23x_1001522.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001522-da24" bus1=x_1001522.1.2.3 bus2=s24x_1001522.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.182915" bus1=182158.1.2.3 bus2=232292.1.2.3 length=83.89031 linecode=186 normamps=214 emergamps=235 units=m enabled=true phases=3
+New "Line.235185" bus1=232292.1.2.3 bus2=182161.1.2.3 length=60.11023 linecode=186 normamps=214 emergamps=235 units=m enabled=true phases=3
+New "Line.s_1001524-da1" bus1=x_1001524.1.2.3 bus2=s1x_1001524.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001524-da2" bus1=x_1001524.1.2.3 bus2=s2x_1001524.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001524-da3" bus1=x_1001524.1.2.3 bus2=s3x_1001524.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001524-da4" bus1=x_1001524.1.2.3 bus2=s4x_1001524.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001524-da5" bus1=x_1001524.1.2.3 bus2=s5x_1001524.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001524-da6" bus1=x_1001524.1.2.3 bus2=s6x_1001524.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001524-da7" bus1=x_1001524.1.2.3 bus2=s7x_1001524.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001524-da8" bus1=x_1001524.1.2.3 bus2=s8x_1001524.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001524-da9" bus1=x_1001524.1.2.3 bus2=s9x_1001524.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001524-da10" bus1=x_1001524.1.2.3 bus2=s10x_1001524.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001524-da11" bus1=x_1001524.1.2.3 bus2=s11x_1001524.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001524-da12" bus1=x_1001524.1.2.3 bus2=s12x_1001524.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.182916" bus1=182161.1.2.3 bus2=182162.1.2.3 length=68.04025 linecode=186 normamps=214 emergamps=235 units=m enabled=true phases=3
+New "Line.s_1001525-da1" bus1=x_1001525.1.2.3 bus2=s1x_1001525.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001525-da2" bus1=x_1001525.1.2.3 bus2=s2x_1001525.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001525-da3" bus1=x_1001525.1.2.3 bus2=s3x_1001525.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001525-da4" bus1=x_1001525.1.2.3 bus2=s4x_1001525.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001525-da5" bus1=x_1001525.1.2.3 bus2=s5x_1001525.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001525-da6" bus1=x_1001525.1.2.3 bus2=s6x_1001525.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001525-da7" bus1=x_1001525.1.2.3 bus2=s7x_1001525.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001525-da8" bus1=x_1001525.1.2.3 bus2=s8x_1001525.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001525-da9" bus1=x_1001525.1.2.3 bus2=s9x_1001525.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001525-da10" bus1=x_1001525.1.2.3 bus2=s10x_1001525.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001525-da11" bus1=x_1001525.1.2.3 bus2=s11x_1001525.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001525-da12" bus1=x_1001525.1.2.3 bus2=s12x_1001525.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001525-da13" bus1=x_1001525.1.2.3 bus2=s13x_1001525.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001525-da14" bus1=x_1001525.1.2.3 bus2=s14x_1001525.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001525-da15" bus1=x_1001525.1.2.3 bus2=s15x_1001525.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001525-da16" bus1=x_1001525.1.2.3 bus2=s16x_1001525.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001525-da17" bus1=x_1001525.1.2.3 bus2=s17x_1001525.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001525-da18" bus1=x_1001525.1.2.3 bus2=s18x_1001525.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001525-da19" bus1=x_1001525.1.2.3 bus2=s19x_1001525.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001525-da20" bus1=x_1001525.1.2.3 bus2=s20x_1001525.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001525-da21" bus1=x_1001525.1.2.3 bus2=s21x_1001525.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001525-da22" bus1=x_1001525.1.2.3 bus2=s22x_1001525.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001525-da23" bus1=x_1001525.1.2.3 bus2=s23x_1001525.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001525-da24" bus1=x_1001525.1.2.3 bus2=s24x_1001525.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.182913" bus1=182157.1.2.3 bus2=182159.1.2.3 length=14.66006 linecode=186 normamps=214 emergamps=235 units=m enabled=true phases=3
+New "Line.s_1001523-da1" bus1=x_1001523.1 bus2=s1x_1001523.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001523-da2" bus1=x_1001523.1 bus2=s2x_1001523.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001523-da3" bus1=x_1001523.1 bus2=s3x_1001523.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001523-da4" bus1=x_1001523.1 bus2=s4x_1001523.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001523-db1" bus1=x_1001523.2 bus2=s1x_1001523.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001523-db2" bus1=x_1001523.2 bus2=s2x_1001523.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001523-db3" bus1=x_1001523.2 bus2=s3x_1001523.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001523-db4" bus1=x_1001523.2 bus2=s4x_1001523.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001523-dc1" bus1=x_1001523.3 bus2=s1x_1001523.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001523-dc2" bus1=x_1001523.3 bus2=s2x_1001523.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001523-dc3" bus1=x_1001523.3 bus2=s3x_1001523.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001523-dc4" bus1=x_1001523.3 bus2=s4x_1001523.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.182908" bus1=182152.1.2.3 bus2=182154.1.2.3 length=32.03012 linecode=110 normamps=355 emergamps=418 units=m enabled=true phases=3
+New "Line.235187" bus1=232294.1.2.3 bus2=182154.1.2.3 length=16.17006 linecode=110 normamps=355 emergamps=418 units=m enabled=true phases=3
+New "Line.235186" bus1=232293.1 bus2=232294.1 length=17.08006 linecode=62 normamps=160 emergamps=190 units=m enabled=true phases=1
+New "Line.216920" bus1=215932.1.2.3 bus2=182155.1.2.3 length=15.25006 linecode=110 normamps=355 emergamps=418 units=m enabled=true phases=3
+New "Line.s_1000277-dc1" bus1=x_1000277.3 bus2=s1x_1000277.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.182910" bus1=182155.1.2.3 bus2=182156.1.2.3 length=37.87014 linecode=110 normamps=355 emergamps=418 units=m enabled=true phases=3
+New "Line.280751" bus1=215932.1 bus2=282273.1 length=13.16005 linecode=62 normamps=160 emergamps=190 units=m enabled=true phases=1
+New "Line.280750" bus1=282273.1 bus2=282274.1 length=15.13006 linecode=251 normamps=500 emergamps=550 units=m enabled=true phases=1
+New "Line.280752" bus1=282274.1 bus2=282275.1 length=76.24028 linecode=62 normamps=160 emergamps=190 units=m enabled=true phases=1
+New "Line.s_1003125-da1" bus1=x_1003125.1 bus2=s1x_1003125.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.175070" bus1=181996.1.2.3 bus2=181999.1.2.3 length=8.24003 linecode=104 normamps=500 emergamps=550 units=m enabled=true phases=3
+New "Line.175065" bus1=181998.1.2.3 bus2=181999.1.2.3 length=15.29006 linecode=99 normamps=500 emergamps=550 units=m enabled=true phases=3
+New "Line.175069" bus1=181998.1.2.3 bus2=182003.1.2.3 length=36.91014 linecode=104 normamps=500 emergamps=550 units=m enabled=true phases=3
+New "Line.174990" bus1=181925.1.2.3 bus2=181928.1.2.3 length=14.59006 linecode=45 normamps=637 emergamps=700 units=m enabled=true phases=3
+New "Line.175053" bus1=181928.1.2.3 bus2=181985.1.2.3 length=44.66017 linecode=40 normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.175054" bus1=181985.1.2.3 bus2=181986.1.2.3 length=14.28005 linecode=40 normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.s_1000199-da1" bus1=x_1000199.1 bus2=s1x_1000199.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000199-db1" bus1=x_1000199.2 bus2=s1x_1000199.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000199-dc1" bus1=x_1000199.3 bus2=s1x_1000199.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.175055" bus1=181986.1.2.3 bus2=181987.1.2.3 length=152.2306 linecode=40 normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.175052" bus1=181987.1.2.3 bus2=181988.1.2.3 length=7.640028 linecode=99 normamps=500 emergamps=550 units=m enabled=true phases=3
+New "Line.175056" bus1=181988.1.2.3 bus2=181989.1.2.3 length=7.110027 linecode=186 normamps=214 emergamps=235 units=m enabled=true phases=3
+New "Line.s_1000567-da1" bus1=x_1000567.1.2.3 bus2=s1x_1000567.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1000567-da2" bus1=x_1000567.1.2.3 bus2=s2x_1000567.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1000567-da3" bus1=x_1000567.1.2.3 bus2=s3x_1000567.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.175057" bus1=181989.1.2.3 bus2=181992.1.2.3 length=9.090034 linecode=186 normamps=214 emergamps=235 units=m enabled=true phases=3
+New "Line.175058" bus1=181992.1.2.3 bus2=181990.1.2.3 length=19.10007 linecode=186 normamps=214 emergamps=235 units=m enabled=true phases=3
+New "Line.s_1001665-da1" bus1=x_1001665.1.2.3 bus2=s1x_1001665.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001665-da2" bus1=x_1001665.1.2.3 bus2=s2x_1001665.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001665-da3" bus1=x_1001665.1.2.3 bus2=s3x_1001665.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.175059" bus1=181992.1.2.3 bus2=181991.1.2.3 length=132.9805 linecode=186 normamps=214 emergamps=235 units=m enabled=true phases=3
+New "Line.s_1001577-da1" bus1=x_1001577.1.2.3 bus2=s1x_1001577.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001577-da2" bus1=x_1001577.1.2.3 bus2=s2x_1001577.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001577-da3" bus1=x_1001577.1.2.3 bus2=s3x_1001577.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.174984" bus1=181919.1.2.3 bus2=152566.1.2.3 length=48.30018 linecode=45 normamps=637 emergamps=700 units=m enabled=true phases=3
+New "Line.174991" bus1=181919.1.2.3 bus2=181924.1.2.3 length=15.69006 linecode=45 normamps=637 emergamps=700 units=m enabled=true phases=3
+New "Line.255473" bus1=181929.1.2.3 bus2=255418.1.2.3 length=10.06004 linecode=45 normamps=637 emergamps=700 units=m enabled=true phases=3
+New "Line.255471" bus1=255418.1.2.3 bus2=255419.1.2.3 length=7.630028 linecode=99 normamps=500 emergamps=550 units=m enabled=true phases=3
+New "Line.255472" bus1=181935.1.2.3 bus2=255419.1.2.3 length=25.55009 linecode=186 normamps=214 emergamps=235 units=m enabled=true phases=3
+New "Line.s_1001933-da1" bus1=x_1001933.1.2.3 bus2=s1x_1001933.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001933-da2" bus1=x_1001933.1.2.3 bus2=s2x_1001933.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001933-da3" bus1=x_1001933.1.2.3 bus2=s3x_1001933.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.175000" bus1=181932.3 bus2=181933.3 length=14.66006 linecode=62 normamps=160 emergamps=190 units=m enabled=true phases=1
+New "Line.174994" bus1=181933.3 bus2=181934.3 length=7.630028 linecode=251 normamps=500 emergamps=550 units=m enabled=true phases=1
+New "Line.175023" bus1=181934.3 bus2=181958.3 length=49.15018 linecode=181 normamps=213 emergamps=234 units=m enabled=true phases=1
+New "Line.s_1000535-dc1" bus1=x_1000535.3 bus2=s1x_1000535.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000535-dc2" bus1=x_1000535.3 bus2=s2x_1000535.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000535-dc3" bus1=x_1000535.3 bus2=s3x_1000535.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000535-dc4" bus1=x_1000535.3 bus2=s4x_1000535.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000535-dc5" bus1=x_1000535.3 bus2=s5x_1000535.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000535-dc6" bus1=x_1000535.3 bus2=s6x_1000535.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000535-dc7" bus1=x_1000535.3 bus2=s7x_1000535.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000535-dc8" bus1=x_1000535.3 bus2=s8x_1000535.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000535-dc9" bus1=x_1000535.3 bus2=s9x_1000535.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000535-dc10" bus1=x_1000535.3 bus2=s10x_1000535.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000535-dc11" bus1=x_1000535.3 bus2=s11x_1000535.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.175024" bus1=181958.3 bus2=181967.3 length=110.0404 linecode=181 normamps=213 emergamps=234 units=m enabled=true phases=1
+New "Line.s_1000583-dc1" bus1=x_1000583.3 bus2=s1x_1000583.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000583-dc2" bus1=x_1000583.3 bus2=s2x_1000583.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000583-dc3" bus1=x_1000583.3 bus2=s3x_1000583.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000583-dc4" bus1=x_1000583.3 bus2=s4x_1000583.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000583-dc5" bus1=x_1000583.3 bus2=s5x_1000583.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000583-dc6" bus1=x_1000583.3 bus2=s6x_1000583.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000583-dc7" bus1=x_1000583.3 bus2=s7x_1000583.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000583-dc8" bus1=x_1000583.3 bus2=s8x_1000583.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000583-dc9" bus1=x_1000583.3 bus2=s9x_1000583.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000583-dc10" bus1=x_1000583.3 bus2=s10x_1000583.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.175025" bus1=181967.3 bus2=181966.3 length=49.76019 linecode=181 normamps=213 emergamps=234 units=m enabled=true phases=1
+New "Line.s_1000584-dc1" bus1=x_1000584.3 bus2=s1x_1000584.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000584-dc2" bus1=x_1000584.3 bus2=s2x_1000584.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000584-dc3" bus1=x_1000584.3 bus2=s3x_1000584.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000584-dc4" bus1=x_1000584.3 bus2=s4x_1000584.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000584-dc5" bus1=x_1000584.3 bus2=s5x_1000584.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000584-dc6" bus1=x_1000584.3 bus2=s6x_1000584.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000584-dc7" bus1=x_1000584.3 bus2=s7x_1000584.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000584-dc8" bus1=x_1000584.3 bus2=s8x_1000584.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000584-dc9" bus1=x_1000584.3 bus2=s9x_1000584.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000584-dc10" bus1=x_1000584.3 bus2=s10x_1000584.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000584-dc11" bus1=x_1000584.3 bus2=s11x_1000584.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000584-dc12" bus1=x_1000584.3 bus2=s12x_1000584.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000584-dc13" bus1=x_1000584.3 bus2=s13x_1000584.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.175026" bus1=181966.3 bus2=181965.3 length=90.34033 linecode=181 normamps=213 emergamps=234 units=m enabled=true phases=1
+New "Line.s_1000585-dc1" bus1=x_1000585.3 bus2=s1x_1000585.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000585-dc2" bus1=x_1000585.3 bus2=s2x_1000585.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000585-dc3" bus1=x_1000585.3 bus2=s3x_1000585.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000585-dc4" bus1=x_1000585.3 bus2=s4x_1000585.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000585-dc5" bus1=x_1000585.3 bus2=s5x_1000585.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000585-dc6" bus1=x_1000585.3 bus2=s6x_1000585.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.175027" bus1=181965.3 bus2=181959.3 length=63.49024 linecode=181 normamps=213 emergamps=234 units=m enabled=true phases=1
+New "Line.s_1000586-dc1" bus1=x_1000586.3 bus2=s1x_1000586.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000586-dc2" bus1=x_1000586.3 bus2=s2x_1000586.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000586-dc3" bus1=x_1000586.3 bus2=s3x_1000586.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000586-dc4" bus1=x_1000586.3 bus2=s4x_1000586.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.239662" bus1=236965.1 bus2=181932.1 length=6.430024 linecode=62 normamps=160 emergamps=190 units=m enabled=true phases=1
+New "Line.239661" bus1=236965.1 bus2=236966.1 length=7.630028 linecode=251 normamps=500 emergamps=550 units=m enabled=true phases=1
+New "Line.175021" bus1=181956.1 bus2=236966.1 length=117.8604 linecode=181 normamps=213 emergamps=234 units=m enabled=true phases=1
+New "Line.s_1000536-da1" bus1=x_1000536.1 bus2=s1x_1000536.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000536-da2" bus1=x_1000536.1 bus2=s2x_1000536.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000536-da3" bus1=x_1000536.1 bus2=s3x_1000536.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000536-da4" bus1=x_1000536.1 bus2=s4x_1000536.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000536-da5" bus1=x_1000536.1 bus2=s5x_1000536.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000536-da6" bus1=x_1000536.1 bus2=s6x_1000536.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000536-da7" bus1=x_1000536.1 bus2=s7x_1000536.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000536-da8" bus1=x_1000536.1 bus2=s8x_1000536.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000536-da9" bus1=x_1000536.1 bus2=s9x_1000536.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000536-da10" bus1=x_1000536.1 bus2=s10x_1000536.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000536-da11" bus1=x_1000536.1 bus2=s11x_1000536.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.175020" bus1=181949.1 bus2=181956.1 length=40.58015 linecode=181 normamps=213 emergamps=234 units=m enabled=true phases=1
+New "Line.175018" bus1=181954.1 bus2=181949.1 length=11.59004 linecode=181 normamps=213 emergamps=234 units=m enabled=true phases=1
+New "Line.s_1000581-da1" bus1=x_1000581.1 bus2=s1x_1000581.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000581-da2" bus1=x_1000581.1 bus2=s2x_1000581.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000581-da3" bus1=x_1000581.1 bus2=s3x_1000581.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000581-da4" bus1=x_1000581.1 bus2=s4x_1000581.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000581-da5" bus1=x_1000581.1 bus2=s5x_1000581.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000581-da6" bus1=x_1000581.1 bus2=s6x_1000581.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000581-da7" bus1=x_1000581.1 bus2=s7x_1000581.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000581-da8" bus1=x_1000581.1 bus2=s8x_1000581.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.175019" bus1=181949.1 bus2=181955.1 length=15.59006 linecode=181 normamps=213 emergamps=234 units=m enabled=true phases=1
+New "Line.s_1000537-da1" bus1=x_1000537.1 bus2=s1x_1000537.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000537-da2" bus1=x_1000537.1 bus2=s2x_1000537.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000537-da3" bus1=x_1000537.1 bus2=s3x_1000537.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000537-da4" bus1=x_1000537.1 bus2=s4x_1000537.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000537-da5" bus1=x_1000537.1 bus2=s5x_1000537.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000537-da6" bus1=x_1000537.1 bus2=s6x_1000537.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000537-da7" bus1=x_1000537.1 bus2=s7x_1000537.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000537-da8" bus1=x_1000537.1 bus2=s8x_1000537.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000537-da9" bus1=x_1000537.1 bus2=s9x_1000537.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000537-da10" bus1=x_1000537.1 bus2=s10x_1000537.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000537-da11" bus1=x_1000537.1 bus2=s11x_1000537.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000537-da12" bus1=x_1000537.1 bus2=s12x_1000537.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000537-da13" bus1=x_1000537.1 bus2=s13x_1000537.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.175009" bus1=181942.3 bus2=181943.3 length=10.42004 linecode=62 normamps=160 emergamps=190 units=m enabled=true phases=1
+New "Line.175006" bus1=181943.3 bus2=181944.3 length=7.640028 linecode=251 normamps=500 emergamps=550 units=m enabled=true phases=1
+New "Line.175022" bus1=181944.3 bus2=181957.3 length=117.3904 linecode=181 normamps=213 emergamps=234 units=m enabled=true phases=1
+New "Line.s_1000534-dc1" bus1=x_1000534.3 bus2=s1x_1000534.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000534-dc2" bus1=x_1000534.3 bus2=s2x_1000534.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000534-dc3" bus1=x_1000534.3 bus2=s3x_1000534.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000534-dc4" bus1=x_1000534.3 bus2=s4x_1000534.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000534-dc5" bus1=x_1000534.3 bus2=s5x_1000534.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000534-dc6" bus1=x_1000534.3 bus2=s6x_1000534.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000534-dc7" bus1=x_1000534.3 bus2=s7x_1000534.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000534-dc8" bus1=x_1000534.3 bus2=s8x_1000534.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000534-dc9" bus1=x_1000534.3 bus2=s9x_1000534.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000534-dc10" bus1=x_1000534.3 bus2=s10x_1000534.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000534-dc11" bus1=x_1000534.3 bus2=s11x_1000534.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.175029" bus1=181963.3 bus2=181957.3 length=88.88033 linecode=181 normamps=213 emergamps=234 units=m enabled=true phases=1
+New "Line.175030" bus1=181963.3 bus2=181964.3 length=14.02005 linecode=181 normamps=213 emergamps=234 units=m enabled=true phases=1
+New "Line.175031" bus1=181964.3 bus2=181960.3 length=15.24006 linecode=181 normamps=213 emergamps=234 units=m enabled=true phases=1
+New "Line.s_1000589-dc1" bus1=x_1000589.3 bus2=s1x_1000589.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000589-dc2" bus1=x_1000589.3 bus2=s2x_1000589.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000589-dc3" bus1=x_1000589.3 bus2=s3x_1000589.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000589-dc4" bus1=x_1000589.3 bus2=s4x_1000589.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000589-dc5" bus1=x_1000589.3 bus2=s5x_1000589.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000589-dc6" bus1=x_1000589.3 bus2=s6x_1000589.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000589-dc7" bus1=x_1000589.3 bus2=s7x_1000589.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000589-dc8" bus1=x_1000589.3 bus2=s8x_1000589.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000589-dc9" bus1=x_1000589.3 bus2=s9x_1000589.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000589-dc10" bus1=x_1000589.3 bus2=s10x_1000589.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.175032" bus1=181964.3 bus2=181961.3 length=16.46006 linecode=181 normamps=213 emergamps=234 units=m enabled=true phases=1
+New "Line.s_1000587-dc1" bus1=x_1000587.3 bus2=s1x_1000587.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000587-dc2" bus1=x_1000587.3 bus2=s2x_1000587.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000587-dc3" bus1=x_1000587.3 bus2=s3x_1000587.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000587-dc4" bus1=x_1000587.3 bus2=s4x_1000587.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000587-dc5" bus1=x_1000587.3 bus2=s5x_1000587.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000587-dc6" bus1=x_1000587.3 bus2=s6x_1000587.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000587-dc7" bus1=x_1000587.3 bus2=s7x_1000587.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000587-dc8" bus1=x_1000587.3 bus2=s8x_1000587.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000587-dc9" bus1=x_1000587.3 bus2=s9x_1000587.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000587-dc10" bus1=x_1000587.3 bus2=s10x_1000587.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000587-dc11" bus1=x_1000587.3 bus2=s11x_1000587.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.175033" bus1=181961.3 bus2=181962.3 length=27.2601 linecode=181 normamps=213 emergamps=234 units=m enabled=true phases=1
+New "Line.s_1000588-dc1" bus1=x_1000588.3 bus2=s1x_1000588.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000588-dc2" bus1=x_1000588.3 bus2=s2x_1000588.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000588-dc3" bus1=x_1000588.3 bus2=s3x_1000588.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000588-dc4" bus1=x_1000588.3 bus2=s4x_1000588.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000588-dc5" bus1=x_1000588.3 bus2=s5x_1000588.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000588-dc6" bus1=x_1000588.3 bus2=s6x_1000588.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000588-dc7" bus1=x_1000588.3 bus2=s7x_1000588.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000588-dc8" bus1=x_1000588.3 bus2=s8x_1000588.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000588-dc9" bus1=x_1000588.3 bus2=s9x_1000588.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000588-dc10" bus1=x_1000588.3 bus2=s10x_1000588.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.239660" bus1=181942.1 bus2=236963.1 length=15.24006 linecode=62 normamps=160 emergamps=190 units=m enabled=true phases=1
+New "Line.239659" bus1=236963.1 bus2=236964.1 length=7.630028 linecode=251 normamps=500 emergamps=550 units=m enabled=true phases=1
+New "Line.175010" bus1=236964.1 bus2=181946.1 length=66.19025 linecode=181 normamps=213 emergamps=234 units=m enabled=true phases=1
+New "Line.175011" bus1=181946.1 bus2=181953.1 length=82.01031 linecode=181 normamps=213 emergamps=234 units=m enabled=true phases=1
+New "Line.s_1000582-da1" bus1=x_1000582.1 bus2=s1x_1000582.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000582-da2" bus1=x_1000582.1 bus2=s2x_1000582.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000582-da3" bus1=x_1000582.1 bus2=s3x_1000582.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000582-da4" bus1=x_1000582.1 bus2=s4x_1000582.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000582-da5" bus1=x_1000582.1 bus2=s5x_1000582.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000582-da6" bus1=x_1000582.1 bus2=s6x_1000582.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000582-da7" bus1=x_1000582.1 bus2=s7x_1000582.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.175013" bus1=181946.1 bus2=181947.1 length=13.72005 linecode=181 normamps=213 emergamps=234 units=m enabled=true phases=1
+New "Line.175014" bus1=181947.1 bus2=181950.1 length=16.20006 linecode=181 normamps=213 emergamps=234 units=m enabled=true phases=1
+New "Line.s_1000531-da1" bus1=x_1000531.1 bus2=s1x_1000531.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000531-da2" bus1=x_1000531.1 bus2=s2x_1000531.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000531-da3" bus1=x_1000531.1 bus2=s3x_1000531.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000531-da4" bus1=x_1000531.1 bus2=s4x_1000531.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000531-da5" bus1=x_1000531.1 bus2=s5x_1000531.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000531-da6" bus1=x_1000531.1 bus2=s6x_1000531.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000531-da7" bus1=x_1000531.1 bus2=s7x_1000531.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000531-da8" bus1=x_1000531.1 bus2=s8x_1000531.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000531-da9" bus1=x_1000531.1 bus2=s9x_1000531.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000531-da10" bus1=x_1000531.1 bus2=s10x_1000531.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000531-da11" bus1=x_1000531.1 bus2=s11x_1000531.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.175015" bus1=181947.1 bus2=181948.1 length=26.2101 linecode=181 normamps=213 emergamps=234 units=m enabled=true phases=1
+New "Line.175016" bus1=181948.1 bus2=181951.1 length=9.150034 linecode=181 normamps=213 emergamps=234 units=m enabled=true phases=1
+New "Line.s_1000533-da1" bus1=x_1000533.1 bus2=s1x_1000533.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000533-da2" bus1=x_1000533.1 bus2=s2x_1000533.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000533-da3" bus1=x_1000533.1 bus2=s3x_1000533.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000533-da4" bus1=x_1000533.1 bus2=s4x_1000533.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000533-da5" bus1=x_1000533.1 bus2=s5x_1000533.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000533-da6" bus1=x_1000533.1 bus2=s6x_1000533.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000533-da7" bus1=x_1000533.1 bus2=s7x_1000533.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000533-da8" bus1=x_1000533.1 bus2=s8x_1000533.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000533-da9" bus1=x_1000533.1 bus2=s9x_1000533.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000533-da10" bus1=x_1000533.1 bus2=s10x_1000533.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000533-da11" bus1=x_1000533.1 bus2=s11x_1000533.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.175017" bus1=181948.1 bus2=181952.1 length=8.540031 linecode=181 normamps=213 emergamps=234 units=m enabled=true phases=1
+New "Line.s_1000532-da1" bus1=x_1000532.1 bus2=s1x_1000532.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000532-da2" bus1=x_1000532.1 bus2=s2x_1000532.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000532-da3" bus1=x_1000532.1 bus2=s3x_1000532.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000532-da4" bus1=x_1000532.1 bus2=s4x_1000532.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000532-da5" bus1=x_1000532.1 bus2=s5x_1000532.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000532-da6" bus1=x_1000532.1 bus2=s6x_1000532.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000532-da7" bus1=x_1000532.1 bus2=s7x_1000532.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000532-da8" bus1=x_1000532.1 bus2=s8x_1000532.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000532-da9" bus1=x_1000532.1 bus2=s9x_1000532.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000532-da10" bus1=x_1000532.1 bus2=s10x_1000532.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000532-da11" bus1=x_1000532.1 bus2=s11x_1000532.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.175038" bus1=181968.1.2.3 bus2=181970.1.2.3 length=9.530035 linecode=45 normamps=637 emergamps=700 units=m enabled=true phases=3
+New "Line.175034" bus1=181969.1.2.3 bus2=181970.1.2.3 length=7.320028 linecode=99 normamps=500 emergamps=550 units=m enabled=true phases=3
+New "Line.255469" bus1=181979.1.2.3 bus2=181969.1.2.3 length=36.25013 linecode=40 normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.175040" bus1=181979.1.2.3 bus2=181971.1.2.3 length=13.16005 linecode=40 normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.175035" bus1=181971.1.2.3 bus2=181972.1.2.3 length=7.640028 linecode=99 normamps=500 emergamps=550 units=m enabled=true phases=3
+New "Line.175048" bus1=181972.1.2.3 bus2=181981.1.2.3 length=33.91013 linecode=186 normamps=214 emergamps=235 units=m enabled=true phases=3
+New "Line.175041" bus1=181979.1.2.3 bus2=181976.1.2.3 length=30.91012 linecode=40 normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.s_1000015-da1" bus1=x_1000015.1 bus2=s1x_1000015.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000015-da2" bus1=x_1000015.1 bus2=s2x_1000015.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000015-da3" bus1=x_1000015.1 bus2=s3x_1000015.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000015-da4" bus1=x_1000015.1 bus2=s4x_1000015.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000015-da5" bus1=x_1000015.1 bus2=s5x_1000015.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.175042" bus1=181976.1.2.3 bus2=181977.1.2.3 length=43.77016 linecode=40 normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.175043" bus1=181977.1.2.3 bus2=181978.1.2.3 length=15.32006 linecode=40 normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.175045" bus1=181978.2 bus2=181975.2 length=48.40018 linecode=62 normamps=160 emergamps=190 units=m enabled=true phases=1
+New "Line.s_1000016-db1" bus1=x_1000016.2 bus2=s1x_1000016.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000016-db2" bus1=x_1000016.2 bus2=s2x_1000016.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000016-db3" bus1=x_1000016.2 bus2=s3x_1000016.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000016-db4" bus1=x_1000016.2 bus2=s4x_1000016.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.175046" bus1=181975.2 bus2=181982.2 length=59.33022 linecode=62 normamps=160 emergamps=190 units=m enabled=true phases=1
+New "Line.175044" bus1=181977.1.2.3 bus2=181973.1.2.3 length=12.08004 linecode=40 normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.175036" bus1=181973.1.2.3 bus2=181974.1.2.3 length=7.670029 linecode=99 normamps=500 emergamps=550 units=m enabled=true phases=3
+New "Line.175047" bus1=181974.1.2.3 bus2=181980.1.2.3 length=28.78011 linecode=186 normamps=214 emergamps=235 units=m enabled=true phases=3
+New "Line.s_1000764-da1" bus1=x_1000764.1.2.3 bus2=s1x_1000764.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1000764-da2" bus1=x_1000764.1.2.3 bus2=s2x_1000764.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1000764-da3" bus1=x_1000764.1.2.3 bus2=s3x_1000764.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1000764-da4" bus1=x_1000764.1.2.3 bus2=s4x_1000764.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1000764-da5" bus1=x_1000764.1.2.3 bus2=s5x_1000764.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1000764-da6" bus1=x_1000764.1.2.3 bus2=s6x_1000764.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.175051" bus1=165504.1.2.3 bus2=261881.1.2.3 length=30.52011 linecode=45 normamps=637 emergamps=700 units=m enabled=true phases=3
+New "Line.183048" bus1=261881.1.2.3 bus2=189963.1.2.3 length=62.51023 linecode=141 normamps=519 emergamps=617 units=m enabled=true phases=3
+New "Line.183046" bus1=189963.1.2.3 bus2=189960.1.2.3 length=0.001 linecode=98 normamps=500 emergamps=550 Switch=True units=m enabled=true phases=3
+New "Line.183044" bus1=189961.2.3 bus2=189960.2.3 length=9.160034 linecode=250 normamps=500 emergamps=550 units=m enabled=true phases=2
+New "Line.184257" bus1=194062.3 bus2=189961.3 length=56.71021 linecode=181 normamps=213 emergamps=234 units=m enabled=true phases=1
+New "Line.s_1001234-dc1" bus1=x_1001234.3 bus2=s1x_1001234.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001234-dc2" bus1=x_1001234.3 bus2=s2x_1001234.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001234-dc3" bus1=x_1001234.3 bus2=s3x_1001234.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001234-dc4" bus1=x_1001234.3 bus2=s4x_1001234.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001234-dc5" bus1=x_1001234.3 bus2=s5x_1001234.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001234-dc6" bus1=x_1001234.3 bus2=s6x_1001234.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001234-dc7" bus1=x_1001234.3 bus2=s7x_1001234.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001234-dc8" bus1=x_1001234.3 bus2=s8x_1001234.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001234-dc9" bus1=x_1001234.3 bus2=s9x_1001234.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001234-dc10" bus1=x_1001234.3 bus2=s10x_1001234.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.184256" bus1=194063.3 bus2=194062.3 length=40.00015 linecode=181 normamps=213 emergamps=234 units=m enabled=true phases=1
+New "Line.s_1001233-dc1" bus1=x_1001233.3 bus2=s1x_1001233.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001233-dc2" bus1=x_1001233.3 bus2=s2x_1001233.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.184255" bus1=194064.3 bus2=194063.3 length=30.06011 linecode=181 normamps=213 emergamps=234 units=m enabled=true phases=1
+New "Line.s_1001232-dc1" bus1=x_1001232.3 bus2=s1x_1001232.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001232-dc2" bus1=x_1001232.3 bus2=s2x_1001232.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001232-dc3" bus1=x_1001232.3 bus2=s3x_1001232.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001232-dc4" bus1=x_1001232.3 bus2=s4x_1001232.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001232-dc5" bus1=x_1001232.3 bus2=s5x_1001232.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001232-dc6" bus1=x_1001232.3 bus2=s6x_1001232.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.184254" bus1=194065.3 bus2=194064.3 length=14.03005 linecode=181 normamps=213 emergamps=234 units=m enabled=true phases=1
+New "Line.s_1001231-dc1" bus1=x_1001231.3 bus2=s1x_1001231.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001231-dc2" bus1=x_1001231.3 bus2=s2x_1001231.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001231-dc3" bus1=x_1001231.3 bus2=s3x_1001231.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001231-dc4" bus1=x_1001231.3 bus2=s4x_1001231.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001231-dc5" bus1=x_1001231.3 bus2=s5x_1001231.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001231-dc6" bus1=x_1001231.3 bus2=s6x_1001231.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001231-dc7" bus1=x_1001231.3 bus2=s7x_1001231.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001231-dc8" bus1=x_1001231.3 bus2=s8x_1001231.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.184260" bus1=194059.2 bus2=189961.2 length=61.01023 linecode=181 normamps=213 emergamps=234 units=m enabled=true phases=1
+New "Line.s_1001228-db1" bus1=x_1001228.2 bus2=s1x_1001228.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001228-db2" bus1=x_1001228.2 bus2=s2x_1001228.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001228-db3" bus1=x_1001228.2 bus2=s3x_1001228.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001228-db4" bus1=x_1001228.2 bus2=s4x_1001228.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001228-db5" bus1=x_1001228.2 bus2=s5x_1001228.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001228-db6" bus1=x_1001228.2 bus2=s6x_1001228.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001228-db7" bus1=x_1001228.2 bus2=s7x_1001228.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001228-db8" bus1=x_1001228.2 bus2=s8x_1001228.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.184259" bus1=194060.2 bus2=194059.2 length=69.71026 linecode=181 normamps=213 emergamps=234 units=m enabled=true phases=1
+New "Line.s_1001229-db1" bus1=x_1001229.2 bus2=s1x_1001229.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001229-db2" bus1=x_1001229.2 bus2=s2x_1001229.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001229-db3" bus1=x_1001229.2 bus2=s3x_1001229.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001229-db4" bus1=x_1001229.2 bus2=s4x_1001229.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001229-db5" bus1=x_1001229.2 bus2=s5x_1001229.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001229-db6" bus1=x_1001229.2 bus2=s6x_1001229.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001229-db7" bus1=x_1001229.2 bus2=s7x_1001229.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001229-db8" bus1=x_1001229.2 bus2=s8x_1001229.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001229-db9" bus1=x_1001229.2 bus2=s9x_1001229.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001229-db10" bus1=x_1001229.2 bus2=s10x_1001229.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.184258" bus1=194061.2 bus2=194060.2 length=26.8701 linecode=181 normamps=213 emergamps=234 units=m enabled=true phases=1
+New "Line.s_1001230-db1" bus1=x_1001230.2 bus2=s1x_1001230.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001230-db2" bus1=x_1001230.2 bus2=s2x_1001230.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001230-db3" bus1=x_1001230.2 bus2=s3x_1001230.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001230-db4" bus1=x_1001230.2 bus2=s4x_1001230.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001230-db5" bus1=x_1001230.2 bus2=s5x_1001230.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001230-db6" bus1=x_1001230.2 bus2=s6x_1001230.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001230-db7" bus1=x_1001230.2 bus2=s7x_1001230.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001230-db8" bus1=x_1001230.2 bus2=s8x_1001230.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001230-db9" bus1=x_1001230.2 bus2=s9x_1001230.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.183045" bus1=189962.1.2.3 bus2=189960.1.2.3 length=8.840034 linecode=98 normamps=500 emergamps=550 units=m enabled=true phases=3
+New "Line.184244" bus1=189951.1 bus2=189962.1 length=57.46021 linecode=181 normamps=213 emergamps=234 units=m enabled=true phases=1
+New "Line.s_1001217-da1" bus1=x_1001217.1 bus2=s1x_1001217.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001217-da2" bus1=x_1001217.1 bus2=s2x_1001217.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001217-da3" bus1=x_1001217.1 bus2=s3x_1001217.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001217-da4" bus1=x_1001217.1 bus2=s4x_1001217.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001217-da5" bus1=x_1001217.1 bus2=s5x_1001217.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001217-da6" bus1=x_1001217.1 bus2=s6x_1001217.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001217-da7" bus1=x_1001217.1 bus2=s7x_1001217.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001217-da8" bus1=x_1001217.1 bus2=s8x_1001217.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.184242" bus1=189951.1 bus2=194048.1 length=57.49022 linecode=181 normamps=213 emergamps=234 units=m enabled=true phases=1
+New "Line.s_1001218-da1" bus1=x_1001218.1 bus2=s1x_1001218.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001218-da2" bus1=x_1001218.1 bus2=s2x_1001218.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001218-da3" bus1=x_1001218.1 bus2=s3x_1001218.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001218-da4" bus1=x_1001218.1 bus2=s4x_1001218.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001218-da5" bus1=x_1001218.1 bus2=s5x_1001218.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001218-da6" bus1=x_1001218.1 bus2=s6x_1001218.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.184243" bus1=194048.1 bus2=194049.1 length=51.58019 linecode=181 normamps=213 emergamps=234 units=m enabled=true phases=1
+New "Line.s_1001220-da1" bus1=x_1001220.1 bus2=s1x_1001220.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001220-da2" bus1=x_1001220.1 bus2=s2x_1001220.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001220-da3" bus1=x_1001220.1 bus2=s3x_1001220.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001220-da4" bus1=x_1001220.1 bus2=s4x_1001220.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001220-da5" bus1=x_1001220.1 bus2=s5x_1001220.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.184245" bus1=189962.2 bus2=189950.2 length=87.96033 linecode=181 normamps=213 emergamps=234 units=m enabled=true phases=1
+New "Line.s_1001216-db1" bus1=x_1001216.2 bus2=s1x_1001216.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001216-db2" bus1=x_1001216.2 bus2=s2x_1001216.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001216-db3" bus1=x_1001216.2 bus2=s3x_1001216.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001216-db4" bus1=x_1001216.2 bus2=s4x_1001216.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001216-db5" bus1=x_1001216.2 bus2=s5x_1001216.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001216-db6" bus1=x_1001216.2 bus2=s6x_1001216.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.184239" bus1=189950.2 bus2=189949.2 length=29.37011 linecode=181 normamps=213 emergamps=234 units=m enabled=true phases=1
+New "Line.184240" bus1=189949.2 bus2=189948.2 length=20.30008 linecode=181 normamps=213 emergamps=234 units=m enabled=true phases=1
+New "Line.s_1001214-db1" bus1=x_1001214.2 bus2=s1x_1001214.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001214-db2" bus1=x_1001214.2 bus2=s2x_1001214.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001214-db3" bus1=x_1001214.2 bus2=s3x_1001214.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001214-db4" bus1=x_1001214.2 bus2=s4x_1001214.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001214-db5" bus1=x_1001214.2 bus2=s5x_1001214.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001214-db6" bus1=x_1001214.2 bus2=s6x_1001214.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.184241" bus1=189948.2 bus2=194050.2 length=43.89016 linecode=181 normamps=213 emergamps=234 units=m enabled=true phases=1
+New "Line.s_1001213-db1" bus1=x_1001213.2 bus2=s1x_1001213.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001213-db2" bus1=x_1001213.2 bus2=s2x_1001213.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001213-db3" bus1=x_1001213.2 bus2=s3x_1001213.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001213-db4" bus1=x_1001213.2 bus2=s4x_1001213.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001213-db5" bus1=x_1001213.2 bus2=s5x_1001213.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001213-db6" bus1=x_1001213.2 bus2=s6x_1001213.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001213-db7" bus1=x_1001213.2 bus2=s7x_1001213.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001213-db8" bus1=x_1001213.2 bus2=s8x_1001213.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.184252" bus1=194058.3 bus2=189962.3 length=47.73018 linecode=181 normamps=213 emergamps=234 units=m enabled=true phases=1
+New "Line.s_1001224-dc1" bus1=x_1001224.3 bus2=s1x_1001224.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001224-dc2" bus1=x_1001224.3 bus2=s2x_1001224.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001224-dc3" bus1=x_1001224.3 bus2=s3x_1001224.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001224-dc4" bus1=x_1001224.3 bus2=s4x_1001224.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001224-dc5" bus1=x_1001224.3 bus2=s5x_1001224.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001224-dc6" bus1=x_1001224.3 bus2=s6x_1001224.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001224-dc7" bus1=x_1001224.3 bus2=s7x_1001224.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.184249" bus1=194058.3 bus2=194053.3 length=32.68012 linecode=181 normamps=213 emergamps=234 units=m enabled=true phases=1
+New "Line.s_1001225-dc1" bus1=x_1001225.3 bus2=s1x_1001225.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001225-dc2" bus1=x_1001225.3 bus2=s2x_1001225.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001225-dc3" bus1=x_1001225.3 bus2=s3x_1001225.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001225-dc4" bus1=x_1001225.3 bus2=s4x_1001225.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001225-dc5" bus1=x_1001225.3 bus2=s5x_1001225.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.184250" bus1=194053.3 bus2=194052.3 length=23.84009 linecode=181 normamps=213 emergamps=234 units=m enabled=true phases=1
+New "Line.s_1001226-dc1" bus1=x_1001226.3 bus2=s1x_1001226.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001226-dc2" bus1=x_1001226.3 bus2=s2x_1001226.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001226-dc3" bus1=x_1001226.3 bus2=s3x_1001226.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001226-dc4" bus1=x_1001226.3 bus2=s4x_1001226.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.184251" bus1=194052.3 bus2=194051.3 length=33.25013 linecode=181 normamps=213 emergamps=234 units=m enabled=true phases=1
+New "Line.s_1001227-dc1" bus1=x_1001227.3 bus2=s1x_1001227.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001227-dc2" bus1=x_1001227.3 bus2=s2x_1001227.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001227-dc3" bus1=x_1001227.3 bus2=s3x_1001227.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001227-dc4" bus1=x_1001227.3 bus2=s4x_1001227.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001227-dc5" bus1=x_1001227.3 bus2=s5x_1001227.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.184253" bus1=194054.1 bus2=189962.1 length=64.99024 linecode=181 normamps=213 emergamps=234 units=m enabled=true phases=1
+New "Line.s_1001223-da1" bus1=x_1001223.1 bus2=s1x_1001223.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001223-da2" bus1=x_1001223.1 bus2=s2x_1001223.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001223-da3" bus1=x_1001223.1 bus2=s3x_1001223.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001223-da4" bus1=x_1001223.1 bus2=s4x_1001223.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.184246" bus1=194054.1 bus2=194055.1 length=40.92015 linecode=181 normamps=213 emergamps=234 units=m enabled=true phases=1
+New "Line.s_1001222-da1" bus1=x_1001222.1 bus2=s1x_1001222.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001222-da2" bus1=x_1001222.1 bus2=s2x_1001222.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001222-da3" bus1=x_1001222.1 bus2=s3x_1001222.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001222-da4" bus1=x_1001222.1 bus2=s4x_1001222.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001222-da5" bus1=x_1001222.1 bus2=s5x_1001222.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001222-da6" bus1=x_1001222.1 bus2=s6x_1001222.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001222-da7" bus1=x_1001222.1 bus2=s7x_1001222.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001222-da8" bus1=x_1001222.1 bus2=s8x_1001222.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.184247" bus1=194055.1 bus2=194056.1 length=58.71022 linecode=181 normamps=213 emergamps=234 units=m enabled=true phases=1
+New "Line.s_1001221-da1" bus1=x_1001221.1 bus2=s1x_1001221.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.184248" bus1=194056.1 bus2=194057.1 length=49.01018 linecode=181 normamps=213 emergamps=234 units=m enabled=true phases=1
+New "Line.s_1001219-da1" bus1=x_1001219.1 bus2=s1x_1001219.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001219-da2" bus1=x_1001219.1 bus2=s2x_1001219.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.261249" bus1=261880.1.2.3 bus2=261881.1.2.3 length=0.001 linecode=99 normamps=500 emergamps=550 Switch=True units=m enabled=true phases=3
+New "Line.282437" bus1=283952.1.2.3 bus2=283954.1.2.3 length=51.6502 linecode=40 normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.282436" bus1=283954.1.2.3 bus2=283955.1.2.3 length=7.770029 linecode=99 normamps=500 emergamps=550 units=m enabled=true phases=3
+New "Line.282438" bus1=283955.1.2.3 bus2=283956.1.2.3 length=185.7807 linecode=185 normamps=213 emergamps=234 units=m enabled=true phases=3
+New "Line.s_1003140-da1" bus1=x_1003140.1.2.3 bus2=s1x_1003140.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003140-da2" bus1=x_1003140.1.2.3 bus2=s2x_1003140.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003140-da3" bus1=x_1003140.1.2.3 bus2=s3x_1003140.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.255461" bus1=165487.1 bus2=165489.1 length=46.82018 linecode=62 normamps=160 emergamps=190 units=m enabled=true phases=1
+New "Line.157153" bus1=165488.1 bus2=165489.1 length=7.630028 linecode=251 normamps=500 emergamps=550 units=m enabled=true phases=1
+New "Line.157155" bus1=165488.1 bus2=165491.1 length=27.8401 linecode=62 normamps=160 emergamps=190 units=m enabled=true phases=1
+New "Line.s_1000042-da1" bus1=x_1000042.1 bus2=s1x_1000042.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000042-da2" bus1=x_1000042.1 bus2=s2x_1000042.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000042-da3" bus1=x_1000042.1 bus2=s3x_1000042.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000042-da4" bus1=x_1000042.1 bus2=s4x_1000042.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000042-da5" bus1=x_1000042.1 bus2=s5x_1000042.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000042-da6" bus1=x_1000042.1 bus2=s6x_1000042.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000042-da7" bus1=x_1000042.1 bus2=s7x_1000042.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.157156" bus1=165491.1 bus2=165490.1 length=48.30018 linecode=62 normamps=160 emergamps=190 units=m enabled=true phases=1
+New "Line.157157" bus1=165490.1 bus2=165494.1 length=72.38026 linecode=62 normamps=160 emergamps=190 units=m enabled=true phases=1
+New "Line.s_1000043-da1" bus1=x_1000043.1 bus2=s1x_1000043.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000043-da2" bus1=x_1000043.1 bus2=s2x_1000043.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000043-da3" bus1=x_1000043.1 bus2=s3x_1000043.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000043-da4" bus1=x_1000043.1 bus2=s4x_1000043.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000043-da5" bus1=x_1000043.1 bus2=s5x_1000043.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000043-da6" bus1=x_1000043.1 bus2=s6x_1000043.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.157159" bus1=165494.1 bus2=165493.1 length=110.7904 linecode=62 normamps=160 emergamps=190 units=m enabled=true phases=1
+New "Line.s_1000474-da1" bus1=x_1000474.1 bus2=s1x_1000474.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000474-da2" bus1=x_1000474.1 bus2=s2x_1000474.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000474-da3" bus1=x_1000474.1 bus2=s3x_1000474.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000474-da4" bus1=x_1000474.1 bus2=s4x_1000474.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000474-da5" bus1=x_1000474.1 bus2=s5x_1000474.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.157158" bus1=165490.1 bus2=165492.1 length=177.8307 linecode=62 normamps=160 emergamps=190 units=m enabled=true phases=1
+New "Line.s_1000077-da1" bus1=x_1000077.1 bus2=s1x_1000077.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000077-da2" bus1=x_1000077.1 bus2=s2x_1000077.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000077-da3" bus1=x_1000077.1 bus2=s3x_1000077.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000077-da4" bus1=x_1000077.1 bus2=s4x_1000077.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000077-da5" bus1=x_1000077.1 bus2=s5x_1000077.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000077-da6" bus1=x_1000077.1 bus2=s6x_1000077.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.157149" bus1=261838.1.2.3 bus2=165478.1.2.3 length=34.73013 linecode=40 normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.261185" bus1=261838.1.2.3 bus2=261839.1.2.3 length=7.630028 linecode=99 normamps=500 emergamps=550 units=m enabled=true phases=3
+New "Line.157148" bus1=165483.1.2.3 bus2=261839.1.2.3 length=5.26002 linecode=186 normamps=214 emergamps=235 units=m enabled=true phases=3
+New "Line.s_1001345-da1" bus1=x_1001345.1.2.3 bus2=s1x_1001345.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001345-da2" bus1=x_1001345.1.2.3 bus2=s2x_1001345.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001345-da3" bus1=x_1001345.1.2.3 bus2=s3x_1001345.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.157147" bus1=165484.1.2.3 bus2=165483.1.2.3 length=22.03008 linecode=186 normamps=214 emergamps=235 units=m enabled=true phases=3
+New "Line.s_1000933-da1" bus1=x_1000933.1.2.3 bus2=s1x_1000933.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1000933-da2" bus1=x_1000933.1.2.3 bus2=s2x_1000933.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1000933-da3" bus1=x_1000933.1.2.3 bus2=s3x_1000933.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1000933-da4" bus1=x_1000933.1.2.3 bus2=s4x_1000933.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1000933-da5" bus1=x_1000933.1.2.3 bus2=s5x_1000933.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1000933-da6" bus1=x_1000933.1.2.3 bus2=s6x_1000933.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1000933-da7" bus1=x_1000933.1.2.3 bus2=s7x_1000933.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1000933-da8" bus1=x_1000933.1.2.3 bus2=s8x_1000933.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1000933-da9" bus1=x_1000933.1.2.3 bus2=s9x_1000933.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1000933-da10" bus1=x_1000933.1.2.3 bus2=s10x_1000933.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1000933-da11" bus1=x_1000933.1.2.3 bus2=s11x_1000933.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1000933-da12" bus1=x_1000933.1.2.3 bus2=s12x_1000933.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1000933-da13" bus1=x_1000933.1.2.3 bus2=s13x_1000933.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1000933-da14" bus1=x_1000933.1.2.3 bus2=s14x_1000933.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1000933-da15" bus1=x_1000933.1.2.3 bus2=s15x_1000933.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.261184" bus1=165469.1.2.3 bus2=261836.1.2.3 length=46.23017 linecode=40 normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.261181" bus1=261836.1.2.3 bus2=261837.1.2.3 length=7.640028 linecode=99 normamps=500 emergamps=550 units=m enabled=true phases=3
+New "Line.235748" bus1=232497.1.2.3 bus2=261837.1.2.3 length=9.470036 linecode=40 normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.279295" bus1=280598.1.2.3 bus2=232497.1.2.3 length=6.100023 linecode=40 normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.272824" bus1=273626.1.2.3 bus2=280598.1.2.3 length=26.3301 linecode=40 normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.s_1003127-db1" bus1=x_1003127.2 bus2=s1x_1003127.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.157138" bus1=165475.1.2.3 bus2=273626.1.2.3 length=37.61014 linecode=40 normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.157136" bus1=165475.1.2.3 bus2=165476.1.2.3 length=7.630028 linecode=99 normamps=500 emergamps=550 units=m enabled=true phases=3
+New "Line.157137" bus1=165477.1.2.3 bus2=165476.1.2.3 length=34.38013 linecode=186 normamps=214 emergamps=235 units=m enabled=true phases=3
+New "Line.s_1001708-da1" bus1=x_1001708.1.2.3 bus2=s1x_1001708.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001708-da2" bus1=x_1001708.1.2.3 bus2=s2x_1001708.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001708-da3" bus1=x_1001708.1.2.3 bus2=s3x_1001708.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.279296" bus1=280598.1.2.3 bus2=280597.1.2.3 length=4.310016 linecode=40 normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.279294" bus1=280596.1.2.3 bus2=280597.1.2.3 length=7.640028 linecode=99 normamps=500 emergamps=550 units=m enabled=true phases=3
+New "Line.279297" bus1=280596.1.2.3 bus2=280600.1.2.3 length=2.74001 linecode=40 normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.s_1003134-da1" bus1=x_1003134.1.2.3 bus2=s1x_1003134.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003134-da2" bus1=x_1003134.1.2.3 bus2=s2x_1003134.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003134-da3" bus1=x_1003134.1.2.3 bus2=s3x_1003134.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.285774" bus1=165469.1.2.3 bus2=287274.1.2.3 length=40.83015 linecode=40 normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.285775" bus1=287274.1.2.3 bus2=287275.1.2.3 length=40.56015 linecode=40 normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.s_1007732-da1" bus1=x_1007732.1 bus2=s1x_1007732.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1007732-db1" bus1=x_1007732.2 bus2=s1x_1007732.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1007732-dc1" bus1=x_1007732.3 bus2=s1x_1007732.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.261180" bus1=165451.1.2.3 bus2=165459.1.2.3 length=43.32016 linecode=40 normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.157124" bus1=165458.1.2.3 bus2=165459.1.2.3 length=7.640028 linecode=99 normamps=500 emergamps=550 units=m enabled=true phases=3
+New "Line.157126" bus1=165458.1.2.3 bus2=165460.1.2.3 length=15.62006 linecode=186 normamps=214 emergamps=235 units=m enabled=true phases=3
+New "Line.s_1001329-da1" bus1=x_1001329.1.2.3 bus2=s1x_1001329.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001329-da2" bus1=x_1001329.1.2.3 bus2=s2x_1001329.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001329-da3" bus1=x_1001329.1.2.3 bus2=s3x_1001329.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.157127" bus1=165460.1.2.3 bus2=165461.1.2.3 length=264.061 linecode=186 normamps=214 emergamps=235 units=m enabled=true phases=3
+New "Line.157128" bus1=165461.1.2.3 bus2=165463.1.2.3 length=82.59031 linecode=186 normamps=214 emergamps=235 units=m enabled=true phases=3
+New "Line.157129" bus1=165463.1.2.3 bus2=165462.1.2.3 length=100.9004 linecode=186 normamps=214 emergamps=235 units=m enabled=true phases=3
+New "Line.s_1001359-da1" bus1=x_1001359.1.2.3 bus2=s1x_1001359.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001359-da2" bus1=x_1001359.1.2.3 bus2=s2x_1001359.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001359-da3" bus1=x_1001359.1.2.3 bus2=s3x_1001359.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.157130" bus1=165465.1.2.3 bus2=165463.1.2.3 length=17.38006 linecode=186 normamps=214 emergamps=235 units=m enabled=true phases=3
+New "Line.s_1001330-da1" bus1=x_1001330.1.2.3 bus2=s1x_1001330.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001330-da2" bus1=x_1001330.1.2.3 bus2=s2x_1001330.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001330-da3" bus1=x_1001330.1.2.3 bus2=s3x_1001330.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001330-da4" bus1=x_1001330.1.2.3 bus2=s4x_1001330.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001330-da5" bus1=x_1001330.1.2.3 bus2=s5x_1001330.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001330-da6" bus1=x_1001330.1.2.3 bus2=s6x_1001330.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.157131" bus1=165461.1.2.3 bus2=165466.1.2.3 length=173.2906 linecode=186 normamps=214 emergamps=235 units=m enabled=true phases=3
+New "Line.318387" bus1=165451.1.2.3 bus2=165453.1.2.3 length=35.75013 linecode=40 normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.s_1000502-db1" bus1=x_1000502.2 bus2=s1x_1000502.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.157118" bus1=165453.1.2.3 bus2=165454.1.2.3 length=23.36009 linecode=40 normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.s_1000824-da1" bus1=x_1000824.1 bus2=s1x_1000824.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000824-da2" bus1=x_1000824.1 bus2=s2x_1000824.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000824-da3" bus1=x_1000824.1 bus2=s3x_1000824.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000824-db1" bus1=x_1000824.2 bus2=s1x_1000824.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000824-db2" bus1=x_1000824.2 bus2=s2x_1000824.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000824-db3" bus1=x_1000824.2 bus2=s3x_1000824.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000824-dc1" bus1=x_1000824.3 bus2=s1x_1000824.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000824-dc2" bus1=x_1000824.3 bus2=s2x_1000824.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000824-dc3" bus1=x_1000824.3 bus2=s3x_1000824.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.157120" bus1=165454.1.2.3 bus2=238402.1.2.3 length=15.73006 linecode=40 normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.241081" bus1=238402.1.2.3 bus2=238403.1.2.3 length=9.450035 linecode=99 normamps=500 emergamps=550 units=m enabled=true phases=3
+New "Line.318388" bus1=315933.1.2.3 bus2=238403.1.2.3 length=10.06004 linecode=40 normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.s_1007805-da1" bus1=x_1007805.1 bus2=s1x_1007805.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1007805-da2" bus1=x_1007805.1 bus2=s2x_1007805.1 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1007805-db1" bus1=x_1007805.2 bus2=s1x_1007805.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1007805-db2" bus1=x_1007805.2 bus2=s2x_1007805.2 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1007805-dc1" bus1=x_1007805.3 bus2=s1x_1007805.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1007805-dc2" bus1=x_1007805.3 bus2=s2x_1007805.3 linecode=defaultSecondary normamps=400 emergamps=600 length=100 units=ft
+New "Line.241080" bus1=315933.1.2.3 bus2=165452.1.2.3 length=55.33021 linecode=40 normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.s_1001746-da1" bus1=x_1001746.1.2.3 bus2=s1x_1001746.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001746-da2" bus1=x_1001746.1.2.3 bus2=s2x_1001746.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001746-da3" bus1=x_1001746.1.2.3 bus2=s3x_1001746.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.157122" bus1=165452.1.2.3 bus2=283563.1.2.3 length=49.29019 linecode=40 normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.282085" bus1=283563.1.2.3 bus2=165456.1.2.3 length=31.19012 linecode=40 normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.157121" bus1=165455.1.2.3 bus2=165456.1.2.3 length=11.21004 linecode=99 normamps=500 emergamps=550 units=m enabled=true phases=3
+New "Line.157123" bus1=165455.1.2.3 bus2=165457.1.2.3 length=21.35008 linecode=186 normamps=214 emergamps=235 units=m enabled=true phases=3
+New "Line.s_1001745-da1" bus1=x_1001745.1.2.3 bus2=s1x_1001745.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001745-da2" bus1=x_1001745.1.2.3 bus2=s2x_1001745.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001745-da3" bus1=x_1001745.1.2.3 bus2=s3x_1001745.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.318386" bus1=283563.1.2.3 bus2=283566.1.2.3 length=7.530029 linecode=40 normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.282086" bus1=283565.1.2.3 bus2=283566.1.2.3 length=8.330031 linecode=99 normamps=500 emergamps=550 units=m enabled=true phases=3
+New "Line.282088" bus1=283565.1.2.3 bus2=283567.1.2.3 length=13.22005 linecode=185 normamps=213 emergamps=234 units=m enabled=true phases=3
+New "Line.s_1003130-da1" bus1=x_1003130.1.2.3 bus2=s1x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da2" bus1=x_1003130.1.2.3 bus2=s2x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da3" bus1=x_1003130.1.2.3 bus2=s3x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da4" bus1=x_1003130.1.2.3 bus2=s4x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da5" bus1=x_1003130.1.2.3 bus2=s5x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da6" bus1=x_1003130.1.2.3 bus2=s6x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da7" bus1=x_1003130.1.2.3 bus2=s7x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da8" bus1=x_1003130.1.2.3 bus2=s8x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da9" bus1=x_1003130.1.2.3 bus2=s9x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da10" bus1=x_1003130.1.2.3 bus2=s10x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da11" bus1=x_1003130.1.2.3 bus2=s11x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da12" bus1=x_1003130.1.2.3 bus2=s12x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da13" bus1=x_1003130.1.2.3 bus2=s13x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da14" bus1=x_1003130.1.2.3 bus2=s14x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da15" bus1=x_1003130.1.2.3 bus2=s15x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da16" bus1=x_1003130.1.2.3 bus2=s16x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da17" bus1=x_1003130.1.2.3 bus2=s17x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da18" bus1=x_1003130.1.2.3 bus2=s18x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da19" bus1=x_1003130.1.2.3 bus2=s19x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da20" bus1=x_1003130.1.2.3 bus2=s20x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da21" bus1=x_1003130.1.2.3 bus2=s21x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da22" bus1=x_1003130.1.2.3 bus2=s22x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da23" bus1=x_1003130.1.2.3 bus2=s23x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da24" bus1=x_1003130.1.2.3 bus2=s24x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da25" bus1=x_1003130.1.2.3 bus2=s25x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da26" bus1=x_1003130.1.2.3 bus2=s26x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da27" bus1=x_1003130.1.2.3 bus2=s27x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da28" bus1=x_1003130.1.2.3 bus2=s28x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da29" bus1=x_1003130.1.2.3 bus2=s29x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da30" bus1=x_1003130.1.2.3 bus2=s30x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da31" bus1=x_1003130.1.2.3 bus2=s31x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da32" bus1=x_1003130.1.2.3 bus2=s32x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da33" bus1=x_1003130.1.2.3 bus2=s33x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da34" bus1=x_1003130.1.2.3 bus2=s34x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da35" bus1=x_1003130.1.2.3 bus2=s35x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da36" bus1=x_1003130.1.2.3 bus2=s36x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da37" bus1=x_1003130.1.2.3 bus2=s37x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da38" bus1=x_1003130.1.2.3 bus2=s38x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da39" bus1=x_1003130.1.2.3 bus2=s39x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da40" bus1=x_1003130.1.2.3 bus2=s40x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da41" bus1=x_1003130.1.2.3 bus2=s41x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da42" bus1=x_1003130.1.2.3 bus2=s42x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da43" bus1=x_1003130.1.2.3 bus2=s43x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da44" bus1=x_1003130.1.2.3 bus2=s44x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da45" bus1=x_1003130.1.2.3 bus2=s45x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da46" bus1=x_1003130.1.2.3 bus2=s46x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da47" bus1=x_1003130.1.2.3 bus2=s47x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da48" bus1=x_1003130.1.2.3 bus2=s48x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da49" bus1=x_1003130.1.2.3 bus2=s49x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da50" bus1=x_1003130.1.2.3 bus2=s50x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da51" bus1=x_1003130.1.2.3 bus2=s51x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da52" bus1=x_1003130.1.2.3 bus2=s52x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da53" bus1=x_1003130.1.2.3 bus2=s53x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da54" bus1=x_1003130.1.2.3 bus2=s54x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da55" bus1=x_1003130.1.2.3 bus2=s55x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da56" bus1=x_1003130.1.2.3 bus2=s56x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da57" bus1=x_1003130.1.2.3 bus2=s57x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da58" bus1=x_1003130.1.2.3 bus2=s58x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da59" bus1=x_1003130.1.2.3 bus2=s59x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da60" bus1=x_1003130.1.2.3 bus2=s60x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da61" bus1=x_1003130.1.2.3 bus2=s61x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da62" bus1=x_1003130.1.2.3 bus2=s62x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da63" bus1=x_1003130.1.2.3 bus2=s63x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da64" bus1=x_1003130.1.2.3 bus2=s64x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da65" bus1=x_1003130.1.2.3 bus2=s65x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da66" bus1=x_1003130.1.2.3 bus2=s66x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da67" bus1=x_1003130.1.2.3 bus2=s67x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da68" bus1=x_1003130.1.2.3 bus2=s68x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da69" bus1=x_1003130.1.2.3 bus2=s69x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da70" bus1=x_1003130.1.2.3 bus2=s70x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da71" bus1=x_1003130.1.2.3 bus2=s71x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da72" bus1=x_1003130.1.2.3 bus2=s72x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da73" bus1=x_1003130.1.2.3 bus2=s73x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da74" bus1=x_1003130.1.2.3 bus2=s74x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da75" bus1=x_1003130.1.2.3 bus2=s75x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da76" bus1=x_1003130.1.2.3 bus2=s76x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da77" bus1=x_1003130.1.2.3 bus2=s77x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da78" bus1=x_1003130.1.2.3 bus2=s78x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da79" bus1=x_1003130.1.2.3 bus2=s79x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da80" bus1=x_1003130.1.2.3 bus2=s80x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da81" bus1=x_1003130.1.2.3 bus2=s81x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da82" bus1=x_1003130.1.2.3 bus2=s82x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da83" bus1=x_1003130.1.2.3 bus2=s83x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da84" bus1=x_1003130.1.2.3 bus2=s84x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da85" bus1=x_1003130.1.2.3 bus2=s85x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da86" bus1=x_1003130.1.2.3 bus2=s86x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da87" bus1=x_1003130.1.2.3 bus2=s87x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da88" bus1=x_1003130.1.2.3 bus2=s88x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da89" bus1=x_1003130.1.2.3 bus2=s89x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da90" bus1=x_1003130.1.2.3 bus2=s90x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da91" bus1=x_1003130.1.2.3 bus2=s91x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da92" bus1=x_1003130.1.2.3 bus2=s92x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da93" bus1=x_1003130.1.2.3 bus2=s93x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da94" bus1=x_1003130.1.2.3 bus2=s94x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da95" bus1=x_1003130.1.2.3 bus2=s95x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da96" bus1=x_1003130.1.2.3 bus2=s96x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da97" bus1=x_1003130.1.2.3 bus2=s97x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da98" bus1=x_1003130.1.2.3 bus2=s98x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da99" bus1=x_1003130.1.2.3 bus2=s99x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da100" bus1=x_1003130.1.2.3 bus2=s100x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da101" bus1=x_1003130.1.2.3 bus2=s101x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da102" bus1=x_1003130.1.2.3 bus2=s102x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da103" bus1=x_1003130.1.2.3 bus2=s103x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da104" bus1=x_1003130.1.2.3 bus2=s104x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da105" bus1=x_1003130.1.2.3 bus2=s105x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da106" bus1=x_1003130.1.2.3 bus2=s106x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da107" bus1=x_1003130.1.2.3 bus2=s107x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da108" bus1=x_1003130.1.2.3 bus2=s108x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da109" bus1=x_1003130.1.2.3 bus2=s109x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da110" bus1=x_1003130.1.2.3 bus2=s110x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da111" bus1=x_1003130.1.2.3 bus2=s111x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da112" bus1=x_1003130.1.2.3 bus2=s112x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da113" bus1=x_1003130.1.2.3 bus2=s113x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da114" bus1=x_1003130.1.2.3 bus2=s114x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da115" bus1=x_1003130.1.2.3 bus2=s115x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da116" bus1=x_1003130.1.2.3 bus2=s116x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da117" bus1=x_1003130.1.2.3 bus2=s117x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da118" bus1=x_1003130.1.2.3 bus2=s118x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da119" bus1=x_1003130.1.2.3 bus2=s119x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da120" bus1=x_1003130.1.2.3 bus2=s120x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da121" bus1=x_1003130.1.2.3 bus2=s121x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da122" bus1=x_1003130.1.2.3 bus2=s122x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da123" bus1=x_1003130.1.2.3 bus2=s123x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da124" bus1=x_1003130.1.2.3 bus2=s124x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da125" bus1=x_1003130.1.2.3 bus2=s125x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da126" bus1=x_1003130.1.2.3 bus2=s126x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da127" bus1=x_1003130.1.2.3 bus2=s127x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da128" bus1=x_1003130.1.2.3 bus2=s128x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da129" bus1=x_1003130.1.2.3 bus2=s129x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da130" bus1=x_1003130.1.2.3 bus2=s130x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da131" bus1=x_1003130.1.2.3 bus2=s131x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da132" bus1=x_1003130.1.2.3 bus2=s132x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da133" bus1=x_1003130.1.2.3 bus2=s133x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da134" bus1=x_1003130.1.2.3 bus2=s134x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da135" bus1=x_1003130.1.2.3 bus2=s135x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da136" bus1=x_1003130.1.2.3 bus2=s136x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da137" bus1=x_1003130.1.2.3 bus2=s137x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da138" bus1=x_1003130.1.2.3 bus2=s138x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da139" bus1=x_1003130.1.2.3 bus2=s139x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da140" bus1=x_1003130.1.2.3 bus2=s140x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da141" bus1=x_1003130.1.2.3 bus2=s141x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da142" bus1=x_1003130.1.2.3 bus2=s142x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da143" bus1=x_1003130.1.2.3 bus2=s143x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da144" bus1=x_1003130.1.2.3 bus2=s144x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da145" bus1=x_1003130.1.2.3 bus2=s145x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da146" bus1=x_1003130.1.2.3 bus2=s146x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da147" bus1=x_1003130.1.2.3 bus2=s147x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da148" bus1=x_1003130.1.2.3 bus2=s148x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da149" bus1=x_1003130.1.2.3 bus2=s149x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da150" bus1=x_1003130.1.2.3 bus2=s150x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da151" bus1=x_1003130.1.2.3 bus2=s151x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da152" bus1=x_1003130.1.2.3 bus2=s152x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da153" bus1=x_1003130.1.2.3 bus2=s153x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da154" bus1=x_1003130.1.2.3 bus2=s154x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da155" bus1=x_1003130.1.2.3 bus2=s155x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da156" bus1=x_1003130.1.2.3 bus2=s156x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da157" bus1=x_1003130.1.2.3 bus2=s157x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da158" bus1=x_1003130.1.2.3 bus2=s158x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da159" bus1=x_1003130.1.2.3 bus2=s159x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da160" bus1=x_1003130.1.2.3 bus2=s160x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da161" bus1=x_1003130.1.2.3 bus2=s161x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da162" bus1=x_1003130.1.2.3 bus2=s162x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da163" bus1=x_1003130.1.2.3 bus2=s163x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da164" bus1=x_1003130.1.2.3 bus2=s164x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da165" bus1=x_1003130.1.2.3 bus2=s165x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da166" bus1=x_1003130.1.2.3 bus2=s166x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da167" bus1=x_1003130.1.2.3 bus2=s167x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1003130-da168" bus1=x_1003130.1.2.3 bus2=s168x_1003130.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.246177" bus1=202181.1.2.3 bus2=157346.1.2.3 length=41.01015 linecode=45 normamps=637 emergamps=700 units=m enabled=true phases=3
+New "Line.150394" bus1=157345.1.2.3 bus2=157346.1.2.3 length=7.720029 linecode=99 normamps=500 emergamps=550 units=m enabled=true phases=3
+New "Line.246179" bus1=157345.1.2.3 bus2=157347.1.2.3 length=37.08014 linecode=186 normamps=214 emergamps=235 units=m enabled=true phases=3
+New "Line.s_0862099-da1" bus1=x_0862099.1.2.3 bus2=s1x_0862099.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_0862099-da2" bus1=x_0862099.1.2.3 bus2=s2x_0862099.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_0862099-da3" bus1=x_0862099.1.2.3 bus2=s3x_0862099.1.2.3 linecode=defaultSecondary3P normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.326" bus1=ckt7 bus2=318405 length=0.0001 units=none r1=0 r0=0 x1=0.0001 x0=0.0001 normamps=600 emergamps=600
+New "Line.335" bus1=ckt7 bus2=318414 length=0.0001 units=none r1=0 r0=0 x1=0.0001 x0=0.0001 normamps=600 emergamps=600
