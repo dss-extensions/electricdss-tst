@@ -1,0 +1,11 @@
+! Adding storage system
+
+New Storage.Sto bus1=165480 kv=12.47 phases=3 kwhrated=100000 kwrated=3000
+
+!Adding Storage controller
+
+New StorageController.Storage_Ctrl modedischarge=I-peakshave kwtarget=0.198 modecharge=I-peakshavelow  kwtargetlow=0.19 element=Line.157132
+
+!Adding monitor to the storage device
+
+New "Monitor.Storage_device" element=Storage.Sto mode=7 terminal=1
