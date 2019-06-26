@@ -7,7 +7,7 @@
 [DSSStartOK, DSSObj, DSSText] = DSSStartup;
 
 if DSSStartOK
-    DSSText.command='Compile (C:\opendss\IEEETestCases\123Bus\IEEE123Master.dss)';
+    DSSText.command='Compile "C:\Program Files\OpenDSS\IEEETestCases\123Bus\IEEE123Master.dss"';
     % Set up the interface variables
     DSSCircuit=DSSObj.ActiveCircuit;
     DSSSolution=DSSCircuit.Solution;
@@ -218,6 +218,34 @@ if DSSStartOK
     ylabel('Amps');
     xlabel('Hour');
     hold off
+    
+    %----------------------------------------------------------------
+    % Playing with loadshapes
+    %----------------------------------------------------------------
+    DSSLoadShapes   =   DSSCircuit.LoadShapes;
+    
+    % Getting the names of all loadshapes
+    LoadShapeNames  =   DSSLoadShapes.AllNames;
+    
+    % Now, activate the first loadshape from the list
+    % to extract its content and then plot it
+    DSSLoadShapes.Name  =   LoadShapeNames{1};
+    LSData              =   DSSLoadShapes.PMult;
+    figure(6);
+    plot(LSData);
+    title('Original Loadshape');
+    
+    % Now lets modify the loadshape
+    LSData              =   fliplr(LSData)' - 0.1;
+    feature('COM_SafeArraySingleDim',1);
+    DSSLoadShapes.PMult =   LSData;
+    feature('COM_SafeArraySingleDim',0);
+    
+    %Read the values from OpenDSS to check they are OK in memory
+    LSData              =   DSSLoadShapes.PMult;
+    figure(7);
+    plot(LSData);
+    title('New Loadshape');
     
 else
     a='DSS Did Not Start'
