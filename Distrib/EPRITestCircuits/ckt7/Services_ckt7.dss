@@ -2,7 +2,7 @@ New Linecode.defaultSecondary nphases=1 rmatrix=0.25  xmatrix=0.076 cmatrix=3 un
 New Linecode.defaultSecondary3P nphases=3 rmatrix=[ 0.109716212 0.018049545 0.018049545 |0.018049545 0.109716212 0.018049545 | 0.018049545 0.018049545 0.109716212]
 !ohms per 1000 ft
 ~ xmatrix=[ 0.27765665 0.246417363 0.23845259 | 0.246417363 0.27765665 0.246417363 | 0.23845259 0.246417363 0.27765665]
-~ cmatrix=[15 | -12 15 | -12 -12 15]
+~ cmatrix=[15 | -7 15 | -7 -7 15]
 ~ Normamps=299  {299 1.25 *}
 ~ units=kft
  
