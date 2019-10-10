@@ -1,0 +1,7 @@
+! Adds storage with 2 targets
+
+New storage.StorageOL  phases=3  bus1=671  kv=4.16  kW=1000.0  pf=1  kWrated=1000.0  kWhrated=6000.0  %stored=100.0  %reserve=20.0  %EffCharge=90.0  %EffDischarge=90.0  %IdlingkW=1.0
+
+New StorageController.StoCtrl Element=Line.632670  Terminal=1  ModeCharge=I-PeakShaveLow  ModeDischarge=I-PeakShave  kWTarget=0.4  kWTargetLow=0.30 Seasons=2 SeasonTargets=[0.38 0.4]  SeasonTargetsLow=[0.25 0.3]
+
+New monitor.storageDev element=storage.StorageOL terminal=1 mode=7
