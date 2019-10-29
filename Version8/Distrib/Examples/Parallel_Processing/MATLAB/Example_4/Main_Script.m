@@ -5,6 +5,7 @@
 clc;
 [DSSStartOK, DSSObj, DSSText] = DSSStartup;
 DSSCircuit      =   DSSObj.ActiveCircuit;
+DSSObj.Allowforms=   false;
 DSSText.Command =   'ClearAll';             % Clears all instances of OpenDSS-PM
 DSSText.Command =   'Set Parallel=No';      % Parallel Suite off
 
