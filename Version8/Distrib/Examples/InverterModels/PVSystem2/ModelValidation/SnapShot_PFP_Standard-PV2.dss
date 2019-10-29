@@ -8,7 +8,7 @@ New XYCurve.Eff npts=4 xarray=[.1 .2 .4 1.0] yarray=[1 1 1 1]
 New XYCurve.FatorPvsT npts=4 xarray=[0 25 75 100] yarray=[1 1 1 1] 
 
 New PVSystem2.PV phases=3 bus1=A Pmpp=1000 kV=13.8 kVA=1200 conn=wye EffCurve=Eff 
-~ P-TCurve=FatorPvsT pctPmpp=100 Temperature=25 irradiance=1 pf=0.9  
+~ P-TCurve=FatorPvsT %Pmpp=100 Temperature=25 irradiance=1 pf=0.9  
 
 Set voltagebases=[13.8]
 Calcvoltagebases
