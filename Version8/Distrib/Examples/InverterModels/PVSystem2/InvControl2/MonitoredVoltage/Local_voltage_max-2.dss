@@ -1,0 +1,48 @@
+Clear
+
+New Circuit.TheveninEquivalente bus1=A pu=1.0 basekv=13.8 
+~ Z0=[10, 10] Z1=[10, 10]
+
+New Wiredata.CondutorFase GMR=0.0244 DIAM=0.721 RAC=0.306
+~ normamps=530
+~ Runits=mi RADunits=in GMRunits=ft
+
+New Wiredata.CondutorNeutro GMR=0.00814 DIAM=0.563 RAC=0.592
+~ normamps=340
+~ Runits=mi RADunits=in GMRunits=ft
+
+New Linegeometry.Poste nconds=3 nphases=3 reduce=No
+~ cond=1 wire=CondutorFase     x= -4     h=29   units=ft
+~ cond=2 wire=CondutorFase     x= -1.5   h=29   units=ft
+~ cond=3 wire=CondutorFase     x= 3      h=29   units=ft
+
+New Line.LineAB bus1=A bus2=B
+~ geometry=Poste
+~ length=10 units=km
+~ earthmodel=Carson
+
+New XYCurve.Eff npts=4 xarray=[.1 .2 .4 1.0] yarray=[1 1 1 1]
+
+New XYCurve.FatorPvsT npts=4 xarray=[0 25 75 100] yarray=[1 1 1 1] 
+
+New PVSystem2.PV phases=3 bus1=B Pmpp=2000 kV=13.8 kVA=2400 conn=wye EffCurve=Eff 
+~ P-TCurve=FatorPvsT %Pmpp=100 Temperature=25 irradiance=1   
+
+New XYcurve.generic npts=5 yarray=[1 1 0 -1 -1] xarray=[0.5 0.92 1.0 1.05 1.5]
+
+New InvControl2.VoltVar mode=VOLTVAR voltage_curvex_ref=rated vvc_curve1=generic 
+~ deltaQ_factor=0.2 RefReactivePower=VARMAX varchangetolerance=0.0001
+~ monVoltageCalc=max
+
+Set voltagebases=[13.8]
+Calcvoltagebases
+
+set casename=Local_voltage_max
+
+Set maxcontroli=2000
+set maxi=2000
+
+Solve
+
+Show Power kVA elements
+Show Voltage LN Nodes
