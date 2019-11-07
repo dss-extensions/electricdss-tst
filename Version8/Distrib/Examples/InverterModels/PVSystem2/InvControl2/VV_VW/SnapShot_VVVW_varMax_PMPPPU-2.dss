@@ -1,0 +1,32 @@
+Clear
+
+New Circuit.TheveninEquivalente bus1=A pu=1.0 basekv=13.8 
+~ Z0=[10, 10] Z1=[10, 10]
+
+New XYCurve.Eff npts=4 xarray=[.1 .2 .4 1.0] yarray=[1 1 1 1]
+
+New XYCurve.FatorPvsT npts=4 xarray=[0 25 75 100] yarray=[1 1 1 1] 
+
+New PVSystem2.PV phases=3 bus1=A Pmpp=1000 kV=13.8 kVA=1200 conn=wye EffCurve=Eff 
+~ P-TCurve=FatorPvsT %Pmpp=100 Temperature=25 irradiance=1   
+
+New XYcurve.vw_curve npts=3 yarray=[1 1 0] xarray=[1 1.02 1.1]
+New XYcurve.vv_curve npts=5 yarray=[1 1 0 -1 -1] xarray=[0.5 0.92 1.0 1.08 1.5]
+
+New InvControl2.VV_VW Combimode=VV_VW voltage_curvex_ref=rated vvc_curve1=vv_curve  
+~ voltwatt_curve=vw_curve deltaQ_factor=0.2  DeltaP_factor=0.45
+~ activePchangetolerance=0.0001 varchangetolerance=0.0001 
+~ VoltwattYAxis=PMPPPU RefReactivePower=varmax
+
+Set voltagebases=[13.8]
+Calcvoltagebases
+
+set casename=SnapShot_VVVW_varMax_PMPPPU
+
+Set maxcontroli=2000
+
+Solve
+
+Show Power kVA elements
+Show Voltage LN Nodes
+
