@@ -1,0 +1,47 @@
+Clear
+
+New Circuit.TheveninEquivalente bus1=A pu=1.0 basekv=13.8 
+~ Z0=[10, 10] Z1=[10, 10]
+
+New XYCurve.Eff npts=4 xarray=[.1 .2 .4 1.0] yarray=[1 1 1 1]
+
+New XYCurve.FatorPvsT npts=4 xarray=[0 25 75 100] yarray=[1 1 1 1] 
+
+New Loadshape.Irrad npts=20 sinterval=1 csvfile=PV_irrad.csv
+
+New Tshape.Temp npts=24 interval=1 
+~ temp=[25 25 25 25 25 25 25 25 35 40 45 50 60 60 55 40 35 30 25 25 25 25 25 25]
+
+New PVSystem2.PV phases=3 bus1=A Pmpp=1000 kV=13.8 kVA=1000 conn=wye EffCurve=Eff 
+~ P-TCurve=FatorPvsT %Pmpp=100 irradiance=1 daily=Irrad Tdaily=Temp wattpriority=yes
+
+New XYcurve.vw_curve npts=3 yarray=[1 1 0] xarray=[1 1.08 1.1]
+New XYcurve.vv_curve npts=5 yarray=[1 1 0 -1 -1] xarray=[0.5 0.92 1.0 1.08 1.5]
+
+New InvControl2.DRC Mode=DYNAMICREACCURR DbVMin=1 DbVMax=1 ArGraLowV=50 arGraHiV=50 
+~ DynReacavgwindowlen=2s deltaQ_factor=0.2 RefReactivePower=VARMAX 
+~ varchangetolerance=0.00001 Voltagechangetolerance=0.00001 
+
+New Monitor.PV_currents element=PVSystem2.PV terminal=1 mode=0
+New Monitor.PV_powers element=PVSystem2.PV terminal=1 mode=1 ppolar=no
+New Monitor.PV_v element=PVSystem2.PV terminal=1 mode=3
+
+Set voltagebases=[13.8]
+Calcvoltagebases
+
+set casename=Daily_DRC_kVAlimitation_P
+
+Set maxcontroli=2000
+
+Set mode=daily
+Set stepsize=1s
+Set number=20
+Solve
+
+Export monitors pv_powers
+Export monitors pv_v
+Export monitors pv_currents
+
+Plot monitor object= pv_powers channels=(1 3 5 )
+Plot monitor object= pv_powers channels=(2 4 6 )
+Plot monitor object= pv_v channels=(9 )
