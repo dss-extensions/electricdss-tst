@@ -19,7 +19,7 @@ New Transformer.XFM1  Phases=3 Windings=2 Xhl=1.81
 ~ wdg=2 bus=775       conn=Delta kv=0.48  kva=500    %r=0.045
 
 ! import line codes with phase impedance matrices
-Redirect        IEEELineCodes.dss
+Redirect        IEEELineCodes.DSS
 
 ! Lines
 New Line.L1     Phases=3 Bus1=701.1.2.3  Bus2=702.1.2.3  LineCode=722  Length=0.96
