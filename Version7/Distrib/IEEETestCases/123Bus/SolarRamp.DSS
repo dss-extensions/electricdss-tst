@@ -18,7 +18,7 @@ Set MaxControlIter=30
 New energymeter.M1 Line.sw1 1
 
 solve
-buscoords buscoords.dat
+buscoords BusCoords.dat
 plot profile
 
 ! 300-sec solar ramp screen
