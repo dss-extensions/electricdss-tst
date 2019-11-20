@@ -1,0 +1,3 @@
+New "Isource.isource_0" bus1=675.1 phases=1 amps=242.500000 daily=pvloadshape
+New "Isource.isource_1" bus1=675.2 phases=1 angle=120.000000 amps=57.000000 daily=pvloadshape
+New "Isource.isource_2" bus1=675.3 phases=1 angle=240.000000 amps=136.000000 daily=pvloadshape
