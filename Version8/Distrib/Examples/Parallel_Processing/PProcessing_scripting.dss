@@ -1,0 +1,50 @@
+ClearAll    ! Clears all the actors created previously
+
+set parallel=No  ! disables the parallel processing suite in case it was enabled from previous runs
+
+! Creates the first actor (default) and loads EPRI's Ckt 5 into it
+compile "C:\Program Files\OpenDSS\EPRITestCircuits\ckt5\Master_ckt5.dss"
+set CPU=0 
+set maxcontroliter=1000
+Solve
+
+! Creates 3 actors assuming that you have at least 4 threads (1 actor is already in memory)
+! avaiable in your computer, if that's not the case (you have less than 4)
+! OpenDSS will throw an error here, just accomodate the number of clones
+! to the number of CPUs avaiable in your PC (num CPUs - 2)
+
+Clone  2
+
+! If everything is going well so far, you should have # CPUs - 1 actors in memory, 
+! 3 with the default vales in this example
+
+set parallel=Yes   ! enables the parallel processing suite
+
+set activeActor=*  ! message to all the actors
+set mode=yearly number=2000 hour = 0 totaltime=0
+
+set activeActor=2  ! message to actor 2
+set hour = 2000
+set CPU=1
+
+set activeActor=3  ! message to actor 3
+set hour = 4000
+set CPU=4
+
+! total simualtion time = 6000 hours (2000 + 2000 + 2000)
+
+SolveAll   ! lets go!
+Wait       ! use this command if you want OpenDSS to wait for the tasks to be finished
+
+get totaltime
+
+get NUMANodes
+
+! If you don't want OpenDSS to wait, you can always ask for the tasks progress with this command
+get actorprogress 
+
+set ConcatenateReports=Yes
+show monitor MS2
+
+! If you are NOT waiting for the tasks to finish (Wait command), use this command to abort the tasks execution if needed
+abort      
