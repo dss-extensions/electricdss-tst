@@ -1,0 +1,38 @@
+Hour=3, Sec=0, ControlIter=1, Element=InvControl2.voltwatt, Storage2.a, Action=**READY TO LIMIT WATT OUTPUT DUE TO VOLTWATT MODE**, VAVGPU= 1.0163, VPRIORPU=1.029
+Hour=3, Sec=0, ControlIter=1, Element=InvControl2.voltwatt, Storage2.a, Action=**VOLTWATT MODE SET STORAGE2 KW OUTPUT LIMIT TO ** KW= 900. ACTUAL OUTPUT IS KW= -72.
+Hour=4, Sec=0, ControlIter=1, Element=InvControl2.voltwatt, Storage2.a, Action=**READY TO LIMIT WATT OUTPUT DUE TO VOLTWATT MODE**, VAVGPU= 1.0246, VPRIORPU=1.0163
+Hour=4, Sec=0, ControlIter=1, Element=InvControl2.voltwatt, Storage2.a, Action=**VOLTWATT MODE SET STORAGE2 KW OUTPUT LIMIT TO ** KW= 900. ACTUAL OUTPUT IS KW= -108.
+Hour=5, Sec=0, ControlIter=1, Element=InvControl2.voltwatt, Storage2.a, Action=**READY TO LIMIT WATT OUTPUT DUE TO VOLTWATT MODE**, VAVGPU= 1.0227, VPRIORPU=1.0246
+Hour=5, Sec=0, ControlIter=1, Element=InvControl2.voltwatt, Storage2.a, Action=**VOLTWATT MODE SET STORAGE2 KW OUTPUT LIMIT TO ** KW= 900. ACTUAL OUTPUT IS KW= -144.
+Hour=6, Sec=0, ControlIter=1, Element=InvControl2.voltwatt, Storage2.a, Action=**READY TO LIMIT WATT OUTPUT DUE TO VOLTWATT MODE**, VAVGPU= 0.9357, VPRIORPU=1.0227
+Hour=6, Sec=0, ControlIter=1, Element=InvControl2.voltwatt, Storage2.a, Action=**VOLTWATT MODE SET STORAGE2 KW OUTPUT LIMIT TO ** KW= 642.62. ACTUAL OUTPUT IS KW= -270.
+Hour=7, Sec=0, ControlIter=1, Element=InvControl2.voltwatt, Storage2.a, Action=**READY TO LIMIT WATT OUTPUT DUE TO VOLTWATT MODE**, VAVGPU= 0.916, VPRIORPU=0.9357
+Hour=7, Sec=0, ControlIter=1, Element=InvControl2.voltwatt, Storage2.a, Action=**VOLTWATT MODE SET STORAGE2 KW OUTPUT LIMIT TO ** KW= 526.51. ACTUAL OUTPUT IS KW= -526.51.
+Hour=7, Sec=0, ControlIter=2, Element=InvControl2.voltwatt, Storage2.a, Action=**READY TO LIMIT WATT OUTPUT DUE TO VOLTWATT MODE**, VAVGPU= 0.93069, VPRIORPU=0.916
+Hour=7, Sec=0, ControlIter=2, Element=InvControl2.voltwatt, Storage2.a, Action=**VOLTWATT MODE SET STORAGE2 KW OUTPUT LIMIT TO ** KW= 539.46. ACTUAL OUTPUT IS KW= -539.46.
+Hour=7, Sec=0, ControlIter=3, Element=InvControl2.voltwatt, Storage2.a, Action=**READY TO LIMIT WATT OUTPUT DUE TO VOLTWATT MODE**, VAVGPU= 0.92992, VPRIORPU=0.93069
+Hour=7, Sec=0, ControlIter=3, Element=InvControl2.voltwatt, Storage2.a, Action=**VOLTWATT MODE SET STORAGE2 KW OUTPUT LIMIT TO ** KW= 538.93. ACTUAL OUTPUT IS KW= -538.93.
+Hour=8, Sec=0, ControlIter=1, Element=InvControl2.voltwatt, Storage2.a, Action=**READY TO LIMIT WATT OUTPUT DUE TO VOLTWATT MODE**, VAVGPU= 0.94766, VPRIORPU=0.92994
+Hour=8, Sec=0, ControlIter=1, Element=InvControl2.voltwatt, Storage2.a, Action=**VOLTWATT MODE SET STORAGE2 KW OUTPUT LIMIT TO ** KW= 792. ACTUAL OUTPUT IS KW= -792.
+Hour=9, Sec=0, ControlIter=1, Element=InvControl2.voltwatt, Storage2.a, Action=**READY TO LIMIT WATT OUTPUT DUE TO VOLTWATT MODE**, VAVGPU= 0.95988, VPRIORPU=0.94766
+Hour=9, Sec=0, ControlIter=1, Element=InvControl2.voltwatt, Storage2.a, Action=**VOLTWATT MODE SET STORAGE2 KW OUTPUT LIMIT TO ** KW= 900. ACTUAL OUTPUT IS KW= -900.
+Hour=16, Sec=0, ControlIter=1, Element=InvControl2.voltwatt, Storage2.a, Action=**READY TO LIMIT WATT OUTPUT DUE TO VOLTWATT MODE**, VAVGPU= 1.0237, VPRIORPU=1.029
+Hour=16, Sec=0, ControlIter=1, Element=InvControl2.voltwatt, Storage2.a, Action=**VOLTWATT MODE SET STORAGE2 KW OUTPUT LIMIT TO ** KW= 900. ACTUAL OUTPUT IS KW= 72.
+Hour=17, Sec=0, ControlIter=1, Element=InvControl2.voltwatt, Storage2.a, Action=**READY TO LIMIT WATT OUTPUT DUE TO VOLTWATT MODE**, VAVGPU= 1.0356, VPRIORPU=1.0237
+Hour=17, Sec=0, ControlIter=1, Element=InvControl2.voltwatt, Storage2.a, Action=**VOLTWATT MODE SET STORAGE2 KW OUTPUT LIMIT TO ** KW= 900. ACTUAL OUTPUT IS KW= 108.
+Hour=18, Sec=0, ControlIter=1, Element=InvControl2.voltwatt, Storage2.a, Action=**READY TO LIMIT WATT OUTPUT DUE TO VOLTWATT MODE**, VAVGPU= 1.0374, VPRIORPU=1.0356
+Hour=18, Sec=0, ControlIter=1, Element=InvControl2.voltwatt, Storage2.a, Action=**VOLTWATT MODE SET STORAGE2 KW OUTPUT LIMIT TO ** KW= 900. ACTUAL OUTPUT IS KW= 144.
+Hour=19, Sec=0, ControlIter=1, Element=InvControl2.voltwatt, Storage2.a, Action=**READY TO LIMIT WATT OUTPUT DUE TO VOLTWATT MODE**, VAVGPU= 1.0436, VPRIORPU=1.0374
+Hour=19, Sec=0, ControlIter=1, Element=InvControl2.voltwatt, Storage2.a, Action=**VOLTWATT MODE SET STORAGE2 KW OUTPUT LIMIT TO ** KW= 900. ACTUAL OUTPUT IS KW= 270.
+Hour=20, Sec=0, ControlIter=1, Element=InvControl2.voltwatt, Storage2.a, Action=**READY TO LIMIT WATT OUTPUT DUE TO VOLTWATT MODE**, VAVGPU= 1.0719, VPRIORPU=1.0436
+Hour=20, Sec=0, ControlIter=1, Element=InvControl2.voltwatt, Storage2.a, Action=**VOLTWATT MODE SET STORAGE2 KW OUTPUT LIMIT TO ** KW= 661.33. ACTUAL OUTPUT IS KW= 661.33.
+Hour=20, Sec=0, ControlIter=2, Element=InvControl2.voltwatt, Storage2.a, Action=**READY TO LIMIT WATT OUTPUT DUE TO VOLTWATT MODE**, VAVGPU= 1.0671, VPRIORPU=1.0719
+Hour=20, Sec=0, ControlIter=2, Element=InvControl2.voltwatt, Storage2.a, Action=**VOLTWATT MODE SET STORAGE2 KW OUTPUT LIMIT TO ** KW= 629.97. ACTUAL OUTPUT IS KW= 629.97.
+Hour=20, Sec=0, ControlIter=3, Element=InvControl2.voltwatt, Storage2.a, Action=**READY TO LIMIT WATT OUTPUT DUE TO VOLTWATT MODE**, VAVGPU= 1.0657, VPRIORPU=1.0671
+Hour=20, Sec=0, ControlIter=3, Element=InvControl2.voltwatt, Storage2.a, Action=**VOLTWATT MODE SET STORAGE2 KW OUTPUT LIMIT TO ** KW= 624.47. ACTUAL OUTPUT IS KW= 624.47.
+Hour=20, Sec=0, ControlIter=4, Element=InvControl2.voltwatt, Storage2.a, Action=**READY TO LIMIT WATT OUTPUT DUE TO VOLTWATT MODE**, VAVGPU= 1.0654, VPRIORPU=1.0657
+Hour=20, Sec=0, ControlIter=4, Element=InvControl2.voltwatt, Storage2.a, Action=**VOLTWATT MODE SET STORAGE2 KW OUTPUT LIMIT TO ** KW= 623.44. ACTUAL OUTPUT IS KW= 623.44.
+Hour=21, Sec=0, ControlIter=1, Element=InvControl2.voltwatt, Storage2.a, Action=**READY TO LIMIT WATT OUTPUT DUE TO VOLTWATT MODE**, VAVGPU= 1.0301, VPRIORPU=1.0654
+Hour=21, Sec=0, ControlIter=1, Element=InvControl2.voltwatt, Storage2.a, Action=**VOLTWATT MODE SET STORAGE2 KW OUTPUT LIMIT TO ** KW= 792. ACTUAL OUTPUT IS KW= 792.
+Hour=22, Sec=0, ControlIter=1, Element=InvControl2.voltwatt, Storage2.a, Action=**READY TO LIMIT WATT OUTPUT DUE TO VOLTWATT MODE**, VAVGPU= 1.0256, VPRIORPU=1.0301
+Hour=22, Sec=0, ControlIter=1, Element=InvControl2.voltwatt, Storage2.a, Action=**VOLTWATT MODE SET STORAGE2 KW OUTPUT LIMIT TO ** KW= 900. ACTUAL OUTPUT IS KW= 900.

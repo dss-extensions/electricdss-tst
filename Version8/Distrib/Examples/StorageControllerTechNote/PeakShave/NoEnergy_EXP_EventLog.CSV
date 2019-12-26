@@ -1,0 +1,21 @@
+Hour=2, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=FLEET SET TO CHARGING BY TIME TRIGGER
+Hour=18, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=ATTEMPTING TO DISPATCH 969.346 KW WITH 3675 KWH REMAINING AND 735 KWH RESERVE.
+Hour=18, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.A TO DISPATCH 100 KW. FINAL KWOUT IS 100 KW
+Hour=18, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.B TO DISPATCH 136.051 KW. FINAL KWOUT IS 136.051 KW
+Hour=18, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.C TO DISPATCH 134.23 KW. FINAL KWOUT IS 134.23 KW
+Hour=18, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.D TO DISPATCH 134.837 KW. FINAL KWOUT IS 134.837 KW
+Hour=18, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.E TO DISPATCH 136.658 KW. FINAL KWOUT IS 136.658 KW
+Hour=18, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.F TO DISPATCH 136.051 KW. FINAL KWOUT IS 136.051 KW
+Hour=18, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.G TO DISPATCH 135.444 KW. FINAL KWOUT IS 135.444 KW
+Hour=19, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=ATTEMPTING TO DISPATCH 486.581 KW WITH 2588.17 KWH REMAINING AND 735 KWH RESERVE.
+Hour=19, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.B TO DISPATCH 200 KW. FINAL KWOUT IS 200 KW
+Hour=19, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.C TO DISPATCH 203.742 KW. FINAL KWOUT IS 203.742 KW
+Hour=19, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.D TO DISPATCH 204.349 KW. FINAL KWOUT IS 204.349 KW
+Hour=19, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.E TO DISPATCH 150 KW. FINAL KWOUT IS 150 KW
+Hour=19, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.F TO DISPATCH 200 KW. FINAL KWOUT IS 200 KW
+Hour=19, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.G TO DISPATCH 204.956 KW. FINAL KWOUT IS 204.956 KW
+Hour=19, Sec=0, ControlIter=2, Element=StorageController2.sc, Action=ATTEMPTING TO DISPATCH 128.887 KW WITH 2588.17 KWH REMAINING AND 735 KWH RESERVE.
+Hour=19, Sec=0, ControlIter=2, Element=StorageController2.sc, Action=REQUESTING STORAGE2.C TO DISPATCH 222.154 KW. FINAL KWOUT IS 222.154 KW
+Hour=19, Sec=0, ControlIter=2, Element=StorageController2.sc, Action=REQUESTING STORAGE2.D TO DISPATCH 222.761 KW. FINAL KWOUT IS 222.761 KW
+Hour=19, Sec=0, ControlIter=2, Element=StorageController2.sc, Action=REQUESTING STORAGE2.G TO DISPATCH 223.368 KW. FINAL KWOUT IS 223.368 KW
+Hour=21, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=RAN OUT OF OOMPH: 735 KWH REMAINING AND 735 RESERVE. FLEET HAS BEEN SET TO IDLING STATE.

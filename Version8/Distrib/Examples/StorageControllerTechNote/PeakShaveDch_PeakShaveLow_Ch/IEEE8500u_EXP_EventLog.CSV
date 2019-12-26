@@ -1,0 +1,103 @@
+Hour=1, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=ATTEMPTING TO CHARGE -508 KW WITH 5880 KWH REMAINING AND 7350 RATING.
+Hour=1, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.A TO DISPATCH -73.7851 KW. FINAL KWOUT IS -73.7851 KW
+Hour=1, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.B TO DISPATCH -74.9987 KW. FINAL KWOUT IS -74.9987 KW
+Hour=1, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.C TO DISPATCH -76.8191 KW. FINAL KWOUT IS -76.8191 KW
+Hour=1, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.D TO DISPATCH -76.2123 KW. FINAL KWOUT IS -76.2123 KW
+Hour=1, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.E TO DISPATCH -74.3919 KW. FINAL KWOUT IS -74.3919 KW
+Hour=1, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.F TO DISPATCH -74.9987 KW. FINAL KWOUT IS -74.9987 KW
+Hour=1, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.G TO DISPATCH -75.6055 KW. FINAL KWOUT IS -75.6055 KW
+Hour=2, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=ATTEMPTING TO CHARGE -386.096 KW WITH 5464.44 KWH REMAINING AND 7350 RATING.
+Hour=2, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.A TO DISPATCH -100 KW. FINAL KWOUT IS -100 KW
+Hour=2, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.B TO DISPATCH -130.155 KW. FINAL KWOUT IS -130.155 KW
+Hour=2, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.C TO DISPATCH -131.976 KW. FINAL KWOUT IS -131.976 KW
+Hour=2, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.D TO DISPATCH -131.369 KW. FINAL KWOUT IS -131.369 KW
+Hour=2, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.E TO DISPATCH -129.548 KW. FINAL KWOUT IS -129.548 KW
+Hour=2, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.F TO DISPATCH -130.155 KW. FINAL KWOUT IS -130.155 KW
+Hour=2, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.G TO DISPATCH -130.762 KW. FINAL KWOUT IS -130.762 KW
+Hour=3, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=ATTEMPTING TO CHARGE -284.58 KW WITH 4728.6 KWH REMAINING AND 7350 RATING.
+Hour=3, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.B TO DISPATCH -170.81 KW. FINAL KWOUT IS -170.81 KW
+Hour=3, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.C TO DISPATCH -172.63 KW. FINAL KWOUT IS -172.63 KW
+Hour=3, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.D TO DISPATCH -172.023 KW. FINAL KWOUT IS -172.023 KW
+Hour=3, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.E TO DISPATCH -150 KW. FINAL KWOUT IS -150 KW
+Hour=3, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.F TO DISPATCH -170.81 KW. FINAL KWOUT IS -170.81 KW
+Hour=3, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.G TO DISPATCH -171.416 KW. FINAL KWOUT IS -171.416 KW
+Hour=6, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=ATTEMPTING TO CHARGE 279.01 KW WITH 2090.5 KWH REMAINING AND 7350 RATING.
+Hour=6, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.B TO DISPATCH -130.951 KW. FINAL KWOUT IS -130.951 KW
+Hour=6, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.C TO DISPATCH -132.771 KW. FINAL KWOUT IS -132.771 KW
+Hour=6, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.D TO DISPATCH -132.165 KW. FINAL KWOUT IS -132.165 KW
+Hour=6, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.F TO DISPATCH -130.951 KW. FINAL KWOUT IS -130.951 KW
+Hour=6, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.G TO DISPATCH -131.558 KW. FINAL KWOUT IS -131.558 KW
+Hour=7, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=ATTEMPTING TO CHARGE 332.834 KW WITH 1547.77 KWH REMAINING AND 7350 RATING.
+Hour=7, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.B TO DISPATCH -83.4032 KW. FINAL KWOUT IS -83.4032 KW
+Hour=7, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.C TO DISPATCH -85.2236 KW. FINAL KWOUT IS -85.2236 KW
+Hour=7, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.D TO DISPATCH -84.6168 KW. FINAL KWOUT IS -84.6168 KW
+Hour=7, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.F TO DISPATCH -83.4032 KW. FINAL KWOUT IS -83.4032 KW
+Hour=7, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.G TO DISPATCH -84.01 KW. FINAL KWOUT IS -84.01 KW
+Hour=8, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=ATTEMPTING TO CHARGE 495.895 KW WITH 1222.91 KWH REMAINING AND 7350 RATING.
+Hour=8, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.B TO DISPATCH -12.5611 KW. FINAL KWOUT IS -12.5611 KW
+Hour=8, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.C TO DISPATCH -14.3815 KW. FINAL KWOUT IS -14.3815 KW
+Hour=8, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.D TO DISPATCH -13.7747 KW. FINAL KWOUT IS -13.7747 KW
+Hour=8, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.F TO DISPATCH -12.5611 KW. FINAL KWOUT IS -12.5611 KW
+Hour=8, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.G TO DISPATCH -13.1679 KW. FINAL KWOUT IS -13.1679 KW
+Hour=8, Sec=0, ControlIter=2, Element=StorageController2.sc, Action=ATTEMPTING TO CHARGE 98.9731 KW WITH 1222.91 KWH REMAINING AND 7350 RATING.
+Hour=8, Sec=0, ControlIter=2, Element=StorageController2.sc, Action=REQUESTING STORAGE2.B TO DISPATCH 1.57791 KW. SETTING STORAGE2.B TO IDLING STATE. FINAL KWOUT IS -2.42718 KW
+Hour=8, Sec=0, ControlIter=2, Element=StorageController2.sc, Action=REQUESTING STORAGE2.C TO DISPATCH -0.242479 KW. FINAL KWOUT IS -0.242479 KW
+Hour=8, Sec=0, ControlIter=2, Element=StorageController2.sc, Action=REQUESTING STORAGE2.D TO DISPATCH 0.364317 KW. SETTING STORAGE2.D TO IDLING STATE. FINAL KWOUT IS -3.64078 KW
+Hour=8, Sec=0, ControlIter=2, Element=StorageController2.sc, Action=REQUESTING STORAGE2.F TO DISPATCH 1.57791 KW. SETTING STORAGE2.F TO IDLING STATE. FINAL KWOUT IS -2.42718 KW
+Hour=8, Sec=0, ControlIter=2, Element=StorageController2.sc, Action=REQUESTING STORAGE2.G TO DISPATCH 0.971114 KW. SETTING STORAGE2.G TO IDLING STATE. FINAL KWOUT IS -3.03398 KW
+Hour=9, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=ATTEMPTING TO CHARGE 562.461 KW WITH 1226.57 KWH REMAINING AND 7350 RATING.
+Hour=18, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=ATTEMPTING TO DISPATCH 969.328 KW WITH 6123.43 KWH REMAINING AND 1470 KWH RESERVE.
+Hour=18, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.A TO DISPATCH 100 KW. FINAL KWOUT IS 100 KW
+Hour=18, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.B TO DISPATCH 136.048 KW. FINAL KWOUT IS 136.048 KW
+Hour=18, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.C TO DISPATCH 134.228 KW. FINAL KWOUT IS 134.228 KW
+Hour=18, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.D TO DISPATCH 134.835 KW. FINAL KWOUT IS 134.835 KW
+Hour=18, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.E TO DISPATCH 136.655 KW. FINAL KWOUT IS 136.655 KW
+Hour=18, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.F TO DISPATCH 136.048 KW. FINAL KWOUT IS 136.048 KW
+Hour=18, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.G TO DISPATCH 135.441 KW. FINAL KWOUT IS 135.441 KW
+Hour=19, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=ATTEMPTING TO DISPATCH 486.597 KW WITH 5036.62 KWH REMAINING AND 1470 KWH RESERVE.
+Hour=19, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.B TO DISPATCH 200 KW. FINAL KWOUT IS 200 KW
+Hour=19, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.C TO DISPATCH 203.742 KW. FINAL KWOUT IS 203.742 KW
+Hour=19, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.D TO DISPATCH 204.348 KW. FINAL KWOUT IS 204.348 KW
+Hour=19, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.E TO DISPATCH 150 KW. FINAL KWOUT IS 150 KW
+Hour=19, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.F TO DISPATCH 200 KW. FINAL KWOUT IS 200 KW
+Hour=19, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.G TO DISPATCH 204.955 KW. FINAL KWOUT IS 204.955 KW
+Hour=19, Sec=0, ControlIter=2, Element=StorageController2.sc, Action=ATTEMPTING TO DISPATCH 128.888 KW WITH 5036.62 KWH REMAINING AND 1470 KWH RESERVE.
+Hour=19, Sec=0, ControlIter=2, Element=StorageController2.sc, Action=REQUESTING STORAGE2.C TO DISPATCH 222.154 KW. FINAL KWOUT IS 222.154 KW
+Hour=19, Sec=0, ControlIter=2, Element=StorageController2.sc, Action=REQUESTING STORAGE2.D TO DISPATCH 222.761 KW. FINAL KWOUT IS 222.761 KW
+Hour=19, Sec=0, ControlIter=2, Element=StorageController2.sc, Action=REQUESTING STORAGE2.G TO DISPATCH 223.368 KW. FINAL KWOUT IS 223.368 KW
+Hour=20, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=ATTEMPTING TO DISPATCH -215.107 KW WITH 3499.6 KWH REMAINING AND 1470 KWH RESERVE.
+Hour=20, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.A TO DISPATCH 69.2704 KW. FINAL KWOUT IS 69.2704 KW
+Hour=20, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.B TO DISPATCH 169.27 KW. FINAL KWOUT IS 169.27 KW
+Hour=20, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.C TO DISPATCH 191.425 KW. FINAL KWOUT IS 191.425 KW
+Hour=20, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.D TO DISPATCH 192.031 KW. FINAL KWOUT IS 192.031 KW
+Hour=20, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.E TO DISPATCH 119.27 KW. FINAL KWOUT IS 119.27 KW
+Hour=20, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.F TO DISPATCH 169.27 KW. FINAL KWOUT IS 169.27 KW
+Hour=20, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.G TO DISPATCH 192.638 KW. FINAL KWOUT IS 192.638 KW
+Hour=21, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=ATTEMPTING TO DISPATCH -351.972 KW WITH 2269.71 KWH REMAINING AND 1470 KWH RESERVE.
+Hour=21, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.A TO DISPATCH 18.9887 KW. FINAL KWOUT IS 18.9887 KW
+Hour=21, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.B TO DISPATCH 118.989 KW. FINAL KWOUT IS 118.989 KW
+Hour=21, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.C TO DISPATCH 141.143 KW. FINAL KWOUT IS 141.143 KW
+Hour=21, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.D TO DISPATCH 141.75 KW. FINAL KWOUT IS 141.75 KW
+Hour=21, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.F TO DISPATCH 118.989 KW. FINAL KWOUT IS 118.989 KW
+Hour=21, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.G TO DISPATCH 142.357 KW. FINAL KWOUT IS 142.357 KW
+Hour=22, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=ATTEMPTING TO DISPATCH -303.621 KW WITH 1624.42 KWH REMAINING AND 1470 KWH RESERVE.
+Hour=22, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.A TO DISPATCH -24.3857 KW. SETTING STORAGE2.A TO IDLING STATE. FINAL KWOUT IS -1.21359 KW
+Hour=22, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.B TO DISPATCH 75.6143 KW. FINAL KWOUT IS 75.6143 KW
+Hour=22, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.F TO DISPATCH 75.6143 KW. FINAL KWOUT IS 75.6143 KW
+Hour=22, Sec=0, ControlIter=2, Element=StorageController2.sc, Action=ATTEMPTING TO DISPATCH -187 KW WITH 1624.42 KWH REMAINING AND 1470 KWH RESERVE.
+Hour=22, Sec=0, ControlIter=2, Element=StorageController2.sc, Action=REQUESTING STORAGE2.B TO DISPATCH 48.9 KW. FINAL KWOUT IS 48.9 KW
+Hour=22, Sec=0, ControlIter=2, Element=StorageController2.sc, Action=REQUESTING STORAGE2.F TO DISPATCH 48.9 KW. FINAL KWOUT IS 48.9 KW
+Hour=22, Sec=0, ControlIter=3, Element=StorageController2.sc, Action=ATTEMPTING TO DISPATCH -129.02 KW WITH 1624.42 KWH REMAINING AND 1470 KWH RESERVE.
+Hour=22, Sec=0, ControlIter=3, Element=StorageController2.sc, Action=REQUESTING STORAGE2.B TO DISPATCH 30.4685 KW. FINAL KWOUT IS 30.4685 KW
+Hour=22, Sec=0, ControlIter=3, Element=StorageController2.sc, Action=REQUESTING STORAGE2.F TO DISPATCH 30.4685 KW. FINAL KWOUT IS 30.4685 KW
+Hour=23, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=ATTEMPTING TO DISPATCH -1557.91 KW WITH 1543.78 KWH REMAINING AND 1470 KWH RESERVE.
+Hour=23, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.B TO DISPATCH -192.09 KW. SETTING STORAGE2.B TO IDLING STATE. FINAL KWOUT IS -2.42718 KW
+Hour=23, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.F TO DISPATCH -192.09 KW. SETTING STORAGE2.F TO IDLING STATE. FINAL KWOUT IS -2.42718 KW
+Hour=24, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=ATTEMPTING TO CHARGE -507.979 KW WITH 5806.22 KWH REMAINING AND 7350 RATING.
+Hour=24, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.A TO DISPATCH -73.782 KW. FINAL KWOUT IS -73.782 KW
+Hour=24, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.B TO DISPATCH -74.9956 KW. FINAL KWOUT IS -74.9956 KW
+Hour=24, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.C TO DISPATCH -76.816 KW. FINAL KWOUT IS -76.816 KW
+Hour=24, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.D TO DISPATCH -76.2092 KW. FINAL KWOUT IS -76.2092 KW
+Hour=24, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.E TO DISPATCH -74.3888 KW. FINAL KWOUT IS -74.3888 KW
+Hour=24, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.F TO DISPATCH -74.9956 KW. FINAL KWOUT IS -74.9956 KW
+Hour=24, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=REQUESTING STORAGE2.G TO DISPATCH -75.6024 KW. FINAL KWOUT IS -75.6024 KW

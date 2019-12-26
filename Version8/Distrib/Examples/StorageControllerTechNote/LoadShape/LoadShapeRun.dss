@@ -1,0 +1,59 @@
+!Compile Circuit and add loadshapes to all loads
+Redirect "C:\Program Files\OpenDSS\IEEETestCases\8500-Node\Master-unbal.dss" ! From IEEE 8500 Buses TestCase Folder
+BatchEdit CapControl..* enabled=False 
+BatchEdit RegControl..* enabled=False
+New Monitor.m1_PQ Line.ln5815900-1 terminal=1 mode=1 ppolar=No 
+New LoadShape.loads_loadshape interval=0 npts=24 csvfile=[LoadShape1.csv]
+BatchEdit Load..* daily=loads_loadshape
+
+! Inverter Efficiency Curve
+New XYCurve.Eff npts = 4 xarray = [.1  .2  .4  1.0] yarray = [.86  .9  .93  .97] 
+
+!Storage fleet 
+New Storage2.A phases=3 bus1=l3235258 kv=12.47 %idlingkW=1 
+~ kWhrated=500.0 %stored=70 kWrated=100.0 EffCurve=Eff vminpu=0.8 vmaxpu=1.2 
+New Storage2.B phases=3 bus1=m1069483 kv=12.47 %idlingkW=1
+~ kWhrated=1000.0 %stored=70 kWrated=200.0 EffCurve=Eff vminpu=0.8 vmaxpu=1.2 
+New Storage2.C  phases=3 bus1=p862322  kv=12.47 %idlingkW=1
+~ kWhrated=1650.0 %stored=70 kWrated=350.0 EffCurve=Eff vminpu=0.8 vmaxpu=1.2 
+New Storage2.D phases=3 bus1=m1047615 kv=12.47 %idlingkW=1
+~ kWhrated=1250.0 %stored=70 kWrated=300.0 EffCurve=Eff vminpu=0.8 vmaxpu=1.2 
+New Storage2.E phases=3 bus1=m1069556 kv=12.47 %idlingkW=1 
+~ kWhrated=500.0 %stored=70 kWrated=150.0 EffCurve=Eff vminpu=0.8 vmaxpu=1.2 
+New Storage2.F phases=3 bus1=l2688692 kv=12.47 %idlingkW=1
+~ kWhrated=1200.0 %stored=70 kWrated=200.0 EffCurve=Eff vminpu=0.8 vmaxpu=1.2 
+New Storage2.G phases=3 bus1=m1089131 kv=12.47 %idlingkW=1 
+~ kWhrated=1250.0 %stored=70 kWrated=250.0 EffCurve=Eff vminpu=0.8 vmaxpu=1.2 
+
+New Monitor.storage_A_states element=Storage2.A mode=3 
+New Monitor.storage_B_states element=Storage2.B mode=3 
+New Monitor.storage_C_states element=Storage2.C  mode=3 
+New Monitor.storage_D_states element=Storage2.D mode=3 
+New Monitor.storage_E_states element=Storage2.E mode=3 
+New Monitor.storage_F_states element=Storage2.F mode=3 
+New Monitor.storage_G_states element=Storage2.G mode=3 
+
+
+New LoadShape.SC_loadshape interval=1 npts=24 mult = [0, 0,-0.3,-0.45,-0.5,-0.45,-0.3,0,0,0,0,0,0,0,0,0.3,0.5,0.8,0.9,0.8,0.5,0.3,0,0]
+New StorageController2.SC element=Line.ln5815900-1 terminal=1 modedis=loadshape 
+~ daily=SC_loadshape %rateCharge=50 %reserve=20 
+~ eventlog=yes
+
+
+!Solution Settings
+Set maxcontroliter=50 
+Set mode=Daily 
+Set stepsize=1h 
+Set number=24
+
+Solve 
+
+Export monitors m1_pq
+Export Eventlog
+Export monitors storage_A_states
+Export monitors storage_B_states
+Export monitors storage_C_states
+Export monitors storage_D_states
+Export monitors storage_E_states
+Export monitors storage_F_states
+Export monitors storage_G_states

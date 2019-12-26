@@ -1,0 +1,27 @@
+! Storage Operation in Default Dispatch Mode
+Clear
+
+New Circuit.Source bus1=A basekv=0.48 phases=3 pu=1
+
+New LoadShape.dispatch_shape interval=1 npts=24
+~ mult = [0.380, 0.220, 0.247, 0.280, 0.313, 0.370, 0.589, 0.672, 0.7477, 0.832, 0.88, 0.94, 0.989 , 0.985, 0.98, 0.9898, 0.999, 1.0, 0.958, 0.936, 0.913, 0.800, 0.720, 0.610]
+
+! Inverter Efficiency Curve
+New XYCurve.Eff npts=4 xarray=[.1  .2  .4  1.0]  yarray=[.86  .9  .93  .97] 
+
+New Storage2.Storage1 phases=3 bus1=A kv=0.48  pf=1 kWrated=50 %reserve=20 
+~ effcurve=Eff kWhrated= 500 %stored=50 %idlingkW=2 state=idling 
+~ dispmode=default model=1 daily=dispatch_shape
+~ chargeTrigger = 0.34  dischargeTrigger = 0.85
+
+New Monitor.Mon_Storage1_State element=Storage2.Storage1 mode=3
+New Monitor.Mon_Storage1_Powers element=Storage2.Storage1 mode=1 ppolar=No
+
+Set voltagebases = [0.48]
+Calcvoltagebases
+
+Set mode=Daily
+Solve
+
+Plot Monitor object=Mon_Storage1_State channels=(1 2 3 4 7 8 9 10)
+Plot Monitor object=Mon_Storage1_Powers channels=(1 3 5)

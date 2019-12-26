@@ -1,0 +1,106 @@
+! Base Circuit with a Single Storage 
+Clear
+
+New Circuit.Source bus1=A basekv=13.8 phases=3 pu=1 Z0=[10, 10] Z1=[10, 10]
+
+! Inverter Efficiency Curve
+New XYCurve.Eff npts=4 xarray=[.1  .2  .4  1.0]  yarray=[.86  .9  .93  .97] 
+
+New Storage2.A phases=3 bus1=A kv=13.8
+~ %charge=100 %discharge=100 %reserve=20
+~ %effcharge=90 %effdischarge=90
+~ %idlingkW=2 
+~ kWhrated= 10000 %stored=80 state=idling
+~ dispmode=default model=1 kVA=1000 kWrated=900 kvarMax=800 %kWRated=100  
+~ EffCurve=Eff %cutin=5 %cutout=5 varfollowinverter=false wattpriority=True
+~ %PminkvarMax = 20 %PminNoVars = 10
+~ vminpu = 0.8 vmaxpu= 1.2
+ 
+New Monitor.Mon_StorageA_State element=Storage2.A mode=3
+New Monitor.Mon_StorageA_V element=Storage2.A mode=0
+
+Set voltagebases = [13.8]
+Calcvoltagebases
+
+! kWRated Violation Only
+New LoadShape.dispatchFollow interval=1 npts=24 mult = [0, -0.01, -0.08, -0.12, -0.16, -0.30, -0.85, -0.96, -1.05, -1.05, 0, 0, 0, 0, 0.01, 0.08, 0.12, 0.16, 0.30, 0.85, 0.96, 1.05, 0, 0]
+
+Edit Storage2.A dispmode=follow daily=dispatchFollow kvar=200
+
+! VW Curves
+! VW Curve for Discharging
+New XYCurve.vw_curve_dch npts=4 yarray=[1 1 0.0 0.0] xarray=[1 1.05 1.1 1.3]   
+! VW Curve for Charging
+New XYCurve.vw_curve_ch  npts=4 yarray=[0.0 0.0 1 1] xarray=[0.7 0.9  0.95 1] 
+
+New InvControl2.VoltWatt mode=VOLTWATT voltWatt_curve=vw_curve_dch 
+~ voltWattCH_curve=vw_curve_ch  
+
+! P Priority
+Set casename=Ppriority
+Edit Storage2.A wattpriority=true
+
+! Q Priority
+!Set casename=Qpriority
+!Edit Storage2.A wattpriority=false
+
+! PF Priority
+!Set casename=PFpriority
+!Edit Storage2.A PFpriority=true
+
+Set mode=Daily
+Set maxcontroliter=50
+Set stepsize=1h
+
+! 1 - 5am
+Edit VSource.source pu=1.02
+Set number=5
+Solve
+
+! 6am
+Edit VSource.source pu=0.94
+Set number=1
+Solve
+
+! 7am
+Edit VSource.source pu=0.95
+Solve
+
+! 8am
+Edit VSource.source pu=0.982
+Edit Storage2.A %kWRated=88
+Solve
+
+! 9am
+Edit VSource.source pu=1.0
+Edit Storage2.A %kWRated=100
+Solve
+
+! 10am - 7pm
+Edit VSource.source pu=1.02
+Set number=10
+Solve
+
+! 8pm
+Edit VSource.source pu=1.025
+Set number=1
+Solve
+
+! 9pm
+Edit VSource.source pu=0.98
+Edit Storage2.A %kWRated=88
+Solve
+
+! 10pm 
+Edit VSource.source pu=0.97
+Edit Storage2.A %kWRated=100
+Solve
+
+! 11pm - 12am 
+Edit VSource.source pu=1.02
+Set number=2
+Solve
+
+Export monitors Mon_StorageA_State
+Export monitors Mon_StorageA_V 
+Export eventlog

@@ -1,0 +1,52 @@
+! Storage Operation in External Mode
+Clear
+
+New Circuit.Source bus1=A basekv=0.48 phases=3 pu=1
+
+! Inverter Efficiency Curve
+New XYCurve.Eff npts=4 xarray=[.1  .2  .4  1.0]  yarray=[.86  .9  .93  .97]
+
+New Storage2.Storage1 phases=3 bus1=A kv=0.48  pf=1 kWrated=50 %reserve=20 
+~ effcurve=Eff kWhrated= 500 %stored=50 state=idling dispmode=External
+
+New Monitor.Mon_Storage1_State element=Storage2.Storage1 mode=3
+New Monitor.Mon_Storage1_Powers element=Storage2.Storage1 mode=1 ppolar=No
+
+Set voltagebases = [0.48]
+Calcvoltagebases
+
+Set mode=Daily
+Set stepsize=1h
+
+// Idles in the first two hours
+// 1am-2am
+Set number=2
+Solve
+
+// Charges for the next 5 hours with 80% of rated power
+// 3am-7am
+Edit Storage2.Storage1 state=charging  %charge=80 ! setting state directly
+Set number=5
+Solve
+
+// Idles for the next 10 hours
+// 8am-5pm
+Edit Storage2.Storage1 state=idling 
+Set number= 10
+Solve
+
+// Discharges for the next 5 hours with half of rated power
+// 6pm-10pm
+! setting state directly through kw (positive means discharging)
+Edit Storage2.Storage1 kW=25 
+Set number=5
+Solve
+
+// Idles for the last two hours
+// 11pm-12am
+Edit Storage2.Storage1 state=idling
+Set number= 2
+Solve
+
+Plot Monitor object=Mon_Storage1_State channels=(1 2 3 4 5 6 7)
+Plot Monitor object=Mon_Storage1_Powers channels=(1 3 5)

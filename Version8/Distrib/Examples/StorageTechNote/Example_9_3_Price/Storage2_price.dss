@@ -1,0 +1,27 @@
+! Storage Operation in Price Mode
+Clear
+
+New Circuit.Source bus1=A basekv=0.48 phases=3 pu=1
+
+New PriceShape.Price interval=1 npts=24
+~ price = [75, 68, 67, 69, 71, 75, 75, 80, 80,  80, 90, 90, 90 , 95, 95, 95, 105, 105, 110, 110, 110, 90, 90, 90]
+
+! Inverter Efficiency Curve
+New XYCurve.Eff npts=4 xarray=[.1  .2  .4  1.0]  yarray=[.86  .9  .93  .97] 
+
+New Storage2.Storage1 phases=3 bus1=A kv=0.48  pf=1 kWrated=50 %reserve=20
+~ kWhrated= 500 %stored=50 state=idling debugtrace=yes dispmode=price model=1 
+~ dischargeTrigger = 100 chargeTrigger= 74 
+
+New Monitor.Mon_Storage1_State element=Storage2.Storage1 mode=3
+New Monitor.Mon_Storage1_Powers element=Storage2.Storage1 mode=1 ppolar=No
+
+Set voltagebases = [0.48]
+Calcvoltagebases
+
+Set pricecurve=Price
+Set mode=Daily
+Solve
+
+Plot Monitor object=Mon_Storage1_State channels=(1 2 3 4 5 6 7)
+Plot Monitor object=Mon_Storage1_Powers channels=(1 3 5)
