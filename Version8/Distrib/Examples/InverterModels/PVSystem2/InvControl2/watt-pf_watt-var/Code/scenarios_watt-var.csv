@@ -1,0 +1,5 @@
+Scenario ID,OpenDSS file,kVA,P Priority,Q Priority,PF Priority,cutIn,PminNoVars,PminkvarLimit,kvar Max Abs,kvar Max
+1,C:\Users\ppra005\Box\Documents_PC\Projects\Inverter_watt_modes\dss\SnapShot_wattvar.dss,1200,no,no,no,0.001,-1,-1,300,300
+2,C:\Users\ppra005\Box\Documents_PC\Projects\Inverter_watt_modes\dss\SnapShot_wattvar.dss,1000,yes,no,no,0.001,-1,-1,400,300
+3,C:\Users\ppra005\Box\Documents_PC\Projects\Inverter_watt_modes\dss\SnapShot_wattvar.dss,1000,no,yes,no,0.001,-1,-1,400,300
+4,C:\Users\ppra005\Box\Documents_PC\Projects\Inverter_watt_modes\dss\SnapShot_wattvar.dss,1200,no,no,no,16.6,40,60,400,300

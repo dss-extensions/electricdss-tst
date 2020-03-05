@@ -1,0 +1,24 @@
+Clear
+
+New Circuit.TheveninEquivalente bus1=A pu=1.0 basekv=13.8 
+~ Z0=[10, 10] Z1=[10, 10]
+
+New XYCurve.Eff npts=4 xarray=[.1 .2 .4 1.0] yarray=[1 1 1 1]
+
+New XYCurve.FatorPvsT npts=4 xarray=[0 25 75 100] yarray=[1 1 1 1] 
+
+New PVSystem2.PV phases=3 bus1=A Pmpp=1000 kV=13.8 conn=wye EffCurve=Eff
+~ P-TCurve=FatorPvsT Temperature=25 
+
+New XYcurve.generic npts=4 yarray=[0.1 0.1 -1 -1] xarray=[0 0.25 0.75 1.0]
+
+New InvControl2.WattVar mode=WATTVAR wattvar_curve=generic refReactivepower=varmax
+
+Set voltagebases=[13.8]
+Calcvoltagebases
+
+Set maxcontroli=2000
+
+
+
+
