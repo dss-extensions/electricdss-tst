@@ -13,7 +13,7 @@ New Tshape.Temp npts=24 interval=1
 ~ temp=[25 25 25 25 25 25 25 25 35 40 45 50 60 60 55 40 35 30 25 25 25 25 25 25]
 
 New PVSystem.PV phases=3 bus1=A Pmpp=1000 kV=13.8 kVA=1005 conn=wye EffCurve=Eff 
-~ P-TCurve=FatorPvsT pctPmpp=100 irradiance=1 daily=Irrad Tdaily=Temp wattpriority=no
+~ P-TCurve=FatorPvsT %Pmpp=100 irradiance=1 daily=Irrad Tdaily=Temp wattpriority=no
 
 New XYcurve.vw_curve npts=3 yarray=[1 1 0] xarray=[1 1.08 1.1]
 New XYcurve.vv_curve npts=5 yarray=[1 1 0 -1 -1] xarray=[0.5 0.92 1.0 1.08 1.5]

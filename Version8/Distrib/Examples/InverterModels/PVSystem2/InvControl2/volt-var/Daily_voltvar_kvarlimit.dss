@@ -14,8 +14,8 @@ New Tshape.Temp npts=24 interval=1
 ~ temp=[25 25 25 25 25 25 25 25 35 40 45 50 60 60 55 40 35 30 25 25 25 25 25 25]
 
 New PVSystem.PV phases=3 bus1=A Pmpp=1000 kV=13.8 kVA=1200 conn=wye effcurve=Eff 
-~ P-TCurve=FatorPvsT pctPmpp=100 irradiance=1 daily=Irrad Tdaily=Temp  
-~ kvarlimit=300 
+~ P-TCurve=FatorPvsT %Pmpp=100 irradiance=1 daily=Irrad Tdaily=Temp  
+~ kvarmax=300 
 
 New XYcurve.generic npts=5 yarray=[1 1 0 -1 -1] xarray=[0.5 0.92 1.0 1.05 1.5]
 
@@ -42,6 +42,6 @@ Export monitors pv_powers
 Export monitors pv_v
 Export monitors pv_currents
 
-!Plot monitor object= pv_powers channels=(1 3 5 )
-!Plot monitor object= pv_powers channels=(2 4 6 )
-!Plot monitor object= pv_v channels=(6 )
+Plot monitor object= pv_powers channels=(1 3 5 )
+Plot monitor object= pv_powers channels=(2 4 6 )
+Plot monitor object= pv_v channels=(6 )

@@ -34,20 +34,20 @@ New Loadshape.Irrad npts=20 sinterval=1 csvfile=PV_irrad.csv
 New Tshape.Temp npts=24 interval=1 
 ~ temp=[25 25 25 25 25 25 25 25 35 40 45 50 60 60 55 40 35 30 25 25 25 25 25 25]
 
-New PVSystem2.PV phases=3 bus1=C Pmpp=2000 kV=0.48 kVA=2400 conn=wye EffCurve=Eff 
+New PVSystem.PV phases=3 bus1=C Pmpp=2000 kV=0.48 kVA=2400 conn=wye EffCurve=Eff 
 ~ P-TCurve=FatorPvsT %Pmpp=100 irradiance=1 daily=Irrad Tdaily=Temp   
 
 New XYcurve.generic npts=5 yarray=[1 1 0 -1 -1] xarray=[0.5 0.92 1.0 1.05 1.5]
 
-New InvControl2.VV_DRC CombiMode=VV_DRC voltage_curvex_ref=avg avgwindowlen=2s 
+New InvControl.VV_DRC CombiMode=VV_DRC voltage_curvex_ref=avg avgwindowlen=2s 
 ~ DbVMin=1 DbVMax=1 ArGraLowV=50 arGraHiV=50 DynReacavgwindowlen=2s
 ~ vvc_curve1=generic deltaQ_factor=0.1 RefReactivePower=VARMAX varchangetolerance=0.001
 ~ monVoltageCalc=MAX MonBus=[A.1.2 A.2 C.1.2 C.2] monBusesVbase=[13800 7967.433415 480 277.128129]
 
-New Monitor.PV_currents element=PVSystem2.PV terminal=1 mode=0
-New Monitor.PV_powers element=PVSystem2.PV terminal=1 mode=1 ppolar=no
-New Monitor.PV_s element=PVSystem2.PV terminal=1 mode=1 ppolar=yes
-New Monitor.PV_v element=PVSystem2.PV terminal=1 mode=3
+New Monitor.PV_currents element=PVSystem.PV terminal=1 mode=0
+New Monitor.PV_powers element=PVSystem.PV terminal=1 mode=1 ppolar=no
+New Monitor.PV_s element=PVSystem.PV terminal=1 mode=1 ppolar=yes
+New Monitor.PV_v element=PVSystem.PV terminal=1 mode=3
 
 Set voltagebases=[13.8 0.48]
 Calcvoltagebases

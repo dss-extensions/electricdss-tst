@@ -29,12 +29,12 @@ New XYCurve.Eff npts=4 xarray=[.1 .2 .4 1.0] yarray=[1 1 1 1]
 
 New XYCurve.FatorPvsT npts=4 xarray=[0 25 75 100] yarray=[1 1 1 1] 
 
-New PVSystem2.PV phases=3 bus1=C Pmpp=2000 kV=0.48 kVA=2400 conn=wye EffCurve=Eff 
+New PVSystem.PV phases=3 bus1=C Pmpp=2000 kV=0.48 kVA=2400 conn=wye EffCurve=Eff 
 ~ P-TCurve=FatorPvsT %Pmpp=100 Temperature=25 irradiance=1   
 
 New XYcurve.generic npts=5 yarray=[1 1 0 -1 -1] xarray=[0.5 0.92 1.0 1.05 1.5]
 
-New InvControl2.VoltVar mode=VOLTVAR voltage_curvex_ref=rated vvc_curve1=generic 
+New InvControl.VoltVar mode=VOLTVAR voltage_curvex_ref=rated vvc_curve1=generic 
 ~ deltaQ_factor=0.2 RefReactivePower=VARMAX varchangetolerance=0.0001
 ~ monVoltageCalc=AVG MonBus=[A.1.2 A.2 C.1.2 C.2] monBusesVbase=[13800 7967.433415 480 277.128129]
 

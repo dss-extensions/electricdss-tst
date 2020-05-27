@@ -13,17 +13,17 @@ New Loadshape.Irrad npts=24 interval=1
 New Tshape.Temp npts=24 interval=1 
 ~ temp=[25 25 25 25 25 25 25 25 35 40 45 50 60 60 55 40 35 30 25 25 25 25 25 25]
 
-New PVSystem2.PV phases=3 bus1=A Pmpp=1000 kV=13.8 kVA=1000 conn=wye EffCurve=Eff 
+New PVSystem.PV phases=3 bus1=A Pmpp=1000 kV=13.8 kVA=1000 conn=wye EffCurve=Eff 
 ~ P-TCurve=FatorPvsT %Pmpp=100 Temperature=25 irradiance=1  daily=Irrad Tdaily=Temp
 
 New XYcurve.generic npts=3 yarray=[1 1 0] xarray=[1 1.08 1.1]
 
-New InvControl2.VoltWatt mode=VOLTWATT voltage_curvex_ref=rated 
+New InvControl.VoltWatt mode=VOLTWATT voltage_curvex_ref=rated 
 ~ voltwatt_curve=generic VoltwattYAxis=PMPPPU DeltaP_factor=0.45 
 
-New Monitor.PV_currents element=PVSystem2.PV terminal=1 mode=0
-New Monitor.PV_powers element=PVSystem2.PV terminal=1 mode=1 ppolar=no
-New Monitor.PV_v element=PVSystem2.PV terminal=1 mode=3
+New Monitor.PV_currents element=PVSystem.PV terminal=1 mode=0
+New Monitor.PV_powers element=PVSystem.PV terminal=1 mode=1 ppolar=no
+New Monitor.PV_v element=PVSystem.PV terminal=1 mode=3
 
 Set voltagebases=[13.8]
 Calcvoltagebases

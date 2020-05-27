@@ -6,7 +6,7 @@ New Circuit.Source bus1=A basekv=13.8 phases=3 pu=1 Z0=[10, 10] Z1=[10, 10]
 ! Inverter Efficiency Curve
 New XYCurve.Eff npts=4 xarray=[.1  .2  .4  1.0]  yarray=[.86  .9  .93  .97] 
 
-New Storage2.A phases=3 bus1=A kv=13.8
+New Storage.A phases=3 bus1=A kv=13.8
 ~ %charge=100 %discharge=100 %reserve=20
 ~ %effcharge=90 %effdischarge=90
 ~ %idlingkW=2 
@@ -16,8 +16,8 @@ New Storage2.A phases=3 bus1=A kv=13.8
 ~ %PminkvarMax = 20 %PminNoVars = 10
 ~ vminpu = 0.8 vmaxpu= 1.2
  
-New Monitor.Mon_StorageA_State element=Storage2.A mode=3
-New Monitor.Mon_StorageA_V element=Storage2.A mode=0
+New Monitor.Mon_StorageA_State element=Storage.A mode=3
+New Monitor.Mon_StorageA_V element=Storage.A mode=0
 
 Set voltagebases = [13.8]
 Calcvoltagebases
@@ -25,22 +25,22 @@ Calcvoltagebases
 ! Reactive Power Violation (linear region, kvarMax, kVA)
 New LoadShape.dispatchFollow interval=(1 3600 /) npts=24 mult = [0, -0.01, -0.08, -0.12, -0.14, -0.16, -0.30, -0.50, -0.6, -0.8, -0.95, 0, 0.01, 0.08, 0.12, 0.14, 0.16, 0.30, 0.50, 0.6, 0.8, 0.95, 0, 0]
 
-Edit Storage2.A dispmode=follow daily=dispatchFollow %cutin=0 %cutout=0 %PminNoVars=0 kvarMaxAbs=600 %idlingkW=0
+Edit Storage.A dispmode=follow daily=dispatchFollow %cutin=0 %cutout=0 %PminNoVars=0 kvarMaxAbs=600 %idlingkW=0
 
 ! VV Curve
 New XYCurve.vv_curve npts=5 yarray=[1 1 0 -1 -1] xarray=[0.5 0.92 1.0 1.08 1.5]  
 
-New InvControl2.InvCtrl combiMode=VV_DRC dbVMin=1 dbVMax=1 arGraLowV=50  
+New InvControl.InvCtrl combiMode=VV_DRC dbVMin=1 dbVMax=1 arGraLowV=50  
 ~ arGraHiV=50 dynReacAvgWindowLen=2s refReactivePower=VARMAX vvc_curve1=vv_curve 
 ~ varChangeTolerance=0.001 
 
 ! P Priority
 Set casename=Ppriority
-Edit Storage2.A wattpriority=true
+Edit Storage.A wattpriority=true
 
 ! Q Priority
 !Set casename=Qpriority
-!Edit Storage2.A wattpriority=false
+!Edit Storage.A wattpriority=false
 
 Set mode=Daily
 Set maxcontroliter=50
