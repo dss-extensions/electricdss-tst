@@ -1,2 +1,0 @@
-Hour=2, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=FLEET SET TO CHARGING BY TIME TRIGGER
-Hour=17, Sec=0, ControlIter=1, Element=StorageController2.sc, Action=FLEET SET TO DISCHARGING BY TIME TRIGGER

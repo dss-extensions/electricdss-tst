@@ -10,32 +10,32 @@ BatchEdit Load..* daily=loads_loadshape
 New XYCurve.Eff npts = 4 xarray = [.1  .2  .4  1.0] yarray = [.86  .9  .93  .97] 
 
 !Storage fleet 
-New Storage2.A phases=3 bus1=l3235258 kv=12.47 %idlingkW=1 
+New Storage.A phases=3 bus1=l3235258 kv=12.47 %idlingkW=1 
 ~ kWhrated=500.0 %stored=70 kWrated=100.0 EffCurve=Eff vminpu=0.8 vmaxpu=1.2 
-New Storage2.B phases=3 bus1=m1069483 kv=12.47 %idlingkW=1
+New Storage.B phases=3 bus1=m1069483 kv=12.47 %idlingkW=1
 ~ kWhrated=1000.0 %stored=70 kWrated=200.0 EffCurve=Eff vminpu=0.8 vmaxpu=1.2 
-New Storage2.C  phases=3 bus1=p862322  kv=12.47 %idlingkW=1
+New Storage.C  phases=3 bus1=p862322  kv=12.47 %idlingkW=1
 ~ kWhrated=1650.0 %stored=70 kWrated=350.0 EffCurve=Eff vminpu=0.8 vmaxpu=1.2 
-New Storage2.D phases=3 bus1=m1047615 kv=12.47 %idlingkW=1
+New Storage.D phases=3 bus1=m1047615 kv=12.47 %idlingkW=1
 ~ kWhrated=1250.0 %stored=70 kWrated=300.0 EffCurve=Eff vminpu=0.8 vmaxpu=1.2 
-New Storage2.E phases=3 bus1=m1069556 kv=12.47 %idlingkW=1 
+New Storage.E phases=3 bus1=m1069556 kv=12.47 %idlingkW=1 
 ~ kWhrated=500.0 %stored=70 kWrated=150.0 EffCurve=Eff vminpu=0.8 vmaxpu=1.2 
-New Storage2.F phases=3 bus1=l2688692 kv=12.47 %idlingkW=1
+New Storage.F phases=3 bus1=l2688692 kv=12.47 %idlingkW=1
 ~ kWhrated=1200.0 %stored=70 kWrated=200.0 EffCurve=Eff vminpu=0.8 vmaxpu=1.2 
-New Storage2.G phases=3 bus1=m1089131 kv=12.47 %idlingkW=1 
+New Storage.G phases=3 bus1=m1089131 kv=12.47 %idlingkW=1 
 ~ kWhrated=1250.0 %stored=70 kWrated=250.0 EffCurve=Eff vminpu=0.8 vmaxpu=1.2 
 
-New Monitor.storage_A_states element=Storage2.A mode=3 
-New Monitor.storage_B_states element=Storage2.B mode=3 
-New Monitor.storage_C_states element=Storage2.C  mode=3 
-New Monitor.storage_D_states element=Storage2.D mode=3 
-New Monitor.storage_E_states element=Storage2.E mode=3 
-New Monitor.storage_F_states element=Storage2.F mode=3 
-New Monitor.storage_G_states element=Storage2.G mode=3 
+New Monitor.storage_A_states element=Storage.A mode=3 
+New Monitor.storage_B_states element=Storage.B mode=3 
+New Monitor.storage_C_states element=Storage.C  mode=3 
+New Monitor.storage_D_states element=Storage.D mode=3 
+New Monitor.storage_E_states element=Storage.E mode=3 
+New Monitor.storage_F_states element=Storage.F mode=3 
+New Monitor.storage_G_states element=Storage.G mode=3 
 
 
 New LoadShape.SC_loadshape interval=1 npts=24 mult = [0, 0,-0.3,-0.45,-0.5,-0.45,-0.3,0,0,0,0,0,0,0,0,0.3,0.5,0.8,0.9,0.8,0.5,0.3,0,0]
-New StorageController2.SC element=Line.ln5815900-1 terminal=1 modedis=loadshape 
+New StorageController.SC element=Line.ln5815900-1 terminal=1 modedis=loadshape 
 ~ daily=SC_loadshape %rateCharge=50 %reserve=20 
 ~ eventlog=yes
 
