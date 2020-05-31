@@ -9,12 +9,12 @@ New LoadShape.dispatch_shape interval=1 npts=24
 ! Inverter Efficiency Curve
 New XYCurve.Eff npts=4 xarray=[.1  .2  .4  1.0]  yarray=[.86  .9  .93  .97] 
 
-New Storage2.Storage1 phases=3 bus1=A kv=0.48  pf=1 kWrated=50 %reserve=20 
+New Storage.Storage1 phases=3 bus1=A kv=0.48  pf=1 kWrated=50 %reserve=20 
 ~ effcurve=Eff kWhrated= 500 %stored=50 state=idling 
 ~ dispmode=follow model=1 daily=dispatch_shape
 
-New Monitor.Mon_Storage1_State element=Storage2.Storage1 mode=3
-New Monitor.Mon_Storage1_Powers element=Storage2.Storage1 mode=1 ppolar=No
+New Monitor.Mon_Storage1_State element=Storage.Storage1 mode=3
+New Monitor.Mon_Storage1_Powers element=Storage.Storage1 mode=1 ppolar=No
 
 Set voltagebases = [0.48]
 Calcvoltagebases

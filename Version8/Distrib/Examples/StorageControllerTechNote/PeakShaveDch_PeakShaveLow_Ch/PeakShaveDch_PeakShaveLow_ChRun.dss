@@ -37,8 +37,8 @@ New Monitor.storage_G_states element=Storage.G mode=3
 batchedit Storage..* %stored=20
 
 New StorageController.SC element=Line.ln5815900-1 terminal=1 modedis=peakShave 
-~ kwtarget=10200 modecharge=peakShaveLow kwtargetLow=8500 %reserve=20 
-~ eventlog=yes
+~ MonPhase=AVG kwtarget=10200 modecharge=peakShaveLow kwtargetLow=8500  
+~ eventlog=yes %reserve=20
 
 
 !Solution Settings

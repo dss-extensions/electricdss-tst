@@ -6,11 +6,11 @@ New Circuit.Source bus1=A basekv=0.48 phases=3 pu=1
 ! Inverter Efficiency Curve
 New XYCurve.Eff npts=4 xarray=[.1  .2  .4  1.0]  yarray=[.86  .9  .93  .97]
 
-New Storage2.Storage1 phases=3 bus1=A kv=0.48  pf=1 kWrated=50 %reserve=20 
+New Storage.Storage1 phases=3 bus1=A kv=0.48  pf=1 kWrated=50 %reserve=20 
 ~ effcurve=Eff kWhrated= 500 %stored=50 state=idling dispmode=External
 
-New Monitor.Mon_Storage1_State element=Storage2.Storage1 mode=3
-New Monitor.Mon_Storage1_Powers element=Storage2.Storage1 mode=1 ppolar=No
+New Monitor.Mon_Storage1_State element=Storage.Storage1 mode=3
+New Monitor.Mon_Storage1_Powers element=Storage.Storage1 mode=1 ppolar=No
 
 Set voltagebases = [0.48]
 Calcvoltagebases
@@ -25,26 +25,26 @@ Solve
 
 // Charges for the next 5 hours with 80% of rated power
 // 3am-7am
-Edit Storage2.Storage1 state=charging  %charge=80 ! setting state directly
+Edit Storage.Storage1 state=charging  %charge=80 ! setting state directly
 Set number=5
 Solve
 
 // Idles for the next 10 hours
 // 8am-5pm
-Edit Storage2.Storage1 state=idling 
+Edit Storage.Storage1 state=idling 
 Set number= 10
 Solve
 
 // Discharges for the next 5 hours with half of rated power
 // 6pm-10pm
 ! setting state directly through kw (positive means discharging)
-Edit Storage2.Storage1 kW=25 
+Edit Storage.Storage1 kW=25 
 Set number=5
 Solve
 
 // Idles for the last two hours
 // 11pm-12am
-Edit Storage2.Storage1 state=idling
+Edit Storage.Storage1 state=idling
 Set number= 2
 Solve
 

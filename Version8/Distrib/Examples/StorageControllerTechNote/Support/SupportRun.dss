@@ -40,8 +40,8 @@ New Generator.G model=1 bus1=m1108295 kW=8000 daily=DGdispatch kV=12.47 vmaxpu=1
 New Monitor.Pmon element=Line.LN6351524-1 terminal=2 mode=1 ppolar=no
 
 New StorageController.SC element=Line.ln6351524-1 terminal=1 modedis=support 
-~ kwtarget=2000 modecharge=Time timeChargeTrigger=2 %rateCharge=50 %reserve=20 
-~ elementList=[F G] eventlog=yes
+~ kwtarget=2000 modecharge=Time timeChargeTrigger=2 %rateCharge=50 MonPhase=AVG
+~ elementList=[F G] %reserve=20 eventlog=yes
 
 Edit Storage.F kWrated=1500 kVA=1500 kWhrated=8500 %stored=70
 Edit Storage.G kWrated=500 kVA=500 kWhrated=3500 %stored=70

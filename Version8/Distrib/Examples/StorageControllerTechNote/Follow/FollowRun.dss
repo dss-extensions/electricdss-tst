@@ -34,7 +34,9 @@ New Monitor.storage_F_states element=Storage.F mode=3
 New Monitor.storage_G_states element=Storage.G mode=3 
 
 
-New StorageController.SC element=Line.ln5815900-1 terminal=1 modedis=follow modecharge=Time kwtarget=10200 timeDischargeTrigger=18 TimechargeTrigger=2 %rateCharge=50 %reserve=20 eventlog=yes
+New StorageController.SC element=Line.ln5815900-1 terminal=1 modedis=follow
+~ MonPhase=AVG kwtarget=10200 modecharge=Time TimechargeTrigger=2 %rateCharge=50 
+~ timeDischargeTrigger=18 %reserve=20 eventlog=yes
 
 
 !Solution Settings

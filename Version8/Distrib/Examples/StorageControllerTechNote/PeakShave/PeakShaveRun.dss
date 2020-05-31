@@ -35,8 +35,8 @@ New Monitor.storage_G_states element=Storage.G mode=3
 
 Set casename=Complete
 New StorageController.SC element=Line.ln5815900-1 terminal=1 modedis=peakShave 
-~ kwtarget=10200 modecharge=Time timeChargeTrigger=2 %rateCharge=50 %reserve=20 
-~ eventlog=yes
+~ MonPhase=AVG kwtarget=10200 modecharge=Time timeChargeTrigger=2 %rateCharge=50 
+~ %reserve=20 eventlog=yes
 
 /*
 set casename=NoPower
