@@ -42,20 +42,20 @@ class DSS(object):
 
         # self.dssText.Command = "set casename=scenario_" + str(self.row["Scenario ID"])
 
-        self.dssText.Command = "PVSystem2.PV.irradiance=" + str(irradiance)
-        self.dssText.Command = "PVSystem2.PV.kVA=" + str(self.row["kVA"])
-        self.dssText.Command = "PVSystem2.PV.PFPriority=" + str(self.row["PF Priority"])
-        self.dssText.Command = "PVSystem2.PV.wattPriority=" + str(self.row["P Priority"])
-        self.dssText.Command = "PVSystem2.PV.%cutIn=" + str(self.row["cutIn"])
-        self.dssText.Command = "PVSystem2.PV.%cutOut=" + str(self.row["cutIn"])
-        self.dssText.Command = "PVSystem2.PV.%PminNoVars=" + str(self.row["PminNoVars"])
-        self.dssText.Command = "PVSystem2.PV.%PminkvarMax=" + str(self.row["PminkvarLimit"])
-        self.dssText.Command = "PVSystem2.PV.kvarmax=" + str(self.row["kvar Max"])
-        self.dssText.Command = "PVSystem2.PV.kvarmaxabs=" + str(self.row["kvar Max Abs"])
+        self.dssText.Command = "PVSystem.PV.irradiance=" + str(irradiance)
+        self.dssText.Command = "PVSystem.PV.kVA=" + str(self.row["kVA"])
+        self.dssText.Command = "PVSystem.PV.PFPriority=" + str(self.row["PF Priority"])
+        self.dssText.Command = "PVSystem.PV.wattPriority=" + str(self.row["P Priority"])
+        self.dssText.Command = "PVSystem.PV.%cutIn=" + str(self.row["cutIn"])
+        self.dssText.Command = "PVSystem.PV.%cutOut=" + str(self.row["cutIn"])
+        self.dssText.Command = "PVSystem.PV.%PminNoVars=" + str(self.row["PminNoVars"])
+        self.dssText.Command = "PVSystem.PV.%PminkvarMax=" + str(self.row["PminkvarLimit"])
+        self.dssText.Command = "PVSystem.PV.kvarmax=" + str(self.row["kvar Max"])
+        self.dssText.Command = "PVSystem.PV.kvarmaxabs=" + str(self.row["kvar Max Abs"])
         self.dssObj.AllowForms = "false"
         self.dssText.Command = "Solve"
 
-        self.dssCircuit.SetActiveElement("PVSystem2.PV")
+        self.dssCircuit.SetActiveElement("PVSystem.PV")
 
         # self.voltage = self.dssCktElement.VoltagesMagAng[0] / 7967.433715
         self.activePower = self.dssCktElement.Powers[0]
