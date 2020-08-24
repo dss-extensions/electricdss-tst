@@ -30,7 +30,7 @@ DSSObj.Start(0)
 DNumActors = 6
 
 DSSText.Command='ClearAll'
-DSSText.Command='compile "C:/Temp/13Bus/IEEE13Nodeckt.dss"' 
+DSSText.Command='compile "C:/Program Files/OpenDSS/IEEETestCases/13Bus/IEEE13Nodeckt.dss"' 
 DSSText.Command='set maxiterations=1000 maxcontroliter=1000' 
 DSSSolution.Solve                       # Solves Actor 1
 DSSText.Command =   'Clone ' + str(DNumActors - 1)

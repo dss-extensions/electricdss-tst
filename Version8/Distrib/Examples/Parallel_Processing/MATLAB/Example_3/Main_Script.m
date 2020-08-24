@@ -1,4 +1,5 @@
 % This example works with OpenDSS version 8.5.4.1 and later
+clear;
 clc;
 [DSSStartOK, DSSObj, DSSText] = DSSStartup;
 DSSCircuit      =   DSSObj.ActiveCircuit;
