@@ -67,5 +67,4 @@ xlabel('Candidate (bus) #');
 ylabel('voltage at PCC');
 legend({'Phase A','Phase B','Phase C'},'Location','southwest')
 
-
  
