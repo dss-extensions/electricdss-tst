@@ -103,3 +103,26 @@ New Wiredata.PIPE1500 GMR=0.0455000 DIAM=1.412000  RAC=0.0500000     NormAmps=0.
 New Wiredata.CU16     GMR=0.0018690 DIAM=0.0576000 RAC=21.60000      NormAmps=14.00000           Runits=mi radunits=in gmrunits=ft
 New Wiredata.CU2000   GMR=0.0528800 DIAM=1.631990  RAC=0.0205500     NormAmps=2600.000           Runits=mi radunits=in gmrunits=ft
 New Wiredata.Mess1    GMR=0.55      DIAM=1.374     RAC=0.474         Normamps=100                Runits=km radunits=cm gmrunits=cm
+
+! ********** Bundled Conductors
+!  Define equivalent GMR for inductance calcs and equivalent radius for capacitance calcs
+!  Formulae may be found in EPRI Red book or various power engineering text books.
+
+! *** 2-conductor Bundles for 345 kV
+! 2-conductor bundle of 1272 ACSR at 1.5 ft spacing
+New Wiredata.Pheasant345 GMR=0.264386 DIAM=1.5     Rac=0.03755       Normamps=2400     caprad=[1.382000 12 / 2 / 1.5 * sqrt ]      Runits=mi Radunits=ft GMRUnits=ft   !1272 MCM
+
+! 2-conductor bundle of 954 ACSR at 1.5 ft spacing
+New Wiredata.Cardinal345 GMR=[2.0 .0403000 * .75  * sqrt]   DIAM=1.5     Rac=[0.1128000 2 /]       Normamps=2020     caprad=0.2734      Runits=mi Radunits=ft GMRUnits=ft   !954 MCM
+! New Wiredata.ACSR954  GMR=0.0403000 DIAM=1.196000  RAC=0.1128000     NormAmps=1010.000           Runits=mi radunits=in gmrunits=ft
+
+! *** 3-conductor Bundles for 500 kV
+! GMRb = [3 GMRc (bundle rad)^2]^.33333
+! 3-conductor bundle of 954 ACSR at 1.5 ft spacing
+New Wiredata.Cardinal500 GMR=[3.0 .0403000  * 10.25 12 / sqr * .33333 ^]  DIAM=[20.5 12 /]     Rac=[0.1128000 3 /]        Normamps=3030     caprad=0.482207747  Runits=mi Radunits=ft GMRUnits=ft   !954 MCM
+
+! *** 4-conductor Bundles for 765 kV
+! GMRb = [4 GMRc (bundle rad)^3]^.25
+! 4-conductor bundle of 954 ACSR at 1.5 ft spacing, 25.5 in diam
+New Wiredata.Cardinal765 GMR=[4.0 .0403000 * 12.25 12 / 3 ^ * .250 ^]    DIAM=[25.5 12 /]     Rac=[0.1128000 4 /]        Normamps=4040     caprad=0.619588      Runits=mi Radunits=ft GMRUnits=ft   !954 MCM
+
