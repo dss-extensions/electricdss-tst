@@ -19,46 +19,46 @@ new relay.21rev like=21src monitoredterm=2 switchedterm=2 delay=0.01 recloseinte
 // Zone 1 temporary faults are cleared by the feeder relays
 // Zone 2 temporary faults are cleared by the overreaching source relay
 //   The tested fault types are SLGFa, LLFbc and 3-phase to ground
-new line.slgf_21_z1_1 bus1=mvbus          bus2=slgf_21_z1_flt linecode=kex41 len=1.2 units=mi
-new line.slgf_21_z1_2 bus1=slgf_21_z1_flt bus2=slgf_21_z1_end linecode=kex41 len=0.8 units=mi
-new fault.slgf_21_z1  bus1=slgf_21_z1_flt.1 phases=1 ontime=0.020 r=0.100 temporary=yes
+new line.slgf_z1_1 bus1=mvbus          bus2=slgf_z1_flt linecode=kex41 len=1.2 units=mi
+new line.slgf_z1_2 bus1=slgf_z1_flt bus2=slgf_z1_end linecode=kex41 len=0.8 units=mi
+new fault.slgf_z1  bus1=slgf_z1_flt.1 phases=1 ontime=0.020 r=0.100 temporary=yes
 // these are the shared settings for feeder zone 1 relays
-new relay.slgf_21_z1  like=21src monitoredobj=line.slgf_21_z1_1 delay=0.01 Mphase=1.4 Mground=1.4 recloseintervals=None
-new line.slgf_21_z2_1 bus1=mvbus          bus2=slgf_21_z2_flt linecode=kex41 len=1.6 units=mi
-new line.slgf_21_z2_2 bus1=slgf_21_z2_flt bus2=slgf_21_z2_end linecode=kex41 len=0.4 units=mi
-new fault.slgf_21_z2  bus1=slgf_21_z2_flt.1 phases=1 ontime=0.520 r=0.100 temporary=yes
-new relay.slgf_21_z2  like=slgf_21_z1 monitoredobj=line.slgf_21_z2_1
+new relay.slgf_z1  like=21src monitoredobj=line.slgf_z1_1 delay=0.01 Mphase=1.4 Mground=1.4 recloseintervals=None
+new line.slgf_z2_1 bus1=mvbus          bus2=slgf_z2_flt linecode=kex41 len=1.6 units=mi
+new line.slgf_z2_2 bus1=slgf_z2_flt bus2=slgf_z2_end linecode=kex41 len=0.4 units=mi
+new fault.slgf_z2  bus1=slgf_z2_flt.1 phases=1 ontime=0.520 r=0.100 temporary=yes
+new relay.slgf_z2  like=slgf_z1 monitoredobj=line.slgf_z2_1
 
-new line.llf_21_z1_1  bus1=mvbus          bus2=llf_21_z1_flt  linecode=kex41 len=1.2 units=mi
-new line.llf_21_z1_2  bus1=llf_21_z1_flt  bus2=llf_21_z1_end  linecode=kex41 len=0.8 units=mi
-new fault.llf_21_z1  bus1=llf_21_z1_flt.2.3 phases=2 ontime=0.120 r=0.001 temporary=yes
-new relay.llf_21_z1   like=slgf_21_z1 monitoredobj=line.llf_21_z1_1
-new line.llf_21_z2_1  bus1=mvbus          bus2=llf_21_z2_flt  linecode=kex41 len=1.6 units=mi
-new line.llf_21_z2_2  bus1=llf_21_z2_flt  bus2=llf_21_z2_end  linecode=kex41 len=0.4 units=mi
-new fault.llf_21_z2  bus1=llf_21_z2_flt.2.3 phases=2 ontime=0.620 r=0.001 temporary=yes
-new relay.llf_21_z2   like=slgf_21_z1 monitoredobj=line.llf_21_z2_1
+new line.llf_z1_1  bus1=mvbus          bus2=llf_z1_flt  linecode=kex41 len=1.2 units=mi
+new line.llf_z1_2  bus1=llf_z1_flt  bus2=llf_z1_end  linecode=kex41 len=0.8 units=mi
+new fault.llf_z1   bus1=llf_z1_flt.2.3 phases=2 ontime=0.120 r=0.001 temporary=yes
+new relay.llf_z1   like=slgf_z1 monitoredobj=line.llf_z1_1
+new line.llf_z2_1  bus1=mvbus          bus2=llf_z2_flt  linecode=kex41 len=1.6 units=mi
+new line.llf_z2_2  bus1=llf_z2_flt  bus2=llf_z2_end  linecode=kex41 len=0.4 units=mi
+new fault.llf_z2   bus1=llf_z2_flt.2.3 phases=2 ontime=0.620 r=0.001 temporary=yes
+new relay.llf_z2   like=slgf_z1 monitoredobj=line.llf_z2_1
 
-new line.3pf_21_z1_1  bus1=mvbus          bus2=3pf_21_z1_flt  linecode=kex41 len=1.2 units=mi
-new line.3pf_21_z1_2  bus1=3pf_21_z1_flt  bus2=3pf_21_z1_end  linecode=kex41 len=0.8 units=mi
-new fault.3pf_21_z1  bus1=3pf_21_z1_flt.1.2.3 phases=3 ontime=0.220 r=0.001 temporary=yes
-new relay.3pf_21_z1   like=slgf_21_z1 monitoredobj=line.3pf_21_z1_1
-new line.3pf_21_z2_1  bus1=mvbus          bus2=3pf_21_z2_flt  linecode=kex41 len=1.6 units=mi
-new line.3pf_21_z2_2  bus1=3pf_21_z2_flt  bus2=3pf_21_z2_end  linecode=kex41 len=0.4 units=mi
-new fault.3pf_21_z2  bus1=3pf_21_z2_flt.1.2.3 phases=3 ontime=0.720 r=0.001 temporary=yes
-new relay.3pf_21_z2   like=slgf_21_z1 monitoredobj=line.3pf_21_z2_1
+new line.3pf_z1_1  bus1=mvbus          bus2=3pf_z1_flt  linecode=kex41 len=1.2 units=mi
+new line.3pf_z1_2  bus1=3pf_z1_flt  bus2=3pf_z1_end  linecode=kex41 len=0.8 units=mi
+new fault.3pf_z1   bus1=3pf_z1_flt.1.2.3 phases=3 ontime=0.220 r=0.001 temporary=yes
+new relay.3pf_z1   like=slgf_z1 monitoredobj=line.3pf_z1_1
+new line.3pf_z2_1  bus1=mvbus          bus2=3pf_z2_flt  linecode=kex41 len=1.6 units=mi
+new line.3pf_z2_2  bus1=3pf_z2_flt  bus2=3pf_z2_end  linecode=kex41 len=0.4 units=mi
+new fault.3pf_z2   bus1=3pf_z2_flt.1.2.3 phases=3 ontime=0.720 r=0.001 temporary=yes
+new relay.3pf_z2   like=slgf_z1 monitoredobj=line.3pf_z2_1
 
 // This permanent fault is outside the source relay zone, so its own feeder relay should clear it
 new line.perm   bus1=mvbus  bus2=perm_flt  linecode=kex41 len=3.0 units=mi
 new fault.perm  bus1=perm_flt.1.2.3 phases=3 ontime=1.00 r=0.001 temporary=no
-new relay.perm  like=slgf_21_z1 monitoredobj=line.perm recloseintervals=[0.04 0.04 0.04] Mphase=3.5 Mground=3.5
+new relay.perm  like=slgf_z1 monitoredobj=line.perm recloseintervals=[0.04 0.04 0.04] Mphase=3.5 Mground=3.5
 
-new monitor.slgf_21_z1 element=fault.slgf_21_z1 mode=32
+new monitor.slgf_z1 element=fault.slgf_z1 mode=32
 new monitor.thev element=line.thev mode=32
 
 solve
 //solve mode=faultstudy
 solve mode=dynamic controlmode=time time=(0,0) stepsize=0.01 number=120
-//plot type=monitor object=slgf_21_z1 channels=[1,2]
+//plot type=monitor object=slgf_z1 channels=[1,2]
 show eventlog
 plot type=monitor object=thev channels=[4,5,6]
 
