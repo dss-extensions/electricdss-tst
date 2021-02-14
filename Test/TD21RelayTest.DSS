@@ -1,0 +1,69 @@
+clear
+new circuit.rly21test basekV=12.47 phases=3 pu=1.0 bus1=src
+// ~ shots=3 recloseintervals=(2.0, 2.0)
+
+// typical data from Kersting example 4.1
+// Z1MAG=0.6977 Z1ANG=63.98 Z0MAG=2.0860 Z0ANG=68.23
+new linecode.kex41 r1=0.3061 x1=0.6270 r0=0.7735 x0=1.9373 c1=0 c0=0 units=mi
+
+new line.thev         bus1=src            bus2=mvbus          linecode=kex41 len=0.5 units=mi
+// These are the shared impedance per mile settings. An overreaching relay with many reclosings.
+new relay.21src type=td21 monitoredobj=line.thev monitoredterm=1 switchedterm=1 delay=0.03
+~ Z1MAG=0.6977 Z1ANG=63.98 Z0MAG=2.0860 Z0ANG=68.23 Mphase=0.05 Mground=0.05
+~ reset=0.20 recloseintervals=[0.02,0.02,0.02] debugtrace=no
+
+// A reverse-looking relay at the source line's receiving end, to test directionality
+// Set to monitoredterm=2, it looks reverse and should not trip.  Set to 1, it should trip.
+new relay.21rev like=21src monitoredterm=2 switchedterm=2 delay=0.01 recloseintervals=None
+
+// Zone 1 temporary faults are cleared by the feeder relays
+// Zone 2 temporary faults are cleared by the overreaching source relay
+//   The tested fault types are SLGFa, LLFbc and 3-phase to ground
+new line.slgf_z1_1 bus1=mvbus          bus2=slgf_z1_flt linecode=kex41 len=1.2 units=mi
+new line.slgf_z1_2 bus1=slgf_z1_flt bus2=slgf_z1_end linecode=kex41 len=0.8 units=mi
+new fault.slgf_z1  bus1=slgf_z1_flt.1 phases=1 ontime=0.020 r=0.001 temporary=yes
+// these are the shared settings for feeder zone 1 relays
+new relay.slgf_z1  like=21src monitoredobj=line.slgf_z1_1 delay=0.01 Mphase=0.7 Mground=0.7 recloseintervals=None debugtrace=no
+
+new line.slgf_z2_1 bus1=mvbus          bus2=slgf_z2_flt linecode=kex41 len=1.6 units=mi
+new line.slgf_z2_2 bus1=slgf_z2_flt bus2=slgf_z2_end linecode=kex41 len=0.4 units=mi
+new fault.slgf_z2  bus1=slgf_z2_flt.1 phases=1 ontime=0.520 r=0.001 temporary=yes
+new relay.slgf_z2  like=slgf_z1 monitoredobj=line.slgf_z2_1
+
+new line.llf_z1_1  bus1=mvbus          bus2=llf_z1_flt  linecode=kex41 len=1.2 units=mi
+new line.llf_z1_2  bus1=llf_z1_flt  bus2=llf_z1_end  linecode=kex41 len=0.8 units=mi
+new fault.llf_z1   bus1=llf_z1_flt.2.3 phases=2 ontime=0.120 r=0.001 temporary=yes
+new relay.llf_z1   like=slgf_z1 monitoredobj=line.llf_z1_1
+
+new line.llf_z2_1  bus1=mvbus          bus2=llf_z2_flt  linecode=kex41 len=1.6 units=mi
+new line.llf_z2_2  bus1=llf_z2_flt  bus2=llf_z2_end  linecode=kex41 len=0.4 units=mi
+new fault.llf_z2   bus1=llf_z2_flt.2.3 phases=2 ontime=0.620 r=0.001 temporary=yes
+new relay.llf_z2   like=slgf_z1 monitoredobj=line.llf_z2_1
+
+new line.3pf_z1_1  bus1=mvbus          bus2=3pf_z1_flt  linecode=kex41 len=1.2 units=mi
+new line.3pf_z1_2  bus1=3pf_z1_flt  bus2=3pf_z1_end  linecode=kex41 len=0.8 units=mi
+new fault.3pf_z1   bus1=3pf_z1_flt.1.2.3 phases=3 ontime=0.220 r=0.001 temporary=yes
+new relay.3pf_z1   like=slgf_z1 monitoredobj=line.3pf_z1_1 debugtrace=yes
+
+new line.3pf_z2_1  bus1=mvbus          bus2=3pf_z2_flt  linecode=kex41 len=1.6 units=mi
+new line.3pf_z2_2  bus1=3pf_z2_flt  bus2=3pf_z2_end  linecode=kex41 len=0.4 units=mi
+new fault.3pf_z2   bus1=3pf_z2_flt.1.2.3 phases=3 ontime=0.720 r=0.001 temporary=yes
+new relay.3pf_z2   like=slgf_z1 monitoredobj=line.3pf_z2_1 debugtrace=yes
+
+// This permanent fault is outside the source relay zone, so its own feeder relay should clear it
+new line.perm   bus1=mvbus  bus2=perm_flt  linecode=kex41 len=3.0 units=mi
+new fault.perm  bus1=perm_flt.1.2.3 phases=3 ontime=1.00 r=0.001 temporary=no
+new relay.perm type=td21 monitoredobj=line.perm monitoredterm=1 switchedterm=1 delay=0.01
+~ Z1MAG=0.6977 Z1ANG=63.98 Z0MAG=2.0860 Z0ANG=68.23 Mphase=1.0 Mground=1.0
+~ reset=0.20 recloseintervals=[0.04 0.04 0.04] debugtrace=no
+
+//new monitor.slgf_z1 element=fault.slgf_z1 mode=32
+new monitor.thev element=line.thev mode=32
+
+solve
+//solve mode=faultstudy
+solve mode=dynamic controlmode=time time=(0,0) stepsize=0.001 number=1200
+//plot type=monitor object=slgf_z1 channels=[1,2]
+show eventlog
+plot type=monitor object=thev channels=[4,5,6]
+
