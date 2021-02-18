@@ -4,8 +4,8 @@ new circuit.HWPLL3
 ~ basekv=4.16 pu=1.0 angle=0 phases=3 bus1=SourceBus r1=0.029 x1=0.058 r0=0.014 x0=0.029
 
 New XYcurve.z_pll npts=3
-~ xarray=[ 1.0000 -1.9852  0.9853] // denominator
-~ yarray=[ 0.0000  0.0148 -0.0147] // numerator
+~ xarray=[ 1.0000 -1.98515  0.98531] // denominator
+~ yarray=[ 0.0000  0.01485 -0.01469] // numerator
 
 New vccs.pv Phases=3 Bus1=SourceBus Prated=375e3 Vrated=4160 Ppct=100 
 ~ filter='z_pll' fsample=10000 rmsmode=true imaxpu=1.15
@@ -26,8 +26,8 @@ set mode=snap
 solve 
 
 set mode=dynamic
-set stepsize=0.0001 // 0.0001 matches fsample
-set number=2500     // 2500 matches fsample
+set stepsize=0.001 // 0.0001 matches fsample
+set number=250     // 2500 matches fsample
 Solve
 
 plot type=monitor obj=invvi channels=[1 3 5 7 9 11] bases=[2400 2400 2400 52.083 52.083 52.083]

@@ -15,3 +15,6 @@ set maxiterations=100
 calcv
 Solve
 
+// test shutoff in snapshot mode
+//open vccs.pv1
+//solve
