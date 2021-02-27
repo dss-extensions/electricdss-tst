@@ -73,7 +73,7 @@ New vccs.pv Phases=3 Bus1=Bg Prated=1700e3 Vrated=360 Ppct=100
 ~ filter='z_pll' fsample=10000 rmsmode=true imaxpu=1.15
 ~ vrmstau=0.01 irmstau=0.05
 new Relay.LV monitoredobj=vccs.pv type=voltage kvbase=0.36 switchedobj=vccs.pv
-~ overvoltcurve=ov1547 undervoltcurve=uv1547 shots=1 delay=0.0 // delay=0.050
+~ overvoltcurve=ov1547 undervoltcurve=uv1547 shots=1 delay=0.0
 
 // New load.stabilize bus1=B2 kw=100 pf=1 kv=12.47 model=2
 
@@ -86,6 +86,7 @@ new Relay.LV monitoredobj=vccs.pv type=voltage kvbase=0.36 switchedobj=vccs.pv
 new monitor.invvi element=vccs.pv terminal=1 mode=0
 new monitor.invpq element=vccs.pv terminal=1 mode=1
 new monitor.invst element=vccs.pv terminal=1 mode=3
+new monitor.invseq element=vccs.pv terminal=1 mode=16
 
 /////////////////////////////////////////////////////////////////////////
 
@@ -135,6 +136,8 @@ plot type=monitor obj=b channels=[1 2 3 5 6 7] bases=[7200 7200 7200 78.704 78.7
 //plot type=monitor obj=invvi channels=[1 3 5 7 9 11] bases=[208 208 208 2727.4 2727.4 2727.4]
 //plot type=monitor obj=invpq channels=[1 3 5] bases=[567.33 567.33 567.33]
 plot type=monitor obj=invst channels=[1 2 3 4]
+plot type=monitor obj=invseq channels=[1 3 5] bases=[208 208 208]
+plot type=monitor obj=invseq channels=[7 9 11] bases=[2727.4 2727.4 2727.4]
 
 //export monitors invst1
 //export monitors lv
