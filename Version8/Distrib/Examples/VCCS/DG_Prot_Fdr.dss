@@ -55,14 +55,27 @@ new Line.Lb bus1=B2 bus2=Lat2 geometry=Lateral units=kft length=105.6
 // DG interconnection transformer and a conventional machine
 new Transformer.Tg phases=3 windings=2 buses=(Bt Bg) conns=(Wye Wye) 
 ~ kvs='12.47 0.36' kvas='1700 1700' taps='1 1' XHL=5
-new Vsource.WindGen1 bus1=Bg basekv=0.36 pu=1.0 angle=-60.0 
-~ X1=0.0127 R1=0.0 X0=100.0 R0=0.0
+//new Vsource.WindGen1 bus1=Bg basekv=0.36 pu=1.0 angle=-48.5 
+//~ X1=0.0127 R1=0.0 X0=100.0 R0=0.0
 
-redirect HW_Inverters.txt
+//redirect HW_Inverters.dat
 //New vccs.pv1 Phases=1 Bus1=Bg.1 Prated=567e3 Vrated=208 Ppct=100 
 //~ bp1='bp1_1phase' bp2='bp2_1phase' filter='z_1phase' fsample=10000
 //New vccs.pv2 Phases=1 Bus1=Bg.2 like=pv1
 //New vccs.pv3 Phases=1 Bus1=Bg.3 like=pv1
+//new Relay.LV monitoredobj=vccs.pv1 type=voltage kvbase=0.208 switchedobj=vccs.pv1
+//~ overvoltcurve=ov1547 undervoltcurve=uv1547 shots=1 delay=0.0 // delay=0.050
+
+New XYcurve.z_pll npts=3
+~ xarray=[ 1.0000 -1.9852  0.9853] // denominator
+~ yarray=[ 0.0000  0.0148 -0.0147] // numerator
+New vccs.pv Phases=3 Bus1=Bg Prated=1700e3 Vrated=360 Ppct=100 
+~ filter='z_pll' fsample=10000 rmsmode=true imaxpu=1.15
+~ vrmstau=0.01 irmstau=0.05
+new Relay.LV monitoredobj=vccs.pv type=voltage kvbase=0.36 switchedobj=vccs.pv
+~ overvoltcurve=ov1547 undervoltcurve=uv1547 shots=1 delay=0.0
+
+// New load.stabilize bus1=B2 kw=100 pf=1 kv=12.47 model=2
 
 // Inverter Model Monitors
 //new monitor.invst1 element=vccs.pv1 terminal=1 mode=3
@@ -70,6 +83,10 @@ redirect HW_Inverters.txt
 //new monitor.invst3 element=vccs.pv3 terminal=1 mode=3
 //new monitor.invvi element=vccs.pv1 terminal=1 mode=0
 //new monitor.invpq element=vccs.pv1 terminal=1 mode=1
+new monitor.invvi element=vccs.pv terminal=1 mode=0
+new monitor.invpq element=vccs.pv terminal=1 mode=1
+new monitor.invst element=vccs.pv terminal=1 mode=3
+new monitor.invseq element=vccs.pv terminal=1 mode=16
 
 /////////////////////////////////////////////////////////////////////////
 
@@ -94,26 +111,34 @@ new Recloser.B monitoredobj=Line.L4 monitoredterm=1 switchedobj=Line.L4 switched
 new Fuse.F1 monitoredobj=Line.La monitoredterm=1 fusecurve=Klink ratedcurrent=40
 new Fuse.F2 monitoredobj=Line.Lb monitoredterm=1 fusecurve=Klink ratedcurrent=40
 
-new Relay.LV monitoredobj=Transformer.Tg monitoredterm=2 type=voltage kvbase=0.6 switchedobj=Transformer.Tg switchedterm=2 
-~ overvoltcurve=ov1547 undervoltcurve=uv1547 shots=1 delay=0.0 // delay=0.050
-
 // comment these out if you want the fault to be cleared
 edit Recloser.A enabled=no
 edit Recloser.B enabled=no
 edit Recloser.D enabled=no
 edit Fuse.F1 enabled=no
 edit Fuse.F2 enabled=no
-edit Relay.LV enabled=no
+edit Relay.LV enabled=yes  // will not see ground faults, but should shut off during phase faults
 
 set voltagebases=(0.36 12.47 34.5)
 calcv
 
 new Fault.Flt bus1=Bm.1 phases=1 r=0.0001 ontime=0.2 temporary=yes
-//new Fault.Flt bus1=Bm phases=3 r=0.0001 ontime=0.0 temporary=yes
+//new Fault.Flt bus1=Bm phases=3 r=0.0001 ontime=0.2 temporary=yes
 
 // comment out the next two lines if solving in Matlab
 set mode=dynamic controlmode=time time=(0,0) stepsize=0.0001 number=9600
 solve
+
+//plot type=monitor obj=b channels=[1 2 3] bases=[7200 7200 7200]
+//plot type=monitor obj=b channels=[5 6 7] bases=[78.704 78.704 78.704]
+plot type=monitor obj=b channels=[1 2 3 5 6 7] bases=[7200 7200 7200 78.704 78.704 78.704]
+
+//plot type=monitor obj=invvi channels=[1 3 5 7 9 11] bases=[208 208 208 2727.4 2727.4 2727.4]
+//plot type=monitor obj=invpq channels=[1 3 5] bases=[567.33 567.33 567.33]
+plot type=monitor obj=invst channels=[1 2 3 4]
+plot type=monitor obj=invseq channels=[1 3 5] bases=[208 208 208]
+plot type=monitor obj=invseq channels=[7 9 11] bases=[2727.4 2727.4 2727.4]
+
 //export monitors invst1
 //export monitors lv
 //export monitors a
