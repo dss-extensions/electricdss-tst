@@ -24,9 +24,6 @@ New Loadshape.LS_PhaseC npts=8760 interval=1 mult=(file=LS_PhaseC.txt) action=no
 New Loadshape.LS_ThreePhase npts=8760 interval=1 mult=(file=LS_ThreePhase.txt) action=normalize
 New Loadshape.Other_Bus_Load npts=8760 interval=1 mult=(file=Other_Bus_Load.txt) action=normalize
 
-!Loadshape.LS_PhaseA.Action=SNGSave
-!Loadshape.LS_PhaseA.Action=DBLSave
-
 Redirect  lines_ckt24.dss
 Redirect  Capacitors_ckt24.dss
 Redirect  stepxfmrs_ckt24.dss
