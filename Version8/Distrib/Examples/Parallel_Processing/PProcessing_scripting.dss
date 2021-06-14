@@ -16,7 +16,7 @@ Solve
 Clone  2
 
 ! If everything is going well so far, you should have # CPUs - 1 actors in memory, 
-! 3 with the default vales in this example
+! 3 with the default values in this example
 
 set parallel=Yes   ! enables the parallel processing suite
 
