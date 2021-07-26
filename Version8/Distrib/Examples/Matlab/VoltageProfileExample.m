@@ -4,7 +4,7 @@
 [DSSStartOK, DSSObj, DSSText] = DSSStartup;
 
 if DSSStartOK
-    DSSText.command='Compile (C:\opendss\IEEETestCases\123Bus\IEEE123Master.dss)';
+    DSSText.command='Compile (C:\Program Files\OpenDSS\IEEETestCases\123Bus\IEEE123Master.dss)';
     % Set up the interface variables
     DSSCircuit=DSSObj.ActiveCircuit;
     DSSSolution=DSSCircuit.Solution;
