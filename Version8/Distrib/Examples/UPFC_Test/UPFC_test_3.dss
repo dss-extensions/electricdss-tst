@@ -42,7 +42,9 @@ New  XfmrCode.UPFCInterface  phases=1  Windings=3 ppm=0
 New Transformer.Service50kVA Xfmrcode=1-ph50kVA-2 Buses=[Source_Bus.1.0  UPFC_Input.1]
 
 // New upfc.TEST phases=1 bus1=UPFC_Input.1 bus2=UPFC_Output.1 refkV=0.242 mode=3 losscurve=Losses TOL1=0.005  Xs=0.02
-New upfc.TEST phases=1 bus1=UPFC_Input.1 bus2=UPFC_Output.1 refkV=0.242 mode=1 losscurve=Losses TOL1=0.005  Xs=0.02
+New upfc.TEST phases=1 bus1=UPFC_Input.1 bus2=UPFC_Output.1 refkV=0.242 mode=1 losscurve=Losses TOL1=0.001  Xs=0.02
+// defines the controller- without it, the UPFC will not work!
+New UPFCControl.myUPFCCtrl
 
 
 New Transformer.TUPFCout XfmrCode=UPFCInterface Buses=[UPFC_output.1.0   LOAD_BUS.1.0   LOAD_BUS.0.2]
