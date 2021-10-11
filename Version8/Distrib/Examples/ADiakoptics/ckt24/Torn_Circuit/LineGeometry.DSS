@@ -1,0 +1,392 @@
+New "LineGeometry.oh3p_fr8_n56_oh_1/0_aaac_6201_oh_1/0_aaac_6201_cn"
+~ nconds=2
+~ nphases=1
+~ Reduce=Yes
+~ Cond=1 wire=OH_1/0_AAAC_6201 X=-3.67 h=31.33 units=ft
+~ Cond=2 wire=OH_1/0_AAAC_6201 X=0 h=26 units=ft
+
+New "LineGeometry.oh3p_fr8_n56_oh_477_aac_oh_336_aac_abcn"
+~ nconds=4
+~ nphases=3
+~ Reduce=Yes
+~ Cond=1 wire=OH_477_AAC X=-3.67 h=31.33 units=ft
+~ Cond=2 wire=OH_477_AAC X=0 h=31.33 units=ft
+~ Cond=3 wire=OH_477_AAC X=3.67 h=31.33 units=ft
+~ Cond=4 wire=OH_336_AAC X=0 h=26 units=ft
+
+New "LineGeometry.oh3p_fr8_n56_oh_477_aac_oh_477_aac_abcn"
+~ nconds=4
+~ nphases=3
+~ Reduce=Yes
+~ Cond=1 wire=OH_477_AAC X=-3.67 h=31.33 units=ft
+~ Cond=2 wire=OH_477_AAC X=0 h=31.33 units=ft
+~ Cond=3 wire=OH_477_AAC X=3.67 h=31.33 units=ft
+~ Cond=4 wire=OH_477_AAC X=0 h=26 units=ft
+
+New "LineGeometry.oh3p_fr8_n56_oh_1/0_aaac_5005_oh_1/0_aaac_5005_abcn"
+~ nconds=4
+~ nphases=3
+~ Reduce=Yes
+~ Cond=1 wire=OH_1/0_AAAC_5005 X=-3.67 h=31.33 units=ft
+~ Cond=2 wire=OH_1/0_AAAC_5005 X=0 h=31.33 units=ft
+~ Cond=3 wire=OH_1/0_AAAC_5005 X=3.67 h=31.33 units=ft
+~ Cond=4 wire=OH_1/0_AAAC_5005 X=0 h=26 units=ft
+
+New "LineGeometry.oh3p_fr8_n56_oh_1/0_aaac_6201_oh_1/0_aaac_6201_an"
+~ nconds=2
+~ nphases=1
+~ Reduce=Yes
+~ Cond=1 wire=OH_1/0_AAAC_6201 X=-3.67 h=31.33 units=ft
+~ Cond=2 wire=OH_1/0_AAAC_6201 X=0 h=26 units=ft
+
+New "LineGeometry.oh3p_armlpin_n30_oh_1/0_aaac_6201_oh_1/0_aaac_6201_an"
+~ nconds=2
+~ nphases=1
+~ Reduce=Yes
+~ Cond=1 wire=OH_1/0_AAAC_6201 X=-0.067 h=28.83 units=ft
+~ Cond=2 wire=OH_1/0_AAAC_6201 X=0 h=26 units=ft
+
+New "LineGeometry.oh1p_vert_n56_oh_1/0_aaac_5005_oh_1/0_aaac_5005_an"
+~ nconds=2
+~ nphases=1
+~ Reduce=Yes
+~ Cond=1 wire=OH_1/0_AAAC_5005 X=0 h=32 units=ft
+~ Cond=2 wire=OH_1/0_AAAC_5005 X=0 h=26 units=ft
+
+New "LineGeometry.oh3p_armlpin_n30_oh_1/0_aaac_5005_oh_1/0_aaac_5005_bn"
+~ nconds=2
+~ nphases=1
+~ Reduce=Yes
+~ Cond=1 wire=OH_1/0_AAAC_5005 X=-0.067 h=28.83 units=ft
+~ Cond=2 wire=OH_1/0_AAAC_5005 X=0 h=26 units=ft
+
+New "LineGeometry.oh3p_fr8_n56_oh_1/0_aaac_5005_oh_unknown_bn"
+~ nconds=2
+~ nphases=1
+~ Reduce=Yes
+~ Cond=1 wire=OH_1/0_AAAC_5005 X=-3.67 h=31.33 units=ft
+~ Cond=2 wire=OH_Unknown X=0 h=26 units=ft
+
+New "LineGeometry.oh3p_armlpin_n30_oh_1/0_aaac_5005_oh_unknown_bn"
+~ nconds=2
+~ nphases=1
+~ Reduce=Yes
+~ Cond=1 wire=OH_1/0_AAAC_5005 X=-0.067 h=28.83 units=ft
+~ Cond=2 wire=OH_Unknown X=0 h=26 units=ft
+
+New "LineGeometry.oh3p_fr8_n56_oh_477_aac_oh_336_aac_an"
+~ nconds=2
+~ nphases=1
+~ Reduce=Yes
+~ Cond=1 wire=OH_477_AAC X=-3.67 h=31.33 units=ft
+~ Cond=2 wire=OH_336_AAC X=0 h=26 units=ft
+
+New "LineGeometry.oh3p_armlpin_n30_oh_1/0_aaac_5005_oh_1/0_aaac_5005_an"
+~ nconds=2
+~ nphases=1
+~ Reduce=Yes
+~ Cond=1 wire=OH_1/0_AAAC_5005 X=-0.067 h=28.83 units=ft
+~ Cond=2 wire=OH_1/0_AAAC_5005 X=0 h=26 units=ft
+
+New "LineGeometry.oh3p_fr8_n56_oh_336_aac_oh_1/0_aaac_5005_abcn"
+~ nconds=4
+~ nphases=3
+~ Reduce=Yes
+~ Cond=1 wire=OH_336_AAC X=-3.67 h=31.33 units=ft
+~ Cond=2 wire=OH_336_AAC X=0 h=31.33 units=ft
+~ Cond=3 wire=OH_336_AAC X=3.67 h=31.33 units=ft
+~ Cond=4 wire=OH_1/0_AAAC_5005 X=0 h=26 units=ft
+
+New "LineGeometry.oh3p_armlpin_n30_oh_1/0_aaac_5005_oh_1/0_aaac_5005_cn"
+~ nconds=2
+~ nphases=1
+~ Reduce=Yes
+~ Cond=1 wire=OH_1/0_AAAC_5005 X=-0.067 h=28.83 units=ft
+~ Cond=2 wire=OH_1/0_AAAC_5005 X=0 h=26 units=ft
+
+New "LineGeometry.oh3p_fr8_n56_oh_1/0_aaac_6201_oh_1/0_aaac_6201_bn"
+~ nconds=2
+~ nphases=1
+~ Reduce=Yes
+~ Cond=1 wire=OH_1/0_AAAC_6201 X=-3.67 h=31.33 units=ft
+~ Cond=2 wire=OH_1/0_AAAC_6201 X=0 h=26 units=ft
+
+New "LineGeometry.oh3p_fr8_n56_oh_1/0_aaac_5005_oh_1/0_aaac_5005_bcn"
+~ nconds=3
+~ nphases=2
+~ Reduce=Yes
+~ Cond=1 wire=OH_1/0_AAAC_5005 X=-3.67 h=31.33 units=ft
+~ Cond=2 wire=OH_1/0_AAAC_5005 X=0 h=31.33 units=ft
+~ Cond=3 wire=OH_1/0_AAAC_5005 X=0 h=26 units=ft
+
+New "LineGeometry.oh3p_fr8_n56_oh_1/0_aaac_5005_oh_477_aac_bn"
+~ nconds=2
+~ nphases=1
+~ Reduce=Yes
+~ Cond=1 wire=OH_1/0_AAAC_5005 X=-3.67 h=31.33 units=ft
+~ Cond=2 wire=OH_477_AAC X=0 h=26 units=ft
+
+New "LineGeometry.oh3p_fr8_n56_oh_1/0_aaac_5005_oh_1/0_aaac_5005_cn"
+~ nconds=2
+~ nphases=1
+~ Reduce=Yes
+~ Cond=1 wire=OH_1/0_AAAC_5005 X=-3.67 h=31.33 units=ft
+~ Cond=2 wire=OH_1/0_AAAC_5005 X=0 h=26 units=ft
+
+New "LineGeometry.oh3p_fr8_n56_oh_1/0_aaac_5005_oh_1/0_aaac_5005_acn"
+~ nconds=3
+~ nphases=2
+~ Reduce=Yes
+~ Cond=1 wire=OH_1/0_AAAC_5005 X=-3.67 h=31.33 units=ft
+~ Cond=2 wire=OH_1/0_AAAC_5005 X=0 h=31.33 units=ft
+~ Cond=3 wire=OH_1/0_AAAC_5005 X=0 h=26 units=ft
+
+New "LineGeometry.oh3p_fr8_n56_oh_1/0_aaac_5005_oh_1/0_aaac_5005_an"
+~ nconds=2
+~ nphases=1
+~ Reduce=Yes
+~ Cond=1 wire=OH_1/0_AAAC_5005 X=-3.67 h=31.33 units=ft
+~ Cond=2 wire=OH_1/0_AAAC_5005 X=0 h=26 units=ft
+
+New "LineGeometry.oh3p_fr8_n56_oh_336_aac_oh_4/0_aac_abcn"
+~ nconds=4
+~ nphases=3
+~ Reduce=Yes
+~ Cond=1 wire=OH_336_AAC X=-3.67 h=31.33 units=ft
+~ Cond=2 wire=OH_336_AAC X=0 h=31.33 units=ft
+~ Cond=3 wire=OH_336_AAC X=3.67 h=31.33 units=ft
+~ Cond=4 wire=OH_4/0_AAC X=0 h=26 units=ft
+
+New "LineGeometry.oh3p_fr8_n56_oh_#2_aaac_5005_oh_#2_aaac_5005_an"
+~ nconds=2
+~ nphases=1
+~ Reduce=Yes
+~ Cond=1 wire=OH_#2_AAAC_5005 X=-3.67 h=31.33 units=ft
+~ Cond=2 wire=OH_#2_AAAC_5005 X=0 h=26 units=ft
+
+New "LineGeometry.oh3p_fr8_n56_oh_1/0_aaac_5005_oh_1/0_aaac_5005_bn"
+~ nconds=2
+~ nphases=1
+~ Reduce=Yes
+~ Cond=1 wire=OH_1/0_AAAC_5005 X=-3.67 h=31.33 units=ft
+~ Cond=2 wire=OH_1/0_AAAC_5005 X=0 h=26 units=ft
+
+New "LineGeometry.oh3p_fr8_n56_oh_#2_aaac_5005_oh_#2_aaac_5005_cn"
+~ nconds=2
+~ nphases=1
+~ Reduce=Yes
+~ Cond=1 wire=OH_#2_AAAC_5005 X=-3.67 h=31.33 units=ft
+~ Cond=2 wire=OH_#2_AAAC_5005 X=0 h=26 units=ft
+
+New "LineGeometry.oh3p_fr8_n56_oh_1/0_aaac_6201_oh_1/0_aaac_6201_abcn"
+~ nconds=4
+~ nphases=3
+~ Reduce=Yes
+~ Cond=1 wire=OH_1/0_AAAC_6201 X=-3.67 h=31.33 units=ft
+~ Cond=2 wire=OH_1/0_AAAC_6201 X=0 h=31.33 units=ft
+~ Cond=3 wire=OH_1/0_AAAC_6201 X=3.67 h=31.33 units=ft
+~ Cond=4 wire=OH_1/0_AAAC_6201 X=0 h=26 units=ft
+
+New "LineGeometry.oh3p_fr8_n56_oh_336_aac_oh_4/0_aac_bn"
+~ nconds=2
+~ nphases=1
+~ Reduce=Yes
+~ Cond=1 wire=OH_336_AAC X=-3.67 h=31.33 units=ft
+~ Cond=2 wire=OH_4/0_AAC X=0 h=26 units=ft
+
+New "LineGeometry.oh3p_fr8_n56_oh_#2_aaac_5005_oh_#2_aaac_5005_abcn"
+~ nconds=4
+~ nphases=3
+~ Reduce=Yes
+~ Cond=1 wire=OH_#2_AAAC_5005 X=-3.67 h=31.33 units=ft
+~ Cond=2 wire=OH_#2_AAAC_5005 X=0 h=31.33 units=ft
+~ Cond=3 wire=OH_#2_AAAC_5005 X=3.67 h=31.33 units=ft
+~ Cond=4 wire=OH_#2_AAAC_5005 X=0 h=26 units=ft
+
+New "LineGeometry.oh3p_fr8_n56_oh_#2_aaac_5005_oh_#2_aaac_5005_bn"
+~ nconds=2
+~ nphases=1
+~ Reduce=Yes
+~ Cond=1 wire=OH_#2_AAAC_5005 X=-3.67 h=31.33 units=ft
+~ Cond=2 wire=OH_#2_AAAC_5005 X=0 h=26 units=ft
+
+New "LineGeometry.oh3p_fr8_n56_oh_#2_aaac_5005_oh_#2_aaac_5005_acn"
+~ nconds=3
+~ nphases=2
+~ Reduce=Yes
+~ Cond=1 wire=OH_#2_AAAC_5005 X=-3.67 h=31.33 units=ft
+~ Cond=2 wire=OH_#2_AAAC_5005 X=0 h=31.33 units=ft
+~ Cond=3 wire=OH_#2_AAAC_5005 X=0 h=26 units=ft
+
+New "LineGeometry.oh3p_fr8_n56_oh_477_aac_oh_477_aac_an"
+~ nconds=2
+~ nphases=1
+~ Reduce=Yes
+~ Cond=1 wire=OH_477_AAC X=-3.67 h=31.33 units=ft
+~ Cond=2 wire=OH_477_AAC X=0 h=26 units=ft
+
+New "LineGeometry.oh3p_fr8_n56_oh_477_aac_oh_477_aac_bn"
+~ nconds=2
+~ nphases=1
+~ Reduce=Yes
+~ Cond=1 wire=OH_477_AAC X=-3.67 h=31.33 units=ft
+~ Cond=2 wire=OH_477_AAC X=0 h=26 units=ft
+
+New "LineGeometry.oh3p_fr8_n56_oh_477_aac_oh_477_aac_cn"
+~ nconds=2
+~ nphases=1
+~ Reduce=Yes
+~ Cond=1 wire=OH_477_AAC X=-3.67 h=31.33 units=ft
+~ Cond=2 wire=OH_477_AAC X=0 h=26 units=ft
+
+New "LineGeometry.oh3p_fr8_n56_oh_477_aac_oh_477_aac_acn"
+~ nconds=3
+~ nphases=2
+~ Reduce=Yes
+~ Cond=1 wire=OH_477_AAC X=-3.67 h=31.33 units=ft
+~ Cond=2 wire=OH_477_AAC X=0 h=31.33 units=ft
+~ Cond=3 wire=OH_477_AAC X=0 h=26 units=ft
+
+New "LineGeometry.oh3p_fr8_n56_oh_#2_aaac_5005_oh_4/0_aac_cn"
+~ nconds=2
+~ nphases=1
+~ Reduce=Yes
+~ Cond=1 wire=OH_#2_AAAC_5005 X=-3.67 h=31.33 units=ft
+~ Cond=2 wire=OH_4/0_AAC X=0 h=26 units=ft
+
+New "LineGeometry.oh3p_fr8_n56_oh_1/0_aaac_5005_oh_1/0_aaac_5005_abn"
+~ nconds=3
+~ nphases=2
+~ Reduce=Yes
+~ Cond=1 wire=OH_1/0_AAAC_5005 X=-3.67 h=31.33 units=ft
+~ Cond=2 wire=OH_1/0_AAAC_5005 X=0 h=31.33 units=ft
+~ Cond=3 wire=OH_1/0_AAAC_5005 X=0 h=26 units=ft
+
+New "LineGeometry.oh3p_fr8_n56_oh_336_acsr_18/1_oh_4/0_acsr_6/1_abcn"
+~ nconds=4
+~ nphases=3
+~ Reduce=Yes
+~ Cond=1 wire=OH_336_ACSR_18/1 X=-3.67 h=31.33 units=ft
+~ Cond=2 wire=OH_336_ACSR_18/1 X=0 h=31.33 units=ft
+~ Cond=3 wire=OH_336_ACSR_18/1 X=3.67 h=31.33 units=ft
+~ Cond=4 wire=OH_4/0_ACSR_6/1 X=0 h=26 units=ft
+
+New "LineGeometry.oh3p_fr8_n56_oh_#6a_copperweld_oh_#6a_copperweld_abcn"
+~ nconds=4
+~ nphases=3
+~ Reduce=Yes
+~ Cond=1 wire=OH_#6A_Copperweld X=-3.67 h=31.33 units=ft
+~ Cond=2 wire=OH_#6A_Copperweld X=0 h=31.33 units=ft
+~ Cond=3 wire=OH_#6A_Copperweld X=3.67 h=31.33 units=ft
+~ Cond=4 wire=OH_#6A_Copperweld X=0 h=26 units=ft
+
+New "LineGeometry.oh3p_fr8_n56_oh_477_aac_oh_336_aac_cn"
+~ nconds=2
+~ nphases=1
+~ Reduce=Yes
+~ Cond=1 wire=OH_477_AAC X=-3.67 h=31.33 units=ft
+~ Cond=2 wire=OH_336_AAC X=0 h=26 units=ft
+
+New "LineGeometry.oh1p_vert_n56_oh_1/0_aaac_5005_oh_1/0_acsr_6/1_an"
+~ nconds=2
+~ nphases=1
+~ Reduce=Yes
+~ Cond=1 wire=OH_1/0_AAAC_5005 X=0 h=32 units=ft
+~ Cond=2 wire=OH_1/0_ACSR_6/1 X=0 h=26 units=ft
+
+New "LineGeometry.oh3p_fr8_n56_oh_1/0_acsr_6/1_oh_477_aac_abcn"
+~ nconds=4
+~ nphases=3
+~ Reduce=Yes
+~ Cond=1 wire=OH_1/0_ACSR_6/1 X=-3.67 h=31.33 units=ft
+~ Cond=2 wire=OH_1/0_ACSR_6/1 X=0 h=31.33 units=ft
+~ Cond=3 wire=OH_1/0_ACSR_6/1 X=3.67 h=31.33 units=ft
+~ Cond=4 wire=OH_477_AAC X=0 h=26 units=ft
+
+New "LineGeometry.oh3p_fr8_n56_oh_1/0_aaac_5005_oh_336_aac_abcn"
+~ nconds=4
+~ nphases=3
+~ Reduce=Yes
+~ Cond=1 wire=OH_1/0_AAAC_5005 X=-3.67 h=31.33 units=ft
+~ Cond=2 wire=OH_1/0_AAAC_5005 X=0 h=31.33 units=ft
+~ Cond=3 wire=OH_1/0_AAAC_5005 X=3.67 h=31.33 units=ft
+~ Cond=4 wire=OH_336_AAC X=0 h=26 units=ft
+
+New "LineGeometry.oh3p_fr8_n56_oh_1/0_aaac_6201_oh_1/0_aaac_6201_bcn"
+~ nconds=3
+~ nphases=2
+~ Reduce=Yes
+~ Cond=1 wire=OH_1/0_AAAC_6201 X=-3.67 h=31.33 units=ft
+~ Cond=2 wire=OH_1/0_AAAC_6201 X=0 h=31.33 units=ft
+~ Cond=3 wire=OH_1/0_AAAC_6201 X=0 h=26 units=ft
+
+New "LineGeometry.oh3p_fr8_n56_oh_477_aac_oh_336_aac_acn"
+~ nconds=3
+~ nphases=2
+~ Reduce=Yes
+~ Cond=1 wire=OH_477_AAC X=-3.67 h=31.33 units=ft
+~ Cond=2 wire=OH_477_AAC X=0 h=31.33 units=ft
+~ Cond=3 wire=OH_336_AAC X=0 h=26 units=ft
+
+New "LineGeometry.oh3p_fr8_n56_oh_#6a_copperweld_oh_#6a_copperweld_cn"
+~ nconds=2
+~ nphases=1
+~ Reduce=Yes
+~ Cond=1 wire=OH_#6A_Copperweld X=-3.67 h=31.33 units=ft
+~ Cond=2 wire=OH_#6A_Copperweld X=0 h=26 units=ft
+
+New "LineGeometry.oh3p_fr8_n56_oh_477_aac_oh_336_aac_bn"
+~ nconds=2
+~ nphases=1
+~ Reduce=Yes
+~ Cond=1 wire=OH_477_AAC X=-3.67 h=31.33 units=ft
+~ Cond=2 wire=OH_336_AAC X=0 h=26 units=ft
+
+New "LineGeometry.oh3p_fr8_n56_oh_477_acsr_24/7_oh_#6a_copperweld_abcn"
+~ nconds=4
+~ nphases=3
+~ Reduce=Yes
+~ Cond=1 wire=OH_477_ACSR_24/7 X=-3.67 h=31.33 units=ft
+~ Cond=2 wire=OH_477_ACSR_24/7 X=0 h=31.33 units=ft
+~ Cond=3 wire=OH_477_ACSR_24/7 X=3.67 h=31.33 units=ft
+~ Cond=4 wire=OH_#6A_Copperweld X=0 h=26 units=ft
+
+New "LineGeometry.oh3p_fr8_n56_oh_#6a_copperweld_oh_336_aac_abcn"
+~ nconds=4
+~ nphases=3
+~ Reduce=Yes
+~ Cond=1 wire=OH_#6A_Copperweld X=-3.67 h=31.33 units=ft
+~ Cond=2 wire=OH_#6A_Copperweld X=0 h=31.33 units=ft
+~ Cond=3 wire=OH_#6A_Copperweld X=3.67 h=31.33 units=ft
+~ Cond=4 wire=OH_336_AAC X=0 h=26 units=ft
+
+New "LineGeometry.oh3p_armlpin_n30_oh_336_aac_oh_4/0_aac_cn"
+~ nconds=2
+~ nphases=1
+~ Reduce=Yes
+~ Cond=1 wire=OH_336_AAC X=-0.067 h=28.83 units=ft
+~ Cond=2 wire=OH_4/0_AAC X=0 h=26 units=ft
+
+New "LineGeometry.oh3p_fr10_n56_oh_1/0_aaac_5005_oh_1/0_aaac_5005_cn"
+~ nconds=2
+~ nphases=1
+~ Reduce=Yes
+~ Cond=1 wire=OH_1/0_AAAC_5005 X=-4.58 h=31.33 units=ft
+~ Cond=2 wire=OH_1/0_AAAC_5005 X=0 h=26 units=ft
+
+New "LineGeometry.oh3p_armlpin_n30_oh_1/0_aaac_6201_oh_1/0_aaac_6201_cn"
+~ nconds=2
+~ nphases=1
+~ Reduce=Yes
+~ Cond=1 wire=OH_1/0_AAAC_6201 X=-0.067 h=28.83 units=ft
+~ Cond=2 wire=OH_1/0_AAAC_6201 X=0 h=26 units=ft
+
+New "LineGeometry.oh3p_fr8_n56_oh_1/0_aaac_5005_oh_477_aac_abcn"
+~ nconds=4
+~ nphases=3
+~ Reduce=Yes
+~ Cond=1 wire=OH_1/0_AAAC_5005 X=-3.67 h=31.33 units=ft
+~ Cond=2 wire=OH_1/0_AAAC_5005 X=0 h=31.33 units=ft
+~ Cond=3 wire=OH_1/0_AAAC_5005 X=3.67 h=31.33 units=ft
+~ Cond=4 wire=OH_477_AAC X=0 h=26 units=ft
+

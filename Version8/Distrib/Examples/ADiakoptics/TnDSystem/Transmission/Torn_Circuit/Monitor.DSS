@@ -1,0 +1,3 @@
+New "Monitor.tpower" element=line.t2dswitch0 mode=1 PPolar=No
+New "Monitor.tvolt" element=generator.b5 terminal=1 mode=0
+New "Monitor.test" element=line.mdv201_hn_2_795_abc788 mode=0

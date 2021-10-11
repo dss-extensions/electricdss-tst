@@ -1,0 +1,157 @@
+//-----------------------------------A-Diakoptics applied to Ckt 5 EPRI---------------------------------------------------------
+//
+// use this example for evaluating the performance of A-Diakoptics in OpenDSS
+// there are some rules that need to be respected:
+//
+// 1. DON'T run the script all at once, there are several cases in the same script.
+// 2. Run the interconnected circuit before using A-Diakoptics, at least a snapshot solve is required.
+// 3. Select the case you are interested in, Use select and Ctrl+D or the pop-up menu to execute it.
+// 4. After running the A-Diakoptics case, you'll have to ClearAll or close DSS to start over with another case.
+// ---------------------------------------------------------------------------------------------------------------------------------------------
+
+Clear
+New Circuit.ckt5
+
+
+Redirect Vsource.dss
+Redirect WireData.DSS
+Redirect LineGeometry.DSS
+Redirect LineCode.DSS
+Redirect LoadShape.DSS
+Redirect GrowthShape.DSS
+Redirect TCC_Curve.DSS
+Redirect Spectrum.DSS
+Redirect sub\Branches.dss
+Redirect sub\Transformers.dss
+Redirect sub\Loads.dss
+Redirect sub\Capacitors.dss
+Redirect Transformer.DSS
+Redirect Reactor.DSS
+Redirect EnergyMeter.DSS
+New monitor.test element=line.mdv201_hn_2_795_abc788 mode=0
+MakeBusList
+Redirect BusVoltageBases.dss  ! set voltage bases
+Buscoords buscoords.dss
+
+//-------------------- Normal yearly simulation------------------------------------
+set controlmode=off mode=yearly
+set totaltime=0
+solve
+get totaltime
+
+export monitor test
+
+//------------------------ A-Diakoptics---------------------------------------
+//------------- automated partitioning (METiS)------------------------
+// ---- Using 2 zones
+
+set Num_SubCircuits=2
+set ADiakoptics=True
+
+set ActiveActor=1
+set controlmode=off mode=yearly
+set totaltime=0
+solve
+wait
+get totaltime
+
+set ActiveActor=1
+export monitor test
+
+// ---- Using 4 zones
+
+set Num_SubCircuits=4
+set ADiakoptics=True
+
+set ActiveActor=1
+set controlmode=off mode=yearly
+set totaltime=0
+solve
+wait
+get totaltime
+
+set ActiveActor=1
+export monitor test
+
+//------------------------ A-Diakoptics---------------------------------------
+//----------------- Using manual partitioning-----------------------------
+
+// ---- Using 4 zones
+set LinkBranches=[Line.mdv201_hn_2_094_abc51012, Line.mdv201_hn_2_394_abc63658, Line.mdv201_hn_2_103_abc39605]
+set UseMyLinkBranches=True
+set ADiakoptics=True
+
+set ActiveActor=1
+set controlmode=off mode=yearly
+set totaltime=0
+solve
+wait
+get totaltime
+
+set ActiveActor=1
+export monitor test
+
+// ---- Using 5 zones
+set LinkBranches=[Line.mdv201_hn_2_094_abc51012, Line.mdv201_hn_2_394_abc63658, Line.mdv201_hn_2_293_abc63684 ,Line.mdv201_hn_2_103_abc39605]
+set UseMyLinkBranches=True
+set ADiakoptics=True
+
+set ActiveActor=1
+set controlmode=off mode=yearly
+set totaltime=0
+solve
+wait
+get totaltime
+
+set ActiveActor=1
+export monitor test
+
+// ---- Using 6 zones
+set LinkBranches=[Line.mdv201_hn_2_094_abc51012, Line.mdv201_hn_2_394_abc63658, Line.mdv201_hn_2_293_abc63684 , Line.mdv201_hn_2_343_abc829 ,Line.mdv201_hn_2_103_abc39605]
+set UseMyLinkBranches=True
+set ADiakoptics=True
+
+set ActiveActor=1
+set controlmode=off mode=yearly
+set totaltime=0
+solve
+wait
+get totaltime
+
+set ActiveActor=1
+export monitor test
+
+// ---- Using 7 zones
+set LinkBranches=[Line.mdv201_hn_2_094_abc51012, Line.mdv201_hn_2_394_abc63658, Line.mdv201_da_8_507_abc6580, Line.mdv201_hn_2_293_abc63684 , Line.mdv201_hn_2_343_abc829 ,Line.mdv201_hn_2_103_abc39605]
+set UseMyLinkBranches=True
+set ADiakoptics=True
+
+set ActiveActor=1
+set controlmode=off mode=yearly
+set totaltime=0
+solve
+wait
+get totaltime
+
+set ActiveActor=1
+export monitor test
+
+//------------------A-Diakoptics DBug-------------------------------------
+_SolveDirect
+
+Export ZCC
+Export Y4
+Export ZLL
+
+set ActiveActor=1
+set controlmode=off mode=yearly
+set totaltime=0
+solve
+wait
+get totaltime
+
+get linkbranches
+
+get NumActors
+
+ClearAll

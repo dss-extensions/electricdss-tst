@@ -1,0 +1,10 @@
+New "WireData.al_556_19str" Rac=0.116196 Runits=km GMRac=0.822957 GMRunits=cm radius=1.087115 radunits=cm normamps=619 emergamps=743
+New "WireData.al_336_19str" Rac=0.190761 Runits=km GMRac=0.64008 GMRunits=cm radius=0.84582 radunits=cm normamps=453 emergamps=544
+New "WireData.none" Rac=1e-9 Runits=km GMRac=1e-9 GMRunits=cm radius=1e-9 radunits=cm normamps=0 emergamps=0
+New "WireData.al_#2_7str" Rac=0.963125 Runits=km GMRac=0.26924 GMRunits=cm radius=0.37084 radunits=cm normamps=163 emergamps=196
+New "WireData.cu_#6_1str" Rac=1.485083 Runits=km GMRac=0.16002 GMRunits=cm radius=0.20574 radunits=cm normamps=125 emergamps=150
+New "WireData.cu_#2_7str" Rac=0.599002 Runits=km GMRac=0.26924 GMRunits=cm radius=0.37084 radunits=cm normamps=224 emergamps=169
+New "WireData.acsr_1/0_6/1" Rac=0.695936 Runits=km GMRac=0.13462 GMRunits=cm radius=0.50546 radunits=cm normamps=271 emergamps=325
+New "WireData.busbar" Rac=1E-06 Runits=km GMRac=0.32258 GMRunits=cm radius=6.35 radunits=cm normamps=2000 emergamps=2400
+New "WireData.al_4/0_7str" Rac=0.301986 Runits=km GMRac=0.48006 GMRunits=cm radius=0.66294 radunits=cm normamps=338 emergamps=406
+New "WireData.al_1/0_7str" Rac=0.604594 Runits=km GMRac=0.33782 GMRunits=cm radius=0.46736 radunits=cm normamps=218 emergamps=262

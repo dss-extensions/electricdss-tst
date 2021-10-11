@@ -1,0 +1,2 @@
+New "Capacitor.b10" bus1=b10 kv=33 kvar=[ 19000]
+New "Capacitor.b24" bus1=b24 kv=33 kvar=[ 4300]

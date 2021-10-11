@@ -1,0 +1,10 @@
+New "Load.s1a" bus1=1.1 phases=1 conn=Wye model=1 kV=2.4 kW=40 kvar=20
+New "Load.s7a" bus1=7.1 phases=1 conn=Wye model=1 kV=2.4 kW=20 kvar=10
+New "Load.s9a" bus1=9.1 phases=1 conn=Wye model=1 kV=2.4 kW=40 kvar=20
+New "Load.s10a" bus1=10.1 phases=1 conn=Wye model=5 kV=2.4 kW=20 kvar=10
+New "Load.s11a" bus1=11.1 phases=1 conn=Wye model=2 kV=2.4 kW=40 kvar=20
+New "Load.s12b" bus1=12.2 phases=1 conn=Wye model=1 kV=2.4 kW=20 kvar=10
+New "Load.s5c" bus1=5.3 phases=1 conn=Wye model=5 kV=2.4 kW=20 kvar=10
+New "Load.s6c" bus1=6.3 phases=1 conn=Wye model=2 kV=2.4 kW=40 kvar=20
+New "Load.s4c" bus1=4.3 phases=1 conn=Wye model=1 kV=2.4 kW=40 kvar=20
+New "Load.s2b" bus1=2.2 phases=1 conn=Wye model=1 kV=2.4 kW=20 kvar=10

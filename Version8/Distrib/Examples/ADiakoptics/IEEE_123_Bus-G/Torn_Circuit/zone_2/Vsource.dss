@@ -1,0 +1,3 @@
+Edit Vsource.source bus1=13.1 phases=1 pu=1.0 basekv=2.4045996 angle=-1.8710702 R1=0 X1=0.001 R0=0 X0=0.001
+New Vsource.Vph_2 bus1=13.2 phases=1 pu=1.0 basekv=2.4731354 angle=-120.97448 R1=0 X1=0.001 R0=0 X0=0.001
+New Vsource.Vph_3 bus1=13.3 phases=1 pu=1.0 basekv=2.4333066 angle=118.90583 R1=0 X1=0.001 R0=0 X0=0.001

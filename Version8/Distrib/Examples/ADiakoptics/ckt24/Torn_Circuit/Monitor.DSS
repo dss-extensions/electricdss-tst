@@ -1,0 +1,5 @@
+New "Monitor.subxfmr_taps" element=transformer.subxfmr terminal=2 mode=2
+New "Monitor.fdr_05410_mon_vi" element=line.fdr_05410 terminal=1 mode=0
+New "Monitor.fdr_05410_mon_pq" element=line.fdr_05410 terminal=1 mode=1 PPolar=No
+New "Monitor.fdr_05410_mon_va" element=line.fdr_05410 terminal=1 mode=1 PPolar=Yes
+New "Monitor.other_feeders" element=line.other_feeders terminal=1 mode=1 PPolar=No

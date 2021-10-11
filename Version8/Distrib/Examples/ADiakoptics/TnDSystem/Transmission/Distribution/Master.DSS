@@ -1,0 +1,28 @@
+//-----------------------------------A-Diakoptics applied to Ckt 5 EPRI---------------------
+//
+// Distribution system coupled with the transmission system, no VSource needed
+// -----------------------------------------------------------------------------------------
+
+!Clear
+!New Circuit.ckt5
+
+
+!Redirect Vsource.dss
+Redirect WireData.DSS
+Redirect LineGeometry.DSS
+Redirect LineCode.DSS
+Redirect LoadShape.DSS
+Redirect GrowthShape.DSS
+Redirect TCC_Curve.DSS
+Redirect Spectrum.DSS
+Redirect sub\Branches.dss
+Redirect sub\Transformers.dss
+Redirect sub\Loads.dss
+Redirect sub\Capacitors.dss
+Redirect Transformer.DSS
+Redirect Reactor.DSS
+Redirect EnergyMeter.DSS
+New monitor.test element=line.mdv201_hn_2_795_abc788 mode=0
+MakeBusList
+Redirect BusVoltageBases.dss  ! set voltage bases
+Buscoords buscoords.dss

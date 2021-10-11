@@ -1,0 +1,4 @@
+New "Capacitor.mdv201_da_8_153_abc74433-1" bus1=74433 kv=13.198602 kvar=[ 600] conn=wye
+New "Capacitor.mdv201_hn_2_345_abc8081-1" bus1=8081 kv=13.198602 kvar=[ 450] conn=wye
+New "Capacitor.mdv201_hn_2_116_abc28285-1" bus1=28285 kv=13.198602 kvar=[ 600] conn=wye
+New "Capacitor.mdv201_hn_2_818_abc63707-1" bus1=63707 kv=13.198602 kvar=[ 300] conn=wye

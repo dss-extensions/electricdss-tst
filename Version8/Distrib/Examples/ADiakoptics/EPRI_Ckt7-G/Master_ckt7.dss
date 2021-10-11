@@ -1,0 +1,108 @@
+//-----------------------------------A-Diakoptics applied to Ckt 7 EPRI---------------------------------------------------------
+//
+// use this example for evaluating the performance of A-Diakoptics in OpenDSS
+// there are some rules that need to be respected:
+//
+// 1. DON'T run the script all at once, there are several cases in the same script.
+// 2. Run the interconnected circuit before using A-Diakoptics, at least a snapshot solve is required.
+// 3. Select the case you are interested in, Use select and Ctrl+D or the pop-up menu to execute it.
+// 4. After running the A-Diakoptics case, you'll have to ClearAll or close DSS to start over with another case.
+// ---------------------------------------------------------------------------------------------------------------------------------------------
+
+Clear
+
+New Circuit.ckt7  pu=1.05 r1=2.314 x1=28.52 r0=0.0001 x0=0.0001 bus1=SourceBus basekv=115
+Redirect LoadShapes_ckt7.dss
+Redirect Substation_ckt7.dss
+Redirect LineCodes_ckt7.dss
+Redirect Lines_ckt7.dss
+Redirect Services_ckt7.dss
+Redirect Load_XFMR_ckt7.dss
+Redirect Loads_ckt7.dss
+Redirect Capacitors_ckt7.dss
+
+! Initial allocation factors for allocated loads
+redirect AllocationFactors.dss
+
+! Define an energy meter -- needed for plot profile and yearly simulations
+Redirect Monitors_ckt7.dss
+
+! Let OpenDSS assign the bus voltage bases for reports
+Set voltagebases = [115, 12.47, 0.480, 0.4157, 0.208, 0.12]
+Calcvoltagebases
+
+! Now that buses are defined, define coordinates
+Buscoords  Buscoords_ckt7.dss
+
+set controlmode=off maxcontroliter=30 mode=yearly
+set totaltime=0
+Solve
+get totaltime
+
+export monitor 25607VI
+
+//------------------------ A-Diakoptics---------------------------------------
+//----------------- Using manual partitioning-----------------------------
+// ---- Using 2 zones
+set LinkBranches=[Line.174995]
+set UseMyLinkBranches=True
+set ADiakoptics=True
+
+set ActiveActor=1
+set controlmode=off mode=yearly
+set totaltime=0
+solve
+wait
+get totaltime
+
+set ActiveActor=1
+export monitor 25607VI
+
+// ---- Using 3 zones
+set LinkBranches=[Line.157133, Line.175061]
+set UseMyLinkBranches=True
+set ADiakoptics=True
+
+set ActiveActor=1
+set controlmode=off mode=yearly
+set totaltime=0
+solve
+wait
+get totaltime
+
+set ActiveActor=1
+export monitor 25607VI
+
+
+
+set ActiveActor=1
+Export YVoltages
+Export YNodeList
+Export YCurrents
+Export Y
+
+get maxcontroliter
+export monitor test
+//------------------A-Diakoptics DBug-------------------------------------
+Export ZCC
+Export Y4
+Export ZLL
+
+get linkBranches
+get numactors
+
+set mode=yearly
+
+set totaltime=0
+Solve
+wait
+get totaltime
+
+set totaltime=0
+_SolveDirect
+get totaltime
+
+ClearAll
+
+
+

@@ -1,0 +1,2 @@
+New "Capacitor.cap_g2100pl6500" phases=3 kvar=[ 900] bus1=n300521 kv=34.5 conn=wye enabled=true
+New "Capacitor.cap_g2101ae7400" phases=3 kvar=[ 1200] bus1=n284062 kv=34.5 conn=wye enabled=true

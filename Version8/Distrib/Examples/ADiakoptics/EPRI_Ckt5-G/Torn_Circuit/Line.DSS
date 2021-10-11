@@ -1,0 +1,730 @@
+New "Line.mdv201_connector" bus1=_mdv_sub_1_lsb bus2=mdv201 length=0.001 r1=0.001 r0=0.001 x1=0.01 x0=0.01 C1=0 C0=0 units=km enabled=true phases=3
+New "Line.mdv201_hn_2_793_abc1023346_sw" bus1=mdv201 bus2=mdv201_hn_2_793_abc1023346_int length=0.001 Switch=True units=km enabled=true phases=3
+New "Line.mdv201_hn_2_793_abc1023346" bus1=mdv201_hn_2_793_abc1023346_int bus2=1023346 length=0.04572 geometry=3PH_HORIZ_LG_1C-AL_556_19STRAL_556_19STRAL_556_19STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=619 emergamps=743 units=km enabled=true phases=3
+New "Line.sw-hn_2_793_sw" bus1=1023346 bus2=mdv201_796usd_int length=0.001 Switch=True units=km enabled=true phases=3
+New "Line.mdv201_796usd" bus1=mdv201_796usd_int bus2=796 length=0.001524 geometry=3PH_HORIZ_LG_1C-BUSBARBUSBARBUSBARBUSBAR Seasons=1 Ratings=[0,] normamps=2000 emergamps=2400 units=km enabled=true phases=3
+New "Line.mdv201_hn_2_794_abc791" bus1=796 bus2=791 length=0.0597408 geometry=3PH_HORIZ_LG_1C-AL_556_19STRAL_556_19STRAL_556_19STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=619 emergamps=743 units=km enabled=true phases=3
+New "Line.mdv201_hn_2_795_abc788" bus1=791 bus2=788 length=0.0667512 geometry=3PH_HORIZ_LG_1C-AL_556_19STRAL_556_19STRAL_556_19STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=619 emergamps=743 units=km enabled=true phases=3
+New "Line.mdv201_hn_2_796_abc782" bus1=788 bus2=782 length=0.0679704 geometry=3PH_VERT_1C-AL_556_19STRAL_556_19STRAL_556_19STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=619 emergamps=743 units=km enabled=true phases=3
+New "Line.mdv201_hn_2_808_abc783" bus1=782 bus2=783 length=0.0573024 geometry=3PH_VERT_1C-AL_556_19STRAL_556_19STRAL_556_19STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=619 emergamps=743 units=km enabled=true phases=3
+New "Line.mdv201_hn_2_809_abc861" bus1=783 bus2=861 length=0.0585216 geometry=3PH_VERT_1C-AL_556_19STRAL_556_19STRAL_556_19STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=619 emergamps=743 units=km enabled=true phases=3
+New "Line.mdv201_hn_2_810_abc63685" bus1=861 bus2=63685 length=0.0734568 geometry=3PH_VERT_1C-AL_556_19STRAL_556_19STRAL_556_19STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=619 emergamps=743 units=km enabled=true phases=3
+New "Line.mdv201_hn_2_811_abc63638" bus1=63685 bus2=63638 length=0.0938784 geometry=3PH_HORIZ_LG_1C-AL_556_19STRAL_556_19STRAL_556_19STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=619 emergamps=743 units=km enabled=true phases=3
+New "Line.mdv201_1010727fuse" bus1=63638.1 bus2=1010727.1 length=0.001524 geometry=1PH-BUSBARNONENONEBUSBAR Seasons=1 Ratings=[0,] normamps=2000 emergamps=2400 units=km enabled=true phases=1
+New "Line.mdv201_hn_2_424_a784" bus1=1010727.1 bus2=784.1 length=0.0932688 geometry=1PH-AL_1/0_7STRNONENONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=218 emergamps=262 units=km enabled=true phases=1
+New "Line.s_mdv201_hn_2_424_a784-1a0" bus1=x_784.1 bus2=x_784_1.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_424_a784-1a1" bus1=x_784.1 bus2=x_784_2.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_423_a785" bus1=784.1 bus2=785.1 length=0.0469392 geometry=1PH-AL_#2_7STRNONENONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.s_mdv201_hn_2_423_a785-1a0" bus1=x_785.1 bus2=x_785_1.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_422_a790" bus1=785.1 bus2=790.1 length=0.0469392 geometry=1PH-AL_#2_7STRNONENONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.s_mdv201_hn_2_422_a790-1a0" bus1=x_790.1 bus2=x_790_1.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_422_a790-1a1" bus1=x_790.1 bus2=x_790_2.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_991_a798" bus1=790.1 bus2=798.1 length=0.0420624 geometry=1PH-AL_#2_7STRNONENONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.mdv201_hn_2_421_a808" bus1=798.1 bus2=808.1 length=0.0405384 geometry=1PH-AL_#2_7STRNONENONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.s_mdv201_hn_2_421_a808-1a0" bus1=x_808.1 bus2=x_808_1.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_420_a814" bus1=808.1 bus2=814.1 length=0.028956 geometry=1PH-AL_#2_7STRNONENONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.s_mdv201_hn_2_420_a814-1a0" bus1=x_814.1 bus2=x_814_1.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_420_a814-1a1" bus1=x_814.1 bus2=x_814_2.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_420_a814-1a2" bus1=x_814.1 bus2=x_814_3.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_419_a827" bus1=814.1 bus2=827.1 length=0.0536448 geometry=1PH-AL_#2_7STRNONENONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.s_mdv201_hn_2_419_a827-1a0" bus1=x_827.1 bus2=x_827_1.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_418_a835" bus1=827.1 bus2=835.1 length=0.0527304 geometry=1PH-AL_#2_7STRNONENONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.s_mdv201_hn_2_418_a835-1a0" bus1=x_835.1 bus2=x_835_1.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_418_a835-1a1" bus1=x_835.1 bus2=x_835_2.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_417_a842" bus1=835.1 bus2=842.1 length=0.048768 geometry=1PH-AL_#2_7STRNONENONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.s_mdv201_hn_2_417_a842-1a0" bus1=x_842.1 bus2=x_842_1.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_416_a844" bus1=842.1 bus2=844.1 length=0.04572 geometry=1PH-AL_#2_7STRNONENONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.s_mdv201_hn_2_416_a844-1a0" bus1=x_844.1 bus2=x_844_1.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_416_a844-1a1" bus1=x_844.1 bus2=x_844_2.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_415_a845" bus1=844.1 bus2=845.1 length=0.04572 geometry=1PH-AL_#2_7STRNONENONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.mdv201_hn_2_414_a843" bus1=844.1 bus2=843.1 length=0.057912 geometry=1PH-AL_#2_7STRNONENONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.s_mdv201_hn_2_414_a843-1a0" bus1=x_843.1 bus2=x_843_1.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_413_a838" bus1=843.1 bus2=838.1 length=0.042672 geometry=1PH-AL_#2_7STRNONENONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.s_mdv201_hn_2_413_a838-1a0" bus1=x_838.1 bus2=x_838_1.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_413_a838-1a1" bus1=x_838.1 bus2=x_838_2.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_413_a838-1a2" bus1=x_838.1 bus2=x_838_3.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_412_a832" bus1=838.1 bus2=832.1 length=0.0524256 geometry=1PH-AL_#2_7STRNONENONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.s_mdv201_hn_2_412_a832-1a0" bus1=x_832.1 bus2=x_832_1.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_412_a832-1a1" bus1=x_832.1 bus2=x_832_2.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_412_a832-1a2" bus1=x_832.1 bus2=x_832_3.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_411_a828" bus1=832.1 bus2=828.1 length=0.044196 geometry=1PH-AL_#2_7STRNONENONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.s_mdv201_hn_2_411_a828-1a0" bus1=x_828.1 bus2=x_828_1.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_411_a828-1a1" bus1=x_828.1 bus2=x_828_2.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_411_a828-1a2" bus1=x_828.1 bus2=x_828_3.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_410_a819" bus1=828.1 bus2=819.1 length=0.047244 geometry=1PH-AL_#2_7STRNONENONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.s_mdv201_hn_2_410_a819-1a0" bus1=x_819.1 bus2=x_819_1.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_410_a819-1a1" bus1=x_819.1 bus2=x_819_2.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_410_a819-1a2" bus1=x_819.1 bus2=x_819_3.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_409_a820" bus1=819.1 bus2=820.1 length=0.0545592 geometry=1PH-AL_#2_7STRNONENONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.s_mdv201_hn_2_409_a820-1a0" bus1=x_820.1 bus2=x_820_1.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_409_a820-1a1" bus1=x_820.1 bus2=x_820_2.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_1010729fuse" bus1=798.1 bus2=1010729.1 length=0.001524 geometry=1PH-BUSBARNONENONEBUSBAR Seasons=1 Ratings=[0,] normamps=2000 emergamps=2400 units=km enabled=true phases=1
+New "Line.mdv201_hn_2p026_a1010728" bus1=1010729.1 bus2=1010728.1 length=0.042672 linecode=UG_1/0AL Seasons=1 Ratings=[400,] normamps=150 emergamps=150 units=km enabled=true phases=1
+New "Line.mdv201_hn_2p028_a1160489" bus1=1010728.1 bus2=1160489.1 length=0.1197864 linecode=UG_1/0AL Seasons=1 Ratings=[400,] normamps=150 emergamps=150 units=km enabled=true phases=1
+New "Line.hn_2p028_sw" bus1=1160489.1 bus2=mdv201_795elb_int.1 length=0.001 Switch=True units=km enabled=true phases=1
+New "Line.mdv201_795elb" bus1=mdv201_795elb_int.1 bus2=795.1 length=0.001524 linecode=BUSBAR Seasons=1 Ratings=[400,] normamps=2000 emergamps=2000 units=km enabled=true phases=1
+New "Line.s_mdv201_795elb-1a0" bus1=x_795.1 bus2=x_795_1.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_795elb-1a1" bus1=x_795.1 bus2=x_795_2.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_436_abc63639" bus1=63638 bus2=63639 length=0.0423672 geometry=3PH_HORIZ_LG_1C-AL_556_19STRAL_556_19STRAL_556_19STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=619 emergamps=743 units=km enabled=true phases=3
+New "Line.s_mdv201_hn_2_436_abc63639-1b0" bus1=x_63639.2 bus2=x_63639_1.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_435_abc63643" bus1=63639 bus2=63643 length=0.0606552 geometry=3PH_HORIZ_LG_1C-AL_556_19STRAL_556_19STRAL_556_19STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=619 emergamps=743 units=km enabled=true phases=3
+New "Line.s_mdv201_hn_2_435_abc63643-1b0" bus1=x_63643.2 bus2=x_63643_1.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_435_abc63643-1b1" bus1=x_63643.2 bus2=x_63643_2.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_434_abc63645" bus1=63643 bus2=63645 length=0.0612648 geometry=3PH_HORIZ_LG_1C-AL_556_19STRAL_556_19STRAL_556_19STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=619 emergamps=743 units=km enabled=true phases=3
+New "Line.s_mdv201_hn_2_434_abc63645-1b0" bus1=x_63645.2 bus2=x_63645_1.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_434_abc63645-1b1" bus1=x_63645.2 bus2=x_63645_2.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_408_abc63655" bus1=63645 bus2=63655 length=0.06096 geometry=3PH_HORIZ_LG_1C-AL_556_19STRAL_556_19STRAL_556_19STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=619 emergamps=743 units=km enabled=true phases=3
+New "Line.s_mdv201_hn_2_408_abc63655-1b0" bus1=x_63655.2 bus2=x_63655_1.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_408_abc63655-1b1" bus1=x_63655.2 bus2=x_63655_2.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_395_abc63657" bus1=63655 bus2=63657 length=0.0691896 geometry=3PH_VERT_1C-AL_556_19STRAL_556_19STRAL_556_19STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=619 emergamps=743 units=km enabled=true phases=3
+New "Line.s_mdv201_hn_2_395_abc63657-1b0" bus1=x_63657.2 bus2=x_63657_1.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_812_abc63656" bus1=63657 bus2=63656 length=0.047244 geometry=3PH_VERT_1C-AL_4/0_7STRAL_4/0_7STRAL_4/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=338 emergamps=406 units=km enabled=true phases=3
+New "Line.sw-hn_2_812_sw" bus1=63656 bus2=mdv201_107107usd_int length=0.001 Switch=True units=km enabled=true phases=3
+New "Line.mdv201_107107usd" bus1=mdv201_107107usd_int bus2=107107 length=0.001524 geometry=3PH_HORIZ_LG_1C-BUSBARBUSBARBUSBARBUSBAR Seasons=1 Ratings=[0,] normamps=2000 emergamps=2400 units=km enabled=true phases=3
+New "Line.mdv201_hn_2_813_abc63654" bus1=107107 bus2=63654 length=0.100584 geometry=3PH_HORIZ_LG_1C-AL_4/0_7STRAL_4/0_7STRAL_4/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=338 emergamps=406 units=km enabled=true phases=3
+New "Line.mdv201_hn_2_814_abc14891" bus1=63654 bus2=14891 length=0.10668 geometry=3PH_HORIZ_LG_1C-AL_4/0_7STRAL_4/0_7STRAL_4/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=338 emergamps=406 units=km enabled=true phases=3
+New "Line.mdv201_hn_2_815_abc14892" bus1=14891 bus2=14892 length=0.0917448 geometry=3PH_HORIZ_LG_1C-AL_4/0_7STRAL_4/0_7STRAL_4/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=338 emergamps=406 units=km enabled=true phases=3
+New "Line.mdv201_hn_2_828_abc28247" bus1=14892 bus2=28247 length=0.0908304 geometry=3PH_HORIZ_LG_1C-AL_4/0_7STRAL_4/0_7STRAL_4/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=338 emergamps=406 units=km enabled=true phases=3
+New "Line.mdv201_hn_2_823_abc28244" bus1=28247 bus2=28244 length=0.0478536 geometry=3PH_VERT_1C-AL_4/0_7STRAL_4/0_7STRAL_4/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=338 emergamps=406 units=km enabled=true phases=3
+New "Line.mdv201_1144254fuse" bus1=28244.2 bus2=1144254.2 length=0.001524 geometry=1PH-NONEBUSBARNONEBUSBAR Seasons=1 Ratings=[0,] normamps=2000 emergamps=2400 units=km enabled=true phases=1
+New "Line.mdv201_hn_2_729_b28246" bus1=1144254.2 bus2=28246.2 length=0.0262128 geometry=1PH-NONEAL_#2_7STRNONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.s_mdv201_hn_2_729_b28246-1b0" bus1=x_28246.2 bus2=x_28246_1.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_730_b14851" bus1=28246.2 bus2=14851.2 length=0.0966216 geometry=1PH-NONEAL_#2_7STRNONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.mdv201_hn_2_731_b14852" bus1=14851.2 bus2=14852.2 length=0.09144 geometry=1PH-NONEAL_#2_7STRNONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.s_mdv201_hn_2_731_b14852-1b0" bus1=x_14852.2 bus2=x_14852_1.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_283_abc14857" bus1=28244 bus2=14857 length=0.0307848 geometry=3PH_VERT_1C-AL_4/0_7STRAL_4/0_7STRAL_4/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=338 emergamps=406 units=km enabled=true phases=3
+New "Line.s_mdv201_hn_2_283_abc14857-1b0" bus1=x_14857.2 bus2=x_14857_1.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_283_abc14857-1b1" bus1=x_14857.2 bus2=x_14857_2.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_094_abc51012" bus1=14857 bus2=51012 length=0.0515112 geometry=3PH_HORIZ_LG_1C-AL_4/0_7STRAL_4/0_7STRAL_4/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=338 emergamps=406 units=km enabled=true phases=3
+New "Line.s_mdv201_hn_2_094_abc51012-1b0" bus1=x_51012.2 bus2=x_51012_1.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_093_abc63714" bus1=51012 bus2=63714 length=0.079248 geometry=3PH_HORIZ_LG_1C-AL_4/0_7STRAL_4/0_7STRAL_4/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=338 emergamps=406 units=km enabled=true phases=3
+New "Line.s_mdv201_hn_2_093_abc63714-1b0" bus1=x_63714.2 bus2=x_63714_1.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_093_abc63714-1b1" bus1=x_63714.2 bus2=x_63714_2.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_092_abc63711" bus1=63714 bus2=63711 length=0.105156 geometry=3PH_HORIZ_LG_1C-AL_4/0_7STRAL_4/0_7STRAL_4/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=338 emergamps=406 units=km enabled=true phases=3
+New "Line.s_mdv201_hn_2_092_abc63711-1b0" bus1=x_63711.2 bus2=x_63711_1.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_092_abc63711-1b1" bus1=x_63711.2 bus2=x_63711_2.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_247_abc44582" bus1=63711 bus2=44582 length=0.0432816 geometry=3PH_HORIZ_LG_1C-AL_4/0_7STRAL_4/0_7STRAL_4/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=338 emergamps=406 units=km enabled=true phases=3
+New "Line.s_mdv201_hn_2_247_abc44582-1b0" bus1=x_44582.2 bus2=x_44582_1.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_247_abc44582-1b1" bus1=x_44582.2 bus2=x_44582_2.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_217_abc8160" bus1=44582 bus2=8160 length=0.025908 geometry=3PH_HORIZ_LG_1C-AL_4/0_7STRAL_4/0_7STRAL_4/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=338 emergamps=406 units=km enabled=true phases=3
+New "Line.mdv201_104355fuse" bus1=8160.2 bus2=104355.2 length=0.001524 geometry=1PH-NONEBUSBARNONEBUSBAR Seasons=1 Ratings=[0,] normamps=2000 emergamps=2400 units=km enabled=true phases=1
+New "Line.mdv201_hn_2_218_b8161" bus1=104355.2 bus2=8161.2 length=0.09144 geometry=1PH-NONECU_#6_1STRNONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=125 emergamps=150 units=km enabled=true phases=1
+New "Line.s_mdv201_hn_2_218_b8161-1b0" bus1=x_8161.2 bus2=x_8161_1.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_218_b8161-1b1" bus1=x_8161.2 bus2=x_8161_2.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_219_b8162" bus1=8161.2 bus2=8162.2 length=0.0920496 geometry=1PH-NONECU_#6_1STRNONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=125 emergamps=150 units=km enabled=true phases=1
+New "Line.mdv201_hn_2_220_b44580" bus1=8162.2 bus2=44580.2 length=0.0844296 geometry=1PH-NONECU_#6_1STRNONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=125 emergamps=150 units=km enabled=true phases=1
+New "Line.s_mdv201_hn_2_220_b44580-1b0" bus1=x_44580.2 bus2=x_44580_1.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_221_b8169" bus1=44580.2 bus2=8169.2 length=0.1109472 geometry=1PH-NONECU_#6_1STRNONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=125 emergamps=150 units=km enabled=true phases=1
+New "Line.mdv201_hn_2_223_b8168" bus1=8169.2 bus2=8168.2 length=0.0920496 geometry=1PH-NONECU_#6_1STRNONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=125 emergamps=150 units=km enabled=true phases=1
+New "Line.s_mdv201_hn_2_223_b8168-1b0" bus1=x_8168.2 bus2=x_8168_1.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_223_b8168-1b1" bus1=x_8168.2 bus2=x_8168_2.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_21011_b1144229" bus1=8169.2 bus2=1144229.2 length=0.085344 geometry=1PH-NONEAL_1/0_7STRNONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=218 emergamps=262 units=km enabled=true phases=1
+New "Line.s_mdv201_hn_21011_b1144229-1b0" bus1=x_1144229.2 bus2=x_1144229_1.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_091_abc44583" bus1=8160 bus2=44583 length=0.0332232 geometry=3PH_HORIZ_LG_1C-AL_4/0_7STRAL_4/0_7STRAL_4/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=338 emergamps=406 units=km enabled=true phases=3
+New "Line.s_mdv201_hn_2_091_abc44583-1c0" bus1=x_44583.3 bus2=x_44583_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_091_abc44583-1c1" bus1=x_44583.3 bus2=x_44583_2.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_248_abc44584" bus1=44583 bus2=44584 length=0.0301752 geometry=3PH_HORIZ_LG_1C-AL_4/0_7STRAL_4/0_7STRAL_4/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=338 emergamps=406 units=km enabled=true phases=3
+New "Line.s_mdv201_hn_2_248_abc44584-1c0" bus1=x_44584.3 bus2=x_44584_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_248_abc44584-1c1" bus1=x_44584.3 bus2=x_44584_2.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_248_abc44584-1c2" bus1=x_44584.3 bus2=x_44584_3.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_089_abc8163" bus1=44584 bus2=8163 length=0.0600456 geometry=3PH_VERT_1C-AL_4/0_7STRAL_4/0_7STRAL_4/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=338 emergamps=406 units=km enabled=true phases=3
+New "Line.s_mdv201_hn_2_089_abc8163-1c0" bus1=x_8163.3 bus2=x_8163_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_089_abc8163-1c1" bus1=x_8163.3 bus2=x_8163_2.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_089_abc8163-1c2" bus1=x_8163.3 bus2=x_8163_3.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_088_abc8164" bus1=8163 bus2=8164 length=0.0841248 geometry=3PH_HORIZ_LG_1C-AL_4/0_7STRAL_4/0_7STRAL_4/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=338 emergamps=406 units=km enabled=true phases=3
+New "Line.s_mdv201_hn_2_088_abc8164-1c0" bus1=x_8164.3 bus2=x_8164_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_088_abc8164-1c1" bus1=x_8164.3 bus2=x_8164_2.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_088_abc8164-1c2" bus1=x_8164.3 bus2=x_8164_3.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_088_abc8164-1c3" bus1=x_8164.3 bus2=x_8164_4.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_360_abc8165" bus1=8164 bus2=8165 length=0.0249936 geometry=3PH_HORIZ_LG_1C-AL_4/0_7STRAL_4/0_7STRAL_4/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=338 emergamps=406 units=km enabled=true phases=3
+New "Line.s_mdv201_hn_2_360_abc8165-1c0" bus1=x_8165.3 bus2=x_8165_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_360_abc8165-1c1" bus1=x_8165.3 bus2=x_8165_2.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_086_abc8167" bus1=8165 bus2=8167 length=0.0630936 geometry=3PH_HORIZ_LG_1C-AL_4/0_7STRAL_4/0_7STRAL_4/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=338 emergamps=406 units=km enabled=true phases=3
+New "Line.s_mdv201_hn_2_086_abc8167-1b0" bus1=x_8167.2 bus2=x_8167_1.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_086_abc8167-1b1" bus1=x_8167.2 bus2=x_8167_2.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_086_abc8167-1b2" bus1=x_8167.2 bus2=x_8167_3.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_086_abc8167-1b3" bus1=x_8167.2 bus2=x_8167_4.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_086_abc8167-1b4" bus1=x_8167.2 bus2=x_8167_5.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_578_abc44585" bus1=8167 bus2=44585 length=0.0332232 geometry=3PH_HORIZ_LG_1C-AL_4/0_7STRAL_4/0_7STRAL_4/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=338 emergamps=406 units=km enabled=true phases=3
+New "Line.mdv201_hn_2_085_abc38388" bus1=44585 bus2=38388 length=0.0341376 geometry=3PH_HORIZ_LG_1C-AL_4/0_7STRAL_4/0_7STRAL_4/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=338 emergamps=406 units=km enabled=true phases=3
+New "Line.s_mdv201_hn_2_085_abc38388-1b0" bus1=x_38388.2 bus2=x_38388_1.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_085_abc38388-1b1" bus1=x_38388.2 bus2=x_38388_2.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_085_abc38388-1b2" bus1=x_38388.2 bus2=x_38388_3.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_106882fuse" bus1=38388.2 bus2=106882.2 length=0.001524 geometry=1PH-NONEBUSBARNONEBUSBAR Seasons=1 Ratings=[0,] normamps=2000 emergamps=2400 units=km enabled=true phases=1
+New "Line.mdv201_hn_2_084_b38389" bus1=106882.2 bus2=38389.2 length=0.0926592 geometry=1PH-NONECU_#6_1STRNONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=125 emergamps=150 units=km enabled=true phases=1
+New "Line.s_mdv201_hn_2_084_b38389-1b0" bus1=x_38389.2 bus2=x_38389_1.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_084_b38389-1b1" bus1=x_38389.2 bus2=x_38389_2.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_312_abc44586" bus1=38388 bus2=44586 length=0.0603504 geometry=3PH_HORIZ_LG_1C-AL_4/0_7STRAL_4/0_7STRAL_4/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=338 emergamps=406 units=km enabled=true phases=3
+New "Line.s_mdv201_hn_2_312_abc44586-1b0" bus1=x_44586.2 bus2=x_44586_1.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_083_abc62239" bus1=44586 bus2=62239 length=0.0313944 geometry=3PH_HORIZ_LG_1C-AL_4/0_7STRAL_4/0_7STRAL_4/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=338 emergamps=406 units=km enabled=true phases=3
+New "Line.mdv201_hn_2_456_abc62242" bus1=62239 bus2=62242 length=0.06096 geometry=3PH_HORIZ_LG_1C-AL_4/0_7STRAL_4/0_7STRAL_4/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=338 emergamps=406 units=km enabled=true phases=3
+New "Line.mdv201_106884fuse" bus1=62242.3 bus2=106884.3 length=0.001524 geometry=1PH-NONENONEBUSBARBUSBAR Seasons=1 Ratings=[0,] normamps=2000 emergamps=2400 units=km enabled=true phases=1
+New "Line.mdv201_hn_2_457_c62244" bus1=106884.3 bus2=62244.3 length=0.0307848 geometry=1PH-NONENONEAL_1/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=218 emergamps=262 units=km enabled=true phases=1
+New "Line.s_mdv201_hn_2_457_c62244-1c0" bus1=x_62244.3 bus2=x_62244_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_457_c62244-1c1" bus1=x_62244.3 bus2=x_62244_2.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_466_c62235" bus1=62244.3 bus2=62235.3 length=0.042672 geometry=1PH-NONENONEAL_1/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=218 emergamps=262 units=km enabled=true phases=1
+New "Line.s_mdv201_hn_2_466_c62235-1c0" bus1=x_62235.3 bus2=x_62235_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_466_c62235-1c1" bus1=x_62235.3 bus2=x_62235_2.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_466_c62235-1c2" bus1=x_62235.3 bus2=x_62235_3.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_465_c62233" bus1=62235.3 bus2=62233.3 length=0.0524256 geometry=1PH-NONENONEAL_1/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=218 emergamps=262 units=km enabled=true phases=1
+New "Line.s_mdv201_hn_2_465_c62233-1c0" bus1=x_62233.3 bus2=x_62233_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_465_c62233-1c1" bus1=x_62233.3 bus2=x_62233_2.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_465_c62233-1c2" bus1=x_62233.3 bus2=x_62233_3.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_464_c62232" bus1=62233.3 bus2=62232.3 length=0.0402336 geometry=1PH-NONENONEAL_1/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=218 emergamps=262 units=km enabled=true phases=1
+New "Line.s_mdv201_hn_2_464_c62232-1c0" bus1=x_62232.3 bus2=x_62232_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_464_c62232-1c1" bus1=x_62232.3 bus2=x_62232_2.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_463_c62234" bus1=62232.3 bus2=62234.3 length=0.0493776 geometry=1PH-NONENONEAL_1/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=218 emergamps=262 units=km enabled=true phases=1
+New "Line.s_mdv201_hn_2_463_c62234-1c0" bus1=x_62234.3 bus2=x_62234_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_463_c62234-1c1" bus1=x_62234.3 bus2=x_62234_2.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_463_c62234-1c2" bus1=x_62234.3 bus2=x_62234_3.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_462_c62243" bus1=62234.3 bus2=62243.3 length=0.0509016 geometry=1PH-NONENONEAL_1/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=218 emergamps=262 units=km enabled=true phases=1
+New "Line.s_mdv201_hn_2_462_c62243-1c0" bus1=x_62243.3 bus2=x_62243_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_462_c62243-1c1" bus1=x_62243.3 bus2=x_62243_2.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_462_c62243-1c2" bus1=x_62243.3 bus2=x_62243_3.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_462_c62243-1c3" bus1=x_62243.3 bus2=x_62243_4.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_461_c62251" bus1=62243.3 bus2=62251.3 length=0.0469392 geometry=1PH-NONENONEAL_1/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=218 emergamps=262 units=km enabled=true phases=1
+New "Line.s_mdv201_hn_2_461_c62251-1c0" bus1=x_62251.3 bus2=x_62251_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_461_c62251-1c1" bus1=x_62251.3 bus2=x_62251_2.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_461_c62251-1c2" bus1=x_62251.3 bus2=x_62251_3.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_460_c62258" bus1=62251.3 bus2=62258.3 length=0.0530352 geometry=1PH-NONENONEAL_1/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=218 emergamps=262 units=km enabled=true phases=1
+New "Line.s_mdv201_hn_2_460_c62258-1c0" bus1=x_62258.3 bus2=x_62258_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_460_c62258-1c1" bus1=x_62258.3 bus2=x_62258_2.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_460_c62258-1c2" bus1=x_62258.3 bus2=x_62258_3.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_459_c62259" bus1=62258.3 bus2=62259.3 length=0.0560832 geometry=1PH-NONENONEAL_1/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=218 emergamps=262 units=km enabled=true phases=1
+New "Line.s_mdv201_hn_2_459_c62259-1c0" bus1=x_62259.3 bus2=x_62259_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_459_c62259-1c1" bus1=x_62259.3 bus2=x_62259_2.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_082_abc62250" bus1=62242 bus2=62250 length=0.0734568 geometry=3PH_HORIZ_LG_1C-AL_4/0_7STRAL_4/0_7STRAL_4/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=338 emergamps=406 units=km enabled=true phases=3
+New "Line.s_mdv201_hn_2_082_abc62250-1b0" bus1=x_62250.2 bus2=x_62250_1.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_082_abc62250-1b1" bus1=x_62250.2 bus2=x_62250_2.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_082_abc62250-1b2" bus1=x_62250.2 bus2=x_62250_3.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_082_abc62250-1b3" bus1=x_62250.2 bus2=x_62250_4.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_031_abc62264" bus1=62250 bus2=62264 length=0.0512064 geometry=3PH_HORIZ_LG_1C-AL_4/0_7STRAL_4/0_7STRAL_4/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=338 emergamps=406 units=km enabled=true phases=3
+New "Line.s_mdv201_hn_2_031_abc62264-1b0" bus1=x_62264.2 bus2=x_62264_1.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_031_abc62264-1b1" bus1=x_62264.2 bus2=x_62264_2.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_106895fuse" bus1=62264.2 bus2=106895.2 length=0.001524 geometry=1PH-NONEBUSBARNONEBUSBAR Seasons=1 Ratings=[0,] normamps=2000 emergamps=2400 units=km enabled=true phases=1
+New "Line.mdv201_hn_21050_b62307" bus1=106895.2 bus2=62307.2 length=0.0740664 geometry=1PH-NONEAL_1/0_7STRNONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=218 emergamps=262 units=km enabled=true phases=1
+New "Line.s_mdv201_hn_21050_b62307-1b0" bus1=x_62307.2 bus2=x_62307_1.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_030_abc62265" bus1=62264 bus2=62265 length=0.054864 geometry=3PH_HORIZ_LG_1C-AL_4/0_7STRAL_4/0_7STRAL_4/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=338 emergamps=406 units=km enabled=true phases=3
+New "Line.s_mdv201_hn_2_030_abc62265-1b0" bus1=x_62265.2 bus2=x_62265_1.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_030_abc62265-1b1" bus1=x_62265.2 bus2=x_62265_2.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_029_abc62262" bus1=62265 bus2=62262 length=0.06096 geometry=3PH_HORIZ_LG_1C-AL_4/0_7STRAL_4/0_7STRAL_4/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=338 emergamps=406 units=km enabled=true phases=3
+New "Line.s_mdv201_hn_2_029_abc62262-1b0" bus1=x_62262.2 bus2=x_62262_1.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.sw-hn_2_029_sw" bus1=62262 bus2=mdv201_1144239usd_int length=0.001 Switch=True units=km enabled=true phases=3
+New "Line.mdv201_1144239usd" bus1=mdv201_1144239usd_int bus2=1144239 length=0.001524 geometry=3PH_HORIZ_LG_1C-BUSBARBUSBARBUSBARBUSBAR Seasons=1 Ratings=[0,] normamps=2000 emergamps=2400 units=km enabled=true phases=3
+New "Line.mdv201_39763_abc39763" bus1=1144239 bus2=39763 length=0.06096 geometry=3PH_HORIZ_LG_1C-AL_4/0_7STRAL_4/0_7STRAL_4/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=338 emergamps=406 units=km enabled=true phases=3
+New "Line.mdv201_hn_2_831_abc39762" bus1=39763 bus2=39762 length=0.013716 geometry=3PH_HORIZ_LG_1C-AL_4/0_7STRAL_4/0_7STRAL_4/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=338 emergamps=406 units=km enabled=true phases=3
+New "Line.mdv201_hn_2_080_abc39764" bus1=39763 bus2=39764 length=0.0222504 geometry=3PH_HORIZ_LG_1C-AL_4/0_7STRAL_4/0_7STRAL_4/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=338 emergamps=406 units=km enabled=true phases=3
+New "Line.mdv201_hn_2_186_abc15011" bus1=39764 bus2=15011 length=0.1085088 geometry=3PH_HORIZ_LG_1C-AL_4/0_7STRAL_4/0_7STRAL_4/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=338 emergamps=406 units=km enabled=true phases=3
+New "Line.s_mdv201_hn_2_186_abc15011-1a0" bus1=x_15011.1 bus2=x_15011_1.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_186_abc15011-1a1" bus1=x_15011.1 bus2=x_15011_2.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_146_abc6578" bus1=15011 bus2=6578 length=0.1075944 geometry=3PH_HORIZ_LG_1C-AL_4/0_7STRAL_4/0_7STRAL_4/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=338 emergamps=406 units=km enabled=true phases=3
+New "Line.s_mdv201_da_8_146_abc6578-1a0" bus1=x_6578.1 bus2=x_6578_1.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_146_abc6578-1a1" bus1=x_6578.1 bus2=x_6578_2.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_146_abc6578-1a2" bus1=x_6578.1 bus2=x_6578_3.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_507_abc6580" bus1=6578 bus2=6580 length=0.0813816 geometry=3PH_HORIZ_LG_1C-AL_4/0_7STRAL_4/0_7STRAL_4/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=338 emergamps=406 units=km enabled=true phases=3
+New "Line.s_mdv201_da_8_507_abc6580-1a0" bus1=x_6580.1 bus2=x_6580_1.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_507_abc6580-1a1" bus1=x_6580.1 bus2=x_6580_2.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_144_abc6582" bus1=6580 bus2=6582 length=0.0307848 geometry=3PH_HORIZ_LG_1C-AL_4/0_7STRAL_4/0_7STRAL_4/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=338 emergamps=406 units=km enabled=true phases=3
+New "Line.mdv201_99419fuse" bus1=6582.1 bus2=99419.1 length=0.001524 geometry=1PH-BUSBARNONENONEBUSBAR Seasons=1 Ratings=[0,] normamps=2000 emergamps=2400 units=km enabled=true phases=1
+New "Line.mdv201_da_8_459_a6583" bus1=99419.1 bus2=6583.1 length=0.0725424 geometry=1PH-AL_#2_7STRNONENONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.s_mdv201_da_8_459_a6583-1a0" bus1=x_6583.1 bus2=x_6583_1.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_459_a6583-1a1" bus1=x_6583.1 bus2=x_6583_2.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.sw-da_8_144_sw" bus1=6582 bus2=mdv201_99420usd_int length=0.001 Switch=True units=km enabled=true phases=3
+New "Line.mdv201_99420usd" bus1=mdv201_99420usd_int bus2=99420 length=0.001524 geometry=3PH_HORIZ_LG_1C-BUSBARBUSBARBUSBARBUSBAR Seasons=1 Ratings=[0,] normamps=2000 emergamps=2400 units=km enabled=true phases=3
+New "Line.mdv201_da_8_142_abc6584" bus1=99420 bus2=6584 length=0.06858 geometry=3PH_HORIZ_LG_1C-AL_4/0_7STRAL_4/0_7STRAL_4/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=338 emergamps=406 units=km enabled=true phases=3
+New "Line.mdv201_99422fuse" bus1=6584.1 bus2=99422.1 length=0.001524 geometry=1PH-BUSBARNONENONEBUSBAR Seasons=1 Ratings=[0,] normamps=2000 emergamps=2400 units=km enabled=true phases=1
+New "Line.mdv201_da_8_673_a6595" bus1=99422.1 bus2=6595.1 length=0.0210312 geometry=1PH-AL_#2_7STRNONENONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.s_mdv201_da_8_673_a6595-1a0" bus1=x_6595.1 bus2=x_6595_1.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_673_a6595-1a1" bus1=x_6595.1 bus2=x_6595_2.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_674_a6597" bus1=6595.1 bus2=6597.1 length=0.0560832 geometry=1PH-AL_#2_7STRNONENONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.s_mdv201_da_8_674_a6597-1a0" bus1=x_6597.1 bus2=x_6597_1.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_674_a6597-1a1" bus1=x_6597.1 bus2=x_6597_2.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_674_a6597-1a2" bus1=x_6597.1 bus2=x_6597_3.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_675_a56750" bus1=6597.1 bus2=56750.1 length=0.054864 geometry=1PH-AL_#2_7STRNONENONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.s_mdv201_da_8_675_a56750-1a0" bus1=x_56750.1 bus2=x_56750_1.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_675_a56750-1a1" bus1=x_56750.1 bus2=x_56750_2.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_675_a56750-1a2" bus1=x_56750.1 bus2=x_56750_3.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_675_a56750-1a3" bus1=x_56750.1 bus2=x_56750_4.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_676_a56755" bus1=56750.1 bus2=56755.1 length=0.0554736 geometry=1PH-AL_#2_7STRNONENONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.s_mdv201_da_8_676_a56755-1a0" bus1=x_56755.1 bus2=x_56755_1.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_676_a56755-1a1" bus1=x_56755.1 bus2=x_56755_2.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_676_a56755-1a2" bus1=x_56755.1 bus2=x_56755_3.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_676_a56755-1a3" bus1=x_56755.1 bus2=x_56755_4.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_677_a56760" bus1=56755.1 bus2=56760.1 length=0.0603504 geometry=1PH-AL_#2_7STRNONENONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.s_mdv201_da_8_677_a56760-1a0" bus1=x_56760.1 bus2=x_56760_1.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_677_a56760-1a1" bus1=x_56760.1 bus2=x_56760_2.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_677_a56760-1a2" bus1=x_56760.1 bus2=x_56760_3.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_677_a56760-1a3" bus1=x_56760.1 bus2=x_56760_4.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_678_a56764" bus1=56760.1 bus2=56764.1 length=0.0576072 geometry=1PH-AL_#2_7STRNONENONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.s_mdv201_da_8_678_a56764-1a0" bus1=x_56764.1 bus2=x_56764_1.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_678_a56764-1a1" bus1=x_56764.1 bus2=x_56764_2.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_678_a56764-1a2" bus1=x_56764.1 bus2=x_56764_3.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_678_a56764-1a3" bus1=x_56764.1 bus2=x_56764_4.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_679_a56772" bus1=56764.1 bus2=56772.1 length=0.0591312 geometry=1PH-AL_#2_7STRNONENONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.s_mdv201_da_8_679_a56772-1a0" bus1=x_56772.1 bus2=x_56772_1.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_679_a56772-1a1" bus1=x_56772.1 bus2=x_56772_2.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_679_a56772-1a2" bus1=x_56772.1 bus2=x_56772_3.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_740_abc6594" bus1=6584 bus2=6594 length=0.0591312 geometry=3PH_HORIZ_LG_1C-AL_4/0_7STRAL_4/0_7STRAL_4/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=338 emergamps=406 units=km enabled=true phases=3
+New "Line.s_mdv201_da_8_740_abc6594-1b0" bus1=x_6594.2 bus2=x_6594_1.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_740_abc6594-1b1" bus1=x_6594.2 bus2=x_6594_2.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_740_abc6594-1b2" bus1=x_6594.2 bus2=x_6594_3.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_140_abc56751" bus1=6594 bus2=56751 length=0.0612648 geometry=3PH_HORIZ_LG_1C-AL_4/0_7STRAL_4/0_7STRAL_4/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=338 emergamps=406 units=km enabled=true phases=3
+New "Line.s_mdv201_da_8_140_abc56751-1a0" bus1=x_56751.1 bus2=x_56751_1.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_234_abc56762" bus1=56751 bus2=56762 length=0.059436 geometry=3PH_HORIZ_LG_1C-AL_4/0_7STRAL_4/0_7STRAL_4/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=338 emergamps=406 units=km enabled=true phases=3
+New "Line.s_mdv201_da_8_234_abc56762-1c0" bus1=x_56762.3 bus2=x_56762_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_147_abc56766" bus1=56762 bus2=56766 length=0.0710184 geometry=3PH_HORIZ_LG_1C-AL_4/0_7STRAL_4/0_7STRAL_4/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=338 emergamps=406 units=km enabled=true phases=3
+New "Line.mdv201_1000983fuse" bus1=56766.1 bus2=1000983.1 length=0.001524 geometry=1PH-BUSBARNONENONEBUSBAR Seasons=1 Ratings=[0,] normamps=2000 emergamps=2400 units=km enabled=true phases=1
+New "Line.mdv201_da_8_917_a56768" bus1=1000983.1 bus2=56768.1 length=0.0307848 geometry=1PH-AL_1/0_7STRNONENONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=218 emergamps=262 units=km enabled=true phases=1
+New "Line.s_mdv201_da_8_917_a56768-1a0" bus1=x_56768.1 bus2=x_56768_1.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_918_a56770" bus1=56768.1 bus2=56770.1 length=0.0454152 geometry=1PH-AL_1/0_7STRNONENONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=218 emergamps=262 units=km enabled=true phases=1
+New "Line.s_mdv201_da_8_918_a56770-1a0" bus1=x_56770.1 bus2=x_56770_1.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_918_a56770-1a1" bus1=x_56770.1 bus2=x_56770_2.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_918_a56770-1a2" bus1=x_56770.1 bus2=x_56770_3.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_919_a56782" bus1=56770.1 bus2=56782.1 length=0.0688848 geometry=1PH-AL_1/0_7STRNONENONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=218 emergamps=262 units=km enabled=true phases=1
+New "Line.s_mdv201_da_8_919_a56782-1a0" bus1=x_56782.1 bus2=x_56782_1.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_919_a56782-1a1" bus1=x_56782.1 bus2=x_56782_2.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_920_a56783" bus1=56782.1 bus2=56783.1 length=0.0743712 geometry=1PH-AL_1/0_7STRNONENONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=218 emergamps=262 units=km enabled=true phases=1
+New "Line.s_mdv201_da_8_920_a56783-1a0" bus1=x_56783.1 bus2=x_56783_1.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_920_a56783-1a1" bus1=x_56783.1 bus2=x_56783_2.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_920_a56783-1a2" bus1=x_56783.1 bus2=x_56783_3.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_920_a56783-1a3" bus1=x_56783.1 bus2=x_56783_4.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_922_a56784" bus1=56782.1 bus2=56784.1 length=0.042672 geometry=1PH-AL_1/0_7STRNONENONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=218 emergamps=262 units=km enabled=true phases=1
+New "Line.s_mdv201_da_8_922_a56784-1a0" bus1=x_56784.1 bus2=x_56784_1.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_922_a56784-1a1" bus1=x_56784.1 bus2=x_56784_2.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_923_a56785" bus1=56784.1 bus2=56785.1 length=0.0643128 geometry=1PH-AL_1/0_7STRNONENONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=218 emergamps=262 units=km enabled=true phases=1
+New "Line.s_mdv201_da_8_923_a56785-1a0" bus1=x_56785.1 bus2=x_56785_1.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_923_a56785-1a1" bus1=x_56785.1 bus2=x_56785_2.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_924_a56786" bus1=56785.1 bus2=56786.1 length=0.0381 geometry=1PH-AL_1/0_7STRNONENONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=218 emergamps=262 units=km enabled=true phases=1
+New "Line.s_mdv201_da_8_924_a56786-1a0" bus1=x_56786.1 bus2=x_56786_1.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_924_a56786-1a1" bus1=x_56786.1 bus2=x_56786_2.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_925_a56787" bus1=56786.1 bus2=56787.1 length=0.0765048 geometry=1PH-AL_1/0_7STRNONENONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=218 emergamps=262 units=km enabled=true phases=1
+New "Line.s_mdv201_da_8_925_a56787-1a0" bus1=x_56787.1 bus2=x_56787_1.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_925_a56787-1a1" bus1=x_56787.1 bus2=x_56787_2.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_925_a56787-1a2" bus1=x_56787.1 bus2=x_56787_3.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_925_a56787-1a3" bus1=x_56787.1 bus2=x_56787_4.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_926_a74421" bus1=56787.1 bus2=74421.1 length=0.0755904 geometry=1PH-AL_1/0_7STRNONENONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=218 emergamps=262 units=km enabled=true phases=1
+New "Line.s_mdv201_da_8_926_a74421-1a0" bus1=x_74421.1 bus2=x_74421_1.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_926_a74421-1a1" bus1=x_74421.1 bus2=x_74421_2.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_926_a74421-1a2" bus1=x_74421.1 bus2=x_74421_3.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_926_a74421-1a3" bus1=x_74421.1 bus2=x_74421_4.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_927_a74424" bus1=74421.1 bus2=74424.1 length=0.074676 geometry=1PH-AL_1/0_7STRNONENONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=218 emergamps=262 units=km enabled=true phases=1
+New "Line.s_mdv201_da_8_927_a74424-1a0" bus1=x_74424.1 bus2=x_74424_1.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_927_a74424-1a1" bus1=x_74424.1 bus2=x_74424_2.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_927_a74424-1a2" bus1=x_74424.1 bus2=x_74424_3.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_927_a74424-1a3" bus1=x_74424.1 bus2=x_74424_4.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_928_a39733" bus1=74424.1 bus2=39733.1 length=0.0734568 geometry=1PH-AL_1/0_7STRNONENONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=218 emergamps=262 units=km enabled=true phases=1
+New "Line.s_mdv201_da_8_928_a39733-1a0" bus1=x_39733.1 bus2=x_39733_1.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_928_a39733-1a1" bus1=x_39733.1 bus2=x_39733_2.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_928_a39733-1a2" bus1=x_39733.1 bus2=x_39733_3.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_928_a39733-1a3" bus1=x_39733.1 bus2=x_39733_4.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_929_a39734" bus1=39733.1 bus2=39734.1 length=0.0697992 geometry=1PH-AL_1/0_7STRNONENONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=218 emergamps=262 units=km enabled=true phases=1
+New "Line.s_mdv201_da_8_929_a39734-1a0" bus1=x_39734.1 bus2=x_39734_1.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_929_a39734-1a1" bus1=x_39734.1 bus2=x_39734_2.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_929_a39734-1a2" bus1=x_39734.1 bus2=x_39734_3.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_929_a39734-1a3" bus1=x_39734.1 bus2=x_39734_4.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_930_a39751" bus1=39734.1 bus2=39751.1 length=0.06858 geometry=1PH-AL_1/0_7STRNONENONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=218 emergamps=262 units=km enabled=true phases=1
+New "Line.s_mdv201_da_8_930_a39751-1a0" bus1=x_39751.1 bus2=x_39751_1.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_930_a39751-1a1" bus1=x_39751.1 bus2=x_39751_2.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_930_a39751-1a2" bus1=x_39751.1 bus2=x_39751_3.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_930_a39751-1a3" bus1=x_39751.1 bus2=x_39751_4.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_931_a74443" bus1=39751.1 bus2=74443.1 length=0.0566928 geometry=1PH-AL_1/0_7STRNONENONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=218 emergamps=262 units=km enabled=true phases=1
+New "Line.s_mdv201_da_8_931_a74443-1a0" bus1=x_74443.1 bus2=x_74443_1.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_931_a74443-1a1" bus1=x_74443.1 bus2=x_74443_2.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_931_a74443-1a2" bus1=x_74443.1 bus2=x_74443_3.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_148_abc56777" bus1=56766 bus2=56777 length=0.0786384 geometry=3PH_VERT_1C-AL_4/0_7STRAL_4/0_7STRAL_4/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=338 emergamps=406 units=km enabled=true phases=3
+New "Line.s_mdv201_da_8_148_abc56777-1b0" bus1=x_56777.2 bus2=x_56777_1.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_149_abc56778" bus1=56777 bus2=56778 length=0.102108 geometry=3PH_HORIZ_LG_1C-AL_4/0_7STRAL_4/0_7STRAL_4/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=338 emergamps=406 units=km enabled=true phases=3
+New "Line.s_mdv201_da_8_149_abc56778-1a0" bus1=x_56778.1 bus2=x_56778_1.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_1149717fuse" bus1=56778 bus2=1149717 length=0.001524 geometry=3PH_HORIZ_LG_1C-BUSBARBUSBARBUSBARBUSBAR Seasons=1 Ratings=[0,] normamps=2000 emergamps=2400 units=km enabled=true phases=3
+New "Line.mdv201_da_8_860_b1149719" bus1=1149717.2 bus2=1149719.2 length=0.0128016 geometry=1PH-NONEAL_#2_7STRNONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.mdv201_da_8_861_b1149720" bus1=1149719.2 bus2=1149720.2 length=0.0749808 geometry=1PH-NONEAL_#2_7STRNONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.s_mdv201_da_8_861_b1149720-1b0" bus1=x_1149720.2 bus2=x_1149720_1.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_861_b1149720-1b1" bus1=x_1149720.2 bus2=x_1149720_2.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_150_abc56781" bus1=56778 bus2=56781 length=0.0862584 geometry=3PH_HORIZ_LG_1C-AL_4/0_7STRAL_4/0_7STRAL_4/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=338 emergamps=406 units=km enabled=true phases=3
+New "Line.mdv201_108774fuse" bus1=56781.2 bus2=108774.2 length=0.001524 geometry=1PH-NONEBUSBARNONEBUSBAR Seasons=1 Ratings=[0,] normamps=2000 emergamps=2400 units=km enabled=true phases=1
+New "Line.mdv201_da_8_944_b74414" bus1=108774.2 bus2=74414.2 length=0.0667512 geometry=1PH-NONEAL_1/0_7STRNONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=218 emergamps=262 units=km enabled=true phases=1
+New "Line.mdv201_da_8_945_b56775" bus1=74414.2 bus2=56775.2 length=0.05334 geometry=1PH-NONEAL_1/0_7STRNONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=218 emergamps=262 units=km enabled=true phases=1
+New "Line.mdv201_da_8_946_b56776" bus1=56775.2 bus2=56776.2 length=0.054864 geometry=1PH-NONEAL_1/0_7STRNONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=218 emergamps=262 units=km enabled=true phases=1
+New "Line.s_mdv201_da_8_946_b56776-1b0" bus1=x_56776.2 bus2=x_56776_1.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_152_abc74420" bus1=56781 bus2=74420 length=0.09906 geometry=3PH_HORIZ_LG_1C-AL_4/0_7STRAL_4/0_7STRAL_4/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=338 emergamps=406 units=km enabled=true phases=3
+New "Line.s_mdv201_da_8_152_abc74420-1b0" bus1=x_74420.2 bus2=x_74420_1.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_492_abc74428" bus1=74420 bus2=74428 length=0.0509016 geometry=3PH_HORIZ_LG_1C-AL_4/0_7STRAL_4/0_7STRAL_4/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=338 emergamps=406 units=km enabled=true phases=3
+New "Line.s_mdv201_da_8_492_abc74428-1b0" bus1=x_74428.2 bus2=x_74428_1.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_493_a74432" bus1=74428.1 bus2=74432.1 length=0.0149352 geometry=1PH-AL_1/0_7STRNONENONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=218 emergamps=262 units=km enabled=true phases=1
+New "Line.mdv201_108776fuse" bus1=74432.1 bus2=108776.1 length=0.001524 geometry=1PH-BUSBARNONENONEBUSBAR Seasons=1 Ratings=[0,] normamps=2000 emergamps=2400 units=km enabled=true phases=1
+New "Line.mdv201_da_8_494_a74434" bus1=108776.1 bus2=74434.1 length=0.1024128 geometry=1PH-AL_1/0_7STRNONENONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=218 emergamps=262 units=km enabled=true phases=1
+New "Line.s_mdv201_da_8_494_a74434-1a0" bus1=x_74434.1 bus2=x_74434_1.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_773_a74438" bus1=74434.1 bus2=74438.1 length=0.0877824 geometry=1PH-AL_#2_7STRNONENONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.s_mdv201_da_8_773_a74438-1a0" bus1=x_74438.1 bus2=x_74438_1.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_153_abc74433" bus1=74428 bus2=74433 length=0.0813816 geometry=3PH_HORIZ_LG_1C-AL_4/0_7STRAL_4/0_7STRAL_4/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=338 emergamps=406 units=km enabled=true phases=3
+New "Line.mdv201_da_8_154_abc74439" bus1=74433 bus2=74439 length=0.080772 geometry=3PH_HORIZ_LG_1C-AL_4/0_7STRAL_4/0_7STRAL_4/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=338 emergamps=406 units=km enabled=true phases=3
+New "Line.sw-da_8_154_sw" bus1=74439 bus2=mdv201_1144238usd_int length=0.001 Switch=True units=km enabled=true phases=3
+New "Line.mdv201_1144238usd" bus1=mdv201_1144238usd_int bus2=1144238 length=0.001524 geometry=3PH_HORIZ_LG_1C-BUSBARBUSBARBUSBARBUSBAR Seasons=1 Ratings=[0,] normamps=2000 emergamps=2400 units=km enabled=true phases=3
+New "Line.s_mdv201_1144238usd-1a0" bus1=x_1144238.1 bus2=x_1144238_1.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_040_abc46394" bus1=1144238 bus2=46394 length=0.0856488 geometry=3PH_VERT_1C-AL_4/0_7STRAL_4/0_7STRAL_4/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=338 emergamps=406 units=km enabled=true phases=3
+New "Line.mdv201_da_8_145_abc46393" bus1=46394 bus2=46393 length=0.0740664 geometry=3PH_HORIZ_LG_1C-AL_4/0_7STRAL_4/0_7STRAL_4/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=338 emergamps=406 units=km enabled=true phases=3
+New "Line.mdv201_1144237fuse" bus1=46394.2 bus2=1144237.2 length=0.001524 geometry=1PH-NONEBUSBARNONEBUSBAR Seasons=1 Ratings=[0,] normamps=2000 emergamps=2400 units=km enabled=true phases=1
+New "Line.mdv201_da_8_786_b1144236" bus1=1144237.2 bus2=1144236.2 length=0.0829056 geometry=1PH-NONECU_#6_1STRNONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=125 emergamps=150 units=km enabled=true phases=1
+New "Line.s_mdv201_da_8_786_b1144236-1b0" bus1=x_1144236.2 bus2=x_1144236_1.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_786_b1144236-1b1" bus1=x_1144236.2 bus2=x_1144236_2.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_787_b74444" bus1=1144236.2 bus2=74444.2 length=0.0597408 geometry=1PH-NONECU_#6_1STRNONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=125 emergamps=150 units=km enabled=true phases=1
+New "Line.mdv201_da_8_686_b74445" bus1=74444.2 bus2=74445.2 length=0.0240792 geometry=1PH-NONEAL_#2_7STRNONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.mdv201_da_8_687_b74448" bus1=74445.2 bus2=74448.2 length=0.0448056 geometry=1PH-NONEAL_#2_7STRNONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.s_mdv201_da_8_687_b74448-1b0" bus1=x_74448.2 bus2=x_74448_1.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_687_b74448-1b1" bus1=x_74448.2 bus2=x_74448_2.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_687_b74448-1b2" bus1=x_74448.2 bus2=x_74448_3.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_688_b74451" bus1=74448.2 bus2=74451.2 length=0.0493776 geometry=1PH-NONEAL_#2_7STRNONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.s_mdv201_da_8_688_b74451-1b0" bus1=x_74451.2 bus2=x_74451_1.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_688_b74451-1b1" bus1=x_74451.2 bus2=x_74451_2.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_688_b74451-1b2" bus1=x_74451.2 bus2=x_74451_3.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_688_b74451-1b3" bus1=x_74451.2 bus2=x_74451_4.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_689_b46389" bus1=74451.2 bus2=46389.2 length=0.0585216 geometry=1PH-NONEAL_#2_7STRNONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.s_mdv201_da_8_689_b46389-1b0" bus1=x_46389.2 bus2=x_46389_1.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_689_b46389-1b1" bus1=x_46389.2 bus2=x_46389_2.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_689_b46389-1b2" bus1=x_46389.2 bus2=x_46389_3.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_689_b46389-1b3" bus1=x_46389.2 bus2=x_46389_4.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_690_b46385" bus1=46389.2 bus2=46385.2 length=0.0551688 geometry=1PH-NONEAL_#2_7STRNONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.s_mdv201_da_8_690_b46385-1b0" bus1=x_46385.2 bus2=x_46385_1.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_690_b46385-1b1" bus1=x_46385.2 bus2=x_46385_2.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_690_b46385-1b2" bus1=x_46385.2 bus2=x_46385_3.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_691_b46386" bus1=46385.2 bus2=46386.2 length=0.042672 geometry=1PH-NONEAL_#2_7STRNONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.s_mdv201_da_8_691_b46386-1b0" bus1=x_46386.2 bus2=x_46386_1.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_691_b46386-1b1" bus1=x_46386.2 bus2=x_46386_2.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_692_b88660" bus1=46386.2 bus2=88660.2 length=0.0719328 geometry=1PH-NONEAL_#2_7STRNONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.s_mdv201_da_8_692_b88660-1b0" bus1=x_88660.2 bus2=x_88660_1.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_692_b88660-1b1" bus1=x_88660.2 bus2=x_88660_2.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_692_b88660-1b2" bus1=x_88660.2 bus2=x_88660_3.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_692_b88660-1b3" bus1=x_88660.2 bus2=x_88660_4.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_692_b88660-1b4" bus1=x_88660.2 bus2=x_88660_5.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_693_b88665" bus1=88660.2 bus2=88665.2 length=0.0566928 geometry=1PH-NONEAL_#2_7STRNONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.s_mdv201_da_8_693_b88665-1b0" bus1=x_88665.2 bus2=x_88665_1.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_693_b88665-1b1" bus1=x_88665.2 bus2=x_88665_2.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_693_b88665-1b2" bus1=x_88665.2 bus2=x_88665_3.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_695_b46387" bus1=46386.2 bus2=46387.2 length=0.0710184 geometry=1PH-NONEAL_#2_7STRNONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.s_mdv201_da_8_695_b46387-1b0" bus1=x_46387.2 bus2=x_46387_1.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_695_b46387-1b1" bus1=x_46387.2 bus2=x_46387_2.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_696_b46388" bus1=46387.2 bus2=46388.2 length=0.0435864 geometry=1PH-NONEAL_#2_7STRNONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.s_mdv201_da_8_696_b46388-1b0" bus1=x_46388.2 bus2=x_46388_1.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_696_b46388-1b1" bus1=x_46388.2 bus2=x_46388_2.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_696_b46388-1b2" bus1=x_46388.2 bus2=x_46388_3.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_696_b46388-1b3" bus1=x_46388.2 bus2=x_46388_4.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_697_b46390" bus1=46388.2 bus2=46390.2 length=0.0679704 geometry=1PH-NONEAL_#2_7STRNONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.s_mdv201_da_8_697_b46390-1b0" bus1=x_46390.2 bus2=x_46390_1.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_697_b46390-1b1" bus1=x_46390.2 bus2=x_46390_2.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_697_b46390-1b2" bus1=x_46390.2 bus2=x_46390_3.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_697_b46390-1b3" bus1=x_46390.2 bus2=x_46390_4.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_155_abc46395" bus1=46394 bus2=46395 length=0.096012 geometry=3PH_HORIZ_LG_1C-AL_336_19STRAL_336_19STRAL_336_19STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=453 emergamps=544 units=km enabled=true phases=3
+New "Line.s_mdv201_da_8_155_abc46395-1c0" bus1=x_46395.3 bus2=x_46395_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_801_abc58430" bus1=46395 bus2=58430 length=0.108204 geometry=3PH_HORIZ_LG_1C-AL_336_19STRAL_336_19STRAL_336_19STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=453 emergamps=544 units=km enabled=true phases=3
+New "Line.mdv201_da_8_157_abc58429" bus1=58430 bus2=58429 length=0.0795528 geometry=3PH_VERT_1C-AL_336_19STRAL_336_19STRAL_336_19STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=453 emergamps=544 units=km enabled=true phases=3
+New "Line.mdv201_da_8_784_abc58431" bus1=58429 bus2=58431 length=0.0688848 geometry=3PH_HORIZ_LG_1C-AL_336_19STRAL_336_19STRAL_336_19STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=453 emergamps=544 units=km enabled=true phases=3
+New "Line.mdv201_106259fuse" bus1=58431.3 bus2=106259.3 length=0.001524 geometry=1PH-NONENONEBUSBARBUSBAR Seasons=1 Ratings=[0,] normamps=2000 emergamps=2400 units=km enabled=true phases=1
+New "Line.mdv201_da_8_158_c58433" bus1=106259.3 bus2=58433.3 length=0.0143256 geometry=1PH-NONENONECU_#6_1STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=125 emergamps=150 units=km enabled=true phases=1
+New "Line.mdv201_1023343fuse" bus1=58433.3 bus2=1023343.3 length=0.001524 geometry=1PH-NONENONEBUSBARBUSBAR Seasons=1 Ratings=[0,] normamps=2000 emergamps=2400 units=km enabled=true phases=1
+New "Line.mdv201_da_8_397_c1023342" bus1=1023343.3 bus2=1023342.3 length=0.0801624 geometry=1PH-NONENONEAL_#2_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.mdv201_da_8_398_c1017351" bus1=1023342.3 bus2=1017351.3 length=0.0749808 geometry=1PH-NONENONEAL_#2_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.s_mdv201_da_8_398_c1017351-1c0" bus1=x_1017351.3 bus2=x_1017351_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_744_c46398" bus1=58433.3 bus2=46398.3 length=0.04572 geometry=1PH-NONENONECU_#6_1STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=125 emergamps=150 units=km enabled=true phases=1
+New "Line.s_mdv201_da_8_744_c46398-1c0" bus1=x_46398.3 bus2=x_46398_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_744_c46398-1c1" bus1=x_46398.3 bus2=x_46398_2.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_200_c46399" bus1=46398.3 bus2=46399.3 length=0.0326136 geometry=1PH-NONENONECU_#6_1STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=125 emergamps=150 units=km enabled=true phases=1
+New "Line.mdv201_da_8_769_c46401" bus1=46399.3 bus2=46401.3 length=0.0414528 geometry=1PH-NONENONECU_#6_1STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=125 emergamps=150 units=km enabled=true phases=1
+New "Line.s_mdv201_da_8_769_c46401-1c0" bus1=x_46401.3 bus2=x_46401_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_769_c46401-1c1" bus1=x_46401.3 bus2=x_46401_2.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_201_c46403" bus1=46401.3 bus2=46403.3 length=0.0371856 geometry=1PH-NONENONECU_#6_1STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=125 emergamps=150 units=km enabled=true phases=1
+New "Line.mdv201_da_8_959_c74455" bus1=46403.3 bus2=74455.3 length=0.0374904 geometry=1PH-NONENONECU_#6_1STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=125 emergamps=150 units=km enabled=true phases=1
+New "Line.mdv201_da_8_202_c74456" bus1=74455.3 bus2=74456.3 length=0.0402336 geometry=1PH-NONENONECU_#6_1STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=125 emergamps=150 units=km enabled=true phases=1
+New "Line.s_mdv201_da_8_202_c74456-1c0" bus1=x_74456.3 bus2=x_74456_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_203_c46407" bus1=74456.3 bus2=46407.3 length=0.0780288 geometry=1PH-NONENONECU_#6_1STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=125 emergamps=150 units=km enabled=true phases=1
+New "Line.s_mdv201_da_8_203_c46407-1c0" bus1=x_46407.3 bus2=x_46407_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_203_c46407-1c1" bus1=x_46407.3 bus2=x_46407_2.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_203_c46407-1c2" bus1=x_46407.3 bus2=x_46407_3.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_607_c46406" bus1=46407.3 bus2=46406.3 length=0.0460248 geometry=1PH-NONENONECU_#6_1STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=125 emergamps=150 units=km enabled=true phases=1
+New "Line.mdv201_da_8_204_c46404" bus1=46406.3 bus2=46404.3 length=0.0362712 geometry=1PH-NONENONECU_#6_1STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=125 emergamps=150 units=km enabled=true phases=1
+New "Line.s_mdv201_da_8_204_c46404-1c0" bus1=x_46404.3 bus2=x_46404_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_204_c46404-1c1" bus1=x_46404.3 bus2=x_46404_2.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_724_c46405" bus1=46404.3 bus2=46405.3 length=0.0557784 geometry=1PH-NONENONECU_#6_1STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=125 emergamps=150 units=km enabled=true phases=1
+New "Line.mdv201_da_8_205_c58436" bus1=46405.3 bus2=58436.3 length=0.0445008 geometry=1PH-NONENONECU_#6_1STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=125 emergamps=150 units=km enabled=true phases=1
+New "Line.mdv201_da_8_869_c58437" bus1=58436.3 bus2=58437.3 length=0.0530352 geometry=1PH-NONENONECU_#6_1STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=125 emergamps=150 units=km enabled=true phases=1
+New "Line.s_mdv201_da_8_869_c58437-1c0" bus1=x_58437.3 bus2=x_58437_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_206_c58438" bus1=58437.3 bus2=58438.3 length=0.0722376 geometry=1PH-NONENONECU_#6_1STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=125 emergamps=150 units=km enabled=true phases=1
+New "Line.mdv201_106261fuse" bus1=58438.3 bus2=106261.3 length=0.001524 geometry=1PH-NONENONEBUSBARBUSBAR Seasons=1 Ratings=[0,] normamps=2000 emergamps=2400 units=km enabled=true phases=1
+New "Line.mdv201_da_8_726_c39743" bus1=106261.3 bus2=39743.3 length=0.024384 geometry=1PH-NONENONEAL_#2_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.mdv201_da_8_727_c39744" bus1=39743.3 bus2=39744.3 length=0.062484 geometry=1PH-NONENONEAL_#2_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.s_mdv201_da_8_727_c39744-1c0" bus1=x_39744.3 bus2=x_39744_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_727_c39744-1c1" bus1=x_39744.3 bus2=x_39744_2.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_728_c39745" bus1=39744.3 bus2=39745.3 length=0.0710184 geometry=1PH-NONENONEAL_#2_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.s_mdv201_da_8_728_c39745-1c0" bus1=x_39745.3 bus2=x_39745_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_728_c39745-1c1" bus1=x_39745.3 bus2=x_39745_2.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_728_c39745-1c2" bus1=x_39745.3 bus2=x_39745_3.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_732_c74453" bus1=39745.3 bus2=74453.3 length=0.0588264 geometry=1PH-NONENONEAL_#2_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.s_mdv201_da_8_732_c74453-1c0" bus1=x_74453.3 bus2=x_74453_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_732_c74453-1c1" bus1=x_74453.3 bus2=x_74453_2.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_732_c74453-1c2" bus1=x_74453.3 bus2=x_74453_3.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_732_c74453-1c3" bus1=x_74453.3 bus2=x_74453_4.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_733_c74446" bus1=74453.3 bus2=74446.3 length=0.0283464 geometry=1PH-NONENONEAL_#2_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.mdv201_da_8_734_c74440" bus1=74446.3 bus2=74440.3 length=0.0359664 geometry=1PH-NONENONEAL_#2_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.s_mdv201_da_8_734_c74440-1c0" bus1=x_74440.3 bus2=x_74440_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_734_c74440-1c1" bus1=x_74440.3 bus2=x_74440_2.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_734_c74440-1c2" bus1=x_74440.3 bus2=x_74440_3.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_735_c74437" bus1=74440.3 bus2=74437.3 length=0.0637032 geometry=1PH-NONENONEAL_#2_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.s_mdv201_da_8_735_c74437-1c0" bus1=x_74437.3 bus2=x_74437_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_735_c74437-1c1" bus1=x_74437.3 bus2=x_74437_2.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_735_c74437-1c2" bus1=x_74437.3 bus2=x_74437_3.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_735_c74437-1c3" bus1=x_74437.3 bus2=x_74437_4.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_736_c74436" bus1=74437.3 bus2=74436.3 length=0.0484632 geometry=1PH-NONENONEAL_#2_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.s_mdv201_da_8_736_c74436-1c0" bus1=x_74436.3 bus2=x_74436_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_736_c74436-1c1" bus1=x_74436.3 bus2=x_74436_2.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_736_c74436-1c2" bus1=x_74436.3 bus2=x_74436_3.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_729_c74452" bus1=39745.3 bus2=74452.3 length=0.050292 geometry=1PH-NONENONEAL_#2_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.s_mdv201_da_8_729_c74452-1c0" bus1=x_74452.3 bus2=x_74452_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_729_c74452-1c1" bus1=x_74452.3 bus2=x_74452_2.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_730_c74449" bus1=74452.3 bus2=74449.3 length=0.0277368 geometry=1PH-NONENONEAL_#2_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.s_mdv201_da_8_730_c74449-1c0" bus1=x_74449.3 bus2=x_74449_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_730_c74449-1c1" bus1=x_74449.3 bus2=x_74449_2.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_730_c74449-1c2" bus1=x_74449.3 bus2=x_74449_3.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_731_c74450" bus1=74449.3 bus2=74450.3 length=0.047244 geometry=1PH-NONENONEAL_#2_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.s_mdv201_da_8_731_c74450-1c0" bus1=x_74450.3 bus2=x_74450_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_731_c74450-1c1" bus1=x_74450.3 bus2=x_74450_2.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_731_c74450-1c2" bus1=x_74450.3 bus2=x_74450_3.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_7_166_c58439" bus1=58438.3 bus2=58439.3 length=0.0798576 geometry=1PH-NONENONECU_#6_1STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=125 emergamps=150 units=km enabled=true phases=1
+New "Line.mdv201_da_7_167_c39741" bus1=58439.3 bus2=39741.3 length=0.0935736 geometry=1PH-NONENONECU_#6_1STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=125 emergamps=150 units=km enabled=true phases=1
+New "Line.mdv201_da_7_205_c39749" bus1=39741.3 bus2=39749.3 length=0.0917448 geometry=1PH-NONENONECU_#6_1STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=125 emergamps=150 units=km enabled=true phases=1
+New "Line.s_mdv201_da_7_205_c39749-1c0" bus1=x_39749.3 bus2=x_39749_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_7_169_c39742" bus1=39741.3 bus2=39742.3 length=0.0704088 geometry=1PH-NONENONEACSR_1/0_6/1ACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=271 emergamps=325 units=km enabled=true phases=1
+New "Line.s_mdv201_da_7_169_c39742-1c0" bus1=x_39742.3 bus2=x_39742_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_971_c46408" bus1=46406.3 bus2=46408.3 length=0.0085344 geometry=1PH-NONENONEACSR_1/0_6/1ACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=271 emergamps=325 units=km enabled=true phases=1
+New "Line.mdv201_da_8_972_c74454" bus1=46408.3 bus2=74454.3 length=0.0762 geometry=1PH-NONENONEACSR_1/0_6/1ACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=271 emergamps=325 units=km enabled=true phases=1
+New "Line.s_mdv201_da_8_972_c74454-1c0" bus1=x_74454.3 bus2=x_74454_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_104582fuse" bus1=46399.3 bus2=104582.3 length=0.001524 geometry=1PH-NONENONEBUSBARBUSBAR Seasons=1 Ratings=[0,] normamps=2000 emergamps=2400 units=km enabled=true phases=1
+New "Line.mdv201_da_8_808_c46400" bus1=104582.3 bus2=46400.3 length=0.0124968 geometry=1PH-NONENONEAL_1/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=218 emergamps=262 units=km enabled=true phases=1
+New "Line.mdv201_da_8_809_c46402" bus1=46400.3 bus2=46402.3 length=0.067056 geometry=1PH-NONENONEAL_1/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=218 emergamps=262 units=km enabled=true phases=1
+New "Line.mdv201_da_8_810_c58435" bus1=46402.3 bus2=58435.3 length=0.0469392 geometry=1PH-NONENONEAL_1/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=218 emergamps=262 units=km enabled=true phases=1
+New "Line.s_mdv201_da_8_810_c58435-1c0" bus1=x_58435.3 bus2=x_58435_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_159_abc58426" bus1=58431 bus2=58426 length=0.0725424 geometry=3PH_VERT_1C-AL_336_19STRAL_336_19STRAL_336_19STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=453 emergamps=544 units=km enabled=true phases=3
+New "Line.s_mdv201_da_8_159_abc58426-1c0" bus1=x_58426.3 bus2=x_58426_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_159_abc58426-1c1" bus1=x_58426.3 bus2=x_58426_2.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_159_abc58426-1c2" bus1=x_58426.3 bus2=x_58426_3.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_804_abc88656" bus1=58426 bus2=88656 length=0.0536448 geometry=3PH_HORIZ_LG_1C-AL_336_19STRAL_336_19STRAL_336_19STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=453 emergamps=544 units=km enabled=true phases=3
+New "Line.s_mdv201_da_8_804_abc88656-1c0" bus1=x_88656.3 bus2=x_88656_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_804_abc88656-1c1" bus1=x_88656.3 bus2=x_88656_2.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_254_abc58420" bus1=88656 bus2=58420 length=0.0454152 geometry=3PH_HORIZ_LG_1C-AL_336_19STRAL_336_19STRAL_336_19STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=453 emergamps=544 units=km enabled=true phases=3
+New "Line.mdv201_106257fuse" bus1=58420.2 bus2=106257.2 length=0.001524 geometry=1PH-NONEBUSBARNONEBUSBAR Seasons=1 Ratings=[0,] normamps=2000 emergamps=2400 units=km enabled=true phases=1
+New "Line.mdv201_da_8_461_b58421" bus1=106257.2 bus2=58421.2 length=0.0886968 geometry=1PH-NONEAL_#2_7STRNONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.s_mdv201_da_8_461_b58421-1b0" bus1=x_58421.2 bus2=x_58421_1.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_783_abc58417" bus1=58420 bus2=58417 length=0.086868 geometry=3PH_HORIZ_LG_1C-AL_336_19STRAL_336_19STRAL_336_19STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=453 emergamps=544 units=km enabled=true phases=3
+New "Line.mdv201_da_8_781_abc58415" bus1=58417 bus2=58415 length=0.064008 geometry=3PH_HORIZ_LG_1C-AL_336_19STRAL_336_19STRAL_336_19STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=453 emergamps=544 units=km enabled=true phases=3
+New "Line.s_mdv201_da_8_781_abc58415-1c0" bus1=x_58415.3 bus2=x_58415_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_256_abc88675" bus1=58415 bus2=88675 length=0.070104 geometry=3PH_HORIZ_LG_1C-AL_336_19STRAL_336_19STRAL_336_19STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=453 emergamps=544 units=km enabled=true phases=3
+New "Line.mdv201_da_8_903_abc58411" bus1=88675 bus2=58411 length=0.048768 geometry=3PH_HORIZ_LG_1C-AL_336_19STRAL_336_19STRAL_336_19STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=453 emergamps=544 units=km enabled=true phases=3
+New "Line.mdv201_106254fuse" bus1=58411.1 bus2=106254.1 length=0.001524 geometry=1PH-BUSBARNONENONEBUSBAR Seasons=1 Ratings=[0,] normamps=2000 emergamps=2400 units=km enabled=true phases=1
+New "Line.mdv201_da_8_904_a58412" bus1=106254.1 bus2=58412.1 length=0.070104 geometry=1PH-AL_#2_7STRNONENONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.mdv201_da_8_905_a58413" bus1=58412.1 bus2=58413.1 length=0.071628 geometry=1PH-AL_#2_7STRNONENONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.s_mdv201_da_8_905_a58413-1a0" bus1=x_58413.1 bus2=x_58413_1.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_257_abc88677" bus1=58411 bus2=88677 length=0.059436 geometry=3PH_VERT_1C-AL_336_19STRAL_336_19STRAL_336_19STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=453 emergamps=544 units=km enabled=true phases=3
+New "Line.mdv201_da_8_258_abc67896" bus1=88677 bus2=67896 length=0.1030224 geometry=3PH_VERT_1C-AL_336_19STRAL_336_19STRAL_336_19STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=453 emergamps=544 units=km enabled=true phases=3
+New "Line.mdv201_da_8_719_abc67893" bus1=67896 bus2=67893 length=0.070104 geometry=3PH_HORIZ_LG_1C-AL_336_19STRAL_336_19STRAL_336_19STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=453 emergamps=544 units=km enabled=true phases=3
+New "Line.s_mdv201_da_8_719_abc67893-1c0" bus1=x_67893.3 bus2=x_67893_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_936_abc67891" bus1=67893 bus2=67891 length=0.073152 geometry=3PH_HORIZ_LG_1C-AL_336_19STRAL_336_19STRAL_336_19STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=453 emergamps=544 units=km enabled=true phases=3
+New "Line.mdv201_da_8_935_abc107782" bus1=67891 bus2=107782 length=0.064008 geometry=3PH_HORIZ_LG_1C-AL_336_19STRAL_336_19STRAL_336_19STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=453 emergamps=544 units=km enabled=true phases=3
+New "Line.mdv201_1023344fuse" bus1=67896.1 bus2=1023344.1 length=0.001524 geometry=1PH-BUSBARNONENONEBUSBAR Seasons=1 Ratings=[0,] normamps=2000 emergamps=2400 units=km enabled=true phases=1
+New "Line.mdv201_da_8_259_a1023345" bus1=1023344.1 bus2=1023345.1 length=0.0786384 geometry=1PH-CU_#6_1STRNONENONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=125 emergamps=150 units=km enabled=true phases=1
+New "Line.s_mdv201_da_8_259_a1023345-1a0" bus1=x_1023345.1 bus2=x_1023345_1.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_1144235fuse" bus1=58415.1 bus2=1144235.1 length=0.001524 geometry=1PH-BUSBARNONENONEBUSBAR Seasons=1 Ratings=[0,] normamps=2000 emergamps=2400 units=km enabled=true phases=1
+New "Line.mdv201_da_8_780_a1144234" bus1=1144235.1 bus2=1144234.1 length=0.1161288 geometry=1PH-AL_#2_7STRNONENONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.s_mdv201_da_8_780_a1144234-1a0" bus1=x_1144234.1 bus2=x_1144234_1.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_da_8_779_a58418" bus1=1144234.1 bus2=58418.1 length=0.1130808 geometry=1PH-AL_#2_7STRNONENONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.mdv201_da_8_778_a58422" bus1=58418.1 bus2=58422.1 length=0.0774192 geometry=1PH-AL_#2_7STRNONENONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.mdv201_da_7_490_a58425" bus1=58422.1 bus2=58425.1 length=0.1088136 geometry=1PH-AL_#2_7STRNONENONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.s_mdv201_da_7_490_a58425-1a0" bus1=x_58425.1 bus2=x_58425_1.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_1023340fuse" bus1=58426.2 bus2=1023340.2 length=0.001524 geometry=1PH-NONEBUSBARNONEBUSBAR Seasons=1 Ratings=[0,] normamps=2000 emergamps=2400 units=km enabled=true phases=1
+New "Line.mdv201_da_8_281_b1023341" bus1=1023340.2 bus2=1023341.2 length=0.071628 geometry=1PH-NONEAL_#2_7STRNONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.s_mdv201_da_8_281_b1023341-1b0" bus1=x_1023341.2 bus2=x_1023341_1.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_281_b1023341-1b1" bus1=x_1023341.2 bus2=x_1023341_2.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_111079fuse" bus1=58430.2 bus2=111079.2 length=0.001524 geometry=1PH-NONEBUSBARNONEBUSBAR Seasons=1 Ratings=[0,] normamps=2000 emergamps=2400 units=km enabled=true phases=1
+New "Line.mdv201_da_8_795_b88661" bus1=111079.2 bus2=88661.2 length=0.0307848 geometry=1PH-NONEAL_#2_7STRNONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.s_mdv201_da_8_795_b88661-1b0" bus1=x_88661.2 bus2=x_88661_1.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_795_b88661-1b1" bus1=x_88661.2 bus2=x_88661_2.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_795_b88661-1b2" bus1=x_88661.2 bus2=x_88661_3.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_da_8_795_b88661-1b3" bus1=x_88661.2 bus2=x_88661_4.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_99417fuse" bus1=6578.1 bus2=99417.1 length=0.001524 geometry=1PH-BUSBARNONENONEBUSBAR Seasons=1 Ratings=[0,] normamps=2000 emergamps=2400 units=km enabled=true phases=1
+New "Line.mdv201_hn_2_912_a6579" bus1=99417.1 bus2=6579.1 length=0.0292608 geometry=1PH-AL_#2_7STRNONENONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.mdv201_hn_2_913_a15010" bus1=6579.1 bus2=15010.1 length=0.0740664 geometry=1PH-AL_#2_7STRNONENONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.s_mdv201_hn_2_913_a15010-1a0" bus1=x_15010.1 bus2=x_15010_1.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_913_a15010-1a1" bus1=x_15010.1 bus2=x_15010_2.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_1144240fuse" bus1=39764.1 bus2=1144240.1 length=0.001524 geometry=1PH-BUSBARNONENONEBUSBAR Seasons=1 Ratings=[0,] normamps=2000 emergamps=2400 units=km enabled=true phases=1
+New "Line.s_mdv201_1144240fuse-1a0" bus1=x_1144240.1 bus2=x_1144240_1.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_079_a1144241" bus1=1144240.1 bus2=1144241.1 length=0.0216408 geometry=1PH-CU_#6_1STRNONENONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=125 emergamps=150 units=km enabled=true phases=1
+New "Line.mdv201_da_8_053_a63763" bus1=1144241.1 bus2=63763.1 length=0.0862584 geometry=1PH-CU_#6_1STRNONENONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=125 emergamps=150 units=km enabled=true phases=1
+New "Line.s_mdv201_da_8_053_a63763-1a0" bus1=x_63763.1 bus2=x_63763_1.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_359_abc93587" bus1=39763 bus2=93587 length=0.0301752 geometry=3PH_HORIZ_LG_1C-AL_4/0_7STRAL_4/0_7STRAL_4/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=338 emergamps=406 units=km enabled=true phases=3
+New "Line.s_mdv201_hn_2_359_abc93587-1c0" bus1=x_93587.3 bus2=x_93587_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_183_abc62261" bus1=93587 bus2=62261 length=0.0536448 geometry=3PH_HORIZ_LG_1C-AL_1/0_7STRAL_1/0_7STRAL_1/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=218 emergamps=262 units=km enabled=true phases=3
+New "Line.s_mdv201_hn_2_183_abc62261-1a0" bus1=x_62261.1 bus2=x_62261_1.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_183_abc62261-1a1" bus1=x_62261.1 bus2=x_62261_2.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_358_abc1010730" bus1=62261 bus2=1010730 length=0.0710184 geometry=3PH_HORIZ_LG_1C-AL_1/0_7STRAL_1/0_7STRAL_1/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=218 emergamps=262 units=km enabled=true phases=3
+New "Line.mdv202_osw_1010730" bus1=62257 bus2=1010730 length=0.001524 geometry=3PH_HORIZ_LG_1C-BUSBARBUSBARBUSBARBUSBAR Seasons=1 Ratings=[0,] normamps=2000 emergamps=2400 units=km enabled=true phases=3
+New "Line.mdv202_hn_2_358_abc62257" bus1=62253 bus2=62257 length=0.0618744 geometry=3PH_HORIZ_LG_1C-AL_1/0_7STRAL_1/0_7STRAL_1/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=218 emergamps=262 units=km enabled=true phases=3
+New "Line.mdv201_106885fuse" bus1=62242.2 bus2=106885.2 length=0.001524 geometry=1PH-NONEBUSBARNONEBUSBAR Seasons=1 Ratings=[0,] normamps=2000 emergamps=2400 units=km enabled=true phases=1
+New "Line.mdv201_hn_2p017_b1160488" bus1=106885.2 bus2=1160488.2 length=0.0893064 linecode=UG_1/0AL Seasons=1 Ratings=[400,] normamps=150 emergamps=150 units=km enabled=true phases=1
+New "Line.hn_2p017_sw" bus1=1160488.2 bus2=mdv201_62249elb_int.2 length=0.001 Switch=True units=km enabled=true phases=1
+New "Line.mdv201_62249elb" bus1=mdv201_62249elb_int.2 bus2=62249.2 length=0.001524 linecode=BUSBAR Seasons=1 Ratings=[400,] normamps=2000 emergamps=2000 units=km enabled=true phases=1
+New "Line.s_mdv201_62249elb-1b0" bus1=x_62249.2 bus2=x_62249_1.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_657_c62231" bus1=44586.3 bus2=62231.3 length=0.0179832 geometry=1PH-NONENONEAL_1/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=218 emergamps=262 units=km enabled=true phases=1
+New "Line.mdv201_106883fuse" bus1=62231.3 bus2=106883.3 length=0.001524 geometry=1PH-NONENONEBUSBARBUSBAR Seasons=1 Ratings=[0,] normamps=2000 emergamps=2400 units=km enabled=true phases=1
+New "Line.mdv201_hn_2_658_c62236" bus1=106883.3 bus2=62236.3 length=0.0573024 geometry=1PH-NONENONEAL_1/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=218 emergamps=262 units=km enabled=true phases=1
+New "Line.s_mdv201_hn_2_658_c62236-1c0" bus1=x_62236.3 bus2=x_62236_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_658_c62236-1c1" bus1=x_62236.3 bus2=x_62236_2.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_658_c62236-1c2" bus1=x_62236.3 bus2=x_62236_3.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_659_c62237" bus1=62236.3 bus2=62237.3 length=0.0591312 geometry=1PH-NONENONEAL_1/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=218 emergamps=262 units=km enabled=true phases=1
+New "Line.mdv201_hn_2_663_c62247" bus1=62237.3 bus2=62247.3 length=0.0414528 geometry=1PH-NONENONEAL_1/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=218 emergamps=262 units=km enabled=true phases=1
+New "Line.s_mdv201_hn_2_663_c62247-1c0" bus1=x_62247.3 bus2=x_62247_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_664_c62252" bus1=62247.3 bus2=62252.3 length=0.0600456 geometry=1PH-NONENONEAL_1/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=218 emergamps=262 units=km enabled=true phases=1
+New "Line.mdv201_hn_2_669_c89789" bus1=62252.3 bus2=89789.3 length=0.0381 geometry=1PH-NONENONEAL_1/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=218 emergamps=262 units=km enabled=true phases=1
+New "Line.s_mdv201_hn_2_669_c89789-1c0" bus1=x_89789.3 bus2=x_89789_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_670_c89784" bus1=89789.3 bus2=89784.3 length=0.0451104 geometry=1PH-NONENONEAL_1/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=218 emergamps=262 units=km enabled=true phases=1
+New "Line.s_mdv201_hn_2_670_c89784-1c0" bus1=x_89784.3 bus2=x_89784_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_670_c89784-1c1" bus1=x_89784.3 bus2=x_89784_2.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_671_c89781" bus1=89784.3 bus2=89781.3 length=0.0527304 geometry=1PH-NONENONEAL_1/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=218 emergamps=262 units=km enabled=true phases=1
+New "Line.s_mdv201_hn_2_671_c89781-1c0" bus1=x_89781.3 bus2=x_89781_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_671_c89781-1c1" bus1=x_89781.3 bus2=x_89781_2.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_672_c62308" bus1=89781.3 bus2=62308.3 length=0.0509016 geometry=1PH-NONENONEAL_1/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=218 emergamps=262 units=km enabled=true phases=1
+New "Line.s_mdv201_hn_2_672_c62308-1c0" bus1=x_62308.3 bus2=x_62308_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_672_c62308-1c1" bus1=x_62308.3 bus2=x_62308_2.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_672_c62308-1c2" bus1=x_62308.3 bus2=x_62308_3.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_672_c62308-1c3" bus1=x_62308.3 bus2=x_62308_4.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_672_c62308-1c4" bus1=x_62308.3 bus2=x_62308_5.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_673_c62309" bus1=62308.3 bus2=62309.3 length=0.0597408 geometry=1PH-NONENONEAL_1/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=218 emergamps=262 units=km enabled=true phases=1
+New "Line.s_mdv201_hn_2_673_c62309-1c0" bus1=x_62309.3 bus2=x_62309_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_674_c62310" bus1=89781.3 bus2=62310.3 length=0.0722376 geometry=1PH-NONENONEAL_1/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=218 emergamps=262 units=km enabled=true phases=1
+New "Line.s_mdv201_hn_2_674_c62310-1c0" bus1=x_62310.3 bus2=x_62310_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_674_c62310-1c1" bus1=x_62310.3 bus2=x_62310_2.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_674_c62310-1c2" bus1=x_62310.3 bus2=x_62310_3.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_675_c89783" bus1=62310.3 bus2=89783.3 length=0.0542544 geometry=1PH-NONENONEAL_1/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=218 emergamps=262 units=km enabled=true phases=1
+New "Line.s_mdv201_hn_2_675_c89783-1c0" bus1=x_89783.3 bus2=x_89783_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_675_c89783-1c1" bus1=x_89783.3 bus2=x_89783_2.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_675_c89783-1c2" bus1=x_89783.3 bus2=x_89783_3.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_942_c89791" bus1=89783.3 bus2=89791.3 length=0.0521208 geometry=1PH-NONENONEAL_#2_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.s_mdv201_hn_2_942_c89791-1c0" bus1=x_89791.3 bus2=x_89791_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_942_c89791-1c1" bus1=x_89791.3 bus2=x_89791_2.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_942_c89791-1c2" bus1=x_89791.3 bus2=x_89791_3.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_943_c89813" bus1=89791.3 bus2=89813.3 length=0.0256032 geometry=1PH-NONENONEAL_#2_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.mdv201_hn_2_944_c44577" bus1=89813.3 bus2=44577.3 length=0.0475488 geometry=1PH-NONENONEAL_#2_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.s_mdv201_hn_2_944_c44577-1c0" bus1=x_44577.3 bus2=x_44577_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_944_c44577-1c1" bus1=x_44577.3 bus2=x_44577_2.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_950_c8190" bus1=44577.3 bus2=8190.3 length=0.0448056 geometry=1PH-NONENONEAL_1/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=218 emergamps=262 units=km enabled=true phases=1
+New "Line.s_mdv201_hn_2_950_c8190-1c0" bus1=x_8190.3 bus2=x_8190_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_950_c8190-1c1" bus1=x_8190.3 bus2=x_8190_2.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_950_c8190-1c2" bus1=x_8190.3 bus2=x_8190_3.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_951_c8188" bus1=8190.3 bus2=8188.3 length=0.0316992 geometry=1PH-NONENONEAL_1/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=218 emergamps=262 units=km enabled=true phases=1
+New "Line.mdv201_hn_2_952_c8189" bus1=8188.3 bus2=8189.3 length=0.0323088 geometry=1PH-NONENONEAL_1/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=218 emergamps=262 units=km enabled=true phases=1
+New "Line.s_mdv201_hn_2_952_c8189-1c0" bus1=x_8189.3 bus2=x_8189_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_952_c8189-1c1" bus1=x_8189.3 bus2=x_8189_2.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_952_c8189-1c2" bus1=x_8189.3 bus2=x_8189_3.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_946_c8179" bus1=44577.3 bus2=8179.3 length=0.0566928 geometry=1PH-NONENONEAL_1/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=218 emergamps=262 units=km enabled=true phases=1
+New "Line.s_mdv201_hn_2_946_c8179-1c0" bus1=x_8179.3 bus2=x_8179_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_946_c8179-1c1" bus1=x_8179.3 bus2=x_8179_2.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_947_c8175" bus1=8179.3 bus2=8175.3 length=0.0557784 geometry=1PH-NONENONEAL_1/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=218 emergamps=262 units=km enabled=true phases=1
+New "Line.s_mdv201_hn_2_947_c8175-1c0" bus1=x_8175.3 bus2=x_8175_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_948_c8176" bus1=8175.3 bus2=8176.3 length=0.0466344 geometry=1PH-NONENONEAL_1/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=218 emergamps=262 units=km enabled=true phases=1
+New "Line.mdv201_hn_2_949_c8180" bus1=8176.3 bus2=8180.3 length=0.0210312 geometry=1PH-NONENONEAL_1/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=218 emergamps=262 units=km enabled=true phases=1
+New "Line.s_mdv201_hn_2_949_c8180-1c0" bus1=x_8180.3 bus2=x_8180_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_949_c8180-1c1" bus1=x_8180.3 bus2=x_8180_2.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_949_c8180-1c2" bus1=x_8180.3 bus2=x_8180_3.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_676_c62306" bus1=62310.3 bus2=62306.3 length=0.0755904 geometry=1PH-NONENONEAL_1/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=218 emergamps=262 units=km enabled=true phases=1
+New "Line.s_mdv201_hn_2_676_c62306-1c0" bus1=x_62306.3 bus2=x_62306_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_676_c62306-1c1" bus1=x_62306.3 bus2=x_62306_2.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_676_c62306-1c2" bus1=x_62306.3 bus2=x_62306_3.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_676_c62306-1c3" bus1=x_62306.3 bus2=x_62306_4.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_677_c62303" bus1=62306.3 bus2=62303.3 length=0.0597408 geometry=1PH-NONENONEAL_1/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=218 emergamps=262 units=km enabled=true phases=1
+New "Line.s_mdv201_hn_2_677_c62303-1c0" bus1=x_62303.3 bus2=x_62303_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_677_c62303-1c1" bus1=x_62303.3 bus2=x_62303_2.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_677_c62303-1c2" bus1=x_62303.3 bus2=x_62303_3.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_678_c62304" bus1=62303.3 bus2=62304.3 length=0.0600456 geometry=1PH-NONENONEAL_1/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=218 emergamps=262 units=km enabled=true phases=1
+New "Line.s_mdv201_hn_2_678_c62304-1c0" bus1=x_62304.3 bus2=x_62304_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_678_c62304-1c1" bus1=x_62304.3 bus2=x_62304_2.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_678_c62304-1c2" bus1=x_62304.3 bus2=x_62304_3.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_667_c89812" bus1=62252.3 bus2=89812.3 length=0.0390144 geometry=1PH-NONENONEAL_1/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=218 emergamps=262 units=km enabled=true phases=1
+New "Line.s_mdv201_hn_2_667_c89812-1c0" bus1=x_89812.3 bus2=x_89812_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_667_c89812-1c1" bus1=x_89812.3 bus2=x_89812_2.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_668_c44578" bus1=89812.3 bus2=44578.3 length=0.0524256 geometry=1PH-NONENONEAL_1/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=218 emergamps=262 units=km enabled=true phases=1
+New "Line.mdv201_hn_2_911_c44579" bus1=44578.3 bus2=44579.3 length=0.077724 geometry=1PH-NONENONEAL_#2_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.s_mdv201_hn_2_911_c44579-1c0" bus1=x_44579.3 bus2=x_44579_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_665_c62311" bus1=62252.3 bus2=62311.3 length=0.0478536 geometry=1PH-NONENONEAL_1/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=218 emergamps=262 units=km enabled=true phases=1
+New "Line.s_mdv201_hn_2_665_c62311-1c0" bus1=x_62311.3 bus2=x_62311_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_665_c62311-1c1" bus1=x_62311.3 bus2=x_62311_2.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_665_c62311-1c2" bus1=x_62311.3 bus2=x_62311_3.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_665_c62311-1c3" bus1=x_62311.3 bus2=x_62311_4.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_666_c62312" bus1=62311.3 bus2=62312.3 length=0.06096 geometry=1PH-NONENONEAL_1/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=218 emergamps=262 units=km enabled=true phases=1
+New "Line.s_mdv201_hn_2_666_c62312-1c0" bus1=x_62312.3 bus2=x_62312_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_666_c62312-1c1" bus1=x_62312.3 bus2=x_62312_2.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_666_c62312-1c2" bus1=x_62312.3 bus2=x_62312_3.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_21095_c1148537" bus1=62237.3 bus2=1148537.3 length=0.0762 geometry=1PH-NONENONEAL_1/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=218 emergamps=262 units=km enabled=true phases=1
+New "Line.s_mdv201_hn_21095_c1148537-1c0" bus1=x_1148537.3 bus2=x_1148537_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_1149722fuse" bus1=1148537.3 bus2=1149722.3 length=0.001524 geometry=1PH-NONENONEBUSBARBUSBAR Seasons=1 Ratings=[0,] normamps=2000 emergamps=2400 units=km enabled=true phases=1
+New "Line.mdv201_hn_2p053_c1163437" bus1=1149722.3 bus2=1163437.3 length=0.0749808 linecode=UG_1/0AL Seasons=1 Ratings=[400,] normamps=150 emergamps=150 units=km enabled=true phases=1
+New "Line.hn_2p053_sw" bus1=1163437.3 bus2=mdv201_1163438elb_int.3 length=0.001 Switch=True units=km enabled=true phases=1
+New "Line.mdv201_1163438elb" bus1=mdv201_1163438elb_int.3 bus2=1163438.3 length=0.001524 linecode=BUSBAR Seasons=1 Ratings=[400,] normamps=2000 emergamps=2000 units=km enabled=true phases=1
+New "Line.mdv201_1163441elb-1_sw" bus1=1163438.3 bus2=mdv201_1163441elb_int.3 length=0.001 Switch=True units=km enabled=true phases=1
+New "Line.mdv201_1163441elb" bus1=mdv201_1163441elb_int.3 bus2=1163441.3 length=0.001524 linecode=BUSBAR Seasons=1 Ratings=[400,] normamps=2000 emergamps=2000 units=km enabled=true phases=1
+New "Line.mdv201_hn_2p054_c1163442" bus1=1163441.3 bus2=1163442.3 length=0.0728472 linecode=UG_1/0AL Seasons=1 Ratings=[400,] normamps=150 emergamps=150 units=km enabled=true phases=1
+New "Line.hn_2p054_sw" bus1=1163442.3 bus2=mdv201_1163443elb_int.3 length=0.001 Switch=True units=km enabled=true phases=1
+New "Line.mdv201_1163443elb" bus1=mdv201_1163443elb_int.3 bus2=1163443.3 length=0.001524 linecode=BUSBAR Seasons=1 Ratings=[400,] normamps=2000 emergamps=2000 units=km enabled=true phases=1
+New "Line.mdv201_hn_2_660_c62246" bus1=62237.3 bus2=62246.3 length=0.0432816 geometry=1PH-NONENONEAL_1/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=218 emergamps=262 units=km enabled=true phases=1
+New "Line.s_mdv201_hn_2_660_c62246-1c0" bus1=x_62246.3 bus2=x_62246_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_660_c62246-1c1" bus1=x_62246.3 bus2=x_62246_2.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_661_c62248" bus1=62246.3 bus2=62248.3 length=0.0478536 geometry=1PH-NONENONEAL_1/0_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=218 emergamps=262 units=km enabled=true phases=1
+New "Line.s_mdv201_hn_2_661_c62248-1c0" bus1=x_62248.3 bus2=x_62248_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_661_c62248-1c1" bus1=x_62248.3 bus2=x_62248_2.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_104356fuse" bus1=8160.3 bus2=104356.3 length=0.001524 geometry=1PH-NONENONEBUSBARBUSBAR Seasons=1 Ratings=[0,] normamps=2000 emergamps=2400 units=km enabled=true phases=1
+New "Line.mdv201_hn_2_216_c44581" bus1=104356.3 bus2=44581.3 length=0.0969264 geometry=1PH-NONENONEAL_#2_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.s_mdv201_hn_2_216_c44581-1c0" bus1=x_44581.3 bus2=x_44581_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_216_c44581-1c1" bus1=x_44581.3 bus2=x_44581_2.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_216_c44581-1c2" bus1=x_44581.3 bus2=x_44581_3.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_287_c63712" bus1=44581.3 bus2=63712.3 length=0.0972312 geometry=1PH-NONENONEAL_#2_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.mdv201_hn_21015_c63716" bus1=63712.3 bus2=63716.3 length=0.0414528 geometry=1PH-NONENONEAL_#2_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.mdv201_hn_2_288_c63719" bus1=63716.3 bus2=63719.3 length=0.0496824 geometry=1PH-NONENONEAL_#2_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.s_mdv201_hn_2_288_c63719-1c0" bus1=x_63719.3 bus2=x_63719_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_288_c63719-1c1" bus1=x_63719.3 bus2=x_63719_2.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_288_c63719-1c2" bus1=x_63719.3 bus2=x_63719_3.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_288_c63719-1c3" bus1=x_63719.3 bus2=x_63719_4.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_288_c63719-1c4" bus1=x_63719.3 bus2=x_63719_5.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_21016_c63717" bus1=63716.3 bus2=63717.3 length=0.0527304 geometry=1PH-NONENONEAL_#2_7STRACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.s_mdv201_hn_21016_c63717-1c0" bus1=x_63717.3 bus2=x_63717_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_21093_c1012641" bus1=63716.3 bus2=1012641.3 length=0.0146304 geometry=1PH-NONENONEACSR_1/0_6/1ACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=271 emergamps=325 units=km enabled=true phases=1
+New "Line.mdv201_1012643fuse" bus1=1012641.3 bus2=1012643.3 length=0.001524 geometry=1PH-NONENONEBUSBARBUSBAR Seasons=1 Ratings=[0,] normamps=2000 emergamps=2400 units=km enabled=true phases=1
+New "Line.mdv201_hn_2p027_c1160453" bus1=1012643.3 bus2=1160453.3 length=0.0993648 linecode=UG_1/0AL Seasons=1 Ratings=[400,] normamps=150 emergamps=150 units=km enabled=true phases=1
+New "Line.hn_2p027_sw" bus1=1160453.3 bus2=mdv201_1012644elb_int.3 length=0.001 Switch=True units=km enabled=true phases=1
+New "Line.mdv201_1012644elb" bus1=mdv201_1012644elb_int.3 bus2=1012644.3 length=0.001524 linecode=BUSBAR Seasons=1 Ratings=[400,] normamps=2000 emergamps=2000 units=km enabled=true phases=1
+New "Line.s_mdv201_1012644elb-1c0" bus1=x_1012644.3 bus2=x_1012644_1.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_963_a14858" bus1=14857.1 bus2=14858.1 length=0.019812 geometry=1PH-AL_#2_7STRNONENONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.mdv201_14869fuse" bus1=14858.1 bus2=14869.1 length=0.001524 geometry=1PH-BUSBARNONENONEBUSBAR Seasons=1 Ratings=[0,] normamps=2000 emergamps=2400 units=km enabled=true phases=1
+New "Line.mdv201_hn_2_964_a14870" bus1=14869.1 bus2=14870.1 length=0.0804672 geometry=1PH-AL_#2_7STRNONENONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.s_mdv201_hn_2_964_a14870-1a0" bus1=x_14870.1 bus2=x_14870_1.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_964_a14870-1a1" bus1=x_14870.1 bus2=x_14870_2.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_964_a14870-1a2" bus1=x_14870.1 bus2=x_14870_3.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_964_a14870-1a3" bus1=x_14870.1 bus2=x_14870_4.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_965_a63726" bus1=14870.1 bus2=63726.1 length=0.0688848 geometry=1PH-AL_#2_7STRNONENONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.mdv201_hn_2_966_a63718" bus1=63726.1 bus2=63718.1 length=0.064008 geometry=1PH-AL_#2_7STRNONENONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.s_mdv201_hn_2_966_a63718-1a0" bus1=x_63718.1 bus2=x_63718_1.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_966_a63718-1a1" bus1=x_63718.1 bus2=x_63718_2.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_966_a63718-1a2" bus1=x_63718.1 bus2=x_63718_3.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_966_a63718-1a3" bus1=x_63718.1 bus2=x_63718_4.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_967_a63715" bus1=63718.1 bus2=63715.1 length=0.0560832 geometry=1PH-AL_#2_7STRNONENONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.s_mdv201_hn_2_967_a63715-1a0" bus1=x_63715.1 bus2=x_63715_1.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_967_a63715-1a1" bus1=x_63715.1 bus2=x_63715_2.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_967_a63715-1a2" bus1=x_63715.1 bus2=x_63715_3.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_968_a63713" bus1=63715.1 bus2=63713.1 length=0.0551688 geometry=1PH-AL_#2_7STRNONENONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.s_mdv201_hn_2_968_a63713-1a0" bus1=x_63713.1 bus2=x_63713_1.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_968_a63713-1a1" bus1=x_63713.1 bus2=x_63713_2.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_968_a63713-1a2" bus1=x_63713.1 bus2=x_63713_3.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_968_a63713-1a3" bus1=x_63713.1 bus2=x_63713_4.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_969_a63709" bus1=63713.1 bus2=63709.1 length=0.0536448 geometry=1PH-AL_#2_7STRNONENONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.s_mdv201_hn_2_969_a63709-1a0" bus1=x_63709.1 bus2=x_63709_1.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_969_a63709-1a1" bus1=x_63709.1 bus2=x_63709_2.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv201_hn_2_970_a63710" bus1=63709.1 bus2=63710.1 length=0.04572 geometry=1PH-AL_#2_7STRNONENONEACSR_1/0_6/1 Seasons=1 Ratings=[0,] normamps=163 emergamps=196 units=km enabled=true phases=1
+New "Line.s_mdv201_hn_2_970_a63710-1a0" bus1=x_63710.1 bus2=x_63710_1.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_970_a63710-1a1" bus1=x_63710.1 bus2=x_63710_2.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_970_a63710-1a2" bus1=x_63710.1 bus2=x_63710_3.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.s_mdv201_hn_2_970_a63710-1a3" bus1=x_63710.1 bus2=x_63710_4.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 phases=1 length=100 units=ft
+New "Line.mdv202_osw_796" bus1=mdv202_osw_796_int bus2=796 length=0.001524 geometry=3PH_HORIZ_LG_1C-BUSBARBUSBARBUSBARBUSBAR Seasons=1 Ratings=[0,] normamps=2000 emergamps=2400 units=km enabled=true phases=3

@@ -1,0 +1,5 @@
+New "Generator.b2" bus1=B2 kv=132 kW=40000 model=3 Vpu=1.045 maxkvar=50000 minkvar=-40000
+New "Generator.b5" bus1=B5 kv=132 kW=1 model=3 Vpu=1.01 maxkvar=40000 minkvar=-40000
+New "Generator.b8" bus1=B8 kv=132 kW=1 model=3 Vpu=1.01 maxkvar=40000 minkvar=-10000
+New "Generator.b11" bus1=B11 kv=11 kW=1 model=3 Vpu=1.082 maxkvar=24000 minkvar=-6000
+New "Generator.b13" bus1=B13 kv=11 kW=1 model=3 Vpu=1.071 maxkvar=24000 minkvar=-6000

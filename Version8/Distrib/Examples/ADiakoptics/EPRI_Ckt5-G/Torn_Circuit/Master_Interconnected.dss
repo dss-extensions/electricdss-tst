@@ -1,0 +1,28 @@
+Clear
+New Circuit.ckt5
+
+
+Redirect Vsource.dss
+Redirect WireData.DSS
+Redirect LineGeometry.DSS
+Redirect LineCode.DSS
+Redirect LoadShape.DSS
+Redirect GrowthShape.DSS
+Redirect TCC_Curve.DSS
+Redirect Spectrum.DSS
+Redirect Line.DSS
+Redirect Load.DSS
+Redirect Transformer.DSS
+Redirect Capacitor.DSS
+Redirect Reactor.DSS
+Redirect CapControl.DSS
+GIScoords GIScoords.dss
+Redirect zone_2\Branches.dss
+Redirect zone_2\Transformers.dss
+Redirect zone_2\Loads.dss
+Redirect zone_2\Capacitors.dss
+Redirect Monitor.DSS
+Redirect EnergyMeter.DSS
+MakeBusList
+Redirect BusVoltageBases.dss  ! set voltage bases
+Buscoords buscoords.dss

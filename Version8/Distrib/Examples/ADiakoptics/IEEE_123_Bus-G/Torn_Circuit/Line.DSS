@@ -1,0 +1,14 @@
+New "Line.l115" bus1=149 bus2=1 linecode=1 Seasons=1 Ratings=[400,] normamps=400 emergamps=600 length=0.4
+New "Line.l3" phases=3 bus1=1.1.2.3 bus2=7.1.2.3 linecode=1 Seasons=1 Ratings=[400,] normamps=400 emergamps=600 length=0.3
+New "Line.l7" phases=3 bus1=7.1.2.3 bus2=8.1.2.3 linecode=1 Seasons=1 Ratings=[400,] normamps=400 emergamps=600 length=0.2
+New "Line.l9" phases=1 bus1=8.1 bus2=9.1 linecode=9 Seasons=1 Ratings=[400,] normamps=400 emergamps=600 length=0.225
+New "Line.l11" phases=1 bus1=9r.1 bus2=14.1 linecode=9 Seasons=1 Ratings=[400,] normamps=400 emergamps=600 length=0.425
+New "Line.l15" phases=1 bus1=14.1 bus2=10.1 linecode=9 Seasons=1 Ratings=[400,] normamps=400 emergamps=600 length=0.25
+New "Line.l14" phases=1 bus1=14.1 bus2=11.1 linecode=9 Seasons=1 Ratings=[400,] normamps=400 emergamps=600 length=0.25
+New "Line.l8" phases=1 bus1=8.2 bus2=12.2 linecode=10 Seasons=1 Ratings=[400,] normamps=400 emergamps=600 length=0.225
+New "Line.l2" phases=1 bus1=1.3 bus2=3.3 linecode=11 Seasons=1 Ratings=[400,] normamps=400 emergamps=600 length=0.25
+New "Line.l5" phases=1 bus1=3.3 bus2=5.3 linecode=11 Seasons=1 Ratings=[400,] normamps=400 emergamps=600 length=0.325
+New "Line.l6" phases=1 bus1=5.3 bus2=6.3 linecode=11 Seasons=1 Ratings=[400,] normamps=400 emergamps=600 length=0.25
+New "Line.l4" phases=1 bus1=3.3 bus2=4.3 linecode=11 Seasons=1 Ratings=[400,] normamps=400 emergamps=600 length=0.2
+New "Line.l1" phases=1 bus1=1.2 bus2=2.2 linecode=10 Seasons=1 Ratings=[400,] normamps=400 emergamps=600 length=0.175
+New "Line.sw1" phases=3 bus1=150r bus2=149 r1=1 r0=1 x1=1 x0=1 C1=1.1 C0=1 length=0.001 Switch=True

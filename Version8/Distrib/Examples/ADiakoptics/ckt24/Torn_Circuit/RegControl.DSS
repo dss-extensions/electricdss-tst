@@ -1,0 +1,1 @@
+New "RegControl.subxfmr_regulator" transformer=SubXFMR winding=2 tapwinding=2 vreg=123.0 band=3 ptratio=166 CTprim=2000 R=7 X=0 enabled=true debugtrace=yes delay=45

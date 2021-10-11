@@ -1,0 +1,118 @@
+//-----------------------------------A-Diakoptics applied to Ckt 24 EPRI---------------------------------------------------------
+//
+// use this example for evaluating the performance of A-Diakoptics in OpenDSS
+// there are some rules that need to be respected:
+//
+// 1. DON'T run the script all at once, there are several cases in the same script.
+// 2. Run the interconnected circuit before using A-Diakoptics, at least a snapshot solve is required.
+// 3. Select the case you are interested in, Use select and Ctrl+D or the pop-up menu to execute it.
+// 4. After running the A-Diakoptics case, you'll have to ClearAll or close DSS to start over with another case.
+// ---------------------------------------------------------------------------------------------------------------------------------------------
+
+Clear
+
+New Circuit.ckt24 bus1=SourceBus pu=1.05  basekV=230 R1=0.63 X1=6.72 R0=4.07 X0=15.55
+
+Redirect  Wiredata_ckt24.dss
+Redirect  Linegeometry_ckt24.dss
+Redirect  LineCodes_ckt24.dss
+Redirect  TriplexLineCodes_ckt24.dss
+Redirect  Substation_ckt24.dss
+
+! Loadshapes for yearly simulations (normalized)
+New Loadshape.LS_PhaseA npts=8760 interval=1 mult=(file=LS_PhaseA.txt) action=normalize 
+New Loadshape.LS_PhaseB npts=8760 interval=1 mult=(file=LS_PhaseB.txt) action=normalize
+New Loadshape.LS_PhaseC npts=8760 interval=1 mult=(file=LS_PhaseC.txt) action=normalize
+New Loadshape.LS_ThreePhase npts=8760 interval=1 mult=(file=LS_ThreePhase.txt) action=normalize
+New Loadshape.Other_Bus_Load npts=8760 interval=1 mult=(file=Other_Bus_Load.txt) action=normalize
+
+Redirect  lines_ckt24.dss
+Redirect  Capacitors_ckt24.dss
+Redirect  stepxfmrs_ckt24.dss
+Redirect  transformers_ckt24.dss
+Redirect  sec_serv_ckt24.dss
+
+! Loads (allocated by XF kVA)
+Redirect  Allocated_Loads_ckt24.dss
+Redirect Other_Load_ckt24.dss
+! set the initial allocation factors based on previousload allocations
+Redirect  AllocationFactors_Base.Txt  !!! R=7 Vset=123
+
+! Let OpenDSS define the voltage bases
+Set voltagebases=[230,34.5,13.2,0.48,0.415,0.208]   ! Allowable voltage bases for this problem
+Calcvoltagebases
+
+! Define the monitors
+Redirect Monitors_ckt24.dss
+
+! optional energy meter. this was used to allocate the loads
+New energymeter.Feeder element=line.fdr_05410 term=1 option=R action=C PhaseVolt=yes peakcurrent=(466,469,452)
+
+! now that we have buses defined, define the bus coordinates so we can draw pictures
+Buscoords buscoords_ckt24.dss
+
+//-------------------- Normal yearly simulation------------------------------------
+set controlmode=off mode=yearly
+set totaltime=0
+solve
+get totaltime
+
+export monitor fdr_05410_Mon_VI
+
+//------------------------ A-Diakoptics---------------------------------------
+//------------- automated partitioning (METiS)------------------------
+// The buses for the lines are backwards for many (bus2 first, then bus1)
+// the automatic partitioning will not work
+
+//------------------------ A-Diakoptics---------------------------------------
+//----------------- Using manual partitioning-----------------------------
+
+// ---- Using 2 zones
+set LinkBranches=[Line.05410_339787oh]
+set UseMyLinkBranches=True
+set ADiakoptics=True
+
+set ActiveActor=1
+set controlmode=off mode=yearly
+set totaltime=0
+solve
+wait
+get totaltime
+
+set ActiveActor=1
+export monitor fdr_05410_Mon_VI
+
+// ---- Using 4 zones
+set LinkBranches=[Line.05410_339577oh, Line.05410_339677oh, Line.05410_339842oh]
+set UseMyLinkBranches=True
+set ADiakoptics=True
+
+set ActiveActor=1
+set controlmode=off mode=yearly
+set totaltime=0
+solve
+wait
+get totaltime
+
+set ActiveActor=1
+export monitor fdr_05410_Mon_VI
+
+//------------------A-Diakoptics DBug-------------------------------------
+_SolveDirect
+
+Export ZCC
+Export Y4
+Export ZLL
+
+set ActiveActor=1
+set controlmode=off mode=yearly
+set totaltime=0
+solve
+wait
+get totaltime
+
+get linkbranches
+
+get NumActors
+
+ClearAll

@@ -1,0 +1,18 @@
+Clear
+New Circuit.ieee13nodeckt
+
+
+Redirect Vsource.dss
+Redirect LineCode.DSS
+Redirect LoadShape.DSS
+Redirect GrowthShape.DSS
+Redirect TCC_Curve.DSS
+Redirect Spectrum.DSS
+Redirect Line.DSS
+Redirect Load.DSS
+Redirect Transformer.DSS
+Redirect RegControl.DSS
+MakeBusList
+Redirect BusVoltageBases.dss  ! set voltage bases
+Buscoords buscoords.dss
+GIScoords GIScoords.dss

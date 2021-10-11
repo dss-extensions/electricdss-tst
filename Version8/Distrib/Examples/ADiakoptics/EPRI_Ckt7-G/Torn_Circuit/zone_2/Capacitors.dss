@@ -1,0 +1,4 @@
+New "Capacitor.cp-nr-613" bus1=181945 kv=12.47 kvar=[ 1200] conn=wye
+New "CapControl.cp-nr-613" capacitor=CP-NR-613 element=Line.175007 type=voltage PTratio=60 ONsetting=118 OFFsetting=121 Delay=75
+New "Capacitor.cp-85w-900" bus1=181993 kv=12.47 kvar=[ 1200] conn=wye
+New "CapControl.cp-85w-900" capacitor=CP-85W-900 element=Line.175060 type=voltage PTratio=60 ONsetting=120 OFFsetting=124 Delay=30

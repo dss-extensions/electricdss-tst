@@ -1,0 +1,2 @@
+New "EnergyMeter.zone_2" element=Line.157133 terminal=1 option=(E, R, C) action=C
+New "EnergyMeter.zone_3" element=Line.175061 terminal=1 option=(E, R, C) action=C

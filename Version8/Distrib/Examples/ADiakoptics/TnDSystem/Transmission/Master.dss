@@ -1,0 +1,78 @@
+//---------------------------A-Diakoptics applied to integrate transmission and distribution----------------------------
+//
+// use this example for evaluating the performance of A-Diakoptics in OpenDSS
+// there are some rules that need to be respected:
+//
+// 1. DON'T run the script all at once, there are several cases in the same script.
+// 2. Run the interconnected circuit before using -ADiakoptics, at least a snapshot solve is required.
+// 3. Select the case you are interested in, Use select and Ctrl+D or the pop-up menu to execute it.
+// 4. After running the A-Diakoptics case, you'll have to ClearAll or close DSS to start over with another case.
+//
+// This example integrates the IEEE30 bus with EPRI ckt 5.
+// ---------------------------------------------------------------------------------------------------------------------------------------------
+
+Clear   ! always have this as the first line before defining a new circuit
+
+New Circuit.IEEE_30
+
+! Define a really stiff 132 kV source for the slack bus
+! (continue editing the VSOURCE object created by the New Circuit command)
+~ BasekV=132  Bus1=B1   pu=1.06  MVASC3=5000000  5000000
+
+! Define the circuit elements
+Redirect Lines.DSS
+
+Redirect Transformers.DSS
+
+Redirect Loads.DSS
+
+Redirect Capacitors.DSS
+
+Redirect Generators.DSS
+
+! interconnects the systems
+
+New Line.T2DSwitch0 phases=3 bus1=B5 bus2=B52D switch=yes
+New Line.T2DSwitch phases=3 bus1=B52D bus2=sourcebus switch=yes
+
+New monitor.TPower element=Line.T2DSwitch0 mode=1 PPolar=No
+New monitor.TVolt element=generator.B5 terminal=1 mode=0
+
+! gets the distribution system
+
+Redirect Distribution\master.dss
+
+! Let the openDSS estimate the voltage bases
+
+set maxiterations=100
+solve
+
+set ActiveActor=1
+set controlmode=off mode=yearly maxiterations=100
+set totaltime=0
+solve
+wait
+get totaltime
+
+
+//------------------------ A-Diakoptics---------------------------------------
+//----------------- Using manual partitioning-----------------------------
+
+// ---- Using 2 zones
+set LinkBranches=[Line.T2DSwitch]
+set UseMyLinkBranches=True
+set ADiakoptics=True
+
+set ActiveActor=1
+set controlmode=off mode=yearly maxiterations=100
+set totaltime=0
+solve
+wait
+get totaltime
+
+get linkbranches
+
+set ActiveActor=1
+export monitor test
+export monitor TPower
+export monitor TVolt

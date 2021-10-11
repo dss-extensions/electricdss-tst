@@ -1,0 +1,82 @@
+//-----------------------------------A-Diakoptics applied to IEEE 123 node test system ---------------------------------------------------------
+//
+// use this example for evaluating the performance of A-Diakoptics in OpenDSS
+// there are some rules that need to be respected:
+//
+// 1. DON'T run the script all at once, there are several cases in the same script.
+// 2. Run the interconnected circuit before using A-Diakoptics, at least a snapshot solve is required.
+// 3. Select the case you are interested in, Use select and Ctrl+D or the pop-up menu to execute it.
+// 4. After running the A-Diakoptics case, you'll have to ClearAll or close DSS to start over with another case.
+// ---------------------------------------------------------------------------------------------------------------------------------------------
+
+Clear
+New Circuit.ieee123
+
+
+Redirect Vsource.dss
+Redirect LineCode.DSS
+Redirect LoadShape.DSS
+Redirect GrowthShape.DSS
+Redirect TCC_Curve.DSS
+Redirect Spectrum.DSS
+Redirect feeder\Branches.dss
+Redirect feeder\Transformers.dss
+Redirect feeder\Loads.dss
+Redirect feeder\Capacitors.dss
+Redirect Line.DSS
+Redirect Transformer.DSS
+Redirect RegControl.DSS
+Redirect EnergyMeter.DSS
+MakeBusList
+Redirect BusVoltageBases.dss  ! set voltage bases
+Buscoords buscoords.dss
+
+calcv
+set controlmode=Static maxcontroliter=30
+set totaltime=0
+Solve
+get totaltime
+
+_SolveDirect
+
+Export YCurrents
+Export YVoltages
+Export YNodeList
+
+//-------------------- A-Diakoptics part------------------------------------
+set Num_SubCircuits=3
+set ADiakoptics=True
+set ActiveActor=1
+set controlmode=Static maxcontroliter=30
+
+set ActiveActor=1
+Export YVoltages
+Export YNodeList
+Export YCurrents
+Export Y
+
+get maxcontroliter
+
+//------------------A-Diakoptics DBug-------------------------------------
+Export ZCC
+Export Y4
+Export ZLL
+
+set mode=yearly
+
+set totaltime=0
+Solve
+get totaltime
+
+set totaltime=0
+_SolveDirect
+get totaltime
+
+set ActiveActor=1
+set CPU=1
+set ActiveActor=2
+set CPU=2
+set ActiveActor=3
+set CPU=3
+set ActiveActor=4
+set CPU=4

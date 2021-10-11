@@ -1,0 +1,7 @@
+New "Load.671" bus1=671.1.2.3 phases=3 conn=Delta model=1 kV=4.16 kW=1155 kvar=660
+New "Load.692" bus1=692.3.1 phases=1 conn=Delta model=5 kV=4.16 kW=170 kvar=151
+New "Load.675a" bus1=675.1 phases=1 conn=Wye model=1 kV=2.4 kW=485 kvar=190
+New "Load.675b" bus1=675.2 phases=1 conn=Wye model=1 kV=2.4 kW=68 kvar=60
+New "Load.675c" bus1=675.3 phases=1 conn=Wye model=1 kV=2.4 kW=290 kvar=212
+New "Load.652" bus1=652.1 phases=1 conn=Wye model=2 kV=2.4 kW=128 kvar=86
+New "Load.611" bus1=611.3 phases=1 conn=Wye model=5 kV=2.4 kW=170 kvar=80

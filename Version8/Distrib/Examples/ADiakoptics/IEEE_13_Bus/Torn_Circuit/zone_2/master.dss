@@ -1,0 +1,13 @@
+Clear
+New Circuit.Zone_2
+
+
+Redirect Vsource.dss
+Redirect LineCode.DSS
+Redirect LoadShape.DSS
+Redirect GrowthShape.DSS
+Redirect TCC_Curve.DSS
+Redirect Spectrum.DSS
+Redirect Branches.dss
+Redirect Loads.dss
+Redirect Capacitors.dss

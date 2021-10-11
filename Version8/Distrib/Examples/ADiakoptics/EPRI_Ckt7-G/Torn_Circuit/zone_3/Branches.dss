@@ -1,0 +1,185 @@
+New "Line.175061" bus1=181993.1.2.3 bus2=181994.1.2.3 length=220.5308 linecode=104 Seasons=1 Ratings=[400,] normamps=500 emergamps=550 units=m enabled=true phases=3
+New "Line.175062" bus1=181994.1.2.3 bus2=181995.1.2.3 length=72.69027 linecode=104 Seasons=1 Ratings=[400,] normamps=500 emergamps=550 units=m enabled=true phases=3
+New "Line.175063" bus1=181995.1.2.3 bus2=181996.1.2.3 length=66.30025 linecode=104 Seasons=1 Ratings=[400,] normamps=500 emergamps=550 units=m enabled=true phases=3
+New "Line.175070" bus1=181996.1.2.3 bus2=181999.1.2.3 length=8.24003 linecode=104 Seasons=1 Ratings=[400,] normamps=500 emergamps=550 units=m enabled=true phases=3
+New "Line.175065" bus1=181998.1.2.3 bus2=181999.1.2.3 length=15.29006 linecode=99 Seasons=1 Ratings=[400,] normamps=500 emergamps=550 units=m enabled=true phases=3
+New "Line.175069" bus1=181998.1.2.3 bus2=182003.1.2.3 length=36.91014 linecode=104 Seasons=1 Ratings=[400,] normamps=500 emergamps=550 units=m enabled=true phases=3
+New "Line.175064" bus1=181996.1.2.3 bus2=181997.1.2.3 length=64.11024 linecode=104 Seasons=1 Ratings=[400,] normamps=500 emergamps=550 units=m enabled=true phases=3
+New "Line.175071" bus1=181997.1.2.3 bus2=182004.1.2.3 length=42.44016 linecode=104 Seasons=1 Ratings=[400,] normamps=500 emergamps=550 units=m enabled=true phases=3
+New "Line.175080" bus1=182004.1.2.3 bus2=182011.1.2.3 length=79.3603 linecode=40 Seasons=1 Ratings=[400,] normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.175082" bus1=182011.1.2.3 bus2=182014.1.2.3 length=19.51007 linecode=40 Seasons=1 Ratings=[400,] normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.175083" bus1=182014.1.2.3 bus2=182016.1.2.3 length=19.53008 linecode=40 Seasons=1 Ratings=[400,] normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.175079" bus1=182015.1.2.3 bus2=182016.1.2.3 length=15.24006 linecode=99 Seasons=1 Ratings=[400,] normamps=500 emergamps=550 units=m enabled=true phases=3
+New "Line.175084" bus1=182015.1.2.3 bus2=182018.1.2.3 length=7.320028 linecode=40 Seasons=1 Ratings=[400,] normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.175085" bus1=182018.1.2.3 bus2=182019.1.2.3 length=18.90007 linecode=40 Seasons=1 Ratings=[400,] normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.s_1000538-dc1" bus1=x_1000538.3 bus2=s1x_1000538.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000538-db1" bus1=x_1000538.2 bus2=s1x_1000538.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000538-da1" bus1=x_1000538.1 bus2=s1x_1000538.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 length=100 units=ft
+New "Line.175086" bus1=182019.1.2.3 bus2=182020.1.2.3 length=67.37025 linecode=40 Seasons=1 Ratings=[400,] normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.s_1000087-dc1" bus1=x_1000087.3 bus2=s1x_1000087.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000087-db1" bus1=x_1000087.2 bus2=s1x_1000087.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000087-da1" bus1=x_1000087.1 bus2=s1x_1000087.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 length=100 units=ft
+New "Line.175087" bus1=182020.1.2.3 bus2=182017.1.2.3 length=53.9502 linecode=40 Seasons=1 Ratings=[400,] normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.175091" bus1=182017.1.2.3 bus2=182023.1.2.3 length=44.50016 linecode=40 Seasons=1 Ratings=[400,] normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.175093" bus1=182023.1.2.3 bus2=215930.1.2.3 length=56.71021 linecode=40 Seasons=1 Ratings=[400,] normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.216925" bus1=215932.1.2.3 bus2=215930.1.2.3 length=103.0304 linecode=40 Seasons=1 Ratings=[400,] normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.280751" bus1=215932.1 bus2=282273.1 length=13.16005 linecode=62 Seasons=1 Ratings=[400,] normamps=160 emergamps=190 units=m enabled=true phases=1
+New "Line.280750" bus1=282273.1 bus2=282274.1 length=15.13006 linecode=251 Seasons=1 Ratings=[400,] normamps=500 emergamps=550 units=m enabled=true phases=1
+New "Line.280752" bus1=282274.1 bus2=282275.1 length=76.24028 linecode=62 Seasons=1 Ratings=[400,] normamps=160 emergamps=190 units=m enabled=true phases=1
+New "Line.s_1003125-da1" bus1=x_1003125.1 bus2=s1x_1003125.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 length=100 units=ft
+New "Line.216920" bus1=215932.1.2.3 bus2=182155.1.2.3 length=15.25006 linecode=110 Seasons=1 Ratings=[400,] normamps=355 emergamps=418 units=m enabled=true phases=3
+New "Line.s_1000277-dc1" bus1=x_1000277.3 bus2=s1x_1000277.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 length=100 units=ft
+New "Line.182910" bus1=182155.1.2.3 bus2=182156.1.2.3 length=37.87014 linecode=110 Seasons=1 Ratings=[400,] normamps=355 emergamps=418 units=m enabled=true phases=3
+New "Line.182909" bus1=182152.1.2.3 bus2=215932.1.2.3 length=59.16022 linecode=110 Seasons=1 Ratings=[400,] normamps=355 emergamps=418 units=m enabled=true phases=3
+New "Line.182908" bus1=182152.1.2.3 bus2=182154.1.2.3 length=32.03012 linecode=110 Seasons=1 Ratings=[400,] normamps=355 emergamps=418 units=m enabled=true phases=3
+New "Line.235187" bus1=232294.1.2.3 bus2=182154.1.2.3 length=16.17006 linecode=110 Seasons=1 Ratings=[400,] normamps=355 emergamps=418 units=m enabled=true phases=3
+New "Line.235186" bus1=232293.1 bus2=232294.1 length=17.08006 linecode=62 Seasons=1 Ratings=[400,] normamps=160 emergamps=190 units=m enabled=true phases=1
+New "Line.182907" bus1=182153.1.2.3 bus2=182152.1.2.3 length=65.91025 linecode=110 Seasons=1 Ratings=[400,] normamps=355 emergamps=418 units=m enabled=true phases=3
+New "Line.s_1000330-dc5" bus1=x_1000330.3 bus2=s5x_1000330.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000330-dc4" bus1=x_1000330.3 bus2=s4x_1000330.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000330-dc3" bus1=x_1000330.3 bus2=s3x_1000330.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000330-dc2" bus1=x_1000330.3 bus2=s2x_1000330.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000330-dc1" bus1=x_1000330.3 bus2=s1x_1000330.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 length=100 units=ft
+New "Line.275695" bus1=182149.1.2.3 bus2=182153.1.2.3 length=51.21019 linecode=110 Seasons=1 Ratings=[400,] normamps=355 emergamps=418 units=m enabled=true phases=3
+New "Line.182901" bus1=182148.1.2.3 bus2=182149.1.2.3 length=15.24006 linecode=99 Seasons=1 Ratings=[400,] normamps=500 emergamps=550 units=m enabled=true phases=3
+New "Line.182911" bus1=182148.1.2.3 bus2=182157.1.2.3 length=130.9505 linecode=186 Seasons=1 Ratings=[400,] normamps=214 emergamps=235 units=m enabled=true phases=3
+New "Line.182913" bus1=182157.1.2.3 bus2=182159.1.2.3 length=14.66006 linecode=186 Seasons=1 Ratings=[400,] normamps=214 emergamps=235 units=m enabled=true phases=3
+New "Line.s_1001523-dc4" bus1=x_1001523.3 bus2=s4x_1001523.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001523-dc3" bus1=x_1001523.3 bus2=s3x_1001523.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001523-dc2" bus1=x_1001523.3 bus2=s2x_1001523.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001523-dc1" bus1=x_1001523.3 bus2=s1x_1001523.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001523-db4" bus1=x_1001523.2 bus2=s4x_1001523.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001523-db3" bus1=x_1001523.2 bus2=s3x_1001523.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001523-db2" bus1=x_1001523.2 bus2=s2x_1001523.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001523-db1" bus1=x_1001523.2 bus2=s1x_1001523.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001523-da4" bus1=x_1001523.1 bus2=s4x_1001523.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001523-da3" bus1=x_1001523.1 bus2=s3x_1001523.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001523-da2" bus1=x_1001523.1 bus2=s2x_1001523.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1001523-da1" bus1=x_1001523.1 bus2=s1x_1001523.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 length=100 units=ft
+New "Line.182912" bus1=182157.1.2.3 bus2=182158.1.2.3 length=18.92007 linecode=186 Seasons=1 Ratings=[400,] normamps=214 emergamps=235 units=m enabled=true phases=3
+New "Line.182915" bus1=182158.1.2.3 bus2=232292.1.2.3 length=83.89031 linecode=186 Seasons=1 Ratings=[400,] normamps=214 emergamps=235 units=m enabled=true phases=3
+New "Line.235185" bus1=232292.1.2.3 bus2=182161.1.2.3 length=60.11023 linecode=186 Seasons=1 Ratings=[400,] normamps=214 emergamps=235 units=m enabled=true phases=3
+New "Line.s_1001524-da12" bus1=x_1001524.1.2.3 bus2=s12x_1001524.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001524-da11" bus1=x_1001524.1.2.3 bus2=s11x_1001524.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001524-da10" bus1=x_1001524.1.2.3 bus2=s10x_1001524.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001524-da9" bus1=x_1001524.1.2.3 bus2=s9x_1001524.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001524-da8" bus1=x_1001524.1.2.3 bus2=s8x_1001524.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001524-da7" bus1=x_1001524.1.2.3 bus2=s7x_1001524.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001524-da6" bus1=x_1001524.1.2.3 bus2=s6x_1001524.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001524-da5" bus1=x_1001524.1.2.3 bus2=s5x_1001524.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001524-da4" bus1=x_1001524.1.2.3 bus2=s4x_1001524.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001524-da3" bus1=x_1001524.1.2.3 bus2=s3x_1001524.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001524-da2" bus1=x_1001524.1.2.3 bus2=s2x_1001524.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001524-da1" bus1=x_1001524.1.2.3 bus2=s1x_1001524.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.182916" bus1=182161.1.2.3 bus2=182162.1.2.3 length=68.04025 linecode=186 Seasons=1 Ratings=[400,] normamps=214 emergamps=235 units=m enabled=true phases=3
+New "Line.s_1001525-da24" bus1=x_1001525.1.2.3 bus2=s24x_1001525.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001525-da23" bus1=x_1001525.1.2.3 bus2=s23x_1001525.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001525-da22" bus1=x_1001525.1.2.3 bus2=s22x_1001525.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001525-da21" bus1=x_1001525.1.2.3 bus2=s21x_1001525.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001525-da20" bus1=x_1001525.1.2.3 bus2=s20x_1001525.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001525-da19" bus1=x_1001525.1.2.3 bus2=s19x_1001525.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001525-da18" bus1=x_1001525.1.2.3 bus2=s18x_1001525.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001525-da17" bus1=x_1001525.1.2.3 bus2=s17x_1001525.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001525-da16" bus1=x_1001525.1.2.3 bus2=s16x_1001525.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001525-da15" bus1=x_1001525.1.2.3 bus2=s15x_1001525.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001525-da14" bus1=x_1001525.1.2.3 bus2=s14x_1001525.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001525-da13" bus1=x_1001525.1.2.3 bus2=s13x_1001525.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001525-da12" bus1=x_1001525.1.2.3 bus2=s12x_1001525.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001525-da11" bus1=x_1001525.1.2.3 bus2=s11x_1001525.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001525-da10" bus1=x_1001525.1.2.3 bus2=s10x_1001525.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001525-da9" bus1=x_1001525.1.2.3 bus2=s9x_1001525.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001525-da8" bus1=x_1001525.1.2.3 bus2=s8x_1001525.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001525-da7" bus1=x_1001525.1.2.3 bus2=s7x_1001525.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001525-da6" bus1=x_1001525.1.2.3 bus2=s6x_1001525.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001525-da5" bus1=x_1001525.1.2.3 bus2=s5x_1001525.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001525-da4" bus1=x_1001525.1.2.3 bus2=s4x_1001525.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001525-da3" bus1=x_1001525.1.2.3 bus2=s3x_1001525.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001525-da2" bus1=x_1001525.1.2.3 bus2=s2x_1001525.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001525-da1" bus1=x_1001525.1.2.3 bus2=s1x_1001525.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.182914" bus1=182158.1.2.3 bus2=182160.1.2.3 length=37.78014 linecode=186 Seasons=1 Ratings=[400,] normamps=214 emergamps=235 units=m enabled=true phases=3
+New "Line.s_1001522-da24" bus1=x_1001522.1.2.3 bus2=s24x_1001522.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001522-da23" bus1=x_1001522.1.2.3 bus2=s23x_1001522.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001522-da22" bus1=x_1001522.1.2.3 bus2=s22x_1001522.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001522-da21" bus1=x_1001522.1.2.3 bus2=s21x_1001522.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001522-da20" bus1=x_1001522.1.2.3 bus2=s20x_1001522.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001522-da19" bus1=x_1001522.1.2.3 bus2=s19x_1001522.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001522-da18" bus1=x_1001522.1.2.3 bus2=s18x_1001522.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001522-da17" bus1=x_1001522.1.2.3 bus2=s17x_1001522.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001522-da16" bus1=x_1001522.1.2.3 bus2=s16x_1001522.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001522-da15" bus1=x_1001522.1.2.3 bus2=s15x_1001522.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001522-da14" bus1=x_1001522.1.2.3 bus2=s14x_1001522.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001522-da13" bus1=x_1001522.1.2.3 bus2=s13x_1001522.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001522-da12" bus1=x_1001522.1.2.3 bus2=s12x_1001522.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001522-da11" bus1=x_1001522.1.2.3 bus2=s11x_1001522.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001522-da10" bus1=x_1001522.1.2.3 bus2=s10x_1001522.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001522-da9" bus1=x_1001522.1.2.3 bus2=s9x_1001522.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001522-da8" bus1=x_1001522.1.2.3 bus2=s8x_1001522.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001522-da7" bus1=x_1001522.1.2.3 bus2=s7x_1001522.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001522-da6" bus1=x_1001522.1.2.3 bus2=s6x_1001522.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001522-da5" bus1=x_1001522.1.2.3 bus2=s5x_1001522.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001522-da4" bus1=x_1001522.1.2.3 bus2=s4x_1001522.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001522-da3" bus1=x_1001522.1.2.3 bus2=s3x_1001522.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001522-da2" bus1=x_1001522.1.2.3 bus2=s2x_1001522.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001522-da1" bus1=x_1001522.1.2.3 bus2=s1x_1001522.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.216919" bus1=215930.2 bus2=233811.2 length=11.89005 linecode=62 Seasons=1 Ratings=[400,] normamps=160 emergamps=190 units=m enabled=true phases=1
+New "Line.236614" bus1=233811.2 bus2=233812.2 length=15.24006 linecode=251 Seasons=1 Ratings=[400,] normamps=500 emergamps=550 units=m enabled=true phases=1
+New "Line.223586" bus1=233812.2 bus2=182026.2 length=89.63033 linecode=62 Seasons=1 Ratings=[400,] normamps=160 emergamps=190 units=m enabled=true phases=1
+New "Line.s_1000119-db2" bus1=x_1000119.2 bus2=s2x_1000119.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000119-db1" bus1=x_1000119.2 bus2=s1x_1000119.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 length=100 units=ft
+New "Line.175092" bus1=182023.1.2.3 bus2=182024.1.2.3 length=15.64006 linecode=40 Seasons=1 Ratings=[400,] normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.175090" bus1=182024.1.2.3 bus2=182025.1.2.3 length=15.06006 linecode=99 Seasons=1 Ratings=[400,] normamps=500 emergamps=550 units=m enabled=true phases=3
+New "Line.175094" bus1=182025.1.2.3 bus2=182027.1.2.3 length=57.25022 linecode=186 Seasons=1 Ratings=[400,] normamps=214 emergamps=235 units=m enabled=true phases=3
+New "Line.s_1002001-da18" bus1=x_1002001.1.2.3 bus2=s18x_1002001.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1002001-da17" bus1=x_1002001.1.2.3 bus2=s17x_1002001.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1002001-da16" bus1=x_1002001.1.2.3 bus2=s16x_1002001.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1002001-da15" bus1=x_1002001.1.2.3 bus2=s15x_1002001.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1002001-da14" bus1=x_1002001.1.2.3 bus2=s14x_1002001.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1002001-da13" bus1=x_1002001.1.2.3 bus2=s13x_1002001.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1002001-da12" bus1=x_1002001.1.2.3 bus2=s12x_1002001.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1002001-da11" bus1=x_1002001.1.2.3 bus2=s11x_1002001.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1002001-da10" bus1=x_1002001.1.2.3 bus2=s10x_1002001.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1002001-da9" bus1=x_1002001.1.2.3 bus2=s9x_1002001.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1002001-da8" bus1=x_1002001.1.2.3 bus2=s8x_1002001.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1002001-da7" bus1=x_1002001.1.2.3 bus2=s7x_1002001.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1002001-da6" bus1=x_1002001.1.2.3 bus2=s6x_1002001.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1002001-da5" bus1=x_1002001.1.2.3 bus2=s5x_1002001.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1002001-da4" bus1=x_1002001.1.2.3 bus2=s4x_1002001.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1002001-da3" bus1=x_1002001.1.2.3 bus2=s3x_1002001.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1002001-da2" bus1=x_1002001.1.2.3 bus2=s2x_1002001.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1002001-da1" bus1=x_1002001.1.2.3 bus2=s1x_1002001.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.175088" bus1=182017.1.2.3 bus2=182022.1.2.3 length=39.03015 linecode=40 Seasons=1 Ratings=[400,] normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.s_1000071-dc1" bus1=x_1000071.3 bus2=s1x_1000071.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000071-db1" bus1=x_1000071.2 bus2=s1x_1000071.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000071-da1" bus1=x_1000071.1 bus2=s1x_1000071.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 length=100 units=ft
+New "Line.175089" bus1=182022.1.2.3 bus2=182021.1.2.3 length=15.24006 linecode=40 Seasons=1 Ratings=[400,] normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.s_1000070-db5" bus1=x_1000070.2 bus2=s5x_1000070.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000070-db4" bus1=x_1000070.2 bus2=s4x_1000070.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000070-db3" bus1=x_1000070.2 bus2=s3x_1000070.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000070-db2" bus1=x_1000070.2 bus2=s2x_1000070.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1000070-db1" bus1=x_1000070.2 bus2=s1x_1000070.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 length=100 units=ft
+New "Line.175081" bus1=182012.1.2.3 bus2=182011.1.2.3 length=10.37004 linecode=40 Seasons=1 Ratings=[400,] normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.175078" bus1=182012.1.2.3 bus2=182013.1.2.3 length=0.001 linecode=99 Seasons=1 Ratings=[400,] normamps=500 emergamps=550 Switch=True units=m enabled=true phases=3
+New "Line.255389" bus1=182013.1.2.3 bus2=255334.1.2.3 length=65.87025 linecode=141 Seasons=1 Ratings=[400,] normamps=519 emergamps=617 units=m enabled=true phases=3
+New "Line.255390" bus1=255334.1.2.3 bus2=255335.1.2.3 length=50.17019 linecode=141 Seasons=1 Ratings=[400,] normamps=519 emergamps=617 units=m enabled=true phases=3
+New "Line.255391" bus1=255335.1.2.3 bus2=247590.1.2.3 length=139.2705 linecode=141 Seasons=1 Ratings=[400,] normamps=519 emergamps=617 units=m enabled=true phases=3
+New "Line.249319" bus1=247589.1.2.3 bus2=247590.1.2.3 length=0.001 linecode=99 Seasons=1 Ratings=[400,] normamps=500 emergamps=550 Switch=True units=m enabled=true phases=3
+New "Line.175098" bus1=247589.1.2.3 bus2=182030.1.2.3 length=45.92017 linecode=40 Seasons=1 Ratings=[400,] normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.175074" bus1=182004.1.2.3 bus2=182005.1.2.3 length=6.690025 linecode=40 Seasons=1 Ratings=[400,] normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.175072" bus1=182005.1.2.3 bus2=182006.1.2.3 length=15.24006 linecode=99 Seasons=1 Ratings=[400,] normamps=500 emergamps=550 units=m enabled=true phases=3
+New "Line.175075" bus1=182006.1.2.3 bus2=210023.1.2.3 length=6.250023 linecode=40 Seasons=1 Ratings=[400,] normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.211128" bus1=210023.1.2.3 bus2=182007.1.2.3 length=19.85007 linecode=40 Seasons=1 Ratings=[400,] normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.s_1002055-dc1" bus1=x_1002055.3 bus2=s1x_1002055.3 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1002055-db1" bus1=x_1002055.2 bus2=s1x_1002055.2 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 length=100 units=ft
+New "Line.s_1002055-da1" bus1=x_1002055.1 bus2=s1x_1002055.1 linecode=defaultSecondary Seasons=1 Ratings=[400,] normamps=400 emergamps=600 length=100 units=ft
+New "Line.223584" bus1=221728.1.2.3 bus2=182007.1.2.3 length=25.5801 linecode=40 Seasons=1 Ratings=[400,] normamps=160 emergamps=190 units=m enabled=true phases=3
+New "Line.223551" bus1=221728.1.2.3 bus2=221729.1.2.3 length=15.62006 linecode=99 Seasons=1 Ratings=[400,] normamps=500 emergamps=550 units=m enabled=true phases=3
+New "Line.223585" bus1=221729.1.2.3 bus2=221730.1.2.3 length=39.11015 linecode=185 Seasons=1 Ratings=[400,] normamps=213 emergamps=234 units=m enabled=true phases=3
+New "Line.s_1001637-da6" bus1=x_1001637.1.2.3 bus2=s6x_1001637.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001637-da5" bus1=x_1001637.1.2.3 bus2=s5x_1001637.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001637-da4" bus1=x_1001637.1.2.3 bus2=s4x_1001637.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001637-da3" bus1=x_1001637.1.2.3 bus2=s3x_1001637.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001637-da2" bus1=x_1001637.1.2.3 bus2=s2x_1001637.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.s_1001637-da1" bus1=x_1001637.1.2.3 bus2=s1x_1001637.1.2.3 linecode=defaultSecondary3P Seasons=1 Ratings=[400,] normamps=299 emergamps=373.75 length=100 units=ft
+New "Line.175067" bus1=181997.1.2.3 bus2=182001.1.2.3 length=8.24003 linecode=104 Seasons=1 Ratings=[400,] normamps=500 emergamps=550 units=m enabled=true phases=3
+New "Line.175066" bus1=182000.1.2.3 bus2=182001.1.2.3 length=15.14006 linecode=99 Seasons=1 Ratings=[400,] normamps=500 emergamps=550 units=m enabled=true phases=3
+New "Line.175068" bus1=182000.1.2.3 bus2=182002.1.2.3 length=7.340027 linecode=104 Seasons=1 Ratings=[400,] normamps=500 emergamps=550 units=m enabled=true phases=3

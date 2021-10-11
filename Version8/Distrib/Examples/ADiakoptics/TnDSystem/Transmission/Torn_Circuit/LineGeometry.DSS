@@ -1,0 +1,264 @@
+New "LineGeometry.1ph-nonebusbarnonebusbar"
+~ nconds=2
+~ nphases=1
+~ Cond=1 wire=BUSBAR X=0 h=12.192 units=m
+~ Cond=2 wire=BUSBAR X=0 h=10.668 units=m
+~ Reduce=Yes
+
+New "LineGeometry.1ph-nonenoneal_1/0_7stracsr_1/0_6/1"
+~ nconds=2
+~ nphases=1
+~ Cond=1 wire=AL_1/0_7STR X=0 h=12.192 units=m
+~ Cond=2 wire=ACSR_1/0_6/1 X=0 h=10.668 units=m
+~ Reduce=Yes
+
+New "LineGeometry.1ph-al_#2_7strnonenoneacsr_1/0_6/1"
+~ nconds=2
+~ nphases=1
+~ Cond=1 wire=AL_#2_7STR X=0 h=12.192 units=m
+~ Cond=2 wire=ACSR_1/0_6/1 X=0 h=10.668 units=m
+~ Reduce=Yes
+
+New "LineGeometry.1ph-noneal_1/0_7strnoneacsr_1/0_6/1"
+~ nconds=2
+~ nphases=1
+~ Cond=1 wire=AL_1/0_7STR X=0 h=12.192 units=m
+~ Cond=2 wire=ACSR_1/0_6/1 X=0 h=10.668 units=m
+~ Reduce=Yes
+
+New "LineGeometry.3ph_horiz_lg_1c-al_4/0_7stral_4/0_7stral_4/0_7stracsr_1/0_6/1"
+~ nconds=4
+~ nphases=3
+~ Cond=1 wire=AL_4/0_7STR X=-1.39598 h=12.192 units=m
+~ Cond=2 wire=AL_4/0_7STR X=0 h=12.192 units=m
+~ Cond=3 wire=AL_4/0_7STR X=1.39598 h=12.192 units=m
+~ Cond=4 wire=ACSR_1/0_6/1 X=0 h=10.9728 units=m
+~ Reduce=Yes
+
+New "LineGeometry.1ph-nonenoneal_#2_7stracsr_1/0_6/1"
+~ nconds=2
+~ nphases=1
+~ Cond=1 wire=AL_#2_7STR X=0 h=12.192 units=m
+~ Cond=2 wire=ACSR_1/0_6/1 X=0 h=10.668 units=m
+~ Reduce=Yes
+
+New "LineGeometry.3ph_horiz_lg_1c-busbarbusbarbusbarbusbar"
+~ nconds=4
+~ nphases=3
+~ Cond=1 wire=BUSBAR X=-1.39598 h=12.192 units=m
+~ Cond=2 wire=BUSBAR X=0 h=12.192 units=m
+~ Cond=3 wire=BUSBAR X=1.39598 h=12.192 units=m
+~ Cond=4 wire=BUSBAR X=0 h=10.9728 units=m
+~ Reduce=Yes
+
+New "LineGeometry.1ph-noneal_#2_7strnoneacsr_1/0_6/1"
+~ nconds=2
+~ nphases=1
+~ Cond=1 wire=AL_#2_7STR X=0 h=12.192 units=m
+~ Cond=2 wire=ACSR_1/0_6/1 X=0 h=10.668 units=m
+~ Reduce=Yes
+
+New "LineGeometry.1ph-al_1/0_7strnonenoneacsr_1/0_6/1"
+~ nconds=2
+~ nphases=1
+~ Cond=1 wire=AL_1/0_7STR X=0 h=12.192 units=m
+~ Cond=2 wire=ACSR_1/0_6/1 X=0 h=10.668 units=m
+~ Reduce=Yes
+
+New "LineGeometry.1ph-nonenonebusbarbusbar"
+~ nconds=2
+~ nphases=1
+~ Cond=1 wire=BUSBAR X=0 h=12.192 units=m
+~ Cond=2 wire=BUSBAR X=0 h=10.668 units=m
+~ Reduce=Yes
+
+New "LineGeometry.1ph-nonenonecu_#6_1stracsr_1/0_6/1"
+~ nconds=2
+~ nphases=1
+~ Cond=1 wire=CU_#6_1STR X=0 h=12.192 units=m
+~ Cond=2 wire=ACSR_1/0_6/1 X=0 h=10.668 units=m
+~ Reduce=Yes
+
+New "LineGeometry.1ph-cu_#6_1strnonenoneacsr_1/0_6/1"
+~ nconds=2
+~ nphases=1
+~ Cond=1 wire=CU_#6_1STR X=0 h=12.192 units=m
+~ Cond=2 wire=ACSR_1/0_6/1 X=0 h=10.668 units=m
+~ Reduce=Yes
+
+New "LineGeometry.3ph_horiz_lg_1c-cu_#2_7strcu_#2_7strcu_#2_7stracsr_1/0_6/1"
+~ nconds=4
+~ nphases=3
+~ Cond=1 wire=CU_#2_7STR X=-1.39598 h=12.192 units=m
+~ Cond=2 wire=CU_#2_7STR X=0 h=12.192 units=m
+~ Cond=3 wire=CU_#2_7STR X=1.39598 h=12.192 units=m
+~ Cond=4 wire=ACSR_1/0_6/1 X=0 h=10.9728 units=m
+~ Reduce=Yes
+
+New "LineGeometry.1ph-nonecu_#6_1strnoneacsr_1/0_6/1"
+~ nconds=2
+~ nphases=1
+~ Cond=1 wire=CU_#6_1STR X=0 h=12.192 units=m
+~ Cond=2 wire=ACSR_1/0_6/1 X=0 h=10.668 units=m
+~ Reduce=Yes
+
+New "LineGeometry.1ph-busbarnonenonebusbar"
+~ nconds=2
+~ nphases=1
+~ Cond=1 wire=BUSBAR X=0 h=12.192 units=m
+~ Cond=2 wire=BUSBAR X=0 h=10.668 units=m
+~ Reduce=Yes
+
+New "LineGeometry.3ph_vert_1c-al_556_19stral_556_19stral_556_19stracsr_1/0_6/1"
+~ nconds=4
+~ nphases=3
+~ Cond=1 wire=AL_556_19STR X=0 h=11.683 units=m
+~ Cond=2 wire=AL_556_19STR X=0 h=13.1064 units=m
+~ Cond=3 wire=AL_556_19STR X=0 h=14.6304 units=m
+~ Cond=4 wire=ACSR_1/0_6/1 X=0 h=10.3632 units=m
+~ Reduce=Yes
+
+New "LineGeometry.3ph_vert_1c-al_4/0_7stral_4/0_7stral_4/0_7stracsr_1/0_6/1"
+~ nconds=4
+~ nphases=3
+~ Cond=1 wire=AL_4/0_7STR X=0 h=11.683 units=m
+~ Cond=2 wire=AL_4/0_7STR X=0 h=13.1064 units=m
+~ Cond=3 wire=AL_4/0_7STR X=0 h=14.6304 units=m
+~ Cond=4 wire=ACSR_1/0_6/1 X=0 h=10.3632 units=m
+~ Reduce=Yes
+
+New "LineGeometry.3ph_horiz_lg_1c-al_336_19stral_336_19stral_336_19stracsr_1/0_6/1"
+~ nconds=4
+~ nphases=3
+~ Cond=1 wire=AL_336_19STR X=-1.39598 h=12.192 units=m
+~ Cond=2 wire=AL_336_19STR X=0 h=12.192 units=m
+~ Cond=3 wire=AL_336_19STR X=1.39598 h=12.192 units=m
+~ Cond=4 wire=ACSR_1/0_6/1 X=0 h=10.9728 units=m
+~ Reduce=Yes
+
+New "LineGeometry.3ph_horiz_lg_1c-al_1/0_7stral_1/0_7stral_1/0_7stracsr_1/0_6/1"
+~ nconds=4
+~ nphases=3
+~ Cond=1 wire=AL_1/0_7STR X=-1.39598 h=12.192 units=m
+~ Cond=2 wire=AL_1/0_7STR X=0 h=12.192 units=m
+~ Cond=3 wire=AL_1/0_7STR X=1.39598 h=12.192 units=m
+~ Cond=4 wire=ACSR_1/0_6/1 X=0 h=10.9728 units=m
+~ Reduce=Yes
+
+New "LineGeometry.3ph_horiz_lg_1c-al_556_19stral_556_19stral_556_19stracsr_1/0_6/1"
+~ nconds=4
+~ nphases=3
+~ Cond=1 wire=AL_556_19STR X=-1.39598 h=12.192 units=m
+~ Cond=2 wire=AL_556_19STR X=0 h=12.192 units=m
+~ Cond=3 wire=AL_556_19STR X=1.39598 h=12.192 units=m
+~ Cond=4 wire=ACSR_1/0_6/1 X=0 h=10.9728 units=m
+~ Reduce=Yes
+
+New "LineGeometry.3ph_horiz_lg_1c-al_#2_7stral_#2_7stral_#2_7stracsr_1/0_6/1"
+~ nconds=4
+~ nphases=3
+~ Cond=1 wire=AL_#2_7STR X=-1.39598 h=12.192 units=m
+~ Cond=2 wire=AL_#2_7STR X=0 h=12.192 units=m
+~ Cond=3 wire=AL_#2_7STR X=1.39598 h=12.192 units=m
+~ Cond=4 wire=ACSR_1/0_6/1 X=0 h=10.9728 units=m
+~ Reduce=Yes
+
+New "LineGeometry.1ph-nonenoneacsr_1/0_6/1acsr_1/0_6/1"
+~ nconds=2
+~ nphases=1
+~ Cond=1 wire=ACSR_1/0_6/1 X=0 h=12.192 units=m
+~ Cond=2 wire=ACSR_1/0_6/1 X=0 h=10.668 units=m
+~ Reduce=Yes
+
+New "LineGeometry.1ph-noneacsr_1/0_6/1noneacsr_1/0_6/1"
+~ nconds=2
+~ nphases=1
+~ Cond=1 wire=ACSR_1/0_6/1 X=0 h=12.192 units=m
+~ Cond=2 wire=ACSR_1/0_6/1 X=0 h=10.668 units=m
+~ Reduce=Yes
+
+New "LineGeometry.3ph_vert_1c-al_336_19stral_336_19stral_336_19stracsr_1/0_6/1"
+~ nconds=4
+~ nphases=3
+~ Cond=1 wire=AL_336_19STR X=0 h=11.683 units=m
+~ Cond=2 wire=AL_336_19STR X=0 h=13.1064 units=m
+~ Cond=3 wire=AL_336_19STR X=0 h=14.6304 units=m
+~ Cond=4 wire=ACSR_1/0_6/1 X=0 h=10.3632 units=m
+~ Reduce=Yes
+
+New "LineGeometry.3ph_vert_1c-cu_#2_7strcu_#2_7strcu_#2_7stracsr_1/0_6/1"
+~ nconds=4
+~ nphases=3
+~ Cond=1 wire=CU_#2_7STR X=0 h=11.683 units=m
+~ Cond=2 wire=CU_#2_7STR X=0 h=13.1064 units=m
+~ Cond=3 wire=CU_#2_7STR X=0 h=14.6304 units=m
+~ Cond=4 wire=ACSR_1/0_6/1 X=0 h=10.3632 units=m
+~ Reduce=Yes
+
+New "LineGeometry.2ph_vert_1c-al_#2_7strnoneal_#2_7stracsr_1/0_6/1"
+~ nconds=3
+~ nphases=2
+~ Cond=1 wire=AL_#2_7STR X=-1.395981 h=11.9634 units=m
+~ Cond=2 wire=AL_#2_7STR X=1.395981 h=11.9634 units=m
+~ Cond=3 wire=ACSR_1/0_6/1 X=0 h=10.668 units=m
+~ Reduce=Yes
+
+New "LineGeometry.2ph_horiz_lg_1c-busbarnonebusbarbusbar"
+~ nconds=3
+~ nphases=2
+~ Cond=1 wire=BUSBAR X=-1.395981 h=11.9634 units=m
+~ Cond=2 wire=BUSBAR X=1.395981 h=11.9634 units=m
+~ Cond=3 wire=BUSBAR X=0 h=10.668 units=m
+~ Reduce=Yes
+
+New "LineGeometry.2ph_vert_1c-al_1/0_7strnoneal_1/0_7stracsr_1/0_6/1"
+~ nconds=3
+~ nphases=2
+~ Cond=1 wire=AL_1/0_7STR X=-1.395981 h=11.9634 units=m
+~ Cond=2 wire=AL_1/0_7STR X=1.395981 h=11.9634 units=m
+~ Cond=3 wire=ACSR_1/0_6/1 X=0 h=10.668 units=m
+~ Reduce=Yes
+
+New "LineGeometry.3ph_vert_1c-al_1/0_7stral_1/0_7stral_1/0_7stracsr_1/0_6/1"
+~ nconds=4
+~ nphases=3
+~ Cond=1 wire=AL_1/0_7STR X=0 h=11.683 units=m
+~ Cond=2 wire=AL_1/0_7STR X=0 h=13.1064 units=m
+~ Cond=3 wire=AL_1/0_7STR X=0 h=14.6304 units=m
+~ Cond=4 wire=ACSR_1/0_6/1 X=0 h=10.3632 units=m
+~ Reduce=Yes
+
+New "LineGeometry.2ph_horiz_lg_1c-al_1/0_7stral_1/0_7strnoneacsr_1/0_6/1"
+~ nconds=3
+~ nphases=2
+~ Cond=1 wire=AL_1/0_7STR X=-1.395981 h=11.9634 units=m
+~ Cond=2 wire=AL_1/0_7STR X=1.395981 h=11.9634 units=m
+~ Cond=3 wire=ACSR_1/0_6/1 X=0 h=10.668 units=m
+~ Reduce=Yes
+
+New "LineGeometry.3ph_horiz_lg_1c-acsr_1/0_6/1acsr_1/0_6/1acsr_1/0_6/1acsr_1/0_6/1"
+~ nconds=4
+~ nphases=3
+~ Cond=1 wire=ACSR_1/0_6/1 X=-1.39598 h=12.192 units=m
+~ Cond=2 wire=ACSR_1/0_6/1 X=0 h=12.192 units=m
+~ Cond=3 wire=ACSR_1/0_6/1 X=1.39598 h=12.192 units=m
+~ Cond=4 wire=ACSR_1/0_6/1 X=0 h=10.9728 units=m
+~ Reduce=Yes
+
+New "LineGeometry.2ph_horiz_lg_1c-nonecu_#6_1strcu_#6_1stracsr_1/0_6/1"
+~ nconds=3
+~ nphases=2
+~ Cond=1 wire=CU_#6_1STR X=-1.395981 h=11.9634 units=m
+~ Cond=2 wire=CU_#6_1STR X=1.395981 h=11.9634 units=m
+~ Cond=3 wire=ACSR_1/0_6/1 X=0 h=10.668 units=m
+~ Reduce=Yes
+
+New "LineGeometry.3ph_vert_1c-al_#2_7stral_#2_7stral_#2_7stracsr_1/0_6/1"
+~ nconds=4
+~ nphases=3
+~ Cond=1 wire=AL_#2_7STR X=0 h=11.683 units=m
+~ Cond=2 wire=AL_#2_7STR X=0 h=13.1064 units=m
+~ Cond=3 wire=AL_#2_7STR X=0 h=14.6304 units=m
+~ Cond=4 wire=ACSR_1/0_6/1 X=0 h=10.3632 units=m
+~ Reduce=Yes
+
