@@ -1,4 +1,4 @@
-//-----------------------------------A-Diakoptics applied to IEEE 123 node test system ---------------------------------------------------------
+//-----------------------------------A-Diakoptics applied to IEEE 123 bus test system ---------------------------------------------------------
 //
 // use this example for evaluating the performance of A-Diakoptics in OpenDSS
 // there are some rules that need to be respected:
