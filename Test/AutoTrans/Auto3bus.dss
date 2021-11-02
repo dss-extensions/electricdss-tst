@@ -1,0 +1,70 @@
+// test of 330-MVA autotransformer modeled as YNad1, at a 6-node bus, 3-node bus, 3-node bus
+// see AutoTest.xlsx file in this directory for test data and expected results
+
+clear
+new circuit.auto  basekV=345.0 phases=3 mvasc3=2000000 2000000
+
+new line.line1 bus1=sourcebus bus2=high switch=yes r1=1e-6 r0=1e-6 x1=0 x0=0 c1=0 c0=0
+
+new xfmrcode.auto phases=1 windings=3 xhl=13.55 xht=17.50 xlt=15.17 %imag=0.0616 %noloadloss=0.0450
+~ wdg=1 conn=w kV=106.23 kVA=58667 %r=0.0925
+~ wdg=2 conn=w kV= 92.95 kVA=58667 %r=0.1042
+~ wdg=3 conn=d kV= 13.80 kVA=24000 %r=0.7031
+
+// the autotransformer is at three buses, with an internal jumper at common node
+new transformer.t1a xfmrcode=auto buses=[high.1.4, low.1.0, tert.1.2]
+new transformer.t1b xfmrcode=auto buses=[high.2.5, low.2.0, tert.2.3]
+new transformer.t1c xfmrcode=auto buses=[high.3.6, low.3.0, tert.3.1]
+
+// jumper bottom of series winding to the common node
+new line.common bus1=high.4.5.6 bus2=low.1.2.3 switch=yes r1=1e-6 r0=1e-6 x1=0 x0=0 c1=0 c0=0
+
+set voltagebases=[345.0 161.0 13.8] 
+calcvoltagebases
+set tolerance=1e-8
+
+// check 1: no-load test (79.3 + j108.4 kVA)
+solve
+export powers kva Auto3bus_noload_power.txt
+batchedit transformer..* %noloadloss=0.0 %imag=0.0
+
+// check 2: HL short circuit and losses (7638.3 A, 346.2 kW)
+new fault.test phases=3 bus1=low r=1e-6
+solve
+export currents file=Auto3bus_HL_current.txt
+edit fault.test enabled=no
+new load.test phases=3 bus1=low conn=wye kv=161 kw=330000 kvar=0
+solve
+export losses file=Auto3bus_HL_losses.txt
+
+// check 3: HT short circuit and losses (2258.7 A, 236.1 kW)
+edit fault.test bus1=tert enabled=yes
+edit load.test enabled=no
+solve
+export currents file=Auto3bus_HT_current.txt
+edit fault.test enabled=no
+edit load.test enabled=yes bus1=tert kv=13.8 kw=72000
+solve
+export losses file=Auto3bus_HT_losses.txt
+
+// check 4: LT short circuit and losses (4159.5 A, 236.1 kW)
+edit vsource.source basekv=161
+edit line.line1 bus2=low
+edit fault.test enabled=yes
+edit load.test enabled=no
+solve
+export currents file=Auto3bus_LT_current.txt
+edit fault.test enabled=no
+edit load.test enabled=yesa
+solve
+export losses file=Auto3bus_LT_losses.txt
+
+// check 5: full-load voltage regulation (0.9488< -4.3 deg, 329.1+j204.0 MVA)
+edit vsource.source basekv=345
+edit line.line1 bus2=high
+edit fault.test enabled=no
+edit load.test enabled=yes bus1=low kv=161 kw=330000 pf=0.85
+solve
+export powers mva file=Auto3bus_Load_power.txt
+export voltages file=Auto3bus_Load_voltage.txt
+
