@@ -18,7 +18,7 @@ set tolerance=1e-8
 // check 1: no-load test (79.3 + j108.4 kVA)
 solve
 export powers kva AutoAuto_noload_power.txt
-batchedit transformer..* %noloadloss=0.0 %imag=0.0
+batchedit autotrans..* %noloadloss=0.0 %imag=0.0
 
 // check 2: HL short circuit and losses (7638.3 A, 346.2 kW)
 new fault.test phases=3 bus1=low r=1e-6
