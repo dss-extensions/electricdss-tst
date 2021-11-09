@@ -21,6 +21,9 @@ Calcvoltagebases
 buscoords buscoords.txt
 solve
 
+//=======================================
+/*
+
 set mode=yearly number= 1440 stepsize=1m    ! one day simulation 
 
 ! Set "DemandInterval" to true so that energy quantities recorded by energy meters are recorded for 
@@ -36,6 +39,7 @@ Set Year=1        ! This statement resets all meters
 solve 
 
 closedi     ! close demand interval files at end of run
+*/
 
 //=======================================
 /*
