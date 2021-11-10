@@ -119,7 +119,7 @@ op = open ('SecNet.dss', 'w')
 print ('clear', file=op)
 print (' ', file=op)
 # near-infinite source impedance to match ATP's
-print ('new circuit.ieee390 basekv=230 pu=1.05 bus1=P1 mvasc3=200000 mvasc1=2000000', file=op)
+print ('new circuit.ieee390 basekv=230 pu=1.05 bus1=P1 mvasc3=200000 mvasc1=200000', file=op)
 
 print (' ', file=op)
 print ('new LineCode.Switch nphases=3 r1=1e-6 r0=1e-6 x1=1e-6 x0=1e-6 c1=0 c0=0', file=op)
