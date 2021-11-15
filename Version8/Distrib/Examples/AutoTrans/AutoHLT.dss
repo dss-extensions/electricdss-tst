@@ -1,0 +1,62 @@
+// test of 330-MVA autotransformer modeled as Yyd1, single tank
+// see AutoTest.xlsx file in this directory for test data and expected results
+
+clear
+new circuit.auto  basekV=345.0 phases=3 mvasc3=2000000 2000000
+
+new line.line1 bus1=sourcebus bus2=high switch=yes r1=1e-6 r0=1e-6 x1=0 x0=0 c1=0 c0=0
+
+new transformer.t1 phases=3 windings=3 xhl=7.23 xht=24.45 xlt=28.45 %imag=0.0329 %noloadloss=0.02402
+~ wdg=1 bus=high conn=w kV=345.0 kVA=330000 %r=0.0493
+~ wdg=2 bus=low  conn=w kV=161.0 kVA=330000 %r=0.0556
+~ wdg=3 bus=tert conn=d kV= 13.8 kVA= 72000 %r=1.4503
+
+set voltagebases=[345.0 161.0 13.8] 
+calcvoltagebases
+set tolerance=1e-8
+
+// check 1: no-load test (79.3 + j108.4 kVA)
+solve
+export powers kva AutoHLT_noload_power.txt
+edit transformer.t1 %noloadloss=0.0 %imag=0.0
+
+// check 2: HL short circuit and losses (7638.3 A, 346.2 kW)
+new fault.test phases=3 bus1=low r=1e-6
+solve
+export currents file=AutoHLT_HL_current.txt
+edit fault.test enabled=no
+new load.test phases=3 bus1=low conn=wye kv=161 kw=330000 kvar=0
+solve
+export losses file=AutoHLT_HL_losses.txt
+
+// check 3: HT short circuit and losses (2258.7 A, 236.1 kW)
+edit fault.test bus1=tert enabled=yes
+edit load.test enabled=no
+solve
+export currents file=AutoHLT_HT_current.txt
+edit fault.test enabled=no
+edit load.test enabled=yes bus1=tert kv=13.8 kw=72000
+solve
+export losses file=AutoHLT_HT_losses.txt
+
+// check 4: LT short circuit and losses (4159.5 A, 236.1 kW)
+edit vsource.source basekv=161
+edit line.line1 bus2=low
+edit fault.test enabled=yes
+edit load.test enabled=no
+solve
+export currents file=AutoHLT_LT_current.txt
+edit fault.test enabled=no
+edit load.test enabled=yes
+solve
+export losses file=AutoHLT_LT_losses.txt
+
+// check 5: full-load voltage regulation (0.9488< -4.3 deg, 329.1+j204.0 MVA)
+edit vsource.source basekv=345
+edit line.line1 bus2=high
+edit fault.test enabled=no
+edit load.test enabled=yes bus1=low kv=161 kw=330000 pf=0.85
+solve
+export powers mva file=AutoHLT_Load_power.txt
+export voltages file=AutoHLT_Load_voltage.txt
+
