@@ -1,7 +1,7 @@
 clear
 Set DefaultBaseFrequency=60
 
-new circuit.ieee390 basekv=230 pu=1.05 bus1=P1 mvasc3=200000 mvasc1=2000000
+new circuit.ieee390 basekv=230 pu=1.05 bus1=P1 mvasc3=200000 mvasc1=200000
  
 new LineCode.Switch nphases=3 r1=1e-6 r0=1e-6 x1=1e-6 x0=1e-6 c1=0 c0=0
  
@@ -2043,3 +2043,5 @@ new Transformer.70 buses=[P84,S190] kvs=[13.800,0.208] kvas=[1000,1000] conns=[d
  
 Set Voltagebases=[230, 13.8, 0.48, 0.208]
 calcv
+buscoords buscoords.dat
+solve

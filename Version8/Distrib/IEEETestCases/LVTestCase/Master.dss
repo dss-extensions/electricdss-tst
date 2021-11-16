@@ -18,8 +18,11 @@ New energymeter.m1 LINE.LINE1 1
 Set voltagebases=[11  .416]
 Calcvoltagebases
 
-buscoords buscoords.txt
+buscoords Buscoords.txt
 solve
+
+//=======================================
+/*
 
 set mode=yearly number= 1440 stepsize=1m    ! one day simulation 
 
@@ -36,6 +39,7 @@ Set Year=1        ! This statement resets all meters
 solve 
 
 closedi     ! close demand interval files at end of run
+*/
 
 //=======================================
 /*
