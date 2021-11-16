@@ -1,4 +1,5 @@
 Clear 
+Set DefaultBaseFrequency=60
 
 !
 ! This script is based on a script developed by Tennessee Tech Univ students
@@ -17,21 +18,21 @@ new circuit.IEEE13Nodeckt
 ! The published test case starts at 1.0 per unit at Bus 650. To make this happen, we will change the impedance
 ! on the transformer to something tiny by dividing by 1000 using the DSS in-line RPN math
 New Transformer.Sub Phases=3 Windings=2   XHL=(8 1000 /)
-~ wdg=1 bus=SourceBus   conn=delta  kv=115  kva=5000   %r=(.5 1000 /)  XHT=4
-~ wdg=2 bus=650             conn=wye    kv=4.16  kva=5000   %r=(.5 1000 /)   XLT=4
+~ wdg=1 bus=SourceBus   conn=delta  kv=115  kva=5000   %r=(.5 1000 /) 
+~ wdg=2 bus=650             conn=wye    kv=4.16  kva=5000   %r=(.5 1000 /)  
 
 ! FEEDER 1-PHASE VOLTAGE REGULATORS
 ! Define low-impedance 2-wdg transformer
 
-New Transformer.Reg1 phases=1 XHL=0.01 kVAs=[1666 1666]
+New Transformer.Reg1 phases=1 bank=reg1 XHL=0.01 kVAs=[1666 1666]
 ~ Buses=[650.1 RG60.1] kVs=[2.4  2.4] %LoadLoss=0.01
 new regcontrol.Reg1  transformer=Reg1 winding=2  vreg=122  band=2  ptratio=20 ctprim=700  R=3   X=9 
 
-New Transformer.Reg2 phases=1 XHL=0.01 kVAs=[1666 1666]
+New Transformer.Reg2 phases=1 bank=reg1 XHL=0.01 kVAs=[1666 1666]
 ~ Buses=[650.2 RG60.2] kVs=[2.4  2.4] %LoadLoss=0.01
 new regcontrol.Reg2  transformer=Reg2 winding=2  vreg=122  band=2  ptratio=20 ctprim=700  R=3   X=9 
 
-New Transformer.Reg3 phases=1 XHL=0.01 kVAs=[1666 1666]
+New Transformer.Reg3 phases=1 bank=reg1 XHL=0.01 kVAs=[1666 1666]
 ~ Buses=[650.3 RG60.3] kVs=[2.4  2.4] %LoadLoss=0.01
 new regcontrol.Reg3  transformer=Reg3 winding=2  vreg=122  band=2  ptratio=20 ctprim=700  R=3   X=9 
 
