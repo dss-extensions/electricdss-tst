@@ -1,0 +1,114 @@
+Clear 
+new circuit.SG2012 
+~ basekv=138 pu=1.0 phases=3 bus1=SourceBus Isc3=40000 Isc1=40000 x1r1=10 x0r0=10
+
+New Transformer.Sub1 Phases=3 Windings=2 Buses=(SourceBus Sub1)
+~ kvas=(12000 12000) XHL=7 %loadloss=0.7 %noloadloss=0.5 conns=(delta wye) kvs=(138 13.8)
+New Transformer.Sub2 Phases=3 Windings=2 Buses=(SourceBus Sub2)
+~ kvas=(12000 12000) XHL=7 %loadloss=0.7 %noloadloss=0.5 conns=(delta wye) kvs=(138 13.8)
+new regcontrol.Sub1  transformer=Sub1 winding=2  vreg=124  band=2  ptratio=66.4 delay=30
+new regcontrol.Sub2  transformer=Sub2 winding=2  vreg=124  band=2  ptratio=66.4 delay=30
+
+New linecode.mtx601 nphases=3 BaseFreq=60 
+~ rmatrix = (0.3465 | 0.1560 0.3375 | 0.1580 0.1535 0.3414 ) 
+~ xmatrix = (1.0179 | 0.5017 1.0478 | 0.4236 0.3849 1.0348 ) 
+~ units=mi 
+New linecode.mtx602 nphases=3 BaseFreq=60 
+~ rmatrix = (0.7526 | 0.1580 0.7475 | 0.1560 0.1535 0.7436 ) 
+~ xmatrix = (1.1814 | 0.4236 1.1983 | 0.5017 0.3849 1.2112 ) 
+~ units=mi 
+New Line.F1_1  Phases=3 Bus1=Sub1  Bus2=F1_1  LineCode=mtx601 Length=1 units=mi
+New Line.F1_2  Phases=3 Bus1=F1_1  Bus2=F1_2  LineCode=mtx601 Length=1 units=mi
+New Line.F1_3  Phases=3 Bus1=F1_2  Bus2=F1_3  LineCode=mtx601 Length=1 units=mi
+New Line.F1_4  Phases=3 Bus1=F1_3  Bus2=F1_4  LineCode=mtx601 Length=1 units=mi
+New Line.F1_5  Phases=3 Bus1=F1_4  Bus2=F1_5  LineCode=mtx601 Length=1 units=mi
+New Line.F1_6  Phases=3 Bus1=F1_5  Bus2=F1_6  LineCode=mtx602 Length=1 units=mi
+New Line.F1_7  Phases=3 Bus1=F1_6  Bus2=F1_7  LineCode=mtx602 Length=1 units=mi
+New Line.F1_8  Phases=3 Bus1=F1_7  Bus2=F1_8  LineCode=mtx602 Length=1 units=mi
+New Line.F1_9  Phases=3 Bus1=F1_8  Bus2=F1_9  LineCode=mtx602 Length=1 units=mi
+New Line.F1_10 Phases=3 Bus1=F1_9  Bus2=F1_10 LineCode=mtx602 Length=1 units=mi
+New Line.F2_1  Phases=3 Bus1=Sub1  Bus2=F2_1  LineCode=mtx601 Length=1 units=mi
+New Line.F2_2  Phases=3 Bus1=F2_1  Bus2=F2_2  LineCode=mtx601 Length=1 units=mi
+New Line.F2_3  Phases=3 Bus1=F2_2  Bus2=F2_3  LineCode=mtx601 Length=1 units=mi
+New Line.F2_4  Phases=3 Bus1=F2_3  Bus2=F2_4  LineCode=mtx601 Length=1 units=mi
+New Line.F2_5  Phases=3 Bus1=F2_4  Bus2=F2_5  LineCode=mtx601 Length=1 units=mi
+New Line.F2_6  Phases=3 Bus1=F2_5  Bus2=F2_6  LineCode=mtx602 Length=1 units=mi
+New Line.F2_7  Phases=3 Bus1=F2_6  Bus2=F2_7  LineCode=mtx602 Length=1 units=mi
+New Line.F2_8  Phases=3 Bus1=F2_7  Bus2=F2_8  LineCode=mtx602 Length=1 units=mi
+New Line.F2_9  Phases=3 Bus1=F2_8  Bus2=F2_9  LineCode=mtx602 Length=1 units=mi
+New Line.F2_10 Phases=3 Bus1=F2_9  Bus2=F2_10 LineCode=mtx602 Length=1 units=mi
+New Line.F3_1  Phases=3 Bus1=Sub2  Bus2=F3_1  LineCode=mtx601 Length=1 units=mi
+New Line.F3_2  Phases=3 Bus1=F3_1  Bus2=F3_2  LineCode=mtx601 Length=1 units=mi
+New Line.F3_3  Phases=3 Bus1=F3_2  Bus2=F3_3  LineCode=mtx601 Length=1 units=mi
+New Line.F3_4  Phases=3 Bus1=F3_3  Bus2=F3_4  LineCode=mtx601 Length=1 units=mi
+New Line.F3_5  Phases=3 Bus1=F3_4  Bus2=F3_5  LineCode=mtx601 Length=1 units=mi
+New Line.F3_6  Phases=3 Bus1=F3_5  Bus2=F3_6  LineCode=mtx602 Length=1 units=mi
+New Line.F3_7  Phases=3 Bus1=F3_6  Bus2=F3_7  LineCode=mtx602 Length=1 units=mi
+New Line.F3_8  Phases=3 Bus1=F3_7  Bus2=F3_8  LineCode=mtx602 Length=1 units=mi
+New Line.F3_9  Phases=3 Bus1=F3_8  Bus2=F3_9  LineCode=mtx602 Length=1 units=mi
+New Line.F3_10 Phases=3 Bus1=F3_9  Bus2=F3_10 LineCode=mtx602 Length=1 units=mi
+New Line.F4_1  Phases=3 Bus1=Sub2  Bus2=F4_1  LineCode=mtx601 Length=1 units=mi
+New Line.F4_2  Phases=3 Bus1=F4_1  Bus2=F4_2  LineCode=mtx601 Length=1 units=mi
+New Line.F4_3  Phases=3 Bus1=F4_2  Bus2=F4_3  LineCode=mtx601 Length=1 units=mi
+New Line.F4_4  Phases=3 Bus1=F4_3  Bus2=F4_4  LineCode=mtx601 Length=1 units=mi
+New Line.F4_5  Phases=3 Bus1=F4_4  Bus2=F4_5  LineCode=mtx601 Length=1 units=mi
+New Line.F4_6  Phases=3 Bus1=F4_5  Bus2=F4_6  LineCode=mtx602 Length=1 units=mi
+New Line.F4_7  Phases=3 Bus1=F4_6  Bus2=F4_7  LineCode=mtx602 Length=1 units=mi
+New Line.F4_8  Phases=3 Bus1=F4_7  Bus2=F4_8  LineCode=mtx602 Length=1 units=mi
+New Line.F4_9  Phases=3 Bus1=F4_8  Bus2=F4_9  LineCode=mtx602 Length=1 units=mi
+New Line.F4_10 Phases=3 Bus1=F4_9  Bus2=F4_10 LineCode=mtx602 Length=1 units=mi
+
+New Load.F1_1  Phases=3 Bus1=F1_1  Conn=Wye Model=2 kV=13.8 kW=800 pf=0.9
+New Load.F1_2  Phases=3 Bus1=F1_2  Conn=Wye Model=2 kV=13.8 kW=800 pf=0.9
+New Load.F1_3  Phases=3 Bus1=F1_3  Conn=Wye Model=2 kV=13.8 kW=800 pf=0.9
+New Load.F1_4  Phases=3 Bus1=F1_4  Conn=Wye Model=2 kV=13.8 kW=800 pf=0.9
+New Load.F1_5  Phases=3 Bus1=F1_5  Conn=Wye Model=2 kV=13.8 kW=800 pf=0.9
+New Load.F1_6  Phases=3 Bus1=F1_6  Conn=Wye Model=2 kV=13.8 kW=800 pf=0.9
+New Load.F1_7  Phases=3 Bus1=F1_7  Conn=Wye Model=2 kV=13.8 kW=800 pf=0.9
+New Load.F1_8  Phases=3 Bus1=F1_8  Conn=Wye Model=2 kV=13.8 kW=800 pf=0.9
+New Load.F1_9  Phases=3 Bus1=F1_9  Conn=Wye Model=2 kV=13.8 kW=800 pf=0.9
+New Load.F1_10 Phases=3 Bus1=F1_10 Conn=Wye Model=2 kV=13.8 kW=800 pf=0.9
+New Load.F2_1  Phases=3 Bus1=F2_1  Conn=Wye Model=2 kV=13.8 kW=800 pf=0.9
+New Load.F2_2  Phases=3 Bus1=F2_2  Conn=Wye Model=2 kV=13.8 kW=800 pf=0.9
+New Load.F2_3  Phases=3 Bus1=F2_3  Conn=Wye Model=2 kV=13.8 kW=800 pf=0.9
+New Load.F2_4  Phases=3 Bus1=F2_4  Conn=Wye Model=2 kV=13.8 kW=800 pf=0.9
+New Load.F2_5  Phases=3 Bus1=F2_5  Conn=Wye Model=2 kV=13.8 kW=800 pf=0.9
+New Load.F2_6  Phases=3 Bus1=F2_6  Conn=Wye Model=2 kV=13.8 kW=800 pf=0.9
+New Load.F2_7  Phases=3 Bus1=F2_7  Conn=Wye Model=2 kV=13.8 kW=800 pf=0.9
+New Load.F2_8  Phases=3 Bus1=F2_8  Conn=Wye Model=2 kV=13.8 kW=800 pf=0.9
+New Load.F2_9  Phases=3 Bus1=F2_9  Conn=Wye Model=2 kV=13.8 kW=800 pf=0.9
+New Load.F2_10 Phases=3 Bus1=F2_10 Conn=Wye Model=2 kV=13.8 kW=800 pf=0.9
+New Load.F3_1  Phases=3 Bus1=F3_1  Conn=Wye Model=2 kV=13.8 kW=800 pf=0.9
+New Load.F3_2  Phases=3 Bus1=F3_2  Conn=Wye Model=2 kV=13.8 kW=800 pf=0.9
+New Load.F3_3  Phases=3 Bus1=F3_3  Conn=Wye Model=2 kV=13.8 kW=800 pf=0.9
+New Load.F3_4  Phases=3 Bus1=F3_4  Conn=Wye Model=2 kV=13.8 kW=800 pf=0.9
+New Load.F3_5  Phases=3 Bus1=F3_5  Conn=Wye Model=2 kV=13.8 kW=800 pf=0.9
+New Load.F3_6  Phases=3 Bus1=F3_6  Conn=Wye Model=2 kV=13.8 kW=800 pf=0.9
+New Load.F3_7  Phases=3 Bus1=F3_7  Conn=Wye Model=2 kV=13.8 kW=800 pf=0.9
+New Load.F3_8  Phases=3 Bus1=F3_8  Conn=Wye Model=2 kV=13.8 kW=800 pf=0.9
+New Load.F3_9  Phases=3 Bus1=F3_9  Conn=Wye Model=2 kV=13.8 kW=800 pf=0.9
+New Load.F3_10 Phases=3 Bus1=F3_10 Conn=Wye Model=2 kV=13.8 kW=800 pf=0.9
+New Load.F4_1  Phases=3 Bus1=F4_1  Conn=Wye Model=2 kV=13.8 kW=800 pf=0.9
+New Load.F4_2  Phases=3 Bus1=F4_2  Conn=Wye Model=2 kV=13.8 kW=800 pf=0.9
+New Load.F4_3  Phases=3 Bus1=F4_3  Conn=Wye Model=2 kV=13.8 kW=800 pf=0.9
+New Load.F4_4  Phases=3 Bus1=F4_4  Conn=Wye Model=2 kV=13.8 kW=800 pf=0.9
+New Load.F4_5  Phases=3 Bus1=F4_5  Conn=Wye Model=2 kV=13.8 kW=800 pf=0.9
+New Load.F4_6  Phases=3 Bus1=F4_6  Conn=Wye Model=2 kV=13.8 kW=800 pf=0.9
+New Load.F4_7  Phases=3 Bus1=F4_7  Conn=Wye Model=2 kV=13.8 kW=800 pf=0.9
+New Load.F4_8  Phases=3 Bus1=F4_8  Conn=Wye Model=2 kV=13.8 kW=800 pf=0.9
+New Load.F4_9  Phases=3 Bus1=F4_9  Conn=Wye Model=2 kV=13.8 kW=800 pf=0.9
+New Load.F4_10 Phases=3 Bus1=F4_10 Conn=Wye Model=2 kV=13.8 kW=800 pf=0.9
+
+New Capacitor.F1_4  Bus1=F1_4  phases=3 kVAR=900 kV=13.8
+New Capacitor.F1_8  Bus1=F1_8  phases=3 kVAR=900 kV=13.8
+New Capacitor.F2_4  Bus1=F2_4  phases=3 kVAR=900 kV=13.8
+New Capacitor.F2_8  Bus1=F2_8  phases=3 kVAR=900 kV=13.8
+New Capacitor.F3_4  Bus1=F3_4  phases=3 kVAR=900 kV=13.8
+New Capacitor.F3_8  Bus1=F3_8  phases=3 kVAR=900 kV=13.8
+New Capacitor.F4_4  Bus1=F4_4  phases=3 kVAR=900 kV=13.8
+New Capacitor.F4_8  Bus1=F4_8  phases=3 kVAR=900 kV=13.8
+
+Set Voltagebases=[138, 13.8]
+calcv
+Solve
+BusCoords SG2012_BusXY.csv

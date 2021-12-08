@@ -1,0 +1,18 @@
+Clear 
+new circuit.SG2012 
+~ basekv=7.967 pu=1.004644 phases=1 bus1=SourceBus r1=0.02 r0=0.02 x1=0.0 x0=0.0
+
+// New Load.ac1 phases=1 bus1=sub1.1 Conn=Wye Model=2 kV=7.967 kW=600 pf=1.0
+
+//New VSConverter.vsc1 Phases=2 Ndc=1 Bus1=SourceBus.1.2 kVac=7.967 kVdc=45 kW=800 Rac=0.02 Xac=0.05 VscMode=Fixed m0=0.502831 Idcmax=1.1
+New VSConverter.vsc1 Phases=2 Ndc=1 Bus1=SourceBus.1.2 kVac=7.967 kVdc=45 kW=800 
+~ Rac=0.02 Xac=0.05 VscMode=VdcVac Vacref=7967 Vdcref=45000 Idcmax=1.1
+New LineCode.DCcable nphases=1 rmatrix=(0.01) xmatrix=(0.0) cmatrix=(0.0)
+New Line.dc1 phases=1 Bus1=SourceBus.2 Bus2=DC2.1 linecode=DCCable length=0.5
+New Load.dc2 phases=1 bus1=dc2.1 Conn=Wye Model=2 kV=45.0 kW=800 pf=1.0
+
+Set Voltagebases=[13.8] // 8.66
+set maxiterations=100
+calcv
+Solve
+

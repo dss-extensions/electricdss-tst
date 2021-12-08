@@ -1,0 +1,22 @@
+Clear 
+new circuit.SG2012 
+~ basekv=79.67 pu=1.0 phases=1 bus1=SourceBus Isc3=40000 Isc1=40000 x1r1=10 x0r0=10
+
+New Transformer.Sub1 Phases=1 Windings=2 Buses=(SourceBus Sub1)
+~ kvas=(12000 12000) XHL=7 %loadloss=0.7 %noloadloss=0.5 conns=(wye wye) kvs=(79.67 7.967)
+new regcontrol.Sub1  transformer=Sub1 winding=2  vreg=124  band=2  ptratio=66.4 delay=30 eventlog=yes
+
+New Load.ac1 phases=1 bus1=sub1.1 Conn=Wye Model=2 kV=7.967 kW=600 pf=1.0
+
+New VSConverter.vsc1 Phases=2 Ndc=1 Bus1=Sub1.1.2      kVac=7.967 kVdc=45 kW=800 
+~ Rac=0.02 Xac=0.0 Mmax=1.0 VacRef=7967.4 VdcRef=45000.0 VscMode=Fixed d0=0 m0=0.51 // Xac = 0.19
+New LineCode.DCcable nphases=1 rmatrix=(0.01) xmatrix=(0.0) cmatrix=(0.0)
+New Line.dc1 phases=1 Bus1=Sub1.2 Bus2=DC2.1 linecode=DCCable length=0.5
+New Load.dc2 phases=1 bus1=dc2.1 Conn=Wye Model=2 kV=45.0 kW=800 pf=1.0
+
+Set Voltagebases=[138, 77.94, 13.8] // 8.66
+set maxiterations=100
+set maxcontroliter=100
+calcv
+Solve
+
