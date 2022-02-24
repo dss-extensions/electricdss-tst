@@ -7,7 +7,7 @@ New XYCurve.Eff npts=4 xarray=[.1 .2 .4 1.0] yarray=[1 1 1 1]
 
 New XYCurve.FatorPvsT npts=4 xarray=[0 25 75 100] yarray=[1 1 1 1] 
 
-New Loadshape.Irrad npts=20 sinterval=1 csvfile=PV_irrad.csv
+New Loadshape.Irrad npts=20 sinterval=1 csvfile=../MonitoredVoltage/PV_irrad.csv
 
 New Tshape.Temp npts=24 interval=1 
 ~ temp=[25 25 25 25 25 25 25 25 35 40 45 50 60 60 55 40 35 30 25 25 25 25 25 25]

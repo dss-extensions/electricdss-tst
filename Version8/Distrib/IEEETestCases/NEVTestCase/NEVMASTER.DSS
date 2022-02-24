@@ -2,14 +2,14 @@ Clear
 New circuit.NEV
 ~ Basekv=138 pu=1.05
 
-redirect linegeometry.dss
-redirect linecodes.dss
-redirect spectra.dss
-redirect substation.dss
-redirect lines.dss
-redirect grounds.dss
-redirect loads.dss
-redirect capacitors.dss
+redirect LineGeometry.DSS
+redirect LineCodes.DSS
+redirect Spectra.DSS
+redirect Substation.DSS
+redirect Lines.DSS
+redirect Grounds.DSS
+redirect Loads.DSS
+redirect Capacitors.DSS
 
 Set voltagebases=[138 13.2 .48 .208]
 calcvoltagebases

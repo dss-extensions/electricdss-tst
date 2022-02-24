@@ -1,7 +1,7 @@
 Clear
 
 New Circuit.TheveninEquivalente bus1=A pu=1.0 basekv=13.8 
-~ Z0=[0.000000001, 0.000000001] Z1=[0.000000001, 0.000000001]
+~ Z0=[0.000001, 0.000001] Z1=[0.000001, 0.000001]
 
 New XYCurve.Eff npts=4 xarray=[.1 .2 .4 1.0] yarray=[1 1 1 1]
 

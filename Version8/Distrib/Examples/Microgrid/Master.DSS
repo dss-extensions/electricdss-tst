@@ -25,8 +25,8 @@ Redirect Capacitor.DSS
 Redirect Isource.DSS
 
 MakeBusList
-Redirect BusVoltageBases.dss  ! set voltage bases
-Buscoords buscoords.dss
+Redirect BusVoltageBases.DSS  ! set voltage bases
+Buscoords BusCoords.dss
 
 solve
 
