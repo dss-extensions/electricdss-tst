@@ -1,0 +1,47 @@
+!Secondary Low-Voltage Circuit Models—How Good is Good Enough?
+!IEEE Transactions on Industry Applications
+Clear
+
+New circuit.equiv_stiff MVAsc1=100000000 MVAsc3=100000000 basekv=7.2 bus1=XfmrMV angle=-30
+
+! Full split-phase transformer with percent short-circuit impedance: r+jx=1.18+j1.44, assume non-interlaced secondary windings
+New Transformer.ServiceXmfr phases=1 windings=3 Xhl=1.728 xht=1.728 xlt=1.152 %Rs=(0.59 1.18 1.18) ppm_antifloat=0 ! %imag = 0.5 %NoLoadLoss = 0.2
+~ wdg=1 bus=XfmrMV.1.2 conn=delta kV=7.2 kVA=25
+~ wdg=2 bus=XfmrLV.1.0 conn=wye kV=0.12 kVA=25
+~ wdg=3 bus=XfmrLV.0.2 conn=wye kV=0.12 kVA=25
+
+! Linecodes
+New Linecode.TriplexAAC4AAC4 nphases=2 units=kft rmatrix=[0.57087 0.10637 | 0.10637 0.57087] xmatrix=[0.22309 0.17856 | 0.17856 0.22309] cmatrix=[0.00 0.00 | 0.00 0.00] normamps=375 emergamps=480 Rg=0 Xg=0 
+New Linecode.TriplexAAC3/0AAC3/0 nphases=2 units=kft rmatrix=[0.18683 0.07113 |0.07113 0.18683] xmatrix=[0.10490 0.06123 |0.06123 0.10490] cmatrix=[0.00 0.00 | 0.00 0.00] normamps=375 emergamps=480 Rg=0 Xg=0 
+
+! Lines
+New Line.Triplex1 Bus1=XfmrLV.1.2.0 Bus2=BusLoad1.1.2.0 Phases=2 Linecode=TriplexAAC4AAC4 length=48 units=ft
+New Line.Triplex2 Bus1=XfmrLV.1.2.0 Bus2=BusLoad2.1.2.0 Phases=2 Linecode=TriplexAAC3/0AAC3/0 length=167 units=ft
+
+! Loads without loadshapes
+New Load.Load1a phases=1 conn=wye bus1=BusLoad1.1.0 kV=0.12 kW=5 kvar=1 Vminpu=0.6 Vmaxpu=2.0 model=1
+New Load.Load1b phases=1 conn=wye bus1=BusLoad1.2.0 kV=0.12 kW=5 kvar=1 Vminpu=0.6 Vmaxpu=2.0 model=1
+New Load.Load2a phases=1 conn=wye bus1=BusLoad2.1.0 kV=0.12 kW=6 kvar=2 Vminpu=0.6 Vmaxpu=2.0 model=1
+New Load.Load2b phases=1 conn=wye bus1=BusLoad2.2.0 kV=0.12 kW=6 kvar=2 Vminpu=0.6 Vmaxpu=2.0 model=1
+
+Set voltagebases=[7.2 0.41569219 0.240]
+Calcvoltagebases
+
+setbusxy bus=XfmrLV x=0 y=0
+setbusxy bus=BusLoad1 x=1 y=1
+setbusxy bus=BusLoad2 x=1 y=-1
+
+New EnergyMeter.sub element=Transformer.ServiceXmfr terminal=1 
+
+set mode=snapshot
+solve
+
+!plot circuit Power max=20 n n C1=$00FF0000
+!plot circuit Voltage Max=2000 dots=n labels=n subs=y C1=$00FF0000
+!plot circuit Losses Max=5 dots=n labels=n subs=n C1=$00FF0000
+!plot circuit Current Max=2000 dots=n labels=n subs=n C1=$00FF0000
+!plot circuit Max=20 dots=n labels=n subs=n C1=$00FF0000 thickness=80
+
+!Show Currents Elements
+!Show Voltage LN Nodes
+!Show Powers kva Elements
