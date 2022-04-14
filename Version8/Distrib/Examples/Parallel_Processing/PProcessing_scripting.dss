@@ -3,7 +3,7 @@ ClearAll    ! Clears all the actors created previously
 set parallel=No  ! disables the parallel processing suite in case it was enabled from previous runs
 
 ! Creates the first actor (default) and loads EPRI's Ckt 5 into it
-compile "C:\Program Files\OpenDSS\EPRITestCircuits\ckt5\Master_ckt5.dss"
+compile "..\..\Distrib\EPRITestCircuits\ckt5\Master_ckt5.dss"
 set CPU=0 
 set maxcontroliter=1000
 Solve
