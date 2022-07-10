@@ -8,7 +8,7 @@ Redirect  LineGeometry_ckt5.dss
 Redirect  LineCodes_ckt5.dss
 Redirect  Lines_ckt5.dss
 Redirect  Transformers_ckt5.dss
-Redirect  LoadShapes_ckt5.dss
+Redirect  Loadshapes_ckt5.dss
 Redirect  Loads_ckt5.dss
 Redirect  XFR_Loads_ckt5.dss
 Redirect  Capacitors_ckt5.dss

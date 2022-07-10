@@ -2,7 +2,7 @@ Clear
 
 New circuit.LineCodeTest
 
-Redirect "C:\Users\prdu001\OpenDSS\Distrib\Examples\Scripts\WireData.txt"
+Redirect "../Version8/Distrib/Examples/Scripts/WireData.txt"
 
 New LineGeometry.2/0Triplex nconds=3 nphases=2
 Cond=1 Wire=SAC2/0 x=0      h= 300 units=in

@@ -2,13 +2,11 @@ clearAll
 
 set parallel=No
 
-var @myfilename="C:\Program Files\OpenDSS\EPRITestCircuits\ckt5\Master_ckt5.dss"
-
 /*
 get numcpu numcores
 */
 
-compile @myfilename
+compile Master_ckt5.dss
 New Monitor.MS2 vsource.source mode=5
 set CPU=0
 Solve
