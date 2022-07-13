@@ -4,17 +4,18 @@
 # In[1]:
 
 
-import win32com.client
-from win32com.client import makepy
+#import win32com.client
+#from win32com.client import makepy
 import sys
 import gc
 import numpy as np
 import time
 from os import system, name 
 
-sys.argv = ["makepy", "OpenDSSEngine.DSS"]
-makepy.main()
-DSSObj = win32com.client.Dispatch("OpenDSSEngine.DSS")
+#sys.argv = ["makepy", "OpenDSSEngine.DSS"]
+#makepy.main()
+#DSSObj = win32com.client.Dispatch("OpenDSSEngine.DSS")
+from dss import dss as DSSObj
 DSSText = DSSObj.Text
 DSSCircuit = DSSObj.ActiveCircuit
 DSSSolution = DSSCircuit.Solution
@@ -36,7 +37,7 @@ for x in range(0, (NCPUs-1)):
     print('Core Number',x)
     if x != 0:
         DSSParallel.CreateActor()
-    DSSText.Command='compile "C:/Program Files/OpenDSS/EPRITestCircuits/ckt5/master_ckt5.DSS"'
+    DSSText.Command='redirect ../../../../EPRITestCircuits/ckt5/Master_ckt5.dss'
     DSSText.Command='Solve'
     if x==NCPUs-1:
         yDelta=8760-(NCPUs-2)*yDelta
@@ -51,7 +52,7 @@ while BoolStatus == False:
     ActorStatus = list(DSSParallel.ActorStatus);
     BoolStatus = ActorStatus == EndArray
     ActorProgress=DSSParallel.ActorProgress
-    system('cls') 
+#    system('cls') 
     print('BoolStatus = ',BoolStatus,' ActorStatus = ',ActorStatus,' ActorProgress = ', ActorProgress)
     for i in range(1,(NCPUs-1)):
         DSSParallel.ActiveActor = i;
