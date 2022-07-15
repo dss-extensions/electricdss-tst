@@ -13,18 +13,18 @@ Redirect Load.DSS
 Redirect Transformer.DSS
 Redirect Capacitor.DSS
 Redirect CapControl.DSS
-Redirect Monitor.dss
-Redirect EnergyMeter.dss
+Redirect Monitor.DSS
+Redirect EnergyMeter.DSS
 MakeBusList
-Redirect BusVoltageBases.dss  ! set voltage bases
-Buscoords buscoords.dss
+Redirect BusVoltageBases.DSS  ! set voltage bases
+Buscoords BusCoords.dss
 
 Redirect Add_Issues.dss
 Redirect Add_Storage.dss
 solve
 
 set mode=yearly number=8760 maxcontroliter=1000
-set DemandInterval=True Overloadreport=True voltexceptionreport=True DIVerbose=True
+set DemandInterval=True Overloadreport=True DIVerbose=True voltexceptionreport=True
 solve
 CloseDI
 export monitor storage_device
