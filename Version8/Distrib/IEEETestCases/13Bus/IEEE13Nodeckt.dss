@@ -39,8 +39,8 @@ new regcontrol.Reg3  transformer=Reg3 winding=2  vreg=122  band=2  ptratio=20 ct
 
 !TRANSFORMER DEFINITION 
 New Transformer.XFM1  Phases=3   Windings=2  XHL=2
-~ wdg=1 bus=633       conn=Wye kv=4.16    kva=500    %r=.55     XHT=1
-~ wdg=2 bus=634       conn=Wye kv=0.480    kva=500    %r=.55   XLT=1
+~ wdg=1 bus=633       conn=Wye kv=4.16    kva=500    %r=.55 
+~ wdg=2 bus=634       conn=Wye kv=0.480    kva=500    %r=.55
 
 
 !LINE CODES
