@@ -1,0 +1,8 @@
+! Example 2.1 Feeder Out of Service 
+Redirect "C:\Program Files\OpenDSS\Examples\DOC_TechNote\ExamplesMaster.dss"
+
+! Feeder 6 Out of Service 
+Open Line.10_sw ! Open feeder breaker
+
+Solve
+Show eventlog

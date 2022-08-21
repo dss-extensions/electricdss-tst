@@ -1,0 +1,19 @@
+! Example 2.2 LL Fault on the MV Primary Network 
+Redirect "C:\Program Files\OpenDSS\Examples\DOC_TechNote\ExamplesMaster.dss"
+
+! Adding OC relays to feeder breakers
+New Relay.F6 monitoredobj=Line.10_sw type=current delay=0.1 PhaseTrip=20000 RecloseIntervals=None
+New Relay.F7 monitoredobj=Line.11_sw type=current delay=0.1 PhaseTrip=20000 RecloseIntervals=None
+New Relay.F8 monitoredobj=Line.12_sw type=current delay=0.1 PhaseTrip=20000 RecloseIntervals=None
+New Relay.F1 monitoredobj=Line.5_sw type=current delay=0.1 PhaseTrip=20000 RecloseIntervals=None
+New Relay.F2 monitoredobj=Line.6_sw type=current delay=0.1 PhaseTrip=20000 RecloseIntervals=None
+New Relay.F3 monitoredobj=Line.7_sw type=current delay=0.1 PhaseTrip=20000 RecloseIntervals=None
+New Relay.F4 monitoredobj=Line.8_sw type=current delay=0.1 PhaseTrip=20000 RecloseIntervals=None
+New Relay.F5 monitoredobj=Line.9_sw type=current delay=0.1 PhaseTrip=20000 RecloseIntervals=None
+
+! LL Fault on Bus p105 (Feeder 6)
+New Fault.fault bus1=p105.1 bus2=p105.2 phases=1 r=0.0001
+
+Set controlmode=event ! To visualize tripping times in event log
+Solve
+Show eventlog
