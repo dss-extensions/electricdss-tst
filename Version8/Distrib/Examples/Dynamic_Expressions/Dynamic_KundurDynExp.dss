@@ -38,9 +38,8 @@ New Line.Source_HT_2 Bus1=SourceBus Bus2=HT  R1=0 X1=(0.93 @Zbase *) R0=0 X0=(0.
 New Transformer.Step_Up Phases=3 Windings=2 XHL=15 ppm=0
 ~ buses=(HT LT) conns='wye wye' kvs="345 24" kvas="2220000 2220000" %Loadloss=0
 
-// Creates the diffrential equation for the generator's dynamics
 New DynamicExp.myDiffEq nvariables=6 varnames=[Speed Mass PShaft Pterm Damp theta] 
-~ expression=[Speed dt = 1 Mass / (Pshaft Pterm - Damp Speed * -) *; theta dt = Speed]
+~ expression=[Speed dt = -1 Mass / ( Pterm Damp Speed * + Pshaft - ) *; theta dt = Speed]
 
 // Constant kW at specified power factor
 // Define X/R very high so that R will be small
