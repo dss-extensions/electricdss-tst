@@ -1,3 +1,5 @@
+# Copyright (C) 2021-2022 Battelle Memorial Institute
+#
 import csv
 import numpy as np
 import matplotlib as mpl

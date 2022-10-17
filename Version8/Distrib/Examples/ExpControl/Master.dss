@@ -1,5 +1,12 @@
 // from 2019 IEEE PVSC conference paper, https://doi.org/10.1109/PVSC40753.2019.8981277
-// after running these 4 cases, use "python plotadaptive.py" and "python plotadapq.py" to visualize results
+// after running these 5 cases, use "python plotadaptive.py" and "python plotadapq.py" to visualize results
+
+// a
+Clear
+New Circuit.CloudUnity
+compile SystemPCC.dss
+edit pvsystem.pv1 daily=Cloud
+compile SolveAndExportMonitors.dss
 
 // g
 Clear
