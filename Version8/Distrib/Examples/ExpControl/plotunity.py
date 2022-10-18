@@ -16,7 +16,6 @@ va = d1[:,2] / vbase
 pa = d2[:,2] / pbase
 qa = d2[:,3] / pbase
 ra = d3[:,6]
-ra[0] = ra[1] # patch for initialization bug in PVSystem state variables
 t = np.linspace(0.0,float(len(va) - 1) / 3600.0,len(va))
 d1 = np.loadtxt('CloudUnity_Mon_pv1v_1.csv', skiprows=1, delimiter=',')
 vb = d1[:,2] / vbase
