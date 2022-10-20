@@ -40,7 +40,7 @@ New XYcurve.voltwatt1547pv npts=4 Yarray=[1.0,1.0,0.0,0.0] Xarray=[0.0,1.03,1.06
 // PVSystem in parallel with BESS1, has 0.5 kW and 3600 kVA rating to superimpose volt-var on BESS1
 New PVSystem.PV1 bus1=pcc1 phases=3 kV=13.2 irradiance=0.5 pmpp=1 kVA=3600 kvarmax=3600 kvarmaxabs=3600 varfollowinverter=false
 New InvControl.pv1 pvsystemlist=(pv1) mode=VOLTVAR RefReactivePower=VARMAX
-~ voltage_curvex_ref=rated vvc_curve1=voltvar1547b deltaQ_factor=0.2 // eventlog=yes
+~ voltage_curvex_ref=rated vvc_curve1=voltvar1547b deltaQ_factor=0.2 LPFtau=2.2 RateOfChangeMode=LPF // eventlog=yes
 new monitor.pv1pq element=PVSystem.PV1 terminal=1 mode=65 PPolar=NO
 
 // PVSystem in place of BESS2, superimposing volt-watt on the BESS2 dispatch, with zero Q
@@ -48,7 +48,7 @@ new monitor.pv1pq element=PVSystem.PV1 terminal=1 mode=65 PPolar=NO
 New PVSystem.PV2 bus1=pcc2 phases=3 kV=13.2 irradiance=1.0 pmpp=6000 kVA=6000 kvarmax=6000 kvarmaxabs=6000
 ~ daily=cycle varfollowinverter=false %cutin=0.01 %cutout=0.01
 New InvControl.pv2 pvsystemlist=(pv2) mode=VOLTWATT
-~ voltage_curvex_ref=rated voltwatt_curve=voltwatt1547pv deltaP_factor=0.1 // eventlog=yes
+~ voltage_curvex_ref=rated voltwatt_curve=voltwatt1547pv deltaP_factor=0.1 LPFtau=2.2 RateOfChangeMode=LPF // eventlog=yes
 new monitor.pv2pq element=PVSystem.PV2 terminal=1 mode=65 PPolar=NO
 // let the BESS handle charging half of the cycle, not responsive to undervoltage
 edit storage.bess2 daily=halfcycle
@@ -131,8 +131,8 @@ if __name__ == '__main__':
     qchan = monitors[keypq]['Q']
     pvqchan = monitors[keypv]['Q']
     print ('{:3d} {:8.4f} {:8.2f} {:8.2f} {:8.4f} {:8.2f} {:8.2f}'.format(pcc, 
-      vchan[3550], pchan[3550], qchan[3550]+pvqchan[3550], 
-      vchan[7150], pchan[7150], qchan[7150]+pvqchan[7150]))
+      vchan[3550]-1.0, pchan[3550], qchan[3550]+pvqchan[3550], 
+      vchan[7150]-1.0, pchan[7150], qchan[7150]+pvqchan[7150]))
   # make a publication-quality plot
   plt.rc('font', family='serif')
   plt.rc('xtick', labelsize=8)
@@ -166,6 +166,5 @@ if __name__ == '__main__':
     ax[i].grid()
   ax[2].set_xlabel ('Time [s]')
 
-#  plt.savefig('Fig8.png', dpi=300)
   plt.show()
 

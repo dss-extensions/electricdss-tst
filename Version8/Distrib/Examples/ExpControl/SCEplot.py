@@ -160,6 +160,9 @@ if __name__ == '__main__':
     ax[i].set_xticks (tticks)
     ax[i].grid()
 
-  plt.savefig('Fig6{:s}.png'.format(EXPON), dpi=300)
+  if EXPON == 'no':
+    plt.savefig('Fig7.png', dpi=300)
+  else: # yes
+    plt.savefig('Fig8.png', dpi=300)
   plt.show()
 

@@ -241,7 +241,7 @@ if __name__ == '__main__':
 # labs = [l.get_label() for l in lns]
 # ax.legend (lns, labs, loc='right')
 
-  plt.savefig('Fig4.png', dpi=300)
+  plt.savefig('Fig5.png', dpi=300)
   plt.show()
 
 

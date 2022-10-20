@@ -5,16 +5,17 @@ import math
 import numpy as np
 import matplotlib.pyplot as plt
 import os
+import sys
 
 template = """
 Clear
 New Circuit.Nantucket pu=1.0 R1=0.0001 X1=0.0001 R0=0.0001 X0=0.0001 basekv=13.2
 
 // comparing uncontrolled inverters at unity pf, two different PCC impedances
-new line.pcc1 bus1=sourcebus bus2=pcc1 r1=1.744 x1=2.6797 r0=3.7061 x0=3.0256 c1=0.0 c0=0.0
-new line.pcc2 bus1=sourcebus bus2=pcc2 r1=1.210 x1=2.8339 r0=3.9612 x0=3.2135 c1=0.0 c0=0.0
-new monitor.pcc1vi element=line.pcc1 terminal=2 mode=96
-new monitor.pcc2vi element=line.pcc2 terminal=2 mode=96
+new line.pcc1 bus1=sourcebus bus2=pcc1 r1={RFL} x1={XFL} r0=3.7061 x0=3.0256 c1=0.0 c0=0.0
+new line.pcc2 bus1=sourcebus bus2=pcc2 r1={RNL} x1={XNL} r0=3.9612 x0=3.2135 c1=0.0 c0=0.0
+//new monitor.pcc1vi element=line.pcc1 terminal=2 mode=96
+//new monitor.pcc2vi element=line.pcc2 terminal=2 mode=96
 
 New Loadshape.cycle npts=10 interval=0 hour=[0.00,0.49,0.50,0.99,1.00,1.49, 1.50, 1.99,2.00,2.50] 
 ~                                      mult=[0.00,0.00,1.00,1.00,0.00,0.00,-1.00,-1.00,0.00,0.00]
@@ -23,9 +24,12 @@ New Loadshape.cycle npts=10 interval=0 hour=[0.00,0.49,0.50,0.99,1.00,1.49, 1.50
 // two similar battery systems, one for each PCC
 new Storage.bess1 bus1=bess1 phases=3 kV=13.2 kWrated=6000 kva=7000 kWhrated=48000 kWhstored=24000 
 ~ dispmode=follow daily=cycle
-new transformer.bess1 windings=2 buses=[pcc1 BESS1] conns=[w,w] kvas=[7500,7500] kvs=[13.2,13.2] xhl=0.1 %loadloss=0.1
+new transformer.bess1 windings=2 buses=[pcc1 BESS1] conns=[w,w] kvas=[7500,7500] kvs=[13.2,13.2] xhl={XHL} %loadloss={XLL}
 new Storage.BESS2 like=BESS1 bus1=BESS2
 New Transformer.BESS2 like=BESS1 buses=[pcc2 BESS2]
+
+new monitor.pcc1vi element=transformer.bess1 terminal=2 mode=96
+new monitor.pcc2vi element=transformer.bess2 terminal=2 mode=96
 New Monitor.bess1pq Element=Storage.BESS1 Terminal=1 mode=65 PPolar=No
 New Monitor.bess2pq Element=Storage.BESS2 Terminal=1 mode=65 PPolar=No
 
@@ -48,7 +52,13 @@ class DSS:
     print (self.engine.Version)
 
 if __name__ == '__main__':
-  case_str = template
+  XHL = 0.0001
+  XLL = 0.0001
+  if len(sys.argv) > 1:
+    if sys.argv[1] == 'xfmr':
+      XHL=5.72
+      XLL=0.55
+  case_str = template.format(RFL=1.744, XFL=2.680, RNL=1.210, XNL=2.834, XHL=XHL, XLL=XLL)
   fp = open ('case.dss', mode='w')
   print (case_str, file=fp)
   fp.close ()
@@ -87,8 +97,8 @@ if __name__ == '__main__':
     pchan = monitors[keypq]['P']
     qchan = monitors[keypq]['Q']
     print ('{:3d} {:8.4f} {:8.2f} {:8.2f} {:8.4f} {:8.2f} {:8.2f}'.format(pcc, 
-      vchan[3550], pchan[3550], qchan[3550], 
-      vchan[7150], pchan[7150], qchan[7150]))
+      vchan[3550]-1.0, pchan[3550], qchan[3550], 
+      vchan[7150]-1.0, pchan[7150], qchan[7150]))
   # make a publication-quality plot
   plt.rc('font', family='serif')
   plt.rc('xtick', labelsize=8)
@@ -102,17 +112,17 @@ if __name__ == '__main__':
   fig, ax = plt.subplots(3, 1, figsize=(pWidth, pHeight), constrained_layout=True)
   fig.suptitle ('Nantucket Steps at Unity Power Factor', fontsize=10)
 
-  ax[0].plot (t, monitors['pcc1vi']['V'], label='PCC1', linestyle='-', color='red')
-  ax[0].plot (t, monitors['pcc2vi']['V'], label='PCC2', linestyle='--', color='blue')
+  ax[0].plot (t, monitors['pcc1vi']['V'], label='PCC1(FL)', linestyle='-', color='red')
+  ax[0].plot (t, monitors['pcc2vi']['V'], label='PCC2(NL)', linestyle='--', color='blue')
   ax[0].set_ylabel ('Voltage [pu]')
 
   ax[1].set_ylabel ('Real Power [kW]')
-  ax[1].plot (t, monitors['bess1pq']['P'], label='BESS1', linestyle='-', color='red')
-  ax[1].plot (t, monitors['bess2pq']['P'], label='BESS2', linestyle='--', color='blue')
+  ax[1].plot (t, monitors['bess1pq']['P'], label='BESS1(FL)', linestyle='-', color='red')
+  ax[1].plot (t, monitors['bess2pq']['P'], label='BESS2(NL)', linestyle='--', color='blue')
 
   ax[2].set_ylabel ('Reactive Power [kvar]')
-  ax[2].plot (t, monitors['bess1pq']['Q'], label='BESS1', linestyle='-', color='red')
-  ax[2].plot (t, monitors['bess2pq']['Q'], label='BESS2', linestyle='--', color='blue')
+  ax[2].plot (t, monitors['bess1pq']['Q'], label='BESS1(FL)', linestyle='-', color='red')
+  ax[2].plot (t, monitors['bess2pq']['Q'], label='BESS2(NL)', linestyle='--', color='blue')
 
   xticks = [0, 1800, 3600, 5400, 7200, 9000]
   for i in range(3):
@@ -122,6 +132,5 @@ if __name__ == '__main__':
     ax[i].grid()
   ax[2].set_xlabel ('Time [s]')
 
-#  plt.savefig('Fig8.png', dpi=300)
   plt.show()
 
