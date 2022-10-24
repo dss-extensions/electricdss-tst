@@ -48,7 +48,7 @@ New XYcurve.voltwatt1547bch npts=4 Yarray=[0.0,0.0,1.0,1.0] Xarray=[0.0,1.06,1.1
 New XYcurve.voltwatt1547pv npts=4 Yarray=[1.0,1.0,0.0,0.0] Xarray=[0.0,1.03,1.06,2.00]
 
 {exp_comment}New InvControl.vw derlist=[pvsystem.der] mode=VOLTWATT voltage_curvex_ref=rated voltwatt_curve=voltwatt1547b deltaP_factor=0.2
-{exp_comment}New ExpControl.pv1 pvsystemlist=[expq] deltaQ_factor=0.3 vreg=0.0 slope=22 vregtau=0 vregmax=1.03 preferQ=yes
+{exp_comment}New ExpControl.pv1 pvsystemlist=[expq] deltaQ_factor=0.3 vreg=0.0 slope=22 vregtau=0 vregmax=1.05 preferQ=yes
 
 {vv_vw_comment}New InvControl.vv_vw derlist=[pvsystem.der] combimode=VV_VW voltage_curvex_ref=rated vvc_curve1=voltvar1547b 
 {vv_vw_comment}~ voltwatt_curve=voltwatt1547b deltaQ_factor=0.4 deltaP_factor=0.2 RefReactivePower=VARMAX
@@ -121,7 +121,7 @@ if __name__ == '__main__':
   print ('Load = {:.3f} kW + j {:.3f} kVAR'.format (load.kw, load.kvar))
 
   # now run a loop over length
-  mtrs = np.linspace (1.0, 300.0)
+  mtrs = np.linspace (1.0, 300.0, num=300)
   npts = len(mtrs)
   vunreg = np.zeros (npts)
   vvv = np.zeros (npts)
@@ -170,6 +170,10 @@ if __name__ == '__main__':
     vavr[i] = get_average_magnitude (d.circuit.Buses(ih).Voltages)/120.0
     pavr[i], qavr[i] = get_pv_power (d.circuit.pvsystems)
 
+  print (npts, 'points')
+  print ('     L   Vupf   Vavr   V14h  Vvvar')
+  for idx in [-1, 149, 159, 160, 161]:
+    print ('{:6.2f} {:6.4f} {:6.4f} {:6.4f} {:6.4f}'.format (mtrs[idx], vunreg[idx], vavr[idx], v14h[idx], vvv[idx]))
   # make a publication-quality plot
   plt.rc('font', family='serif')
   plt.rc('xtick', labelsize=8)
@@ -181,23 +185,23 @@ if __name__ == '__main__':
   pHeight = 7.0
 
   fig, ax = plt.subplots(3, 1, figsize=(pWidth, pHeight), constrained_layout=True)
-  fig.suptitle ('{:.1f}-kW PV Output with {:.1f}-kW Load'.format(PV_KW, LOAD_KW), fontsize=10)
+  fig.suptitle ('{:.1f}-kW PV Output, {:.1f}-kW Load on Long Secondary'.format(PV_KW, LOAD_KW), fontsize=10)
 
-  ax[0].plot (mtrs, vavr, label='AVR', linestyle='-', color='red')
-  ax[0].plot (mtrs, v14h, label='14H', linestyle='--', color='green')
-  ax[0].plot (mtrs, vvv,  label='VVar', linestyle='-.', color='blue')
-  ax[0].plot (mtrs, vunreg, label='pf=1', linestyle=':', color='black')
+  ax[0].plot (mtrs, vavr, label='AARV+VoltWatt', linestyle='-', color='red')
+  ax[0].plot (mtrs, v14h, label='14H', linestyle='--', color='green', linewidth=3)
+  ax[0].plot (mtrs, vvv,  label='VoltVar', linestyle='-.', color='blue')
+  ax[0].plot (mtrs, vunreg, label='Unity pf', linestyle=':', color='black')
   ax[0].set_ylabel ('Voltage [pu]')
 
   ax[1].set_ylabel ('Real Power [kW]')
-  ax[1].plot (mtrs, pavr, label='AVR', linestyle='-', color='red')
-  ax[1].plot (mtrs, p14h, label='14H', linestyle='--', color='green')
-  ax[1].plot (mtrs, pvv, label='VVar', linestyle='-.', color='blue')
+  ax[1].plot (mtrs, pavr, label='AARV+VoltWatt', linestyle='-', color='red')
+  ax[1].plot (mtrs, p14h, label='14H', linestyle='--', color='green', linewidth=3)
+  ax[1].plot (mtrs, pvv, label='VoltVar', linestyle='-.', color='blue')
 
   ax[2].set_ylabel ('Reactive Power [kvar]')
-  ax[2].plot (mtrs, qavr, label='AVR', linestyle='-', color='red')
-  ax[2].plot (mtrs, q14h, label='14H', linestyle='--', color='green')
-  ax[2].plot (mtrs, qvv, label='VVar', linestyle='-.', color='blue')
+  ax[2].plot (mtrs, qavr, label='AARV+VoltWatt', linestyle='-', color='red')
+  ax[2].plot (mtrs, q14h, label='14H', linestyle='--', color='green', linewidth=3)
+  ax[2].plot (mtrs, qvv, label='VoltVar', linestyle='-.', color='blue')
 
   xticks = [0, 50, 100, 150, 200, 250, 300]
 # pticks = [0, 3, 6, 9, 12]

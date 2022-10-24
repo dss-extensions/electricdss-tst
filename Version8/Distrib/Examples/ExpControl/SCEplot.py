@@ -75,14 +75,14 @@ def scan_vreg (dict):
 
 def plot_setpoints(ax, hrs, vreg, keymin, keymax):
   ax.set_ylabel ('Setpoint [pu]')
-  ax.plot (hrs[3600:], vreg[keymax][3600:], label=keymax, color='red', linestyle='solid', linewidth=LINEWIDTH)
-  ax.plot (hrs[3600:], vreg[keymin][3600:], label=keymin, color='blue', linestyle='dotted', linewidth=2*LINEWIDTH)
+  ax.plot (hrs[3600:], vreg[keymax][3600:], label='DER $V_{ref}$', color='red', linestyle='solid', linewidth=LINEWIDTH)
+  ax.plot (hrs[3600:], vreg[keymin][3600:], label='Transformer $V_{ref}$', color='blue', linestyle='dotted', linewidth=2*LINEWIDTH)
   ax.legend(loc='best')
 
 def plot_voltages(ax, hrs, vreg, keyxf, keypv):
   ax.set_ylabel ('Voltage [pu]')
-  ax.plot (hrs[3600:], volts[keyxf][3600:], label=keyxf, color='red', linestyle='solid', linewidth=LINEWIDTH)
-  ax.plot (hrs[3600:], volts[keypv][3600:], label=keypv, color='blue', linestyle='dotted', linewidth=2*LINEWIDTH)
+  ax.plot (hrs[3600:], volts[keypv][3600:], label='DER $V_T$', color='red', linestyle='solid', linewidth=LINEWIDTH)
+  ax.plot (hrs[3600:], volts[keyxf][3600:], label='Transformer $V_T$', color='blue', linestyle='dotted', linewidth=2*LINEWIDTH)
   ax.legend(loc='best')
 
 def plot_pvp(ax, hrs, p):
@@ -141,7 +141,7 @@ if __name__ == '__main__':
   keypv = max_vwin['pvv']['key']
   if EXPON == 'yes':
     fig, ax = plt.subplots(4, 1, figsize=(pWidth, pHeight), constrained_layout=True)
-    fig.suptitle ('With Exponential Control', fontsize=10)
+    fig.suptitle ('Cloudy-Day Response of 18 DER With AARV', fontsize=10)
     plot_setpoints (ax[0], hrs, vreg, keymin, keymax)
     plot_voltages (ax[1], hrs, volts, keyxf, keypv)
     plot_pvp (ax[2], hrs, total_pv_p)
@@ -149,7 +149,7 @@ if __name__ == '__main__':
   else:
     nrows = 2
     fig, ax = plt.subplots(2, 1, figsize=(pWidth, 0.6 * pHeight), constrained_layout=True)
-    fig.suptitle ('Without Exponential Control', fontsize=10)
+    fig.suptitle ('Cloudy-Day Response of 18 DER at Unity Power Factor', fontsize=10)
     plot_voltages (ax[0], hrs, volts, keyxf, keypv)
     plot_pvp (ax[1], hrs, total_pv_p)
 

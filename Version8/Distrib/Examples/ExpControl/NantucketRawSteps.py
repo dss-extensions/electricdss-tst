@@ -14,6 +14,7 @@ New Circuit.Nantucket pu=1.0 R1=0.0001 X1=0.0001 R0=0.0001 X0=0.0001 basekv=13.2
 // comparing uncontrolled inverters at unity pf, two different PCC impedances
 new line.pcc1 bus1=sourcebus bus2=pcc1 r1={RFL} x1={XFL} r0=3.7061 x0=3.0256 c1=0.0 c0=0.0
 new line.pcc2 bus1=sourcebus bus2=pcc2 r1={RNL} x1={XNL} r0=3.9612 x0=3.2135 c1=0.0 c0=0.0
+//new load.pcc2 bus1=pcc2 phases=3 conn=2 kv=13.2 kw=7519.0 kvar=-6329.0 model=5
 //new monitor.pcc1vi element=line.pcc1 terminal=2 mode=96
 //new monitor.pcc2vi element=line.pcc2 terminal=2 mode=96
 
