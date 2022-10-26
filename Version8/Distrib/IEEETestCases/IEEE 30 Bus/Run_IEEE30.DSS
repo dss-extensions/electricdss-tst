@@ -14,6 +14,6 @@ Solve
 
 show voltage    ! sequence voltage magnitudes
 show voltage  LN Nodes   ! Detailed
-show power   ! sequence powers
+show power MVA   ! sequence powers
 show power MVA elem   ! show powers in MVA, element by element
 

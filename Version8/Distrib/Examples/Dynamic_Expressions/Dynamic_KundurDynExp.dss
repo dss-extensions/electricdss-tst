@@ -89,8 +89,8 @@ Solve Number=3914  ! run 2 s
 Show mon G1d
 Show mon G1outd
 
-!Export monitors G1out
-!Plot monitor object= G1out channels=(2 )
+Export monitors G1outd
+Plot monitor object= G1outd channels=(2 )
 
 Export mon G1d
 Export monitors G1outd
