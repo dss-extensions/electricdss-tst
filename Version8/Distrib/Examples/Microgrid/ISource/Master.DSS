@@ -1,0 +1,42 @@
+! This example shows how to simulate a microgrid using ISources
+! the model used is the IEEE 13 bus test case
+! last modification 11-20-2019
+
+Clear
+New Circuit.ieee13nodeckt
+
+
+Redirect Vsource.dss
+Redirect LineCode.DSS
+Redirect LoadShape.DSS
+Redirect GrowthShape.DSS
+Redirect TCC_Curve.DSS
+Redirect Spectrum.DSS
+Redirect Line.DSS
+Redirect Load.DSS
+Redirect Transformer.DSS
+Redirect RegControl.DSS
+Redirect Capacitor.DSS
+
+! Adds 3 single phase ISources to hold the microgrid 
+! since the system is unbalanced
+! the isources will follow an irradianc profile to simulate a PV
+! feeding the microgrid.
+Redirect Isource.DSS
+
+MakeBusList
+Redirect BusVoltageBases.dss  ! set voltage bases
+Buscoords buscoords.dss
+
+solve
+
+! isolates the microgrid
+Open line.671692 term=2
+
+! adss monitors to check the voltage at the isolated part of the feeder (microgrid)
+new monitor.MVoltage element=Line.692675 mode=0 terminal=2
+
+set mode=daily // 24 hour simulation
+solve
+plot monitor object= MVoltage channels=(1 3  5)
+

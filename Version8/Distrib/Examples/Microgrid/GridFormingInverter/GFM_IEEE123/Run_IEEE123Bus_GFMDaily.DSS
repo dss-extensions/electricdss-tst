@@ -1,0 +1,91 @@
+! Annotated "Run" file for the IEEE 123 Bus Test Case
+! Modified for demonstrating the grid forming and grid following capabilites
+! added to OpenDSS on 10/28/2022
+
+Compile (IEEE123Master.dss)
+
+! 'Compile' differs from "redirect" in that it changes the default directory 
+! to the one in which the referenced file is located.
+! 'Redirect' returns to the directory from which it was invoked.
+
+! After compiling, the next series of script commands modify to the regulator control definitions to
+! limit the maximum tap change to 1 per solution control iteration. In most cases, this will 
+! allow the standard DSS solution algorithm to better represent an actual control.
+! Note the time delay is also chnaged. This forces the regulator at the head of the feeder to move first.
+
+RegControl.creg1a.maxtapchange=1  Delay=15  !Allow only one tap change per solution. This one moves first
+RegControl.creg2a.maxtapchange=1  Delay=30  !Allow only one tap change per solution
+RegControl.creg3a.maxtapchange=1  Delay=30  !Allow only one tap change per solution
+RegControl.creg4a.maxtapchange=1  Delay=30  !Allow only one tap change per solution
+RegControl.creg3c.maxtapchange=1  Delay=30  !Allow only one tap change per solution
+RegControl.creg4b.maxtapchange=1  Delay=30  !Allow only one tap change per solution
+RegControl.creg4c.maxtapchange=1  Delay=30  !Allow only one tap change per solution
+
+! The default maximum control iterations is 10. With so many regulators each moving only one tap at a time,
+! this is insufficient for the 123-bus test case, which will need 15 control iterations for the initial solution.
+! Therefore, the 'MaxControlIter' option is set to 30 to be safe.
+
+Set MaxControlIter=30
+
+! Solve executes the solution for the present solution mode, which is "snapshot".
+
+New EnergyMeter.Feeder Line.L115 1
+
+! This case considers the default load shape to represent the load demand in time for daily simulations
+! Adding DER for supporting the microgrid below switch 5
+
+new Transformer.TSto1 phases=3 windings=2 buses=(StoBus 101) conns=(delta wye) kvs=(0.48 4.16) kvas=(800 800) taps='1 1' XHL=0.5
+new Transformer.TPV1 phases=3 windings=2 buses=(PVBus 108) conns=(delta wye) kvs=(0.48 4.16) kvas=(500 500) taps='1 1' XHL=0.5
+
+New "Storage.mystorage" phases=3 conn=delta bus1=StoBus kV=0.48 kva=800 kWrated=800 kWhrated=6000 %stored=100 %reserve=20 
+~ %EffCharge=90 %EffDischarge=90 %IdlingkW=1 %R=50 %X=0 State=IDLING
+
+New "PVSystem.myPV" phases=3 conn=delta bus1=PVBus kV=0.48 kva=800 pmpp=800 daily=pvshape
+
+! Grid forming inverter mode requires an InvControl for monitoring the current
+New InvControl.StoCtrl DERList=[Storage.mystorage PVSystem.myPV] mode=GFM !eventlog=yes
+
+! Monitors
+
+New "Monitor.pvmonitor" element=pvsystem.mypv mode=1 terminal=1 PPolar=no residual=no VIPolar=yes
+New "Monitor.pvvi" element=pvsystem.mypv mode=0 terminal=1
+New "Monitor.pvstatevars" element=pvsystem.mypv mode=3 terminal=1
+New "Monitor.stomonitor" element=storage.mystorage mode=1 terminal=1 PPolar=no residual=no VIPolar=yes
+New "Monitor.stovi" element=storage.mystorage mode=0 terminal=1
+New "Monitor.stostatevars" element=storage.mystorage mode=3 terminal=1
+
+calcv
+solve
+Buscoords BusCoords.dat   ! load in bus coordinates
+
+! Show some selected results
+
+Plot Profile
+plot profile phases=all
+
+! Opens switch 5 and solves to show the isolated area
+set mode=daily
+
+! solves the first 10 hours, at 10 AM, sw5 opens
+set number=10
+solve
+open line.sw5 terminal=1
+
+! Enables the storage device (fully charged) to operate as grid forming inverter remains like that for 6 hours
+edit storage.mystorage State = Discharging ControlMode = GFM 
+set number=6
+solve
+
+!Go back to normal
+
+edit storage.mystorage State=Charging Controlmode=GFL
+Close  line.sw5 terminal=1
+set number=8
+Solve
+
+! Export monitors
+export monitors all
+
+
+
+
