@@ -10,7 +10,7 @@ LOAD_KW = 0.1
 LOAD_PF = 0.85
 PV_KW = 10.0
 INV_KVA = PV_KW * 1.0328 # Category A
-INV_KVA = PV_KW * 1.1135 # Category B (in the case_template, kvarMax and kvarMaxAbs are hard-coded for 10 kW Cat B)
+INV_KVA = PV_KW * 1.1136 # Category B (in the case_template, kvarMax and kvarMaxAbs are hard-coded for 10 kW Cat B)
 
 case_template = """
 clear
@@ -49,11 +49,11 @@ New XYcurve.voltwatt1547bch npts=4 Yarray=[0.0,0.0,1.0,1.0] Xarray=[0.0,1.06,1.1
 //   OpenDSS will screen for V1 >= 1.00 and V2 <= 1.10
 New XYcurve.voltwatt1547pv npts=4 Yarray=[1.0,1.0,0.0,0.0] Xarray=[0.0,1.03,1.06,2.00]
 
-{exp_comment}New InvControl.vw derlist=[pvsystem.der] mode=VOLTWATT voltage_curvex_ref=rated voltwatt_curve=voltwatt1547b deltaP_factor=0.2
+{exp_comment}New InvControl.vw derlist=[pvsystem.der] mode=VOLTWATT voltage_curvex_ref=rated voltwatt_curve=voltwatt1547b deltaP_factor=0.02
 {exp_comment}New ExpControl.pv1 pvsystemlist=[expq] deltaQ_factor=0.3 vreg=0.0 slope=22 vregtau=0 vregmax=1.05 preferQ=yes
 
 {vv_vw_comment}New InvControl.vv_vw derlist=[pvsystem.der] combimode=VV_VW voltage_curvex_ref=rated vvc_curve1=voltvar14h 
-{vv_vw_comment}~ voltwatt_curve=voltwatt1547b deltaQ_factor=0.4 deltaP_factor=0.2 RefReactivePower=VARMAX
+{vv_vw_comment}~ voltwatt_curve=voltwatt1547b deltaQ_factor=0.4 deltaP_factor=0.02 RefReactivePower=VARMAX
 
 {vv_comment}New InvControl.vv derlist=[pvsystem.der] mode=VOLTVAR voltage_curvex_ref=rated vvc_curve1=voltvar1547b deltaQ_factor=0.4 RefReactivePower=VARMAX
 
