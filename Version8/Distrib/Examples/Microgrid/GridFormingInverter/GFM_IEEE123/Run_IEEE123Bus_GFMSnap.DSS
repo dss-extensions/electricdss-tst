@@ -34,8 +34,8 @@ New EnergyMeter.Feeder Line.L115 1
 ! This case considers the default load shape to represent the load demand in time for daily simulations
 ! Adding DER for supporting the microgrid below switch 5
 
-new Transformer.TSto1 phases=3 windings=2 buses=(StoBus 101) conns=(delta wye) kvs=(0.48 4.16) kvas=(800 800) taps='1 1' XHL=5
-new Transformer.TPV1 phases=3 windings=2 buses=(PVBus 108) conns=(delta wye) kvs=(0.48 4.16) kvas=(500 500) taps='1 1' XHL=5
+new Transformer.TSto1 phases=3 windings=2 buses=(StoBus 101) conns=(delta wye) kvs=(0.48 4.16) kvas=(1000 1000) taps='1 1' XHL=0.5
+new Transformer.TPV1 phases=3 windings=2 buses=(PVBus 108) conns=(delta wye) kvs=(0.48 4.16) kvas=(1000 1000) taps='1 1' XHL=0.5
 
 New "Storage.mystorage" phases=3 conn=delta bus1=StoBus kV=0.48 kva=800 kWrated=800 kWhrated=6000 %stored=100 %reserve=20 
 ~ %EffCharge=90 %EffDischarge=90 %IdlingkW=1 %R=50 %X=0 State=IDLING
