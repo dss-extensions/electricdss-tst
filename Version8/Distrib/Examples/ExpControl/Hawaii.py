@@ -37,6 +37,8 @@ New PVSystem.der phases=2 bus1=house conn=w kV=0.208 irradiance=1.0 pmpp={pvkw} 
 New XYcurve.voltvar1547a npts=4 Yarray=[1.0,1.0,-1.0,-1.0] Xarray=[.5,0.9,1.1,1.5]
 // 1547-2018 default volt-var settings for category B, with sentinels (Yarray is based on kvarmax/kvarmaxabs, not invkva as in IEEE 1547)
 New XYcurve.voltvar1547b npts=6 Yarray=[1.0,1.0,0,0,-1.0,-1.0] Xarray=[.5,0.92,0.98,1.02,1.08,1.5]
+// volt-var for Hawaii Rule 14H, wider deadband but steeper slopes
+New XYcurve.voltvar14h npts=6 Yarray=[1.0,1.0,0,0,-1.0,-1.0] Xarray=[.5,0.94,0.97,1.03,1.06,1.5]
 // 1547-2018 default watt-var settings for category B, with sentinels; can only be implemented in Version 8 of OpenDSS, Y in pu of VARMAX
 New XYcurve.wattvar1547b npts=8 Yarray=[1.0,1.0,0,0,0,0,1.0,-1.0] Xarray=[-2.0,-1.0,-0.5,-0.2,0.2,0.5,1.0,2.0]
 // 1547-2018 default volt-watt settings for category B, with sentinel, not for storage
@@ -50,7 +52,7 @@ New XYcurve.voltwatt1547pv npts=4 Yarray=[1.0,1.0,0.0,0.0] Xarray=[0.0,1.03,1.06
 {exp_comment}New InvControl.vw derlist=[pvsystem.der] mode=VOLTWATT voltage_curvex_ref=rated voltwatt_curve=voltwatt1547b deltaP_factor=0.2
 {exp_comment}New ExpControl.pv1 pvsystemlist=[expq] deltaQ_factor=0.3 vreg=0.0 slope=22 vregtau=0 vregmax=1.05 preferQ=yes
 
-{vv_vw_comment}New InvControl.vv_vw derlist=[pvsystem.der] combimode=VV_VW voltage_curvex_ref=rated vvc_curve1=voltvar1547b 
+{vv_vw_comment}New InvControl.vv_vw derlist=[pvsystem.der] combimode=VV_VW voltage_curvex_ref=rated vvc_curve1=voltvar14h 
 {vv_vw_comment}~ voltwatt_curve=voltwatt1547b deltaQ_factor=0.4 deltaP_factor=0.2 RefReactivePower=VARMAX
 
 {vv_comment}New InvControl.vv derlist=[pvsystem.der] mode=VOLTVAR voltage_curvex_ref=rated vvc_curve1=voltvar1547b deltaQ_factor=0.4 RefReactivePower=VARMAX
