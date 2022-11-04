@@ -22,9 +22,9 @@ new linegeometry.#2_triplex_full nconds=3 nphases=2 reduce=yes normamps=90.00
 ~ cond=1 wire=#2 x=-0.20600 h=240.28543 units=in
 ~ cond=2 wire=#2 x=0.20600 h=240.28543 units=in
 ~ cond=3 wire=#2 x=0 h=240.00000 units=in
-new xfmrcode.10kva phases=1 windings=3 conns=[w, w, w] kvs=[7.200 0.12 0.12]
-~ kvas=[10.0 10.0 10.0] %noloadloss=0.318
-~ Xhl=1.08 Xht=1.08 Xlt=0.72 %Rs=[0.58 1.15 1.15]
+new xfmrcode.10kva phases=1 windings=3 conns=[w, w, w] kvs=[7.200 0.12 0.12] // from IEEE 8500 data
+~ kvas=[10.0 10.0 10.0] %noloadloss=0.2 %imag=0.5
+~ Xhl=2.04 Xht=2.04 Xlt=1.36 %Rs=[0.6 1.2 1.2]
 
 new transformer.poletop xfmrcode=10kva buses=[pole.1, sec.1.0, sec.0.2]
 new line.drop geometry=#2_triplex_full bus1=sec bus2=house units=m length={meters}
@@ -189,21 +189,21 @@ if __name__ == '__main__':
   fig, ax = plt.subplots(3, 1, figsize=(pWidth, pHeight), constrained_layout=True)
   fig.suptitle ('{:.1f}-kW PV Output, {:.1f}-kW Load on Long Secondary'.format(PV_KW, LOAD_KW), fontsize=10)
 
-  ax[0].plot (mtrs, vavr, label='AARV+VoltWatt', linestyle='-', color='red')
+  ax[0].plot (mtrs, vavr, label='AARV + Volt-Watt', linestyle='-', color='red')
   ax[0].plot (mtrs, v14h, label='14H', linestyle='--', color='green', linewidth=3)
-  ax[0].plot (mtrs, vvv,  label='VoltVar', linestyle='-.', color='blue')
+  ax[0].plot (mtrs, vvv,  label='Volt-Var', linestyle='-.', color='blue')
   ax[0].plot (mtrs, vunreg, label='Unity pf', linestyle=':', color='black')
   ax[0].set_ylabel ('Voltage [pu]')
 
   ax[1].set_ylabel ('Real Power [kW]')
-  ax[1].plot (mtrs, pavr, label='AARV+VoltWatt', linestyle='-', color='red')
+  ax[1].plot (mtrs, pavr, label='AARV + Volt-Watt', linestyle='-', color='red')
   ax[1].plot (mtrs, p14h, label='14H', linestyle='--', color='green', linewidth=3)
   ax[1].plot (mtrs, pvv, label='VoltVar', linestyle='-.', color='blue')
 
   ax[2].set_ylabel ('Reactive Power [kvar]')
-  ax[2].plot (mtrs, qavr, label='AARV+VoltWatt', linestyle='-', color='red')
+  ax[2].plot (mtrs, qavr, label='AARV + Volt-Watt', linestyle='-', color='red')
   ax[2].plot (mtrs, q14h, label='14H', linestyle='--', color='green', linewidth=3)
-  ax[2].plot (mtrs, qvv, label='VoltVar', linestyle='-.', color='blue')
+  ax[2].plot (mtrs, qvv, label='Volt-Var', linestyle='-.', color='blue')
 
   xticks = [0, 50, 100, 150, 200, 250, 300]
 # pticks = [0, 3, 6, 9, 12]
