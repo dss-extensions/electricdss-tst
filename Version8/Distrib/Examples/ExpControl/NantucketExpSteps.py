@@ -134,12 +134,12 @@ if __name__ == '__main__':
   ax[0].set_ylabel ('Voltage [pu]')
 
   ax[1].set_ylabel ('Real Power [kW]')
-  ax[1].plot (t, monitors['bess1pq']['P'] + monitors['pv1pq']['P'], label='FL $\Delta$P', linestyle='-', color='red')
-  ax[1].plot (t, monitors['bess2pq']['P'] + monitors['pv2pq']['P'], label='NL $\Delta$P', linestyle='--', color='blue')
+  ax[1].plot (t, -monitors['bess1pq']['P'] - monitors['pv1pq']['P'], label='FL $\Delta$P', linestyle='-', color='red')
+  ax[1].plot (t, -monitors['bess2pq']['P'] - monitors['pv2pq']['P'], label='NL $\Delta$P', linestyle='--', color='blue')
 
   ax[2].set_ylabel ('Reactive Power [kvar]')
-  ax[2].plot (t, monitors['bess1pq']['Q'] + monitors['pv1pq']['Q'], label='FL $\Delta$Q', linestyle='-', color='red')
-  ax[2].plot (t, monitors['bess2pq']['Q'] + monitors['pv2pq']['Q'], label='NL $\Delta$Q', linestyle='--', color='blue')
+  ax[2].plot (t, -monitors['bess1pq']['Q'] - monitors['pv1pq']['Q'], label='FL $\Delta$Q', linestyle='-', color='red')
+  ax[2].plot (t, -monitors['bess2pq']['Q'] - monitors['pv2pq']['Q'], label='NL $\Delta$Q', linestyle='--', color='blue')
 
   xticks = [0, 1800, 3600, 5400, 7200, 9000]
   for i in range(3):
