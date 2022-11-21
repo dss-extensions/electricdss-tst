@@ -38,10 +38,10 @@ New "Monitor.stomonitor" element=storage.mystorage mode=1 terminal=1 PPolar=no r
 New "Monitor.stovi" element=storage.mystorage mode=0 terminal=1
 New "Monitor.stostatevars" element=storage.mystorage mode=3 terminal=1
 
-Set Maxiterations=20 maxcontroliter=30     ! Sometimes the solution takes more than the default 15 iterations
+Set Maxiterations=20 maxcontroliter=30      ! Sometimes the solution takes more than the default 15 iterations
 calcv
 Solve
-set mode=yearly number=7 ! Simulates first 7 hours
+set mode=yearly stepsize=15m number=28 ! Simulates first 7 hours
 Solve
 ! At 10 AM an event opens a switch for entering into islanded mode
 Open Line.ln4586093_sw terminal=1
@@ -49,13 +49,13 @@ Open Line.ln4586093_sw terminal=1
 !Enables Storage for working as GFM, it is expected for PV to help later
 ! The event lasts for 8 hours
 edit storage.mystorage State = Discharging ControlMode = GFM
-set number=8
+set number=32
 Solve
 
 ! get back to normal
 edit storage.mystorage State = Charging ControlMode = GFL
 Close Line.ln4586093_sw terminal=1
-set number=9
+set number=36
 solve 
 
 ! Export monitors
