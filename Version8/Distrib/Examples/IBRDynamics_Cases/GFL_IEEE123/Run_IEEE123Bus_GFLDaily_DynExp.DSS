@@ -1,0 +1,105 @@
+! Annotated "Run" file for the IEEE 123 Bus Test Case
+! Modified for demonstrating the grid forming and grid following capabilites
+! added to OpenDSS on 10/28/2022
+
+Compile (IEEE123Master.dss)
+
+! 'Compile' differs from "redirect" in that it changes the default directory 
+! to the one in which the referenced file is located.
+! 'Redirect' returns to the directory from which it was invoked.
+
+! After compiling, the next series of script commands modify to the regulator control definitions to
+! limit the maximum tap change to 1 per solution control iteration. In most cases, this will 
+! allow the standard DSS solution algorithm to better represent an actual control.
+! Note the time delay is also chnaged. This forces the regulator at the head of the feeder to move first.
+
+RegControl.creg1a.maxtapchange=1  Delay=15  !Allow only one tap change per solution. This one moves first
+RegControl.creg2a.maxtapchange=1  Delay=30  !Allow only one tap change per solution
+RegControl.creg3a.maxtapchange=1  Delay=30  !Allow only one tap change per solution
+RegControl.creg4a.maxtapchange=1  Delay=30  !Allow only one tap change per solution
+RegControl.creg3c.maxtapchange=1  Delay=30  !Allow only one tap change per solution
+RegControl.creg4b.maxtapchange=1  Delay=30  !Allow only one tap change per solution
+RegControl.creg4c.maxtapchange=1  Delay=30  !Allow only one tap change per solution
+
+! The default maximum control iterations is 10. With so many regulators each moving only one tap at a time,
+! this is insufficient for the 123-bus test case, which will need 15 control iterations for the initial solution.
+! Therefore, the 'MaxControlIter' option is set to 30 to be safe.
+
+Set MaxControlIter=30
+
+! Solve executes the solution for the present solution mode, which is "snapshot".
+
+New EnergyMeter.Feeder Line.L115 1
+
+! This case considers the default load shape to represent the load demand in time for daily simulations
+! Adding DER for supporting the microgrid below switch 5
+
+! First, dynamics expressions for defining the inverter behavior
+New DynamicExp.myDiffEq nvariables=4 varnames=[it vdc modul vac] 
+~ expression=[it dt = 1 0.61059E-3 / ( -0.230187 it * modul vdc * + vac - ) *]
+
+New DynamicExp.myDiffEq2 nvariables=4 varnames=[it vdc modul vac] 
+~ expression=[it dt = 1 0.50882E-3 / ( -0.1918225 it * modul vdc * + vac - ) *]
+
+! Device declarations
+new Transformer.TSto1 phases=3 windings=2 buses=(StoBus 101) conns=(wye delta) kvs=(0.48 4.16) kvas=(1000 1000) taps='1 1' XHL=0.5
+new Transformer.TPV1 phases=3 windings=2 buses=(PVBus 108) conns=(wye delta) kvs=(0.48 4.16) kvas=(1000 1000) taps='1 1' XHL=0.5
+
+New "Storage.mystorage" phases=3 conn=delta bus1=StoBus kV=0.48 kva=800 kWrated=800 kWhrated=6000 %stored=100 %reserve=20 
+~ %EffCharge=90 %EffDischarge=90 %IdlingkW=1 %R=50 %X=50 State=IDLING kP=0.01 KVDC=0.700 PITol=0.1 SafeVoltage=0
+~ DynamicEq=myDiffEq2
+~ it = imag vdc = kvdc modul=mod vac = vmag
+~ DynOut = [it]
+
+New "PVSystem.myPV" phases=3 conn=delta bus1=PVBus kV=0.48 kva=800 pmpp=800 daily=pvshape %R=50 %X=50 kP=0.01 KVDC=0.700 PITol=0.1 SafeVoltage=0
+~ DynamicEq=myDiffEq
+~ it = imag vdc = kvdc modul=mod vac = vmag
+~ DynOut = [it]
+
+! Grid forming inverter mode requires an InvControl for monitoring the current
+New InvControl.StoCtrl DERList=[Storage.mystorage PVSystem.myPV] mode=GFM !eventlog=yes
+
+! Monitors
+
+New "Monitor.pvmonitor" element=pvsystem.mypv mode=1 terminal=1 PPolar=no residual=no VIPolar=yes
+New "Monitor.pvvi" element=pvsystem.mypv mode=0 terminal=1
+New "Monitor.pvstatevars" element=pvsystem.mypv mode=3 terminal=1
+New "Monitor.stomonitor" element=storage.mystorage mode=1 terminal=1 PPolar=no residual=no VIPolar=yes
+New "Monitor.stovi" element=storage.mystorage mode=0 terminal=1
+New "Monitor.stostatevars" element=storage.mystorage mode=3 terminal=1
+
+calcv
+solve
+Buscoords BusCoords.dat   ! load in bus coordinates
+
+! Show some selected results
+
+Plot Profile
+plot profile phases=all
+
+! Simulation starts at 10 hours, then there is a fault in the system
+! Starts in dynamics mode and goes for 200 ms
+edit storage.mystorage State = Discharging 
+set mode=dynamics steptime=0.001 maxiterations=500 number=200
+set loadshapeclass=daily
+set time=(10,0)
+solve
+
+! Then the fault happens at bus 57 (1.6 mi from storage, 2.21 mi from the PV)
+New Fault.myFault phases=3 bus1=51
+
+! Enables the storage device (fully charged) and simulate the behavior during the fault
+set number=70
+solve
+! The fault is cleared
+Fault.myFault.enabled=False
+! Goes for another 200 ms to bring the system back
+set number=200
+solve
+
+! Export monitors
+export monitors all
+
+
+
+
