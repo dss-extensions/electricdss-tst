@@ -25,6 +25,8 @@ Set voltagebases=[66 12.47,  0.480, 0.416, 0.208]
 Calcv
 Solve
 
+BusCoords Buscoords.dss
+
 New Energymeter.M1 element=line.temp2 term=1 PhaseVolt=yes 
 New Monitor.subVI element=transformer.M1_XFMR term=2 mode=0
 New Monitor.subPQ element=transformer.M1_XFMR term=1 mode=17 
@@ -41,3 +43,5 @@ New Monitor.VoltageCap1 element=capacitor.Cap1 mode=0
 New Monitor.VoltageCap2 element=capacitor.Cap2 mode=0
 New Monitor.VoltageCap3 element=capacitor.Cap3 mode=0
 New monitor.VoltageTap1 element=Transformer.M1_XFMR terminal=2 mode=0
+
+solve
