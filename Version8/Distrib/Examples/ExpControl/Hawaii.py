@@ -49,7 +49,7 @@ New XYcurve.voltwatt1547bch npts=4 Yarray=[0.0,0.0,1.0,1.0] Xarray=[0.0,1.06,1.1
 //   OpenDSS will screen for V1 >= 1.00 and V2 <= 1.10
 New XYcurve.voltwatt1547pv npts=4 Yarray=[1.0,1.0,0.0,0.0] Xarray=[0.0,1.03,1.06,2.00]
 
-{exp_comment}New InvControl.vw derlist=[pvsystem.der] mode=VOLTWATT voltage_curvex_ref=rated voltwatt_curve=voltwatt1547b deltaP_factor=0.02
+{exp_vw_comment}New InvControl.vw derlist=[pvsystem.der] mode=VOLTWATT voltage_curvex_ref=rated voltwatt_curve=voltwatt1547b deltaP_factor=0.02
 {exp_comment}New ExpControl.pv1 pvsystemlist=[expq] deltaQ_factor=0.3 vreg=0.0 slope=22 vregtau=0 vregmax=1.05 preferQ=yes
 
 {vv_vw_comment}New InvControl.vv_vw derlist=[pvsystem.der] combimode=VV_VW voltage_curvex_ref=rated vvc_curve1=voltvar14h 
@@ -84,9 +84,10 @@ def get_pv_power (pv):
     q += pv.kvar
   return p, q
 
-def format_case(meters, loadkw, loadpf, pvkw, invkva, vv_comment='//', vv_vw_comment='//', exp_comment='//'):
+def format_case(meters, loadkw, loadpf, pvkw, invkva, vv_comment='//', vv_vw_comment='//', exp_comment='//', exp_vw_comment='//'):
   case_str = case_template.format (meters=meters, loadkw=loadkw, loadpf=loadpf, pvkw=pvkw, invkva=invkva, 
-                                   exp_comment=exp_comment, vv_comment=vv_comment, vv_vw_comment=vv_vw_comment)
+                                   exp_comment=exp_comment, exp_vw_comment=exp_vw_comment, 
+                                   vv_comment=vv_comment, vv_vw_comment=vv_vw_comment)
   return case_str
 
 class DSS:
@@ -135,6 +136,9 @@ if __name__ == '__main__':
   vavr = np.zeros (npts)
   pavr = np.zeros (npts)
   qavr = np.zeros (npts)
+  vavrvw = np.zeros (npts)
+  pavrvw = np.zeros (npts)
+  qavrvw = np.zeros (npts)
   for i in range(npts):
     case_str = format_case (meters=mtrs[i], loadkw=LOAD_KW, loadpf=LOAD_PF, pvkw=PV_KW, invkva=INV_KVA)
     fp = open ('case.dss', mode='w')
@@ -172,10 +176,19 @@ if __name__ == '__main__':
     vavr[i] = get_average_magnitude (d.circuit.Buses(ih).Voltages)/120.0
     pavr[i], qavr[i] = get_pv_power (d.circuit.pvsystems)
 
+    case_str = format_case (meters=mtrs[i], loadkw=LOAD_KW, loadpf=LOAD_PF, pvkw=PV_KW, invkva=INV_KVA, exp_comment='', exp_vw_comment='')
+    fp = open ('case.dss', mode='w')
+    print (case_str, file=fp)
+    fp.close ()
+    d.text.command = "redirect case.dss"
+    ih = d.circuit.SetActiveBus ('house')
+    vavrvw[i] = get_average_magnitude (d.circuit.Buses(ih).Voltages)/120.0
+    pavrvw[i], qavrvw[i] = get_pv_power (d.circuit.pvsystems)
+
   print (npts, 'points')
-  print ('     L   Vupf   Vavr   V14h  Vvvar')
+  print ('     L   Vupf   Vavr Vavrvw  V14h  Vvvar')
   for idx in [-1, 149, 159, 160, 161]:
-    print ('{:6.2f} {:6.4f} {:6.4f} {:6.4f} {:6.4f}'.format (mtrs[idx], vunreg[idx], vavr[idx], v14h[idx], vvv[idx]))
+    print ('{:6.2f} {:6.4f} {:6.4f} {:6.4f} {:6.4f} {:6.4f}'.format (mtrs[idx], vunreg[idx], vavr[idx], vavrvw[idx], v14h[idx], vvv[idx]))
   # make a publication-quality plot
   plt.rc('font', family='serif')
   plt.rc('xtick', labelsize=8)
@@ -189,19 +202,21 @@ if __name__ == '__main__':
   fig, ax = plt.subplots(3, 1, figsize=(pWidth, pHeight), constrained_layout=True)
   fig.suptitle ('{:.1f}-kW PV Output, {:.1f}-kW Load on Long Secondary'.format(PV_KW, LOAD_KW), fontsize=10)
 
-  ax[0].plot (mtrs, vavr, label='AARV + Volt-Watt', linestyle='-', color='red')
+  ax[0].plot (mtrs, vavrvw, label='AARV + Volt-Watt', linestyle='-', color='red')
+  ax[0].plot (mtrs, vavr, label='AARV', linestyle='--', color='magenta')
   ax[0].plot (mtrs, v14h, label='14H', linestyle='--', color='green', linewidth=3)
   ax[0].plot (mtrs, vvv,  label='Volt-Var', linestyle='-.', color='blue')
   ax[0].plot (mtrs, vunreg, label='Unity pf', linestyle=':', color='black')
   ax[0].set_ylabel ('Voltage [pu]')
 
   ax[1].set_ylabel ('Real Power [kW]')
-  ax[1].plot (mtrs, pavr, label='AARV + Volt-Watt', linestyle='-', color='red')
+  ax[1].plot (mtrs, pavrvw, label='AARV + Volt-Watt', linestyle='-', color='red')
   ax[1].plot (mtrs, p14h, label='14H', linestyle='--', color='green', linewidth=3)
-  ax[1].plot (mtrs, pvv, label='VoltVar', linestyle='-.', color='blue')
+  ax[1].plot (mtrs, pvv, label='VoltVar or AARV', linestyle='-.', color='blue')
 
   ax[2].set_ylabel ('Reactive Power [kvar]')
-  ax[2].plot (mtrs, qavr, label='AARV + Volt-Watt', linestyle='-', color='red')
+  ax[2].plot (mtrs, qavrvw, label='AARV + Volt-Watt', linestyle='-', color='red')
+  ax[2].plot (mtrs, qavr, label='AARV', linestyle='--', color='magenta')
   ax[2].plot (mtrs, q14h, label='14H', linestyle='--', color='green', linewidth=3)
   ax[2].plot (mtrs, qvv, label='Volt-Var', linestyle='-.', color='blue')
 
