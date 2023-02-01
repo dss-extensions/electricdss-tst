@@ -212,13 +212,14 @@ if __name__ == '__main__':
   ax[1].set_ylabel ('Real Power [kW]')
   ax[1].plot (mtrs, pavrvw, label='AARV + Volt-Watt', linestyle='-', color='red')
   ax[1].plot (mtrs, p14h, label='14H', linestyle='--', color='green', linewidth=3)
-  ax[1].plot (mtrs, pvv, label='VoltVar or AARV', linestyle='-.', color='blue')
+  ax[1].plot (mtrs, pvv, label='VoltVar or AARV or Unity pf', linestyle='-.', color='blue')
 
   ax[2].set_ylabel ('Reactive Power [kvar]')
   ax[2].plot (mtrs, qavrvw, label='AARV + Volt-Watt', linestyle='-', color='red')
   ax[2].plot (mtrs, qavr, label='AARV', linestyle='--', color='magenta')
   ax[2].plot (mtrs, q14h, label='14H', linestyle='--', color='green', linewidth=3)
   ax[2].plot (mtrs, qvv, label='Volt-Var', linestyle='-.', color='blue')
+  ax[2].plot (mtrs, np.zeros(300), label='Unity pf', linestyle=':', color='black')
 
   xticks = [0, 50, 100, 150, 200, 250, 300]
 # pticks = [0, 3, 6, 9, 12]
