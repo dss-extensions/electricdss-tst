@@ -1,0 +1,74 @@
+!Secondary Low-Voltage Circuit Models—How Good is Good Enough?
+!IEEE Transactions on Industry Applications
+Clear
+
+New circuit.equiv_stiff MVAsc1=100000000 MVAsc3=100000000 basekv=7.2 bus1=XfmrMV angle=-30
+
+! Full split-phase transformer with percent short-circuit impedance: r+jx=1.18+j1.44, assume non-interlaced secondary windings
+New Transformer.ServiceXmfr phases=1 windings=3 Xhl=1.728 xht=1.728 xlt=1.152 %Rs=(0.59 1.18 1.18) ppm_antifloat=0 ! %imag = 0.5 %NoLoadLoss = 0.2
+~ wdg=1 bus=XfmrMV.1.2 conn=delta kV=7.2 kVA=25
+~ wdg=2 bus=XfmrLV.1.0 conn=wye kV=0.12 kVA=25
+~ wdg=3 bus=XfmrLV.0.2 conn=wye kV=0.12 kVA=25
+
+! Linecodes
+New Linecode.TriplexAAC1/0AAC1/0 nphases=2 units=kft rmatrix=[0.27929 0.09559 |0.09559 0.27929] xmatrix=[0.13215 0.08937 |0.08937 0.13215] cmatrix=[0.00 0.00 | 0.00 0.00] normamps=280 emergamps=350 Rg=0 Xg=0 
+
+! Lines
+New Line.Triplex1 bus1=XfmrLV.1.2.0 bus2=BusLV1.1.2.0 phases=2 linecode=TriplexAAC1/0AAC1/0 length=106 units=ft linecode=TriplexAAC1/0AAC1/0
+New Line.Triplex2 bus1=BusLV1.1.2.0 bus2=BusLV2.1.2.0 phases=2 linecode=TriplexAAC1/0AAC1/0 length=206 units=ft linecode=TriplexAAC1/0AAC1/0
+New Line.Triplex3 bus1=XfmrLV.1.2.0 bus2=BusLV3.1.2.0 phases=2 linecode=TriplexAAC1/0AAC1/0 length=187 units=ft linecode=TriplexAAC1/0AAC1/0
+New Line.Triplex4 bus1=BusLV3.1.2.0 bus2=BusLV4.1.2.0 phases=2 linecode=TriplexAAC1/0AAC1/0 length=161 units=ft linecode=TriplexAAC1/0AAC1/0
+New Line.Triplex5 bus1=BusLV3.1.2.0 bus2=BusLV5.1.2.0 phases=2 linecode=TriplexAAC1/0AAC1/0 length=103 units=ft linecode=TriplexAAC1/0AAC1/0
+New Line.TriplexLoad1 bus1=BusLV2.1.2.0 bus2=BusLoad1.1.2.0 phases=2 linecode=TriplexAAC1/0AAC1/0 length=10 units=ft linecode=TriplexAAC1/0AAC1/0
+New Line.TriplexLoad2 bus1=BusLV2.1.2.0 bus2=BusLoad2.1.2.0 phases=2 linecode=TriplexAAC1/0AAC1/0 length=11 units=ft linecode=TriplexAAC1/0AAC1/0
+New Line.TriplexLoad3 bus1=BusLV1.1.2.0 bus2=BusLoad3.1.2.0 phases=2 linecode=TriplexAAC1/0AAC1/0 length=13 units=ft linecode=TriplexAAC1/0AAC1/0
+New Line.TriplexLoad4 bus1=BusLV1.1.2.0 bus2=BusLoad4.1.2.0 phases=2 linecode=TriplexAAC1/0AAC1/0 length=61 units=ft linecode=TriplexAAC1/0AAC1/0
+New Line.TriplexLoad5 bus1=BusLV4.1.2.0 bus2=BusLoad5.1.2.0 phases=2 linecode=TriplexAAC1/0AAC1/0 length=286 units=ft linecode=TriplexAAC1/0AAC1/0
+New Line.TriplexLoad6 bus1=BusLV4.1.2.0 bus2=BusLoad6.1.2.0 phases=2 linecode=TriplexAAC1/0AAC1/0 length=116 units=ft linecode=TriplexAAC1/0AAC1/0
+New Line.TriplexLoad7 bus1=BusLV5.1.2.0 bus2=BusLoad7.1.2.0 phases=2 linecode=TriplexAAC1/0AAC1/0 length=42 units=ft linecode=TriplexAAC1/0AAC1/0
+New Line.TriplexLoad8 bus1=BusLV5.1.2.0 bus2=BusLoad8.1.2.0 phases=2 linecode=TriplexAAC1/0AAC1/0 length=23 units=ft linecode=TriplexAAC1/0AAC1/0
+
+! Loads without loadshapes
+New Load.Load1a phases=1 conn=wye bus1=BusLoad1.1.0 kV=0.12 kW=0.8 kvar=0.5 Vminpu=0.6 Vmaxpu=2.0 model=1
+New Load.Load1b phases=1 conn=wye bus1=BusLoad1.2.0 kV=0.12 kW=0.8 kvar=0.5 Vminpu=0.6 Vmaxpu=2.0 model=1
+New Load.Load2a phases=1 conn=wye bus1=BusLoad2.1.0 kV=0.12 kW=0.6 kvar=0.35 Vminpu=0.6 Vmaxpu=2.0 model=1
+New Load.Load2b phases=1 conn=wye bus1=BusLoad2.2.0 kV=0.12 kW=0.6 kvar=0.35 Vminpu=0.6 Vmaxpu=2.0 model=1
+New Load.Load3a phases=1 conn=wye bus1=BusLoad3.1.0 kV=0.12 kW=2.6 kvar=1.6 Vminpu=0.6 Vmaxpu=2.0 model=1
+New Load.Load3b phases=1 conn=wye bus1=BusLoad3.2.0 kV=0.12 kW=2.6 kvar=1.6 Vminpu=0.6 Vmaxpu=2.0 model=1
+New Load.Load4a phases=1 conn=wye bus1=BusLoad4.1.0 kV=0.12 kW=4.15 kvar=2.55 Vminpu=0.6 Vmaxpu=2.0 model=1
+New Load.Load4b phases=1 conn=wye bus1=BusLoad4.2.0 kV=0.12 kW=4.15 kvar=2.55 Vminpu=0.6 Vmaxpu=2.0 model=1
+New Load.Load5a phases=1 conn=wye bus1=BusLoad5.1.0 kV=0.12 kW=1.3 kvar=0.8 Vminpu=0.6 Vmaxpu=2.0 model=1
+New Load.Load5b phases=1 conn=wye bus1=BusLoad5.2.0 kV=0.12 kW=1.3 kvar=0.8 Vminpu=0.6 Vmaxpu=2.0 model=1
+New Load.Load6a phases=1 conn=wye bus1=BusLoad6.1.0 kV=0.12 kW=4.2 kvar=2.55 Vminpu=0.6 Vmaxpu=2.0 model=1
+New Load.Load6b phases=1 conn=wye bus1=BusLoad6.2.0 kV=0.12 kW=4.2 kvar=2.55 Vminpu=0.6 Vmaxpu=2.0 model=1
+New Load.Load7a phases=1 conn=wye bus1=BusLoad7.1.0 kV=0.12 kW=0.9 kvar=0.55 Vminpu=0.6 Vmaxpu=2.0 model=1
+New Load.Load7b phases=1 conn=wye bus1=BusLoad7.2.0 kV=0.12 kW=0.9 kvar=0.55 Vminpu=0.6 Vmaxpu=2.0 model=1
+New Load.Load8a phases=1 conn=wye bus1=BusLoad8.1.0 kV=0.12 kW=2.85 kvar=1.75 Vminpu=0.6 Vmaxpu=2.0 model=1
+New Load.Load8b phases=1 conn=wye bus1=BusLoad8.2.0 kV=0.12 kW=2.85 kvar=1.75 Vminpu=0.6 Vmaxpu=2.0 model=1
+
+Set voltagebases=[7.2 0.41569219 0.240]
+Calcvoltagebases
+
+setbusxy bus=XfmrLV x=0 y=0
+setbusxy bus=BusLV1 x=1 y=2.5
+setbusxy bus=BusLV2 x=3 y=3.5
+setbusxy bus=BusLV3 x=1 y=-2
+setbusxy bus=BusLV4 x=2 y=-1.5
+setbusxy bus=BusLV5 x=3 y=-3.5
+setbusxy bus=BusLoad1 x=4 y=4
+setbusxy bus=BusLoad2 x=4 y=3
+setbusxy bus=BusLoad3 x=4 y=2
+setbusxy bus=BusLoad4 x=4 y=1
+setbusxy bus=BusLoad5 x=4 y=-1
+setbusxy bus=BusLoad6 x=4 y=-2
+setbusxy bus=BusLoad7 x=4 y=-3
+setbusxy bus=BusLoad8 x=4 y=-4
+
+New EnergyMeter.sub element=Transformer.ServiceXmfr terminal=1
+
+set mode=snapshot
+solve
+
+!Show Currents Elements
+!Show Voltage LN Nodes
+!Show Powers kva Elements

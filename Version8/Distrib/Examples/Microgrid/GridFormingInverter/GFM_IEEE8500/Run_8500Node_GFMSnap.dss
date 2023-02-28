@@ -1,0 +1,50 @@
+
+!----------------------------------------------------------------------------------------------------------------------------
+! OpenDSS script to control the running of the IEEE 8500-Node Distrubution Test Feeder
+! Balanced Load Case
+!----------------------------------------------------------------------------------------------------------------------------
+
+! This case illustrates a situation in which a switch is open intentionally and separates a portion of the feeder. The results
+! present how the storage + PV can serve the isolated section of the feeder.
+!----------------------------------------------------------------------------------------------------------------------------
+
+! Edit the path name to indicate the correct location of the Master file.
+
+Compile (master.dss)
+
+New Energymeter.m1 Line.ln5815900-1 1
+! Adding DER for microgrid support
+new Transformer.TSto1 phases=3 windings=2 buses=(StoBus m1089119) conns=(delta wye) kvs=(12.47 12.47) kvas=(3000 3000) taps='1 1' XHL=0.5
+new Transformer.TPV1 phases=3 windings=2 buses=(PVBus l3195356) conns=(delta wye) kvs=(12.47 12.47) kvas=(3000 3000) taps='1 1' XHL=0.5
+
+New "Storage.mystorage" phases=3 conn=delta bus1=StoBus kV=12.47 kva=2000 kWrated=2000 kWhrated=6000 %stored=100 %reserve=20 
+~ %EffCharge=90 %EffDischarge=90 %IdlingkW=1 %R=50 %X=0 State=IDLING
+
+New "PVSystem.myPV" phases=3 conn=delta bus1=PVBus kV=12.47 kva=2000 pmpp=2000 daily=pvshape
+
+! Grid forming inverter mode requires an InvControl for monitoring the current
+New InvControl.StoCtrl DERList=[Storage.mystorage PVSystem.myPV] mode=GFM !eventlog=yes
+! Adds yearly profile to loads
+batchedit Load..* yearly=LoadShape1
+
+! Monitors
+
+New "Monitor.pvmonitor" element=pvsystem.mypv mode=1 terminal=1 PPolar=no residual=no VIPolar=yes
+New "Monitor.pvvi" element=pvsystem.mypv mode=0 terminal=1
+New "Monitor.pvstatevars" element=pvsystem.mypv mode=3 terminal=1
+New "Monitor.stomonitor" element=storage.mystorage mode=1 terminal=1 PPolar=no residual=no VIPolar=yes
+New "Monitor.stovi" element=storage.mystorage mode=0 terminal=1
+New "Monitor.stostatevars" element=storage.mystorage mode=3 terminal=1
+
+Set Maxiterations=20     ! Sometimes the solution takes more than the default 15 iterations
+
+Solve
+
+!Opens switch for entering into islanded mode
+Open Line.ln4586093_sw terminal=1
+Solve
+
+!Enables Storage for feeding the microgrid
+edit storage.mystorage State = Discharging ControlMode = GFM
+Solve
+Show voltage Node LN

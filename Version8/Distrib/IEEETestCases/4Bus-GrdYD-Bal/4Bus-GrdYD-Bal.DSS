@@ -4,7 +4,7 @@ Set DefaultBaseFrequency=60
 ! IEEE 4-bus test case   ungrounded-Y-Delta Stepdown Balanced
 ! Based on script developed by Alan Dunn and Steve Sparling
 
-new circuit.4busYDBal   basekV=12.47 phases=3 
+new circuit.4busGrdYBal   basekV=12.47 phases=3 
 ! **** HAVE TO STIFFEN THE SOURCE UP A LITTLE; THE TEST CASE ASSUMES AN INFINITE BUS
 ~ mvasc3=200000 200000
 

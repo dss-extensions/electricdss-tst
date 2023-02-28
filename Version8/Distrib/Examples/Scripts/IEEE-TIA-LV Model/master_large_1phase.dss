@@ -1,0 +1,65 @@
+!Secondary Low-Voltage Circuit Models—How Good is Good Enough?
+!IEEE Transactions on Industry Applications
+Clear
+
+New circuit.equiv_stiff MVAsc1=100000000 MVAsc3=100000000 basekv=7.2 bus1=XfmrMV angle=-30
+
+! 1-phase equivalent of the split-phase transformer with percent short-circuit impedance: r+jx=1.18+j1.44
+New Transformer.ServiceXmfr phases=1 windings=2 Xhl=1.44 %Rs=(0.59 0.59) ppm_antifloat=0  ! %imag = 0.5 %NoLoadLoss = 0.2
+~ wdg=1 bus=XfmrMV.1.2 conn=wye kV=7.2 kVA=25
+~ wdg=2 bus=XfmrLV.1.0 conn=wye kV=0.24 kVA=25
+
+! Linecodes for the 1-phase equivalents of the triplex cables
+New Linecode.Triplex1PhEquivalent1/0 nphases=1 units=kft rmatrix=[0.3674] xmatrix=[0.0856] cmatrix=[0] normamps=280 emergamps=350 Rg=0 Xg=0 
+
+! The 1-phase equivalents of the triplex cables
+New Line.Triplex1 bus1=XfmrLV.1.0 bus2=BusLV1.1.0 length=106 units=ft linecode=Triplex1PhEquivalent1/0
+New Line.Triplex2 bus1=BusLV1.1.0 bus2=BusLV2.1.0 length=206 units=ft linecode=Triplex1PhEquivalent1/0
+New Line.Triplex3 bus1=XfmrLV.1.0 bus2=BusLV3.1.0 length=187 units=ft linecode=Triplex1PhEquivalent1/0
+New Line.Triplex4 bus1=BusLV3.1.0 bus2=BusLV4.1.0 length=161 units=ft linecode=Triplex1PhEquivalent1/0
+New Line.Triplex5 bus1=BusLV3.1.0 bus2=BusLV5.1.0 length=103 units=ft linecode=Triplex1PhEquivalent1/0
+New Line.TriplexLoad1 bus1=BusLV2.1.0 bus2=BusLoad1.1.0 length=10 units=ft linecode=Triplex1PhEquivalent1/0
+New Line.TriplexLoad2 bus1=BusLV2.1.0 bus2=BusLoad2.1.0 length=11 units=ft linecode=Triplex1PhEquivalent1/0
+New Line.TriplexLoad3 bus1=BusLV1.1.0 bus2=BusLoad3.1.0 length=13 units=ft linecode=Triplex1PhEquivalent1/0
+New Line.TriplexLoad4 bus1=BusLV1.1.0 bus2=BusLoad4.1.0 length=61 units=ft linecode=Triplex1PhEquivalent1/0
+New Line.TriplexLoad5 bus1=BusLV4.1.0 bus2=BusLoad5.1.0 length=286 units=ft linecode=Triplex1PhEquivalent1/0
+New Line.TriplexLoad6 bus1=BusLV4.1.0 bus2=BusLoad6.1.0 length=116 units=ft linecode=Triplex1PhEquivalent1/0
+New Line.TriplexLoad7 bus1=BusLV5.1.0 bus2=BusLoad7.1.0 length=42 units=ft linecode=Triplex1PhEquivalent1/0
+New Line.TriplexLoad8 bus1=BusLV5.1.0 bus2=BusLoad8.1.0 length=23 units=ft linecode=Triplex1PhEquivalent1/0
+
+! Loads without loadshapes, kvar calculated from pf=0.854
+New Load.Load1 kV=0.24 phases=1 bus1=BusLoad1.1.0 Vminpu=0.6 Vmaxpu=2.0 model=1 conn=wye kW=1.6 kvar=1.0
+New Load.Load2 kV=0.24 phases=1 bus1=BusLoad2.1.0 Vminpu=0.6 Vmaxpu=2.0 model=1 conn=wye kW=1.2 kvar=0.7
+New Load.Load3 kV=0.24 phases=1 bus1=BusLoad3.1.0 Vminpu=0.6 Vmaxpu=2.0 model=1 conn=wye kW=5.2 kvar=3.2
+New Load.Load4 kV=0.24 phases=1 bus1=BusLoad4.1.0 Vminpu=0.6 Vmaxpu=2.0 model=1 conn=wye kW=8.3 kvar=5.1
+New Load.Load5 kV=0.24 phases=1 bus1=BusLoad5.1.0 Vminpu=0.6 Vmaxpu=2.0 model=1 conn=wye kW=2.6 kvar=1.6
+New Load.Load6 kV=0.24 phases=1 bus1=BusLoad6.1.0 Vminpu=0.6 Vmaxpu=2.0 model=1 conn=wye kW=8.4 kvar=5.1
+New Load.Load7 kV=0.24 phases=1 bus1=BusLoad7.1.0 Vminpu=0.6 Vmaxpu=2.0 model=1 conn=wye kW=1.8 kvar=1.1
+New Load.Load8 kV=0.24 phases=1 bus1=BusLoad8.1.0 Vminpu=0.6 Vmaxpu=2.0 model=1 conn=wye kW=5.7 kvar=3.5
+
+Set voltagebases=[7.2 0.41569219 0.240]
+Calcvoltagebases
+
+setbusxy bus=XfmrLV x=0 y=0
+setbusxy bus=BusLV1 x=1 y=2.5
+setbusxy bus=BusLV2 x=3 y=3.5
+setbusxy bus=BusLV3 x=1 y=-2
+setbusxy bus=BusLV4 x=2 y=-1.5
+setbusxy bus=BusLV5 x=3 y=-3.5
+setbusxy bus=BusLoad1 x=4 y=4
+setbusxy bus=BusLoad2 x=4 y=3
+setbusxy bus=BusLoad3 x=4 y=2
+setbusxy bus=BusLoad4 x=4 y=1
+setbusxy bus=BusLoad5 x=4 y=-1
+setbusxy bus=BusLoad6 x=4 y=-2
+setbusxy bus=BusLoad7 x=4 y=-3
+setbusxy bus=BusLoad8 x=4 y=-4
+
+New EnergyMeter.sub element=Transformer.ServiceXmfr terminal=1
+
+set mode=snapshot
+solve
+
+!Show Currents Elements
+!Show Voltage LN Nodes
+!Show Powers kva Elements

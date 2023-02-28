@@ -1,0 +1,8 @@
+! Example 1.1 Fault on the 2ndary grid network 
+Redirect "C:\Program Files\OpenDSS\Examples\DOC_TechNote\ExamplesMaster.dss"
+
+! SLG Fault on Bus S21 - Top Right Corner of LV network
+New Fault.fault bus1=S21.1 bus2=S21.0 phases=1 r=0.0001
+
+Solve
+Show eventlog

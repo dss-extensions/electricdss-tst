@@ -1,0 +1,10 @@
+! Load Master Model from Local OpenDSS
+Redirect "C:\Program Files\OpenDSS\IEEETestCases\LVTestCaseNorthAmerican\Master.dss"
+
+! Load Network Protectors
+Redirect "C:\Program Files\OpenDSS\IEEETestCases\LVTestCaseNorthAmerican\network_protectors.dss"
+
+! Load Energy Meters
+Redirect "C:\Program Files\OpenDSS\IEEETestCases\LVTestCaseNorthAmerican\energy_meters.dss"
+
+BatchEdit Relay..* debugtrace=yes
