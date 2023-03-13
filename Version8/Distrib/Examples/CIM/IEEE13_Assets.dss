@@ -112,3 +112,6 @@ Transformer.Reg3.Taps=[1.0 1.06875]
 Set Controlmode=OFF
 
 Solve
+
+uuids ieee13_assets_uuids.dat
+export cim100
