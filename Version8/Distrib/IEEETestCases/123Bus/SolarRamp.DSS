@@ -42,7 +42,7 @@ Plot Monitor object=Mon1  Channels=(1,3,5) Bases=[2400, 2400, 2400]
 !**** NOW ADD SOME STORAGE WITH A DISPATCH CURVE
 
 ! 300-sec storage ramp 
-New Loadshape.StorageRamp npts=300 Interval=(1 3600 /) mult=(file=StorageRamp.csv)
+New Loadshape.StorageRamp npts=300 Interval=(1 3600 /) mult=(file=StorageRamp.CSV)
 New storage.2MWStorage Bus1=450 kV=4.16 Duty=storageramp  kwrated=2000 kWhRated= 500 dischargetrigger=.9
 
 ! Run 300-point dutycycle

@@ -1,6 +1,6 @@
 Clear
 
-Redirect LoadShapes_ckt7.dss
+Redirect Loadshapes_ckt7.dss
 Redirect Substation_ckt7.dss
 Redirect LineCodes_ckt7.dss
 Redirect Lines_ckt7.dss
@@ -20,7 +20,7 @@ Set voltagebases = [115, 12.47, 0.480, 0.4157, 0.208, 0.12]
 Calcvoltagebases
 
 ! Now that buses are defined, define coordinates
-Buscoords  Buscoords_ckt7.dss
+Buscoords  BusCoords_ckt7.dss
 BatchEdit Load..* Vminpu=0.85
 
 
