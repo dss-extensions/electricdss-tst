@@ -1,6 +1,6 @@
-new loadshape.23 mult=1
-new loadshape.26 mult=1
-new loadshape.32 mult=1
-new loadshape.36 mult=1
-new loadshape.Aggregated mult=1
+new loadshape.23 npts=1 mult=1
+new loadshape.26 npts=1 mult=1
+new loadshape.32 npts=1 mult=1
+new loadshape.36 npts=1 mult=1
+new loadshape.Aggregated npts=1 mult=1
 !************** End LoadShapes **************!
