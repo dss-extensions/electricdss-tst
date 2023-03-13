@@ -27,7 +27,7 @@ New Monitor.P4a  Transformer.reg4a  2  mode=1 ppolar=no
 New Monitor.P4b  Transformer.reg4b  2  mode=1 ppolar=no
 New Monitor.P4c  Transformer.reg4c  2  mode=1 ppolar=no
 
-Redirect SetDailyLoadshape.DSS
+Redirect SetDailyLoadShape.DSS
 
 solve
 
