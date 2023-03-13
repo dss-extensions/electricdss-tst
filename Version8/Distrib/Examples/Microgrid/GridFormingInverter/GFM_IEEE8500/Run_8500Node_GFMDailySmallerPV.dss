@@ -12,7 +12,7 @@
 
 ! Edit the path name to indicate the correct location of the Master file.
 
-Compile (master.dss)
+Compile (Master.dss)
 
 New Energymeter.m1 Line.ln5815900-1 1
 ! Adding DER for microgrid support
