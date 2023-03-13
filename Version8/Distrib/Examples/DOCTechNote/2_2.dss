@@ -1,5 +1,5 @@
 ! Example 2.2 LL Fault on the MV Primary Network 
-Redirect "C:\Program Files\OpenDSS\Examples\DOC_TechNote\ExamplesMaster.dss"
+Redirect "ExamplesMaster.dss"
 
 ! Adding OC relays to feeder breakers
 New Relay.F6 monitoredobj=Line.10_sw type=current delay=0.1 PhaseTrip=20000 RecloseIntervals=None
