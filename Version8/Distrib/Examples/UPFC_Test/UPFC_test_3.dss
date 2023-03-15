@@ -9,9 +9,9 @@ New circuit.UPFC3-1 bus1=SOURCE_BUS.1.0 phases=1
 New XYCurve.Losses npts=3 xarray=[0.9 1 1.1] yarray=[1.0143 1.008 1.0143]
 New XFMRCode.QuasiIdeal Phases=1 windings=2 XHL=0.01 %LoadLoss=.01 kVAs=[100 100] kVs=[.24 .24] conns=[delta delta] ppm=0
 
-New Loadshape.Load1   npts=37438 minterval=1 pmult=[file=load1kW.csv]  qmult=[file=load1kvar.csv] Action=Normalize
-New Loadshape.Load2   npts=37438 minterval=1 pmult=[file=load2kW.csv]  qmult=[file=load2kvar.csv] Action=Normalize
-New Loadshape.Vsource npts=37438 minterval=1 mult= [file=Vpucurve.csv]  
+New Loadshape.Load1   npts=37438 minterval=1 pmult=[file=Load1kW.CSV]  qmult=[file=Load1kvar.csv] Action=Normalize
+New Loadshape.Load2   npts=37438 minterval=1 pmult=[file=Load2kW.CSV]  qmult=[file=Load2kvar.csv] Action=Normalize
+New Loadshape.Vsource npts=37438 minterval=1 mult= [file=VpuCurve.CSV]  
 Vsource.source.daily=Vsource
 
 
