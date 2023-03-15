@@ -3,12 +3,10 @@
 Clear
 New Circuit.IndMachTest
 
-/*********************************
+// Induction generator simulation with temporary SLG fault
+// DYNAMICS mode simulation
 
-   Induction generator simulation with temporary SLG fault
-   DYNAMICS mode simulation
 
-*******************/
 
 !*********Redirect Vsource.txt
 Edit "Vsource.source" bus1=Bx basekv=115 pu=1.0475 angle=0 frequency=60 phases=3 MVAsc3=20000 MVAsc1=21000 x1r1=4 x0r0=3

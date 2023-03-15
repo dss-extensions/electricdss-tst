@@ -1,3 +1,7 @@
+// NOTE: This is a step-by-step version of the main file to test different snapshots
+//       in the validation suite (from DSS Extensions).
+
+
 ! Annotated "Run" file for the IEEE 123 Bus Test Case
 ! Modified for demonstrating the grid forming and grid following capabilites
 ! added to OpenDSS on 10/28/2022
@@ -49,36 +53,6 @@ calcv
 solve
 Buscoords BusCoords.dat   ! load in bus coordinates
 
-! Show some selected results
-
-Plot Profile
-plot profile phases=all
-
-! Show Voltage LN Nodes     ! this shows the voltages by node, Line-to-Neutral voltage.
-! Show Currents Elements    ! this produces a report of the currents, element-by-element.
-! Show Powers kva Elements  ! This produces a report of the powers, in kVA, element-by-element
-! Show taps                 ! shows the present regulator taps
-
-! Redirect CircuitplottingScripts.dss	
-
-! Opens switch 5 and solves to show the isolated area
-
 open line.sw5 terminal=1
 solve
-
-! Enables the storage device (fully charged) to operate as grid forming inverter
-edit storage.mystorage State = Discharging ControlMode = GFM 
-
-solve
-show Voltage LN Nodes
-
-!Go back to normal
-
-edit storage.mystorage State=Charging Controlmode=GFL
-Close  line.sw5 terminal=1
-
-Solve
-show Voltage LN Nodes
-
-
 

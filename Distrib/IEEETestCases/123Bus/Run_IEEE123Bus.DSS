@@ -57,7 +57,7 @@ Show Currents Elements    ! this produces a report of the currents, element-by-e
 Show Powers kva Elements  ! This produces a report of the powers, in kVA, element-by-element
 Show taps                 ! shows the present regulator taps
 
-Redirect CircuitplottingScripts.DSS
+! Redirect CircuitplottingScripts.dss
 
 ! =================================================================
 ! 2nd Script

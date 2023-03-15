@@ -13,11 +13,9 @@ setkvbase sourcebus 115
 setkvbase loadbus 12.47
 setkvbase LVBus 0.400
 
-/*
-Show Voltages ln nodes
-! Show Currents
-Show Powers kVA elements
-*/
+// Show Voltages ln nodes
+// ! Show Currents
+// Show Powers kVA elements
 
 ! Dynamics Mode 200 usec time step, 1-s intervals
 Set mode=dynamics  stepsize=0.0002  number=5000

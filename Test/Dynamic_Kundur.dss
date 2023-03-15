@@ -47,7 +47,7 @@ New Generator.G1 Bus1=LT kV=24 kW=(2220000 0.9 *) kvar=(2220000 0.436 *)   Model
 set voltagebases=[345, 24]
 calcv
 
-//solve the steady-state solution
+// solve the steady-state solution
 solve
 
 //Monitor the generator and electrical lines
@@ -64,20 +64,19 @@ New Monitor.Line2 Line.Source_HT_2 2 mode=0
 solve mode=dynamic h=0.001 number=1 
 Solve number=1000
 
-/***** optional debugs
-Fileedit DSSDLLDebug.txt   ! if debugs in code activated
-
-Dump Vsource.source debug
-
-Solve mode=fault
-Show fault
-
-show Monitor G1
-show Monitor G1VI
-Show Monitor G1Seq
-Show Monitor G1SeqVI
-Show Mon G1vars 
-*/
+// optional debugs
+// Fileedit DSSDLLDebug.txt   ! if debugs in code activated
+//
+// Dump Vsource.source debug
+//
+// Solve mode=fault
+// Show fault
+//
+// show Monitor G1
+// show Monitor G1VI
+// Show Monitor G1Seq
+// Show Monitor G1SeqVI
+// Show Mon G1vars 
 
 // Add the fault to bus HTand run 70 ms
 New fault.F1 phases=3 Bus1=HT
@@ -90,26 +89,24 @@ Open Line.Source_HT_2
 // Run simulation out to 10000 ms
 Solve Number=10000
 
-/******
-Show mon G1
-Show mon G1vars
-*/
+
+// Show mon G1
+// Show mon G1vars
 
 
 Export monitors g1vars
 Plot monitor object= g1vars channels=(2 )  ! generator angle
 
 
-/****** optional reports
-show V ln Nodes
-show powers mva elem
-Export mon G1
-Export monitors g1vars
-Export monitors Line1
-Export monitors Line2
-Plot monitor object=g1 channels=(1 )
-Plot monitor object= g1vars channels=(2 )
-Plot monitor object= g1vars channels=(1 )
-Plot monitor object= Line1 channels=(1 )
-Plot monitor object= Line2 channels=(1 )
-*/
+// ****** optional reports
+// show V ln Nodes
+// show powers mva elem
+// Export mon G1
+// Export monitors g1vars
+// Export monitors Line1
+// Export monitors Line2
+// Plot monitor object=g1 channels=(1 )
+// Plot monitor object= g1vars channels=(2 )
+// Plot monitor object= g1vars channels=(1 )
+// Plot monitor object= Line1 channels=(1 )
+// Plot monitor object= Line2 channels=(1 )
