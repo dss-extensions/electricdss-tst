@@ -1,6 +1,7 @@
 # Copyright (C) 2021-2022 Battelle Memorial Institute
+# Adapted for DSS Extensions by Paulo Meira
 #
-import win32com.client # pip install pywin32
+from expcontrol_common import get_dss_engine, dss_suffix
 import math
 import numpy as np
 import matplotlib.pyplot as plt
@@ -82,8 +83,8 @@ solve mode=daily number=9000 stepsize=1s
 
 class DSS:
   def __init__(self):
-    self.engine = win32com.client.Dispatch("OpenDSSEngine.DSS")
-    self.engine.Start("0")
+    self.engine = get_dss_engine()
+    self.engine.Start(0)
     self.text = self.engine.Text
     self.text.Command = "clear"
     self.circuit = self.engine.ActiveCircuit
@@ -165,6 +166,6 @@ if __name__ == '__main__':
     ax[i].legend (loc='best')
     ax[i].grid()
   ax[2].set_xlabel ('Time [s]')
-
+  plt.savefig(f'NantucketInvControl_{dss_suffix}.png', dpi=300)
   plt.show()
 

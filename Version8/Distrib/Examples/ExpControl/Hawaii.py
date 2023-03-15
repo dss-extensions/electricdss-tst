@@ -1,10 +1,11 @@
 # Copyright (C) 2021-2022 Battelle Memorial Institute
+# Adapted for DSS Extensions by Paulo Meira
 #
-import win32com.client # pip install pywin32
 import math
 import numpy as np
 import matplotlib.pyplot as plt
 import os
+from expcontrol_common import get_dss_engine, dss_suffix
 
 LOAD_KW = 0.1
 LOAD_PF = 0.85
@@ -92,8 +93,8 @@ def format_case(meters, loadkw, loadpf, pvkw, invkva, vv_comment='//', vv_vw_com
 
 class DSS:
   def __init__(self):
-    self.engine = win32com.client.Dispatch("OpenDSSEngine.DSS")
-    self.engine.Start("0")
+    self.engine = get_dss_engine()
+    self.engine.Start(0)
     self.text = self.engine.Text
     self.text.Command = "clear"
     self.circuit = self.engine.ActiveCircuit
@@ -263,7 +264,7 @@ if __name__ == '__main__':
 # labs = [l.get_label() for l in lns]
 # ax.legend (lns, labs, loc='right')
 
-  plt.savefig('Fig5.png', dpi=300)
+  plt.savefig(f'Fig5_{dss_suffix}.png', dpi=300)
   plt.show()
 
 
