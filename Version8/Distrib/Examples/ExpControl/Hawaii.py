@@ -51,7 +51,7 @@ New XYcurve.voltwatt1547bch npts=4 Yarray=[0.0,0.0,1.0,1.0] Xarray=[0.0,1.06,1.1
 New XYcurve.voltwatt1547pv npts=4 Yarray=[1.0,1.0,0.0,0.0] Xarray=[0.0,1.03,1.06,2.00]
 
 {exp_vw_comment}New InvControl.vw derlist=[pvsystem.der] mode=VOLTWATT voltage_curvex_ref=rated voltwatt_curve=voltwatt1547b deltaP_factor=0.02
-{exp_comment}New ExpControl.pv1 pvsystemlist=[expq] deltaQ_factor=0.3 vreg=0.0 slope=22 vregtau=0 vregmax=1.05 preferQ=yes
+{exp_comment}New ExpControl.pv1 derlist=[pvsystem.expq] deltaQ_factor=0.3 vreg=0.0 slope=22 vregtau=0 vregmax=1.05 preferQ=yes
 
 {vv_vw_comment}New InvControl.vv_vw derlist=[pvsystem.der] combimode=VV_VW voltage_curvex_ref=rated vvc_curve1=voltvar14h 
 {vv_vw_comment}~ voltwatt_curve=voltwatt1547b deltaQ_factor=0.4 deltaP_factor=0.02 RefReactivePower=VARMAX

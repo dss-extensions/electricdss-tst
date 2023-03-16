@@ -40,7 +40,7 @@ New XYcurve.voltwatt1547pv npts=4 Yarray=[1.0,1.0,0.0,0.0] Xarray=[0.0,1.03,1.06
 
 // PVSystem in parallel with BESS1, has 0.5 kW and 3600 kVA rating to superimpose volt-var on BESS1
 New PVSystem.PV1 bus1=pcc1 phases=3 kV=13.2 irradiance=0.5 pmpp=1 kVA=3600 kvarmax=3600 kvarmaxabs=3600 varfollowinverter=false
-New InvControl.pv1 pvsystemlist=(pv1) mode=VOLTVAR RefReactivePower=VARMAX
+New InvControl.pv1 derlist=(pvsystem.pv1) mode=VOLTVAR RefReactivePower=VARMAX
 ~ voltage_curvex_ref=rated vvc_curve1=voltvar1547b deltaQ_factor=0.2 LPFtau=2.2 RateOfChangeMode=LPF // eventlog=yes
 new monitor.pv1pq element=PVSystem.PV1 terminal=1 mode=65 PPolar=NO
 
@@ -48,7 +48,7 @@ new monitor.pv1pq element=PVSystem.PV1 terminal=1 mode=65 PPolar=NO
 // the PVSystem by itself can absorb P when %cutin and %cutout < 0, but this is unstable with VOLTWATT
 New PVSystem.PV2 bus1=pcc2 phases=3 kV=13.2 irradiance=1.0 pmpp=6000 kVA=6000 kvarmax=6000 kvarmaxabs=6000
 ~ daily=cycle varfollowinverter=false %cutin=0.01 %cutout=0.01
-New InvControl.pv2 pvsystemlist=(pv2) mode=VOLTWATT
+New InvControl.pv2 derlist=(pvsystem.pv2) mode=VOLTWATT
 ~ voltage_curvex_ref=rated voltwatt_curve=voltwatt1547pv deltaP_factor=0.1 LPFtau=2.2 RateOfChangeMode=LPF // eventlog=yes
 new monitor.pv2pq element=PVSystem.PV2 terminal=1 mode=65 PPolar=NO
 // let the BESS handle charging half of the cycle, not responsive to undervoltage
