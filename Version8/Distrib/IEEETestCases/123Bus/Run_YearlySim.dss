@@ -11,7 +11,7 @@ Buscoords BusCoords.dat
 
 // Define a yearly loadshape  "loadshape1"
 // Change the path for the actual location of the example loadshape file
-Redirect  "C:\Users\prdu001\OpenDSS\Distrib\Examples\Loadshapes\LoadShape1.DSS"
+Redirect  "../../Examples/Loadshapes/LoadShape1.DSS"
 
 // New command added by McDermott in 2011
 // Uses PERL syntax to do global changes on items of the same class

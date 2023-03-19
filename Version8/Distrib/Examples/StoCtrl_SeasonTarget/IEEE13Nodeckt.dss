@@ -43,8 +43,8 @@ New Transformer.XFM1  Phases=3   Windings=2  XHL=2
 
 
 !LINE CODES
-redirect IEEELineCodes.dss
-redirect LoadShape1.dss
+redirect IEEELineCodes.DSS
+redirect LoadShape1.DSS
 
 // these are local matrix line codes
 // corrected 9-14-2011
@@ -149,7 +149,7 @@ New Line.671692    Phases=3 Bus1=671   Bus2=692  Switch=y  r1=1e-4 r0=1e-4 x1=0.
 batchedit Load..* yearly=Loadshape1
 
 ! adds the seasonal signal
-redirect seasons.dss 
+redirect Seasons.dss 
 
 Set Voltagebases=[115, 4.16, .48]
 calcv
