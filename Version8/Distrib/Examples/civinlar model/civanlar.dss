@@ -80,7 +80,7 @@ edit swtcontrol.10_14 action=o
 set voltagebases="0.12,23.0,115.0"
 calcvoltagebases
 
-buscoords civanlar_bus.csv
+buscoords civanlar_busx.csv
 
 // initially open tie switches
 // open line.5_11 1
