@@ -51,6 +51,6 @@ Set frequency=0.1
 Solve
 
 !Load file with bus coordinates, used for plotting
-LatLongCoords LatLonFile.csv  
+LatLongCoords LatLonFile.CSV 
 Show Current Elements
 plot circuit Current Max=70 dots=y labels=y subs=n C1=$00FF0000
