@@ -11,8 +11,8 @@ new circuit.4busGrdYBal   basekV=12.47 phases=3
 Set earthmodel=carson
 
 ! **** DEFINE WIRE DATA 
-new wiredata.conductor Runits=mi Rac=0.306 GMRunits=ft GMRac=0.0244  Radunits=in Diam=0.721 
-new wiredata.neutral   Runits=mi Rac=0.592 GMRunits=ft GMRac=0.00814 Radunits=in Diam=0.563 
+new wiredata.conductor Runits=mi Rac=0.306 GMRunits=ft GMRac=0.0244  Radunits=in Diam=0.721 normamps=530
+new wiredata.neutral   Runits=mi Rac=0.592 GMRunits=ft GMRac=0.00814 Radunits=in Diam=0.563 normamps=340
 
 ! **** DEFINE LINE GEOMETRY; REDUCE OUT THE NEUTRAL
 new linegeometry.4wire nconds=4 nphases=3 reduce=yes 
