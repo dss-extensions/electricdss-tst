@@ -1,0 +1,28 @@
+! Random data, just to check the Yprims for various configs
+clear
+set DefaultBaseFreq=60
+New circuit.test_capacitors bus1=1
+new Line.1-2 bus1=1 bus2=2
+new Capacitor.delta_1 bus1=2 phases=1 conn=delta kva=1329.53 kV=3.848616894418045
+new Line.2-3 bus1=2 bus2=3
+new Load.delta_1 bus1=3 phases=1 conn=delta kw=0 kvar=-1329.53 kV=3.848616894418045 model=2 Xneut=0 Rneut=0
+new Line.3-4 bus1=3 bus2=4
+new Capacitor.delta_2 bus1=4 phases=2 conn=delta kva=1329.53 kV=3.848616894418045
+new Line.4-5 bus1=4 bus2=5
+new Load.delta_2 bus1=5 phases=2 conn=delta kw=0 kvar=-1329.53 kV=3.848616894418045 model=2 Xneut=0 Rneut=0
+new Line.5-6 bus1=5 bus2=6
+new Capacitor.delta_3 bus1=6 phases=3 conn=delta kva=1329.53 kV=3.848616894418045
+new Line.6-7 bus1=6 bus2=7
+new Load.delta_3 bus1=7 phases=3 conn=delta kw=0 kvar=-1329.53 kV=3.848616894418045 model=2 Xneut=0 Rneut=0
+new Line.7-8 bus1=7 bus2=8
+new Capacitor.wye_1 bus1=8 phases=1 conn=wye kva=1329.53 kV=2.222
+new Line.8-9 bus1=8 bus2=9
+new Load.wye_1 bus1=9 phases=1 conn=wye kw=0 kvar=-1329.53 kV=2.222 model=2 Xneut=0 Rneut=0
+new Line.9-10 bus1=9 bus2=10
+new Capacitor.wye_2 bus1=10 phases=2 conn=wye kva=1329.53 kV=3.848616894418045
+new Line.10-11 bus1=10 bus2=11
+new Load.wye_2 bus1=11 phases=2 conn=wye kw=0 kvar=-1329.53 kV=3.848616894418045 model=2 Xneut=0 Rneut=0
+new Line.11-12 bus1=11 bus2=12
+new Capacitor.wye_3 bus1=12 phases=3 conn=wye kva=1329.53 kV=3.848616894418045
+new Line.12-13 bus1=12 bus2=13
+new Load.wye_3 bus1=13 phases=3 conn=wye kw=0 kvar=-1329.53 kV=3.848616894418045 model=2 Xneut=0 Rneut=0
