@@ -1,4 +1,4 @@
-# Copyright (C) 2021-2022 Battelle Memorial Institute
+# Copyright (C) 2021-2023 Battelle Memorial Institute
 #
 import win32com.client # pip install pywin32
 import math
@@ -63,10 +63,13 @@ class DSS:
 if __name__ == '__main__':
   XHL = 0.0001
   XLL = 0.0001
+  FullLoadOnly = False
   if len(sys.argv) > 1:
     if sys.argv[1] == 'xfmr':
       XHL=5.72
       XLL=0.55
+    elif sys.argv[1] == 'FL':
+      FullLoadOnly = True
   case_str = template.format(XHL=XHL, XLL=XLL)
   fp = open ('case.dss', mode='w')
   print (case_str, file=fp)
@@ -124,31 +127,53 @@ if __name__ == '__main__':
   pHeight = pWidth / 1.618
   pHeight = 7.0
 
-  fig, ax = plt.subplots(3, 1, figsize=(pWidth, pHeight), constrained_layout=True)
-  fig.suptitle ('Nantucket BESS $\Delta$P Steps with AARV', fontsize=10)
+  if FullLoadOnly:
+    fig, ax = plt.subplots(3, 1, figsize=(pWidth, pHeight), constrained_layout=True)
 
-  ax[0].plot (t, monitors['pcc1vi']['V'], label='FL $V_T$', linestyle='-', color='red')
-  ax[0].plot (t, monitors['pcc2vi']['V'], label='NL $V_T$', linestyle='--', color='blue')
-  ax[0].plot (t, monitors['pv1st']['Vreg'], label='FL $V_{ref}$', linestyle='-.', color='magenta')
-  ax[0].plot (t, monitors['pv2st']['Vreg'], label='NL $V_{ref}$', linestyle=':', color='green')
-  ax[0].set_ylabel ('Voltage [pu]')
+    ax[0].set_title ('BESS Discharges and then Charges at $\Delta$P = $\pm$ 6 MW')
+    ax[0].set_ylabel ('Real Power [MW]')
+    ax[0].plot (t, (-monitors['bess1pq']['P'] - monitors['pv1pq']['P'])*0.001, color='red')
 
-  ax[1].set_ylabel ('Real Power [kW]')
-  ax[1].plot (t, -monitors['bess1pq']['P'] - monitors['pv1pq']['P'], label='FL $\Delta$P', linestyle='-', color='red')
-  ax[1].plot (t, -monitors['bess2pq']['P'] - monitors['pv2pq']['P'], label='NL $\Delta$P', linestyle='--', color='blue')
+    ax[1].set_title ('$V_T$ Changes Slowly and $V_{ref}$ Approaches $V_T$')
+    ax[1].plot (t, monitors['pcc1vi']['V'], label='$V_T$', linestyle='-', color='red')
+    ax[1].plot (t, monitors['pv1st']['Vreg'], label='$V_{ref}$', linestyle='-.', color='blue')
+    ax[1].set_ylabel ('Voltage [pu]')
+    ax[1].legend (loc='best')
 
-  ax[2].set_ylabel ('Reactive Power [kvar]')
-  ax[2].plot (t, -monitors['bess1pq']['Q'] - monitors['pv1pq']['Q'], label='FL $\Delta$Q', linestyle='-', color='red')
-  ax[2].plot (t, -monitors['bess2pq']['Q'] - monitors['pv2pq']['Q'], label='NL $\Delta$Q', linestyle='--', color='blue')
+    ax[2].set_title ('$\Delta$Q Resists $V_T$, Reducing $d$ from 6.41% to 2.75%')
+    ax[2].set_ylabel ('Reactive Power [Mvar]')
+    ax[2].plot (t, (-monitors['bess1pq']['Q'] - monitors['pv1pq']['Q'])*0.001, color='red')
+  else:
+    fig, ax = plt.subplots(3, 1, figsize=(pWidth, pHeight), constrained_layout=True)
+    fig.suptitle ('Nantucket BESS $\Delta$P Steps with AARV', fontsize=10)
+
+    ax[0].plot (t, monitors['pcc1vi']['V'], label='FL $V_T$', linestyle='-', color='red')
+    ax[0].plot (t, monitors['pcc2vi']['V'], label='NL $V_T$', linestyle='--', color='blue')
+    ax[0].plot (t, monitors['pv1st']['Vreg'], label='FL $V_{ref}$', linestyle='-.', color='magenta')
+    ax[0].plot (t, monitors['pv2st']['Vreg'], label='NL $V_{ref}$', linestyle=':', color='green')
+    ax[0].set_ylabel ('Voltage [pu]')
+    ax[0].legend (loc='best')
+
+    ax[1].set_ylabel ('Real Power [kW]')
+    ax[1].plot (t, -monitors['bess1pq']['P'] - monitors['pv1pq']['P'], label='FL $\Delta$P', linestyle='-', color='red')
+    ax[1].plot (t, -monitors['bess2pq']['P'] - monitors['pv2pq']['P'], label='NL $\Delta$P', linestyle='--', color='blue')
+    ax[1].legend (loc='best')
+
+    ax[2].set_ylabel ('Reactive Power [kvar]')
+    ax[2].plot (t, -monitors['bess1pq']['Q'] - monitors['pv1pq']['Q'], label='FL $\Delta$Q', linestyle='-', color='red')
+    ax[2].plot (t, -monitors['bess2pq']['Q'] - monitors['pv2pq']['Q'], label='NL $\Delta$Q', linestyle='--', color='blue')
+    ax[2].legend (loc='best')
 
   xticks = [0, 1800, 3600, 5400, 7200, 9000]
   for i in range(3):
     ax[i].set_xticks (xticks)
     ax[i].set_xlim(xticks[0], xticks[-1])
-    ax[i].legend (loc='best')
     ax[i].grid()
   ax[2].set_xlabel ('Time [s]')
 
-  plt.savefig('Fig4.png', dpi=300)
+  if FullLoadOnly:
+    plt.savefig('PosterBESS.png', dpi=600)
+  else:
+    plt.savefig('Fig4.png', dpi=300)
   plt.show()
 

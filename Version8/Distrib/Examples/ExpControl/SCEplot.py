@@ -1,8 +1,9 @@
-# Copyright (C) 2021-2022 Battelle Memorial Institute
+# Copyright (C) 2021-2023 Battelle Memorial Institute
 #
 # plots the secondary circuit results from 2023 PES GM submittal
 #  invoke 'python SCEplot.py no' after 'python SCErun.py no', without ExpControl
 #  invoke 'python SCEplot.py yes' after 'python SCErun.py yes', with ExpControl
+#  invoke 'python SCEplot.py poster' with both results available
 
 import win32com.client # pip install pywin32
 import math
@@ -46,7 +47,7 @@ def tabulate_voltages (dict):
         max_vwin['xfv']['key'] = key
     else:
       print ('unrecognized voltage monitor', key)
-  print ('Voltage Summary')
+  print ('Voltage Summary [Vmin, Vmax, Vdiff, Vwin=d]')
   for tag in ['xfv', 'pvv']:
     row = summ[tag]
     print (' {:s} {:6.4f} {:6.4f} {:6.4f} {:6.4f}'.format(tag, row['vmin'], row['vmax'], row['vdiff'], row['vwin']))
@@ -95,8 +96,12 @@ def plot_pvq(ax, hrs, q):
 
 if __name__ == '__main__':
   EXPON = 'yes'
+  PosterPlot = False
   if len(sys.argv) > 1:
-    EXPON = sys.argv[1]
+    if sys.argv[1] == 'poster':
+      PosterPlot = True
+    else:
+      EXPON = sys.argv[1]
   volts = {}
   vreg = {}
   xfp = {}
@@ -139,30 +144,52 @@ if __name__ == '__main__':
   keymax = minmax_vreg['max']['key']
   keyxf = max_vwin['xfv']['key']
   keypv = max_vwin['pvv']['key']
-  if EXPON == 'yes':
+  if PosterPlot:
+    fig, ax = plt.subplots(2, 2, figsize=(2.0 * pWidth, 0.6 * pHeight), constrained_layout=True)
+    nrows=2
+    ncols=2
+    plot_pvp (ax[0,0], hrs, total_pv_p)
+    plot_pvq (ax[1,0], hrs, total_pv_q)
+    plot_setpoints (ax[0,1], hrs, vreg, keymin, keymax)
+    plot_voltages (ax[1,1], hrs, volts, keyxf, keypv)
+    ax[0,0].set_title('Cloudy Day with $\Delta$P of 80%')
+    ax[1,0].set_title('$\Delta$Q Nets to About Zero')
+    ax[0,1].set_title('Each DER has a Different $V_{ref}$')
+    ax[1,1].set_title('Transformer $d$ Reduced from 4.29% to 2.01%')
+  elif EXPON == 'yes':
     fig, ax = plt.subplots(4, 1, figsize=(pWidth, pHeight), constrained_layout=True)
     fig.suptitle ('Cloudy-Day Response of 180 DER With AARV', fontsize=10)
     plot_setpoints (ax[0], hrs, vreg, keymin, keymax)
     plot_voltages (ax[1], hrs, volts, keyxf, keypv)
     plot_pvp (ax[2], hrs, total_pv_p)
     plot_pvq (ax[3], hrs, total_pv_q)
-  else:
+  else: #  EXPON == 'no':
     nrows = 2
     fig, ax = plt.subplots(2, 1, figsize=(pWidth, 0.6 * pHeight), constrained_layout=True)
     fig.suptitle ('Cloudy-Day Response of 180 DER at Unity Power Factor', fontsize=10)
     plot_voltages (ax[0], hrs, volts, keyxf, keypv)
     plot_pvp (ax[1], hrs, total_pv_p)
 
-  ax[nrows-1].set_xlabel ('Time of Day [hr]')
   tticks = [6, 8, 10, 12, 14, 16, 18, 20]
-  for i in range(nrows):
-    ax[i].set_xlim (tticks[0], tticks[-1])
-    ax[i].set_xticks (tticks)
-    ax[i].grid()
+  if PosterPlot:
+    for j in range(ncols):
+      ax[nrows-1, j].set_xlabel ('Time of Day [hr]')
+      for i in range(nrows):
+        ax[i,j].set_xlim (tticks[0], tticks[-1])
+        ax[i,j].set_xticks (tticks)
+        ax[i,j].grid()
+  else:
+    ax[nrows-1].set_xlabel ('Time of Day [hr]')
+    for i in range(nrows):
+      ax[i].set_xlim (tticks[0], tticks[-1])
+      ax[i].set_xticks (tticks)
+      ax[i].grid()
 
-  if EXPON == 'no':
-    plt.savefig('Fig7.png', dpi=300)
-  else: # yes
+  if PosterPlot:
+    plt.savefig('PosterSCE.png', dpi=600)
+  elif EXPON == 'yes':
     plt.savefig('Fig8.png', dpi=300)
+  else: #  EXPON == 'no':
+    plt.savefig('Fig7.png', dpi=300)
   plt.show()
 
