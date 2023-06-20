@@ -20,7 +20,7 @@ New Loadshape.cycle npts=10 interval=0 hour=[0.00,0.124,0.125,0.700,0.701,1.790,
 ~ action=normalize
 
 // two similar battery systems, one for each PCC
-new Storage.bess1 bus1=bess1 phases=3 kV=13.2 kWrated=6000 kva=7000 kWhrated=48000 kWhstored=24000 
+new Storage.bess1 bus1=bess1 phases=3 kV=13.2 kWrated={DKW} kva=7000 kWhrated=48000 kWhstored=24000 
 ~ dispmode=follow daily=cycle
 new transformer.bess1 windings=2 buses=[pcc1 BESS1] conns=[w,w] kvas=[7500,7500] kvs=[13.2,13.2] xhl={XHL} %loadloss={XLL}
 new Storage.BESS2 like=BESS1 bus1=BESS2
@@ -64,7 +64,7 @@ New Loadshape.cycle npts=10 interval=0 hour=[0.00,0.124,0.125,0.700,0.701,1.790,
 ~ action=normalize
 
 // two similar battery systems, one for each PCC
-new Storage.bess1 bus1=bess1 phases=3 kV=13.2 kWrated=6000 kva=7000 kWhrated=48000 kWhstored=24000 
+new Storage.bess1 bus1=bess1 phases=3 kV=13.2 kWrated={DKW} kva=7000 kWhrated=48000 kWhstored=24000 
 ~ dispmode=follow daily=cycle
 new transformer.bess1 windings=2 buses=[pcc1 BESS1] conns=[w,w] kvas=[7500,7500] kvs=[13.2,13.2] xhl={XHL} %loadloss={XLL}
 new Storage.BESS2 like=BESS1 bus1=BESS2
@@ -97,7 +97,7 @@ New Loadshape.cycle npts=10 interval=0 hour=[0.00,0.124,0.125,0.700,0.701,1.790,
 ~ action=normalize
 
 // two similar battery systems, one for each PCC
-new Storage.bess1 bus1=bess1 phases=3 kV=13.2 kWrated=6000 kva=7000 kWhrated=48000 kWhstored=24000 
+new Storage.bess1 bus1=bess1 phases=3 kV=13.2 kWrated={DKW} kva=7000 kWhrated=48000 kWhstored=24000 
 ~ dispmode=follow daily=cycle
 new transformer.bess1 windings=2 buses=[pcc1 BESS1] conns=[w,w] kvas=[7500,7500] kvs=[13.2,13.2] xhl=0.1 %loadloss=0.1
 New Monitor.bess5pq Element=Storage.BESS1 Terminal=1 mode=65 PPolar=No
@@ -139,6 +139,8 @@ solve
 solve mode=daily number=9000 stepsize=1s
 """
 
+DKW = 6000.0 # 2000.0
+
 class DSS:
   def __init__(self):
     self.engine = win32com.client.Dispatch("OpenDSSEngine.DSS")
@@ -160,7 +162,7 @@ if __name__ == '__main__':
       FullLoadOnly = True
 
   # running ExpControl cases; channel 1 = Full-Load Impedance, channel 2 = No-Load Impedance
-  case_str = template.format(XHL=XHL, XLL=XLL)
+  case_str = template.format(XHL=XHL, XLL=XLL, DKW=DKW)
   fp = open ('case.dss', mode='w')
   print (case_str, file=fp)
   fp.close ()
@@ -191,7 +193,7 @@ if __name__ == '__main__':
   t = np.linspace(0.0, npts - 1.0, npts)
 
   # running Unity Power Factor cases for baseline; channel 3 = Full-Load Impedance, channel 4 = No-Load Impedance
-  case_str = upf_template.format(XHL=XHL, XLL=XLL)
+  case_str = upf_template.format(XHL=XHL, XLL=XLL, DKW=DKW)
   fp = open ('case.dss', mode='w')
   print (case_str, file=fp)
   fp.close ()
@@ -218,7 +220,7 @@ if __name__ == '__main__':
   nopv = np.zeros(npts)
 
   # running Volt-Var Cat B case; channel 5 = Full-Load Impedance
-  case_str = dflt_template
+  case_str = dflt_template.format(DKW=DKW)
   fp = open ('case.dss', mode='w')
   print (case_str, file=fp)
   fp.close ()
@@ -270,7 +272,7 @@ if __name__ == '__main__':
   if FullLoadOnly: # summary plot for the 2023 PES General Meeting
     fig, ax = plt.subplots(3, 1, figsize=(pWidth, pHeight), constrained_layout=True)
 
-    ax[0].set_title ('BESS Discharges and then Charges at $\Delta$P = $\pm$ 6 MW')
+    ax[0].set_title ('BESS Discharges and then Charges at $\Delta$P = $\pm$ {:.1f} MW'.format(DKW*0.001))
     ax[0].set_ylabel ('Real Power [MW]')
     ax[0].plot (t, (-monitors['bess1pq']['P'] - monitors['pv1pq']['P'])*0.001, color='red')
 
