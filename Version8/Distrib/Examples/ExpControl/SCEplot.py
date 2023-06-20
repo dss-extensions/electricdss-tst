@@ -155,7 +155,7 @@ if __name__ == '__main__':
     ax[0,0].set_title('Cloudy Day with $\Delta$P of 80%')
     ax[1,0].set_title('$\Delta$Q Nets to About Zero')
     ax[0,1].set_title('Each DER has a Different $V_{ref}$')
-    ax[1,1].set_title('Transformer $d$ Reduced from 4.29% to 2.01%')
+    ax[1,1].set_title('Worst PV $d$ Reduced from 4.29% to 2.01%')
   elif EXPON == 'yes':
     fig, ax = plt.subplots(4, 1, figsize=(pWidth, pHeight), constrained_layout=True)
     fig.suptitle ('Cloudy-Day Response of 180 DER With AARV', fontsize=10)
