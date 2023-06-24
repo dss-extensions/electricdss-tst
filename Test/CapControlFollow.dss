@@ -1,0 +1,19 @@
+// A sample case to validate CapControl Follow mode, added for DSS-Extensions.
+
+Redirect "IEEE13_LineAndCableSpacing.dss"
+
+Set Controlmode=TIME
+Set Mode=Daily
+
+BatchEdit Load..* Daily=Default
+New LoadShape.Cap1Shape npts=24 interval=1 mult=(0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0)
+New LoadShape.Cap2Shape npts=24 interval=1 mult=(0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1)
+New CapControl.Cap1Ctrl Capacitor=Cap1 ControlSignal=Cap1Shape Type=follow
+New CapControl.Cap2Ctrl Capacitor=Cap2 Type=follow ControlSignal=Cap2Shape
+New Monitor.Cap1Mon element=Capacitor.Cap1 terminal=1 mode=1
+New Monitor.Cap2Mon element=Capacitor.Cap2 terminal=1 mode=1
+
+Solve
+
+// plot monitor object=Cap1Mon
+// plot monitor object=Cap2Mon
