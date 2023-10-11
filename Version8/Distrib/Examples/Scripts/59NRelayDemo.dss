@@ -6,7 +6,7 @@ Clear
 
 New Circuit.59Nrelay BasekV=0.48
 New line.Line1 Bus1=sourcebus  Bus2=Genbus
-New Generator.gen1 bus1=genbus kV=0.48 kW=100 
+New Generator.gen1 bus1=genbus kV=0.48 kW=100 D=1
 
 ! Pattern for 1-phase PTs  (1:1 ratio)
 New Xfmrcode.PT phases=1 windings=2 kvs=[.48 .48] kVAs=[10 10] XHL=10 conns=[wye wye]
