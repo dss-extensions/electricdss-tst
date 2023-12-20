@@ -36,7 +36,7 @@ New GICTransformer.T14 busH=4 busX=3 busNX=4.4.4.4 R1=0.04 R2=0.06 type=Auto
 New GICTransformer.T15 busH=15 busX=16 busNX=15.4.4.4 R1=0.04 R2=0.06 type=Auto
 
 ! NOTE (2023-12-05): added the default kV for capacitors and reactors since it is required. 
-! The value may be inadequate, but we do want to change the results, etc.
+! The value may be inadequate, but we do not want to change the results, etc.
 New Capacitor.T1 bus1=2.4 bus2=2.5 phases=1 cuf=10 kV=12.47
 
 !Substation Ground Grid Data

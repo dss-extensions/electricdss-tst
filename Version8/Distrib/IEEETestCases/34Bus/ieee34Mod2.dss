@@ -15,7 +15,7 @@ New Transformer.SubXF Phases=3 Windings=2 Xhl=0.001 ppm=0    ! Very low %Z and n
 ~ wdg=2 bus=800       conn=wye   kv=24.9  kva=25000   %r=0.0005
 
 ! import line codes with phase impedance matrices
-Redirect        IEEELineCodes.dss   ! assumes original order is ABC rather than BAC
+Redirect        IEEELineCodes.DSS   ! assumes original order is ABC rather than BAC
 
 ! Define Lines and mid-point buses
 New Line.L1      Phases=3 Bus1=800.1.2.3     Bus2=802.1.2.3     LineCode=300  Length=2.58   units=kft
