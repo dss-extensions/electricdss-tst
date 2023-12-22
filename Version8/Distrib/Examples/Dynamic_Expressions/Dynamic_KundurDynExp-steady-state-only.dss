@@ -1,0 +1,59 @@
+// Master for Simple Demo from Kundur's book pg.843 Example 13.1 //
+
+// GIVEN PARAMETERS
+//
+// System Base: Vbase=24kV  Sbase=2200MVA
+//
+// Generator: Rating=2200MVA kV=24 Xdp=0.3  H=3.5 MWs/MVA  Damping Coefficient (Kd) = 0
+// Initial Generator Conditions: Vpu=1.0  Vangle=28.34  P=0.9  Q=0.436 (overexcited)
+//
+// Initial SourceBus Conditions: Vpu=0.90081  Vangle=0
+//
+// Step-Up Transformer: Xt=j0.15pu
+//
+// Parallel Lines from transformer to SourceBus
+// Circuit 1: Xpu = j0.5
+// Circuit 2: Xpu = j0.93
+//
+// Scenario: 3-phase bolted fault to ground located on Circuit 2 near transformer terminal at t=1s and cleared at tc=0.07s by opening Circuit 2
+
+
+ClearAll
+
+// Set the base frequency to 60Hz
+Set DefaultBaseFrequency=60
+
+Var @Zbase=53.615
+
+// quasi-ideal source for inf. bus at SourceBus with initial conditions Vpu=0.90081 and Vangle = 0
+New Circuit.SimpleDemo 
+~ BasekV=345 pu=0.90081 phases=3
+~ Angle = 0.0 Model=ideal puZideal=[ 1.0e-7, 0.00001]  BaseMVA=2220
+
+// New parallel lines from SourceBus to high side of transformer
+New Line.Source_HT_1 Bus1=SourceBus Bus2=HT  R1=0 X1=(0.5 @Zbase *) R0=0 X0=(0.5 @Zbase *) C1=0 C0=0 length=1 Units=mi
+New Line.Source_HT_2 Bus1=SourceBus Bus2=HT  R1=0 X1=(0.93 @Zbase *) R0=0 X0=(0.93 @Zbase *) C1=0 C0=0 length=1 Units=mi
+
+// New Transformer with reactance j0.15
+New Transformer.Step_Up Phases=3 Windings=2 XHL=15 ppm=0
+~ buses=(HT LT) conns='wye wye' kvs="345 24" kvas="2220000 2220000" %Loadloss=0
+
+New DynamicExp.myDiffEq nvariables=6 varnames=[Speed Mass PShaft Pterm Damp theta] 
+~ expression=[Speed dt = -1 Mass / ( Pterm Damp Speed * + Pshaft - ) *; theta dt = Speed]
+
+// Constant kW at specified power factor
+// Define X/R very high so that R will be small
+// Corrected MVA from 2200 to 2220
+New Generator.G1 Bus1=LT kV=24 kW=(2220000 0.9 *) kvar=(2220000 0.436 *)   Model=1 vminpu= 0.80  Vmaxpu=1.4 DynamicEq=myDiffEq
+~ MVA=2220  XRdp=1e12  Xdp=0.3  Xdpp=0.25
+// Initializes the dynamic equation's state variables
+~ Damp = 0 PShaft = P0 Pterm = P Speed = 0 theta = Edp
+~ Mass = (3.5 2 * 2220000000 376.99112 / *)
+~ DynOut = [Speed theta]
+
+// Set all voltage bases in model
+set voltagebases=[345, 24]
+calcv
+
+//solve the steady-state solution
+solve
