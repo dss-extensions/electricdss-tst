@@ -1,8 +1,8 @@
 //------------------------------------------------------------------------------------------------------------------------------//
 // Dados dos transformadores.
-//         SubestaÁ„o.
-//ObservaÁ„o: A tens„o na saÌda desse trafo na publicaÁ„o do IEEE È igual a 1 pu. 
-//            Portanto, para a simulaÁ„o È considerado a imped‚ncia do trafo muito 
+//         Subesta√ß√£o.
+//Observa√ß√£o: A tens√£o na sa√≠da desse trafo na publica√ß√£o do IEEE √© igual a 1 pu. 
+//            Portanto, para a simula√ß√£o √© considerado a imped√¢ncia do trafo muito 
 //            pequena, ou seja, diferente do publicado.
 
 New Transformer.Subestacao phases=3 windings=2   xhl=0.0001

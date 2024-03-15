@@ -1,5 +1,5 @@
 //--------------------------------------------------------------------------------------------------//
-// Escola Politécnica da USP
+// Escola PolitÃ©cnica da USP
 // PEA
 // Autor
 //        Nome: Paulo Radatz
@@ -10,7 +10,7 @@
 // Modelagem da rede teste IEEE 13 barras
 //------------------------------------------------------------------------------------------------------------------------------//
 
-// No Apêndice A do meu TCC se encontra toda a explicação para rodar os diferentes cenários.
+// No ApÃªndice A do meu TCC se encontra toda a explicaÃ§Ã£o para rodar os diferentes cenÃ¡rios.
 
 //------------------------------------------------------------------------------------------------------------------------------//
 //Reinicia o programa
@@ -59,7 +59,7 @@ Redirect solve_daily.dss
 !solve  maxcontrol=100
 
 //--------------------------------------------------------------------------------------------------//
-//Opções de cálculo
+//OpÃ§Ãµes de cÃ¡lculo
 
 !set controlmode=static
 !set mode=daily stepsize=1.0h number=21
