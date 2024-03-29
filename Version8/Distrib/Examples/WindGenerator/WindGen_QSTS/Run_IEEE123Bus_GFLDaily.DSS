@@ -1,0 +1,80 @@
+! Annotated "Run" file for the IEEE 123 Bus Test Case
+! Modified for demonstrating the grid forming and grid following capabilites
+! added to OpenDSS on 10/28/2022
+
+Compile (IEEE123Master.dss)
+
+! 'Compile' differs from "redirect" in that it changes the default directory 
+! to the one in which the referenced file is located.
+! 'Redirect' returns to the directory from which it was invoked.
+
+! After compiling, the next series of script commands modify to the regulator control definitions to
+! limit the maximum tap change to 1 per solution control iteration. In most cases, this will 
+! allow the standard DSS solution algorithm to better represent an actual control.
+! Note the time delay is also chnaged. This forces the regulator at the head of the feeder to move first.
+
+RegControl.creg1a.maxtapchange=1  Delay=15  !Allow only one tap change per solution. This one moves first
+RegControl.creg2a.maxtapchange=1  Delay=30  !Allow only one tap change per solution
+RegControl.creg3a.maxtapchange=1  Delay=30  !Allow only one tap change per solution
+RegControl.creg4a.maxtapchange=1  Delay=30  !Allow only one tap change per solution
+RegControl.creg3c.maxtapchange=1  Delay=30  !Allow only one tap change per solution
+RegControl.creg4b.maxtapchange=1  Delay=30  !Allow only one tap change per solution
+RegControl.creg4c.maxtapchange=1  Delay=30  !Allow only one tap change per solution
+
+! The default maximum control iterations is 10. With so many regulators each moving only one tap at a time,
+! this is insufficient for the 123-bus test case, which will need 15 control iterations for the initial solution.
+! Therefore, the 'MaxControlIter' option is set to 30 to be safe.
+
+Set MaxControlIter=30
+
+! Solve executes the solution for the present solution mode, which is "snapshot".
+
+New EnergyMeter.Feeder Line.L115 1
+
+! This case considers the default load shape to represent the load demand in time for daily simulations
+! Adding DER
+
+new Transformer.TWindG phases=3 windings=2 buses=(WindGB 101) conns=(wye delta) kvs=(0.69 4.16) kvas=(1000 1000) taps='1 1' XHL=0.5
+
+! Add WindGen variables, references and object
+
+New XYcurve.PLosses npts=11 
+~ yarray=[43.7934 25.71 16.5371 11.45 8.422 6.5199 5.2913 4.4653 3.37 2.34 1.31] 
+~ xarray=[5 6 7 8 9 10 11 12 13 14 15]
+
+New Loadshape.WindData npts=24 mult=[10 10.1 9.98 10.012 10.056 10.085 10.1 10.085 10.087 10.102 10.075 10.06 10.056 10.104 10.098 10.085 10.0756 10.065 10.0765 10.07 10.08 10.095 11.1 10.9]
+
+New XYcurve.generic npts=8 yarray=[1 1 0.44 0 0 -0.44 -1 -1] xarray=[0.09 0.9 0.95 0.98 1.02 1.05 1.1 1.5]
+
+New WindGen.wtg1 phases=3 bus1=WindGB kV=0.69 kVA=1200.0         
+~ model=1 vwind=12 ag=(1 90 /) Lamda=7.95 PF=0.88
+~ VV_Curve=generic Rad=30
+~ PLoss=PLosses vmaxpu=1.5 daily=WindData QMode=2
+
+
+! Monitors
+
+new monitor.WindGen   element=WindGen.wtg1 terminal=1 mode=3
+new monitor.WindGenS  element=WindGen.wtg1 terminal=1 mode=1
+new monitor.WindGenPQ element=WindGen.wtg1 terminal=1 mode=1 ppolar=No
+new monitor.VI_Sys    element=Line.L101 terminal=1 mode=0
+
+calcv
+solve
+Buscoords BusCoords.dat   ! load in bus coordinates
+
+! Show some selected results
+
+plot profile phases=all
+
+set mode=daily number=24
+
+set time=(0,0)
+solve
+
+! Export monitors
+export monitors all
+
+
+
+
