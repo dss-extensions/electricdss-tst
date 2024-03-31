@@ -17,8 +17,8 @@ new line.feeder phases=3 bus1=xfbus bus2=xfload length=0.1
 new Transformer.Service phases=3 windings=2 buses=(xfload,network)
 ~  kvas=(300000,300000) conns=(delta,wye) kvs=(13.8,0.208) 
 ~  xhl=7.00 %loadloss=0.4
-// new loadshape.ldc_2007 npts=8678 interval=1 csvfile=ldc_2007.dat action=normalize
-new loadshape.ldc_2007 npts=230 interval=0 csvfile=ldc_2007_approx.dat action=normalize
+new loadshape.ldc_2007 npts=8678 interval=1 csvfile=ldc_2007.dat action=normalize
+// new loadshape.ldc_2007 npts=230 interval=0 csvfile=ldc_2007_approx.dat action=normalize
 new Load.cust bus1=network kv=0.208 kva=320000 pf=0.88 vminpu=0.9 vmaxpu=1.1 yearly=ldc_2007
 
 new Capacitor.capbank phases=3 bus1=xfbus kvar=200000 numsteps=10 kv=13.8
