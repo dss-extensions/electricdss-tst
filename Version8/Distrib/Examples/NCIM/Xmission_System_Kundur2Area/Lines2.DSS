@@ -1,0 +1,15 @@
+! Line definitions
+
+Var @Zbase=529
+
+New linecode.default_line R1=(0.0001 @Zbase *)  X1=(0.001 @Zbase *)   R0=(0.0001 @Zbase *)  X0=(0.001 @Zbase *)    
+~ B1=(0.00175 @Zbase / 1e6 *)  B0= (0.00175 @Zbase / 1e6 *) Units = km
+
+New line.5_6   Bus1=B5   Bus2=B6	Length=25	linecode=default_line Units=km
+New line.6_7   Bus1=B6   Bus2=B7	Length=10	linecode=default_line Units=km
+New line.7_8   Bus1=B7   Bus2=B8	Length=110	linecode=default_line Units=km
+New line.7_8b  Bus1=B7   Bus2=B8	Length=110	linecode=default_line Units=km
+New line.8_9   Bus1=B8   Bus2=B9	Length=110	linecode=default_line Units=km
+New line.8_9b  Bus1=B8   Bus2=B9	Length=110	linecode=default_line Units=km
+New line.9_10   Bus1=B9   Bus2=B10	Length=10	linecode=default_line Units=km
+New line.10_11   Bus1=B10  Bus2=B11	Length=25	linecode=default_line Units=km

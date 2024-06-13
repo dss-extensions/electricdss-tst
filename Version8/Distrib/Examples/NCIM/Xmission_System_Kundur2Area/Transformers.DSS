@@ -1,0 +1,13 @@
+! Transformer definitions
+
+New Transformer.1_5 Phases=3 Windings=2 %R=0 XHL=15 %Rs=[0 0]
+~ buses=(B1 B5) conns='wye wye' kvs="20 230" kvas="900000 900000" %Loadloss=0 taps=[1.0 1.0]  PPM=0
+
+New Transformer.2_6 Phases=3 Windings=2 %R=0 XHL=15 %Rs=[0 0]
+~ buses=(B2 B6) conns='wye wye' kvs="20 230" kvas="900000 900000" %Loadloss=0 taps=[1.0 1.0]  PPM=0
+
+New Transformer.4_10 Phases=3 Windings=2 %R=0 XHL=15 %Rs=[0 0]
+~ buses=(B4 B10.1.2.3) conns='wye wye' kvs="20 230" kvas="900000 900000" %Loadloss=0 taps=[1.0 1.0] PPM=0
+
+New Transformer.3_11 Phases=3 Windings=2 %R=0 XHL=15 %Rs=[0 0]
+~ buses=(B3 B11) conns='wye wye' kvs="20 230" kvas="900000 900000" %Loadloss=0 taps=[1.0 1.0] PPM=0

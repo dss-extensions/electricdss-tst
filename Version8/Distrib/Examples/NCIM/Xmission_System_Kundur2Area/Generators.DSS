@@ -1,0 +1,9 @@
+
+! Generator Definitions
+
+
+!New Generator.G1 Bus1=B1 conn=wye kV = 20 kW=700000  kvar=185000  Model=3 Vpu=1.03 Maxkvar = 600000 Minkvar = -600000 MVA=900 Xd=0.000001 XRdp=1e12 Xdp=0.3 Xdpp=0.25 H=6.175 D = 0 status=fixed  Vmax=1.2 Vmin=0.6	pvfactor=0.403
+New Generator.G2 Bus1=B2 conn=wye kV = 20 kW=700000  kvar=235000  Model=3 Vpu=1.01 Maxkvar = 600000 Minkvar = -600000 MVA=900 Xd=0.000001 XRdp=1e12 Xdp=0.3 Xdpp=0.25 H=6.5 D = 0 status=fixed 	  Vmax=1.2 Vmin=0.6	pvfactor=1
+New Generator.G3 Bus1=B3 conn=wye kV = 20 kW=719000  kvar=176000  Model=3 Vpu=1.03 Maxkvar = 600000 Minkvar = -600000 MVA=900 Xd=0.000001 XRdp=1e12 Xdp=0.3 Xdpp=0.25 H=6.175 D = 0 status=fixed  Vmax=1.2 Vmin=0.6	pvfactor=1
+New Generator.G4 Bus1=B4 conn=wye kV = 20 kW=700000  kvar=202000  Model=3 Vpu=1.01 Maxkvar = 600000 Minkvar = -600000 MVA=900 Xd=0.000001 XRdp=1e12 Xdp=0.3 Xdpp=0.25 H=6.175 D = 0 status=fixed  Vmax=1.2 Vmin=0.6	pvfactor=1 !debugtrace=yes
+

@@ -1,0 +1,6 @@
+!New Load.B7  Bus1=B7  kV=230 kW= 96700 kvar=10000 vminpu=0.8 vmaxpu=1.30 model=1 
+!New Load.B9  Bus1=B9  kV=230 kW=176700  kvar=10000  vminpu=0.8 vmaxpu=1.30 model=1 
+
+New Load.B7  Bus1=B7  kV=230 kW=  967000 kvar=100000 vminpu=0.8 vmaxpu=1.30 model=1 
+New Load.B9  Bus1=B9  kV=230 kW= 1767000 kvar=100000 vminpu=0.8 vmaxpu=1.30 model=1 
+

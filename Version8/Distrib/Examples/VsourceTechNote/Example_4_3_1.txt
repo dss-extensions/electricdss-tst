@@ -1,0 +1,15 @@
+Clear
+New Circuit.ThA bus1=A_internal.1 phases=1 pu=1.1 basekv=7.97
+~ Z0=[1e-6, 1e-6] Z1=[1e-6, 1e-6]
+New Vsource.ThB bus1=A_internal.2 phases=1 pu=1.1 basekv=7.97
+~ Z0=[1e-6, 1e-6] Z1=[1e-6, 1e-6]
+New Vsource.ThC bus1=A_internal.3 phases=1 pu=1.1 basekv=7.97
+~ Z0=[1e-6, 1e-6] Z1=[1e-6, 1e-6]
+
+New Reactor.SourceImpedance bus1=A_internal.1.2.3 bus2=A.1.2.3
+~ Z0=[0.025862916, 0.077588748] Z1=[0.023094242, 0.092376969]
+
+Set voltagebases=[13.8]
+Calcvoltagebases
+
+Solve

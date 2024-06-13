@@ -1,0 +1,11 @@
+Clear
+New Circuit.TheveninEquivalent bus1=A bus2=A.4.4.4 pu=1.1 basekv=13.8 
+~ Z0=[0.025862916, 0.077588748] Z1=[0.023094242, 0.092376969]
+
+New Reactor.Rg bus1=A.4 bus2=A.0 phases=1
+~ R= 10 ! 10 Ohms grounding resistance
+
+Set voltagebases=[13.8]
+Calcvoltagebases
+
+Solve

@@ -1,0 +1,41 @@
+
+Clear   ! always have this as the first line before defining a new circuit
+
+set DefaultBaseFrequency=60
+
+New Circuit.KUNDUR_TWO_AREA pu=1.03  bus=b1  basekv=20 angle=20.2 MVAsc3=1e6 MVAsc1=1e6
+  
+Redirect Generators.DSS
+
+Redirect Lines2.DSS
+
+Redirect Transformers.DSS
+
+Redirect Loads.DSS
+
+Redirect Capacitors.DSS
+
+
+
+! Let the openDSS estimate the voltage bases
+Set Voltagebases=[230,20]    ! legal bases for this problem
+Calcvoltagebases
+
+set algorithm=NCIM
+
+set MaxIterations = 200
+set MinIterations = 1 tolerance=1e-6 !IgnoreGenQLimits=Yes
+solve
+
+export deltaF
+export deltaZ
+export jacobian
+
+show V ln Nodes
+show powers mva elem
+summary
+
+
+
+
+

@@ -1,0 +1,8 @@
+Clear
+New Circuit.TheveninEquivalent bus1=A pu=1.1 basekv=13.8 
+~ Z0=[0.025862916, 0.077588748] Z1=[0.023094242, 0.092376969]
+
+Set voltagebases=[13.8]
+Calcvoltagebases
+
+Solve

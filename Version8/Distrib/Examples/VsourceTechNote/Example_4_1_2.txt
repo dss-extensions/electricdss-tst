@@ -1,0 +1,8 @@
+Clear
+New Circuit.TheveninEquivalent bus1=A pu=1.1 basekv=13.8 
+~ MVAsc3=2000 x1r1=4 MVAsc1=2100 x0r0=3
+
+Set voltagebases=[13.8]
+Calcvoltagebases
+
+Solve
