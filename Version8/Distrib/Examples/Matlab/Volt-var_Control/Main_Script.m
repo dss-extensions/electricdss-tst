@@ -22,7 +22,7 @@ plot(VVar_Curve(1,:),VVar_Curve(2,:));
 axis([0.4 1.6 -1.1 1.1]);
 grid on;
 DSSText.Command =   'Clear'; 
-DSSText.Command =   'compile (C:\Program Files\OpenDSS\IEEETestCases\123Bus\IEEE123Master.DSS)';
+DSSText.Command =   'compile (C:/Program Files/OpenDSS/IEEETestCases/123Bus/IEEE123Master.dss)';
 
 % Creates the generator to emulate the storage device
 DSSText.Command =   'New generator.StorageSm bus1=79 kv=4.16 phases=3 kw=0.1 kvar=0.1';

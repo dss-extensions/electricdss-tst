@@ -10,7 +10,7 @@ clc;
 DSSCircuit      =   DSSObj.ActiveCircuit;
 DSSBuses        =   DSSCircuit.ActiveBus;
 disp('Compiling circuit');
-DSSText.Command =   'compile "C:\Program Files\OpenDSS\IEEETestCases\13Bus\IEEE13Nodeckt.dss"';
+DSSText.Command =   'compile "C:/Program Files/OpenDSS/IEEETestCases/13Bus/IEEE13Nodeckt.dss"';
 DSSText.Command =   'set maxiterations=1000 maxcontroliter=1000';   % Just in case
 DSSCircuit.Solution.Solve;
 % Random Bus Allocation

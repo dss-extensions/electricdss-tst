@@ -1,6 +1,6 @@
 [DSSStartOK, DSSObj, DSSText] = DSSStartup;
 if DSSStartOK
-    DSSText.command='Compile (C:\opendss\IEEETestCases\123Bus\IEEE123Master.dss)';
+    DSSText.command='Compile (C:/Program Files/OpenDSS/IEEETestCases/123Bus/IEEE123Master.dss)';
     % Set up the interface variables
     DSSCircuit=DSSObj.ActiveCircuit;
     DSSSolution=DSSCircuit.Solution;
@@ -36,7 +36,7 @@ if DSSStartOK
     DSSSolution.DoControlActions;
     DSSCircuit.CtrlQueue.Show;
 
-    DSSText.Command='Buscoords Buscoords.dat   ! load in bus coordinates';
+    DSSText.Command='Buscoords BusCoords.dat   ! load in bus coordinates';
 else
     a = 'DSS Did Not Start'
     disp(a)

@@ -4,10 +4,10 @@ Clear
 
 !NEW SYSTEM DEFINITION------------------------------------------------------------
 
+set DefaultBaseFreq=60
+
 New circuit.IEEE_519
 ~ bus1=SourceBus.1.2.3 Phases=3 basekv=115 pu=1.0001 Angle=30 Frequency=60 Mvasc3=20000 Mvasc1=21000 
-
-set DefaultBaseFreq=60
 
 !REDIRECT TO SPECTRUM CODES--------------------------------------------
 

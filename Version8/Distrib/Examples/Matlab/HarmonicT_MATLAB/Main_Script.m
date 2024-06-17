@@ -17,7 +17,7 @@
     DSSCircuit  = DSSObj.ActiveCircuit;
     DSSSolution = DSSCircuit.Solution;
     DSSLoad     = DSSCircuit.Loads;
-    Projpath    = [pwd,'\IEEE_519.dss'];
+    Projpath    = [pwd,'/IEEE_519.DSS'];
     DSSText.Command='Clear';
     DSSText.Command=['Compile "',Projpath,'"'];    
 %Gets the names and nominal powers (P) for each load    
