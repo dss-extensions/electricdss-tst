@@ -29,8 +29,8 @@ new circuit.IEEE13Nodeckt
 ! The published test case starts at 1.0 per unit at Bus 650. To make this happen, we will change the impedance
 ! on the transformer to something tiny by dividing by 1000 using the DSS in-line RPN math
 New Transformer.Sub Phases=3 Windings=2   XHL=(8 1000 /)
-~ wdg=1 bus=SourceBus   conn=delta  kv=115  kva=5000   %r=(.5 1000 /)  XHT=4
-~ wdg=2 bus=650             conn=wye    kv=4.16  kva=5000   %r=(.5 1000 /)   XLT=4
+~ wdg=1 bus=SourceBus   conn=delta  kv=115  kva=5000   %r=(.5 1000 /)
+~ wdg=2 bus=650             conn=wye    kv=4.16  kva=5000   %r=(.5 1000 /)
 
 ! FEEDER 1-PHASE VOLTAGE REGULATORS
 ! Define low-impedance 2-wdg transformer
@@ -50,8 +50,8 @@ new regcontrol.Reg3  transformer=Reg3 winding=2  vreg=122  band=2  ptratio=20 ct
 
 !TRANSFORMER DEFINITION 
 New Transformer.XFM1  Phases=3   Windings=2  XHL=2
-~ wdg=1 bus=633       conn=Wye kv=4.16    kva=500    %r=.55     XHT=1
-~ wdg=2 bus=634       conn=Wye kv=0.480    kva=500    %r=.55   XLT=1
+~ wdg=1 bus=633       conn=Wye kv=4.16    kva=500    %r=.55
+~ wdg=2 bus=634       conn=Wye kv=0.480    kva=500    %r=.55
 
 
 !LINE CODES
