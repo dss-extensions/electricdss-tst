@@ -82,17 +82,17 @@ fileedit [YDY_Test3_EXP_VOLTAGES.CSV]
 Export Currents
 fileedit [YDY_Test3_EXP_CURRENTS.CSV]
 
-/*  SLG Fault to ground at Bus B4
-New Fault.SLGFault phases=1 Bus1=B4.1 Bus2=B4.0
-! Disable Loads
-Batchedit Load..* Enabled=no
-! Direct mode solution -- loads ignored
-Solve mode=Direct
-// Show results
-Show Currents residual=yes Elements
-Show Powers kva Elements
-Show Voltage LN Nodes
-*/
+//  SLG Fault to ground at Bus B4
+// New Fault.SLGFault phases=1 Bus1=B4.1 Bus2=B4.0
+// ! Disable Loads
+// Batchedit Load..* Enabled=no
+// ! Direct mode solution -- loads ignored
+// Solve mode=Direct
+// // Show results
+// Show Currents residual=yes Elements
+// Show Powers kva Elements
+// Show Voltage LN Nodes
+
 
 !  SLG Fault to ground at Bus B2
 New Fault.SLGFault phases=1 Bus1=B2.1 Bus2=B2.0

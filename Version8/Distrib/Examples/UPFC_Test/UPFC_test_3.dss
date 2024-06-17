@@ -66,8 +66,6 @@ solve
 set mode=daily number=3700  ! 37438 
 solve
 
-!/**************************
-
 show monitor VIout
 show monitor VIoutu
 show monitor VIin
@@ -80,7 +78,3 @@ Plot monitor object= viin channels=(1 )
 
 select upfc.test 1
 losses
-
-!***********/
-
-

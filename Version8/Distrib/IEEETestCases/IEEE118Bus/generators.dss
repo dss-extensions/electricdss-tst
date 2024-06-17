@@ -1,5 +1,5 @@
 
-/********************************************************************************************************  generators definitions for 138.0kV  ***/
+// *******************************************************************************************************  generators definitions for 138.0kV
 
 New Generator.Gen_at_1_1    bus1=1_riversde   phases=3 kV=138.0 kW=0.001              model=3 PVFactor=0.005 Vpu=0.955              maxkvar=15000.0   minkvar=-5000.0
 New Generator.Gen_at_4_1    bus1=4_nwcarlsl   phases=3 kV=138.0 kW=0.001              model=3 PVFactor=0.005 Vpu=0.998              maxkvar=300000.0  minkvar=-300000.0
@@ -57,5 +57,5 @@ New Generator.Gen_at_112_1  bus1=112_danville phases=3 kV=138.0 kW=0.001        
 New Generator.Gen_at_113_1  bus1=113_deercrk  phases=3 kV=138.0 kW=0.001              model=3 PVFactor=0.005 Vpu=0.993              maxkvar=200000.0  minkvar=-100000.0
 New Generator.Gen_at_116_1  bus1=116_kygercrk phases=3 kV=138.0 kW=0.001              model=3 PVFactor=0.005 Vpu=1.005              maxkvar=1000000.0 minkvar=-1000000.0
 
-/********************************************************************************************************  generators definitions for 20.0kV  ***/
+// *******************************************************************************************************  generators definitions for 20.0kV
 

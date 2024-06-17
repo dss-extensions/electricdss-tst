@@ -10,30 +10,29 @@ New Transformer.wind_up  phases=3 xhl=5.750000
 ~ wdg=1 bus=trafo_wind kV=0.69 kVA=750.000000 conn=wye
 ~ wdg=2 bus=680 kV=4.16 kVA=750.000000 conn=wye
 
-/*
+
 //------------------------------------------------------------------------------------------------------------------------------//
 // Dados do regulador.
 
-//Fase A
-New Transformer.wind_upA phases=1 xhl=0.01 
-~ wdg=1 bus=trafo_wind.1   kV=0.39837   kva=300      
-~ wdg=2 bus=680.1   kV=2.4017    kva=300     
-!New regcontrol.wind_upA  transformer=wind_upA
-!~ winding=1  vreg=122  band=2  ptratio=3.26 
-
-//Fase B
-New Transformer.wind_upB phases=1 xhl=0.01 
-~ wdg=1 bus=trafo_wind.2   kV=0.39837    kva=300        
-~ wdg=2 bus=680.2   kV=2.4017   kva=300     
-!New regcontrol.wind_upB  transformer=wind_upB
-!~ winding=1  vreg=122  band=2  ptratio=3.26 
-
-//Fase C
-New Transformer.wind_upC phases=1 xhl=0.01 
-~ wdg=1 bus=trafo_wind.3   kV=0.39837    kva=300        
-~ wdg=2 bus=680.3   kV=2.4017    kva=300     
-!New regcontrol.wind_upC  transformer=wind_upC
-!~ winding=1  vreg=122  band=2  ptratio=3.26 
+// //Fase A
+// New Transformer.wind_upA phases=1 xhl=0.01 
+// ~ wdg=1 bus=trafo_wind.1   kV=0.39837   kva=300      
+// ~ wdg=2 bus=680.1   kV=2.4017    kva=300     
+// !New regcontrol.wind_upA  transformer=wind_upA
+// !~ winding=1  vreg=122  band=2  ptratio=3.26 
+// 
+// //Fase B
+// New Transformer.wind_upB phases=1 xhl=0.01 
+// ~ wdg=1 bus=trafo_wind.2   kV=0.39837    kva=300        
+// ~ wdg=2 bus=680.2   kV=2.4017   kva=300     
+// !New regcontrol.wind_upB  transformer=wind_upB
+// !~ winding=1  vreg=122  band=2  ptratio=3.26 
+// 
+// //Fase C
+// New Transformer.wind_upC phases=1 xhl=0.01 
+// ~ wdg=1 bus=trafo_wind.3   kV=0.39837    kva=300        
+// ~ wdg=2 bus=680.3   kV=2.4017    kva=300     
+// !New regcontrol.wind_upC  transformer=wind_upC
+// !~ winding=1  vreg=122  band=2  ptratio=3.26 
 
 //------------------------------------------------------------------------------------------------------------------------------//
-*/

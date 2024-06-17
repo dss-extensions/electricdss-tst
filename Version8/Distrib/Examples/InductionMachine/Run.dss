@@ -8,14 +8,11 @@ Set Maxcontroliter=20
 Set maxiterations=20
 solve
  
-/*  This script shows selected reports
+//  This commented script shows selected reports:
+// show busflow bg2 kva elem
+// Show Powers kva Elements
+// show isolated
 
-show busflow bg2 kva elem
-
-Show Powers kva Elements
-show isolated
-
-*/
 
 // This dynamic simulation applies a SLG fault at 0.3 s
 // Relays then operate about 0.1 s later, isolating the induction motor

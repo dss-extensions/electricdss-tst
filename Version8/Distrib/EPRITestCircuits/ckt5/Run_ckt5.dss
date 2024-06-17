@@ -26,26 +26,24 @@ New Monitor.Timer element=vsource.source terminal=1 mode=5
 
 Solve  ! This executes a snaphot power flow solution of the circuit
 
-/******************* Optional items in Block Comment *********************
-!  (Select these individually as needed)
+// ******************* Optional items *********************
+!  (Uncomment and select these individually as needed)
 
-Export seqvoltage
-plot general quantity=7 max=.1 dots=n labels=n subs=y object=@lastexportfile 
+// Export seqvoltage
+// plot general quantity=7 max=.1 dots=n labels=n subs=y object=@lastexportfile 
 
-plot circuit Power Max=2000 dots=n labels=n subs=y C1=Blue 1phlinestyle=3
-plot circuit Voltage Max=200 dots=n labels=n subs=y C1=Blue 1phlinestyle=3
+// plot circuit Power Max=2000 dots=n labels=n subs=y C1=Blue 1phlinestyle=3
+// plot circuit Voltage Max=200 dots=n labels=n subs=y C1=Blue 1phlinestyle=3
 
 ! Loss Density Plot
-plot circuit Losses Max=20 dots=n labels=n subs=y C1=Blue 1phlinestyle=3
+// plot circuit Losses Max=20 dots=n labels=n subs=y C1=Blue 1phlinestyle=3
 
-show voltages ln nodes
-show powers kva elements
-show overloads
-show currents elements
-show losses
-Export Capacity
-
-*************************End Block Comment ************************
+// show voltages ln nodes
+// show powers kva elements
+// show overloads
+// show currents elements
+// show losses
+// Export Capacity
 
 !********** ANNUAL SOLUTION SCRIPT ***********************
 set totaltime=0   ' Initialize total timer

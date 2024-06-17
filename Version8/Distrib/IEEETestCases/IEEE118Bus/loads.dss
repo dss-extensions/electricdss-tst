@@ -1,5 +1,5 @@
 
-/********************************************************************************************************  load definitions for 138.0kV  ***/
+// *******************************************************************************************************  load definitions for 138.0kV
 
 New Load.Load_at_1_1   phases=3 bus=1_riversde   kv=138.0 kW=51000.0  kvar=27000.0  model=1 daily=Default spectrum=Linear
 New Load.Load_at_2_1   phases=3 bus=2_pokagon    kv=138.0 kW=20000.0  kvar=9000.0   model=1 daily=Default spectrum=Linear
@@ -100,12 +100,4 @@ New Load.Load_at_115_1 phases=3 bus=115_medford  kv=138.0 kW=22000.0  kvar=7000.
 New Load.Load_at_116_1 phases=3 bus=116_kygercrk kv=138.0 kW=184000.0 kvar=0.0      model=1 daily=Default spectrum=Linear
 New Load.Load_at_117_1 phases=3 bus=117_corey    kv=138.0 kW=20000.0  kvar=8000.0   model=1 daily=Default spectrum=Linear
 New Load.Load_at_118_1 phases=3 bus=118_whuntngd kv=138.0 kW=33000.0  kvar=15000.0  model=1 daily=Default spectrum=Linear
-
-/*******************************************************  shunts as loads (active power only) definitions for 138.0kV  ***/
-
-
-/********************************************************************************************************  load definitions for 20.0kV  ***/
-
-
-/*******************************************************  shunts as loads (active power only) definitions for 20.0kV  ***/
 

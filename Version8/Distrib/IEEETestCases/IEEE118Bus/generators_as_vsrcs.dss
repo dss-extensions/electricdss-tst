@@ -1,5 +1,5 @@
 
-/********************************************************************************************************  generators definitions as Vsources for 138.0kV  ***/
+// ********************************************************************************************************  generators definitions as Vsources for 138.0kV
 
 New Vsource.Vsrc_at_1_1 bus1=1_riversde basekv=138.0 phases=3 pu=0.7804804179887121 angle=11.046858401037541 frequency=60.0 baseMVA=3.7247999999999992 puZ1=[0.001, 0.2] !Model=ideal
 New Vsource.Vsrc_at_4_1 bus1=4_nwcarlsl basekv=138.0 phases=3 pu=0.8309997515105423 angle=15.641171828662817 frequency=60.0 baseMVA=18.006 puZ1=[0.001, 0.2] !Model=ideal
@@ -57,5 +57,5 @@ New Vsource.Vsrc_at_112_1 bus1=112_danville basekv=138.0 phases=3 pu=1.145940489
 New Vsource.Vsrc_at_113_1 bus1=113_deercrk basekv=138.0 phases=3 pu=1.160841860914075 angle=13.962279139686938 frequency=60.0 baseMVA=7.587599999999999 puZ1=[0.001, 0.2] !Model=ideal
 New Vsource.Vsrc_at_116_1 bus1=116_kygercrk basekv=138.0 phases=3 pu=1.1708377728856392 angle=27.125823121368366 frequency=60.0 baseMVA=61.58879999999999 puZ1=[0.001, 0.2] !Model=ideal
 
-/********************************************************************************************************  generators definitions as Vsources for 20.0kV  ***/
+// *******************************************************************************************************  generators definitions as Vsources for 20.0kV
 

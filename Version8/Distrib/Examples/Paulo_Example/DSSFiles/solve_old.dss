@@ -1,9 +1,7 @@
-/*
-solve 
-plot circuit Power max=2000 n n C1=$00FF0000
-plot circuit Voltage Max=2000 dots=nlabels=n subs=y C1=$00FF0000
-plot profile 
-*/
+// solve 
+// plot circuit Power max=2000 n n C1=$00FF0000
+// plot circuit Voltage Max=2000 dots=nlabels=n subs=y C1=$00FF0000
+// plot profile 
 !--------------------------------
 
 

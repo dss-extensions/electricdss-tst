@@ -1,5 +1,5 @@
 ! Network protector relays 
-/* Based on IEEE Std C57.12.44-2005, this setting should be between 50% and 200% of the CT primary rating */
+// Based on IEEE Std C57.12.44-2005, this setting should be between 50% and 200% of the CT primary rating
 var @nwp_iset_ct_pu = 0.5 ! Network protector setting (50%) w.r.t. CT primary rating
 var @nwp_inst_ct_pu = 0.0015 ! Network protector instantaneous setting (0.15%) w.r.t. CT primary rating
 var @nwp_time_delay = 150 ! Network protector time delay setting set to 2.5 minutes

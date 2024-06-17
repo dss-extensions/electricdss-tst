@@ -2,9 +2,7 @@ clearAll
 
 set parallel=No
 
-/*
-get numcpu numcores
-*/
+// get numcpu numcores
 
 compile Master_ckt5.dss
 New Monitor.MS2 vsource.source mode=5

@@ -36,11 +36,10 @@ New Transformer.XfmrAB    Phases=1 Windings=3 Xhl=2.04 XHt = 2.04  Xlt=1.36
 ~ wdg=2 bus=secondary.1.0   kv=.12  kva=25  %r=1.2 conn=delta  ! Declared delta but one terminal connected to node 0
 ~ wdg=3 bus=secondary.0.2   kv=.12  kva=25  %r=1.2 conn=delta
 
-/******** Phase BC removed from closed delta case.
-New Transformer.XfmrBC    Phases=1 Windings=2 Xhl=1.4
-~ wdg=1 bus=Primary.2.0     kv=7.2  kva=10  %r=0.8 
-~ wdg=2 bus=secondary.2.3   kv=.24  kva=10  %r=0.8  conn=delta
-***************/
+// ******* Phase BC removed from closed delta case.
+// New Transformer.XfmrBC    Phases=1 Windings=2 Xhl=1.4
+// ~ wdg=1 bus=Primary.2.0     kv=7.2  kva=10  %r=0.8 
+// ~ wdg=2 bus=secondary.2.3   kv=.24  kva=10  %r=0.8  conn=delta
 
 
 New Transformer.XfmrCA    Phases=1 Windings=2 Xhl=1.4

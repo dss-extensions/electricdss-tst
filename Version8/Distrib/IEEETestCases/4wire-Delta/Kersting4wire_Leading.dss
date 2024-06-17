@@ -40,11 +40,10 @@ New Transformer.XfmrBC    Phases=1 Windings=2 Xhl=1.4
 ~ wdg=1 bus=Primary.2.0     kv=7.2  kva=10  %r=0.8 
 ~ wdg=2 bus=secondary.2.3   kv=.24  kva=10  %r=0.8  conn=delta
 
-/******** Phase CA removed from closed delta case.
-New Transformer.XfmrCA    Phases=1 Windings=2 Xhl=1.4
-~ wdg=1 bus=Primary.3.0     kv=7.2  kva=10  %r=0.8 
-~ wdg=2 bus=secondary.3.1   kv=.24  kva=10  %r=0.8  conn=delta
-****/
+// ******* Phase CA removed from closed delta case.
+// New Transformer.XfmrCA    Phases=1 Windings=2 Xhl=1.4
+// ~ wdg=1 bus=Primary.3.0     kv=7.2  kva=10  %r=0.8 
+// ~ wdg=2 bus=secondary.3.1   kv=.24  kva=10  %r=0.8  conn=delta
 
 !Loads - single phase
 
