@@ -1,5 +1,5 @@
 # Copyright (C) 2021-2022 Battelle Memorial Institute
-# Adapted for DSS Extensions by Paulo Meira
+# Adapted for DSS-Extensions by Paulo Meira
 #
 import math
 import numpy as np
@@ -15,6 +15,7 @@ INV_KVA = PV_KW * 1.1136 # Category B (in the case_template, kvarMax and kvarMax
 
 case_template = """
 clear
+Set DefaultBaseFrequency=60
 new circuit.secondary 
 edit vsource.source bus1=pole phases=1 pu=1 basekv=7.2 Isc1=10000 Isc3=10000 x1r1=2 x0r0=2
 

@@ -1,4 +1,5 @@
 clear
+Set DefaultBaseFrequency=60
 new circuit.civanlar3 bus1=sub basekv=23.0 pu=1.0 MVAsc3=10000 MVAsc1=10000
 
 // three separate feeder transformers

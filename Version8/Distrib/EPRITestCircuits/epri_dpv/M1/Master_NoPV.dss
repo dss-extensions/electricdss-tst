@@ -3,7 +3,7 @@
 ! Please feel free to use this circuit model for further research/study. 
 ! For reference purposes, please use: EPRI Feeder M1, Distributed PV (DPV) Monitoring and Feeder Analysis, dpv.epri.com, 2013
 Clear
-
+Set DefaultBaseFrequency=60
 New Circuit.M1 bus1=SourceBus pu=1.0  basekV=67  R1= 0.0518  X1=0.1555    R0= 0.0518  X0=0.155
 New line.temp bus1=temp bus2=temp2 switch=yes enabled=yes phases=3 normamps=99999 emergamps=99999
 New line.temp1 bus1=temp2 bus2=AggLD switch=yes enabled=yes phases=3 normamps=99999 emergamps=99999

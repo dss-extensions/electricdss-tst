@@ -3,6 +3,7 @@
 !OpenDSS Example of Split-Phase Model
 
 clear
+Set DefaultBaseFrequency=60
 
 New circuit.equiv_stiff MVAsc1=100000000 MVAsc3=100000000 basekv = 7.2 bus1=1 angle=-30
 

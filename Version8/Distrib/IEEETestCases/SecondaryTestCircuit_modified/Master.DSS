@@ -1,6 +1,6 @@
 Clear
 ClearAll
-
+Set DefaultBaseFrequency=60
 New Circuit.SecondaryTestCircuit pu=1.0 bus1=bussource basekV=46.0 R1=1.036 X1=10.1433 R0=5.462 X0=34.1897
 
 Redirect Loadshapes_VarySubV.dss

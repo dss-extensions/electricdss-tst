@@ -1,4 +1,5 @@
 Clear
+Set DefaultBaseFrequency=60
 
 // Script to Test RegControl on a transformer configured as an autotransformer
 

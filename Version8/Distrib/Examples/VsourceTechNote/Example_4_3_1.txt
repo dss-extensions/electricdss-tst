@@ -1,4 +1,5 @@
 Clear
+Set DefaultBaseFrequency=60
 New Circuit.ThA bus1=A_internal.1 phases=1 pu=1.1 basekv=7.97
 ~ Z0=[1e-6, 1e-6] Z1=[1e-6, 1e-6]
 New Vsource.ThB bus1=A_internal.2 phases=1 pu=1.1 basekv=7.97

@@ -1,4 +1,6 @@
 Clear
+Set DefaultBaseFrequency=60
+
 New Circuit.MultiLineExample  ! example of 4 lines in parallel
 ~ basekV=12.47
 

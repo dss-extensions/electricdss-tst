@@ -14,6 +14,7 @@ import os
 prefix_template = """Clear
 // from "Evaluation of the Effectiveness and Robustness of Residential-Scale Smart Photovoltaics"
 // J. Schoene, M. Humayun, B. Poudel, V. Zheglov, A. Gebeyehu
+Set DefaultBaseFrequency=60
 New Circuit.Primary basekv=12.0 pu=1.00 r1=0 x1=0.001 r0=0 x0=0.001
 
 // Definitions /////////////////////////////////////////////////////////////////////////////

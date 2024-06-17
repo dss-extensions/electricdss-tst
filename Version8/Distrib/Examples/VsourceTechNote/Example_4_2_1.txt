@@ -1,4 +1,5 @@
 Clear
+Set DefaultBaseFrequency=60
 New Circuit.TheveninEquivalent bus1=A_internal.1.2.3 bus2=A_internal.2.3.1 pu=1.1 
 ~ basekv=(13.8 3 sqrt *) Z0=[0.000001, 0.000001] Z1=[0.000001, 0.000001]
 

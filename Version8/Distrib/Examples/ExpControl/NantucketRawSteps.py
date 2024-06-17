@@ -10,6 +10,7 @@ import sys
 
 template = """
 Clear
+Set DefaultBaseFrequency=60
 New Circuit.Nantucket pu=1.0 R1=0.0001 X1=0.0001 R0=0.0001 X0=0.0001 basekv=13.2
 
 // comparing uncontrolled inverters at unity pf, two different PCC impedances

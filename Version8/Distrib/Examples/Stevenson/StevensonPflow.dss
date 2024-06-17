@@ -1,4 +1,5 @@
 Clear
+Set DefaultBaseFrequency=60
 
 // Power flow example from Stevenson 2nd Ed, p.219-225
 

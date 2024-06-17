@@ -1,5 +1,5 @@
 clear
- 
+ Set DefaultBaseFrequency=60
 new circuit.ieee390 basekv=230 pu=1.05 bus1=P1
  
 new LineSpacing.101 nconds=3 nphases=3 units=ft x=[0,10,20] h=[50,50,50]

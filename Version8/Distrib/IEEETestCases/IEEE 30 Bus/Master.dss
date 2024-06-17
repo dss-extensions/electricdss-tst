@@ -1,6 +1,6 @@
 
 Clear   ! always have this as the first line before defining a new circuit
-
+Set DefaultBaseFrequency=60
 New Circuit.IEEE_30
 
 ! Define a really stiff 132 kV source for the slack bus

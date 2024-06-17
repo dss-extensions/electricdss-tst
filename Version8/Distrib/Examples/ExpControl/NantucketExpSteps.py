@@ -11,6 +11,7 @@ import sys
 
 template = """
 Clear
+Set DefaultBaseFrequency=60
 New Circuit.Nantucket pu=1.0 R1=0.0001 X1=0.0001 R0=0.0001 X0=0.0001 basekv=13.2
 
 // comparing uncontrolled inverters at unity pf, two different PCC impedances
@@ -55,6 +56,7 @@ solve mode=daily number=9000 stepsize=1s
 
 upf_template = """
 Clear
+Set DefaultBaseFrequency=60
 New Circuit.Nantucket pu=1.0 R1=0.0001 X1=0.0001 R0=0.0001 X0=0.0001 basekv=13.2
 
 // comparing uncontrolled inverters at unity pf, two different PCC impedances
@@ -88,6 +90,7 @@ solve mode=daily number=9000 stepsize=1s
 
 dflt_template = """
 Clear
+Set DefaultBaseFrequency=60
 New Circuit.Nantucket pu=1.0 R1=0.0001 X1=0.0001 R0=0.0001 X0=0.0001 basekv=13.2
 
 // these PCC impedances include the effect of loading, so they have a lower X/R ratio

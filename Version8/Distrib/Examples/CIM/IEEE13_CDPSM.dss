@@ -1,4 +1,5 @@
 Clear 
+Set DefaultBaseFrequency=60
 
 new circuit.IEEE13Nodeckt 
 ~ basekv=115 pu=1.00 phases=3 bus1=SourceBus  

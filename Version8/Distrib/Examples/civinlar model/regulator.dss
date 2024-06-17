@@ -1,4 +1,5 @@
 clear
+Set DefaultBaseFrequency=60
 
 new circuit.sub phases=3 bus1=sub basekv=138.0 pu=1 angle=0.0
 ~   isc3=40000 isc1=41000 x1r1=18.5 x0r0=2

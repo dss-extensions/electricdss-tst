@@ -1,4 +1,5 @@
 clear
+Set DefaultBaseFrequency=60
 new circuit.rly21test basekV=12.47 phases=3 pu=1.0 bus1=src
 // ~ shots=3 recloseintervals=(2.0, 2.0)
 

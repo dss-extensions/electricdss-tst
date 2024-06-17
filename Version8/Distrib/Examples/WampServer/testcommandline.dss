@@ -7,6 +7,7 @@ var @loadmod=2 //Z=2, I=5, P=1
 var @vmin=0.5
 var @vlow=0.4
 
+Set DefaultBaseFrequency=60
 new circuit.fbs basekv=@syskv Isc3=100000 Isc1=100000 x1r1=20 x0r0=20
 
 new linecode.602 nphases=3 units=mi r0=1.0595 x0=2.0704 r1=0.5921 x1=0.7603

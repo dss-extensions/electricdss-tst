@@ -1,4 +1,6 @@
 clear
+Set DefaultBaseFrequency=60
+
 new circuit.Test750
 
 New tsdata.750MCM  Diashield=(0.017459 2 *)  epsR=2.4 radunits=m tapelayer=0.0001

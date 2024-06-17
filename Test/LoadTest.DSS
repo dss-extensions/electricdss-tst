@@ -1,4 +1,5 @@
 clear
+Set DefaultBaseFrequency=60
 new circuit.loadtest basekV=1 phases=1 pu=1.0 bus1=src
 new line.bus bus1=src bus2=load phases=1 rmatrix=(0.00001) xmatrix=(0) cmatrix=(0)
 

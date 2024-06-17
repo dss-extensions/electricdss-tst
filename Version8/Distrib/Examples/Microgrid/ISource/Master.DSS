@@ -3,6 +3,7 @@
 ! last modification 11-20-2019
 
 Clear
+Set DefaultBaseFrequency=60
 New Circuit.ieee13nodeckt
 
 

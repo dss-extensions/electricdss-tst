@@ -1,4 +1,5 @@
 Clear
+Set DefaultBaseFrequency=60
 
 New Circuit.ckt24 bus1=SourceBus pu=1.05  basekV=230 R1=0.63 X1=6.72 R0=4.07 X0=15.55
 

@@ -3,6 +3,8 @@
 
 // a
 Clear
+Set DefaultBaseFrequency=60
+
 New Circuit.CloudUnity
 compile SystemPCC.dss
 edit pvsystem.pv1 daily=Cloud

@@ -16,6 +16,7 @@
 //Reinicia o programa
 
 Clear
+Set DefaultBaseFrequency=60
 
 //------------------------------------------------------------------------------------------------------------------------------//
 // Files que descrevem o circuito

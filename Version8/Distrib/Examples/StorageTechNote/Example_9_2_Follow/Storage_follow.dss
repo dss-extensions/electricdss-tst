@@ -1,5 +1,6 @@
 ! Storage Operation in Follow Dispatch Mode
 Clear
+Set DefaultBaseFrequency=60
 
 New Circuit.Source bus1=A basekv=0.48 phases=3 pu=1
 

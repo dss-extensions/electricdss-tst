@@ -2,6 +2,8 @@
 // see AutoTest.xlsx file in this directory for test data and expected results
 
 clear
+Set DefaultBaseFrequency=60
+
 new circuit.auto  basekV=345.0 phases=3 mvasc3=2000000 2000000
 
 new line.line1 bus1=sourcebus bus2=high switch=yes r1=1e-6 r0=1e-6 x1=0 x0=0 c1=0 c0=0

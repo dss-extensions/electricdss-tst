@@ -1,6 +1,6 @@
 ! Base Circuit with a Single Storage 
 Clear
-
+Set DefaultBaseFrequency=60
 New Circuit.Source bus1=A basekv=13.8 phases=3 pu=1 Z0=[10, 10] Z1=[10, 10]
 
 ! Inverter Efficiency Curve

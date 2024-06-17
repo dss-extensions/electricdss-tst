@@ -1,6 +1,7 @@
 
 !*********Compile "Master.DSS"
 Clear
+Set DefaultBaseFrequency=60
 New Circuit.IndMachTest
 
 // Induction generator simulation with temporary SLG fault

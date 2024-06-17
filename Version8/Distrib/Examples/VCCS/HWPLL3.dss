@@ -1,4 +1,6 @@
 Clear 
+Set DefaultBaseFrequency=60
+
 // EPSL impedance is 10% on 75 kVA positive sequence, 5% zero sequence, assume X/R = 2
 new circuit.HWPLL3 
 ~ basekv=4.16 pu=1.0 angle=0 phases=3 bus1=SourceBus r1=0.029 x1=0.058 r0=0.014 x0=0.029

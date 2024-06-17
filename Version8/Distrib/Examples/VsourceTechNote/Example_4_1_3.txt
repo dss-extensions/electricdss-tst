@@ -1,4 +1,5 @@
 Clear
+Set DefaultBaseFrequency=60
 New Circuit.TheveninEquivalent bus1=A pu=1.1 basekv=13.8 
 ~ Isc3=83674 x1r1=4 Isc1=87858 x0r0=3
 

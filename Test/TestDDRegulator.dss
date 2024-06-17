@@ -1,4 +1,5 @@
 clear
+Set DefaultBaseFrequency=60
 
 New Circuit.testDDRegulator
 ~ basekV=12.47

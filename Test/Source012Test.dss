@@ -1,4 +1,5 @@
 ﻿Clear
+Set DefaultBaseFrequency=60
 
 New Circuit.source012Test
 ~ Base=0.24 Z1=[1.9775  1.3431]  Z2=[0.1203  0.3623]  Z0=[1 0]

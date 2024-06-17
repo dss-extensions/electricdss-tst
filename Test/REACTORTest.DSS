@@ -3,6 +3,7 @@
 // should be same as Kersting's induction motor model Example 9.2
 
 Clear
+Set DefaultBaseFrequency=60
 
 New Circuit.ReactorTest
 

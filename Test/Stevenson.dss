@@ -2,6 +2,7 @@
 ! from page 106 of Stevenson, 3rd edition
 
 clear
+Set DefaultBaseFrequency=60
 
 new circuit.stevenson basekv=200 pu=1.16 mvasc3=500000 mvasc1=500000
 

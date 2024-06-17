@@ -1,4 +1,5 @@
 clear
+Set DefaultBaseFrequency=60
 new circuit.dummy
 set earthmodel=Carson
 

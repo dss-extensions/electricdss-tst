@@ -1,6 +1,7 @@
 !Secondary Low-Voltage Circuit Models—How Good is Good Enough?
 !IEEE Transactions on Industry Applications
 Clear
+Set DefaultBaseFrequency=60
 
 New circuit.equiv_stiff MVAsc1=100000000 MVAsc3=100000000 basekv=7.2 bus1=XfmrMV angle=-30
 

@@ -1,4 +1,5 @@
 Clear 
+Set DefaultBaseFrequency=60
 new circuit.SG2012 
 ~ basekv=138 pu=1.0 phases=3 bus1=SourceBus Isc3=40000 Isc1=40000 x1r1=10 x0r0=10
 
