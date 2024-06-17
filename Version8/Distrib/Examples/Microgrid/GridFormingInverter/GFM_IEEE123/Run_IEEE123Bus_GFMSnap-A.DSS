@@ -6,7 +6,10 @@
 ! Modified for demonstrating the grid forming and grid following capabilites
 ! added to OpenDSS on 10/28/2022
 
-Compile (IEEE123Master.dss)
+Redirect (../../../../IEEETestCases/123Bus/IEEE123Master.dss)
+Redirect (../../../../IEEETestCases/123Bus/PVShape.dss)
+BatchEdit Load..* Daily=default
+BusCoords (../../../../IEEETestCases/123Bus/BusCoords.dat)   ! load in bus coordinates
 
 ! 'Compile' differs from "redirect" in that it changes the default directory 
 ! to the one in which the referenced file is located.
@@ -51,5 +54,3 @@ New InvControl.StoCtrl DERList=[Storage.mystorage PVSystem.myPV] mode=GFM !event
 
 calcv
 solve
-Buscoords BusCoords.dat   ! load in bus coordinates
-

@@ -2,7 +2,7 @@
 ! Solves the system with no storage
 !***************************************************************************************************************************
 
-redirect IEEE13Nodeckt.dss
+redirect IEEE13NodecktMOD.dss
 
 set mode=yearly DemandInterval=yes overloadreport=yes DIVerbose=yes
 solve
@@ -11,7 +11,7 @@ CloseDI
 !***************************************************************************************************************************
 ! Now, lets introduce a storage device to relieve the violation, but using just one rating for the whole year
 !***************************************************************************************************************************
-redirect IEEE13Nodeckt.dss
+redirect IEEE13NodecktMOD.dss
 
 ! Adds the first case (does not relieve the summer overloads for line 632670)
 redirect Add_storage_1target.dss 
@@ -25,7 +25,7 @@ CloseDI
 ! By changing the number of seasons and targets for the storage controller we will solve all the violations
 !***************************************************************************************************************************
 
-redirect IEEE13Nodeckt.dss
+redirect IEEE13NodecktMOD.dss
 
 ! Adds the second case (relieves all overloads for line 632670)
 redirect Add_storage_2targets.dss 

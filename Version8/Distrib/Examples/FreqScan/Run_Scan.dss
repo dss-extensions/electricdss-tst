@@ -10,7 +10,8 @@ Redirect "../../IEEETestCases/123Bus/IEEE123Master.dss"
 ! Solve executes the solution for the present solution mode, which is "snapshot".
 
 solve
-Buscoords BusCoords.dat   ! load in bus coordinates (must be local file)
+BusCoords "../../IEEETestCases/123Bus/BusCoords.dat"   ! load in bus coordinates
+
 
 Spectrum.DefaultLoad.NumHarm=1   ! This effectively gets rid of LOAD harmonics
 

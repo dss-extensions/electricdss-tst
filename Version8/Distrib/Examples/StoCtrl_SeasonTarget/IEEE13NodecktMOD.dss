@@ -1,11 +1,15 @@
+// NOTE: This is not the canonical IEEE13 circuit, there are modifications!
+//       Check "IEEETestCases/13Bus/IEEENodeckt.dss" for the original version.
+
 Clear 
+Set DefaultBaseFrequency=60
 
 !
 ! This script is based on a script developed by Tennessee Tech Univ students
 ! Tyler Patton, Jon Wood, and David Woods, April 2009
 !
 
-new circuit.IEEE13Nodeckt 
+new circuit.IEEE13NodecktMOD
 ~ basekv=115 pu=1.0001 phases=3 bus1=SourceBus  
 ~ Angle=30                                                         ! advance angle 30 deg so result agree with published angle
 ~ MVAsc3=20000 MVASC1=21000    ! stiffen the source to approximate inf source
@@ -23,15 +27,15 @@ New Transformer.Sub Phases=3 Windings=2   XHL=(8 1000 /)
 ! FEEDER 1-PHASE VOLTAGE REGULATORS
 ! Define low-impedance 2-wdg transformer
 
-New Transformer.Reg1 phases=1 XHL=0.01 kVAs=[1666 1666]
+New Transformer.Reg1 phases=1 bank=reg1 XHL=0.01 kVAs=[1666 1666]
 ~ Buses=[650.1 RG60.1] kVs=[2.4  2.4] %LoadLoss=0.01
 new regcontrol.Reg1  transformer=Reg1 winding=2  vreg=122  band=2  ptratio=20 ctprim=700  R=3   X=9 
 
-New Transformer.Reg2 phases=1 XHL=0.01 kVAs=[1666 1666]
+New Transformer.Reg2 phases=1 bank=reg1 XHL=0.01 kVAs=[1666 1666]
 ~ Buses=[650.2 RG60.2] kVs=[2.4  2.4] %LoadLoss=0.01
 new regcontrol.Reg2  transformer=Reg2 winding=2  vreg=122  band=2  ptratio=20 ctprim=700  R=3   X=9 
 
-New Transformer.Reg3 phases=1 XHL=0.01 kVAs=[1666 1666]
+New Transformer.Reg3 phases=1 bank=reg1 XHL=0.01 kVAs=[1666 1666]
 ~ Buses=[650.3 RG60.3] kVs=[2.4  2.4] %LoadLoss=0.01
 new regcontrol.Reg3  transformer=Reg3 winding=2  vreg=122  band=2  ptratio=20 ctprim=700  R=3   X=9 
 
@@ -43,7 +47,7 @@ New Transformer.XFM1  Phases=3   Windings=2  XHL=2
 
 
 !LINE CODES
-redirect IEEELineCodes.DSS
+redirect ../../IEEETestCases/13Bus/IEEELineCodes.DSS
 redirect LoadShape1.DSS
 
 // these are local matrix line codes
@@ -152,7 +156,7 @@ redirect Seasons.dss
 Set Voltagebases=[115, 4.16, .48]
 calcv
 Solve
-BusCoords IEEE13Node_BusXY.csv
+BusCoords ../../IEEETestCases/13Bus/IEEE13Node_BusXY.csv
 
 new monitor.feederhead element=Line.650632 terminal=1
 new monitor.OLLine element=Line.632670 terminal=1
