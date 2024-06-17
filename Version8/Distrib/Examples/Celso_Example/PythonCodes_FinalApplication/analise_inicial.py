@@ -1,4 +1,3 @@
-###  # -*- coding: iso-8859-15 -*-
 #This is my main code.
 __author__ = 'CelsoRocha'
 
@@ -21,7 +20,7 @@ class DSS(object): #Classe DSS
 
         # Start the DSS
         if self.dssObj.Start(0) == False:
-            print "DSS Failed to Start"
+            print("DSS Failed to Start")
         else:
             #Assign a variable to each of the interfaces for easier access
             self.dssText = self.dssObj.Text
@@ -52,9 +51,9 @@ class DSS(object): #Classe DSS
 
                     self.ajuste_param(loadmult[i],pv_penetracao[j])
                     self.dssText.Command = "get loadmult"
-                    print self.dssText.Result
+                    print(self.dssText.Result)
                     self.dssText.Command = "? PVSystem.PV_1.Pmpp"
-                    print self.dssText.Result
+                    print(self.dssText.Result)
 
 
                     # Solve settings
@@ -107,7 +106,7 @@ class DSS(object): #Classe DSS
         if PV_pen == 0:
             self.dssText.Command = "PVSystem.PV_1.enabled = False"
             self.dssText.Command = "? PVSystem.PV_1.enabled"
-            print self.dssText.Result
+            print(self.dssText.Result)
         else:
             self.dssText.Command = "PVSystem.PV_1.enabled = True"
             #self.dssText.Command = "PVSystem.PV_1.kVA=" + str(OrigTotalLoad*PV_pen)  O OpenDSS
@@ -119,7 +118,3 @@ class DSS(object): #Classe DSS
 
 if __name__ == '__main__':
     d = DSS(r"C:\Users\User\Desktop\TCC\IEEE123Barras\IEEE123Master.dss")
-
-
-
-
