@@ -1,0 +1,1 @@
+New Loadshape.LS_PhaseA npts=8760 interval=1 MemoryMapping=Yes PQcsvfile=LS_Phase_AOK.csv

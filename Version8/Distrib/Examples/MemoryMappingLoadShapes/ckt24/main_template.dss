@@ -1,0 +1,56 @@
+// (Added for DSS-Extensions by Paulo Meira)
+// Test case for MemoryMapping samples -- Template Master
+//
+// This file is reused to simplify the script and reduce duplication
+// Notice there is no "clear" command in this file and it runs the
+// script to load the LoadShape (LS_PhaseA) according to the DSS variable
+// "@loadshape_script_dss", which is controlled by the actual master script.
+
+// This file (also the master_ckt24.dss in this folder) is a modified version
+// of the master_ckt24.dss from the base test circuit in EPRITestCircuits/ckt24
+
+Set DefaultBaseFrequency=60
+New Circuit.ckt24 bus1=SourceBus pu=1.05  basekV=230 R1=0.63 X1=6.72 R0=4.07 X0=15.55
+
+Redirect  ../../../EPRITestCircuits/ckt24/Wiredata_ckt24.dss
+Redirect  ../../../EPRITestCircuits/ckt24/Linegeometry_ckt24.dss
+Redirect  ../../../EPRITestCircuits/ckt24/Linecodes_ckt24.dss
+Redirect  ../../../EPRITestCircuits/ckt24/TriplexLineCodes_ckt24.dss
+Redirect  ../../../EPRITestCircuits/ckt24/substation_ckt24.dss
+
+Redirect "@loadshape_script_dss" 
+
+New Loadshape.LS_PhaseB npts=8760 interval=1 mult=(file=../../../EPRITestCircuits/ckt24/LS_PhaseB.txt) action=normalize
+New Loadshape.LS_PhaseC npts=8760 interval=1 mult=(file=../../../EPRITestCircuits/ckt24/LS_PhaseC.txt) action=normalize
+New Loadshape.LS_ThreePhase npts=8760 interval=1 mult=(file=../../../EPRITestCircuits/ckt24/LS_ThreePhase.txt) action=normalize
+New Loadshape.Other_Bus_Load npts=8760 interval=1 mult=(file=../../../EPRITestCircuits/ckt24/Other_Bus_Load.txt) action=normalize
+
+Redirect  ../../../EPRITestCircuits/ckt24/lines_ckt24.dss
+Redirect  ../../../EPRITestCircuits/ckt24/capacitors_ckt24.dss
+Redirect  ../../../EPRITestCircuits/ckt24/stepxfmrs_ckt24.dss
+Redirect  ../../../EPRITestCircuits/ckt24/transformers_ckt24.dss
+Redirect  ../../../EPRITestCircuits/ckt24/sec_serv_ckt24.dss
+
+! Loads (allocated by XF kVA)
+Redirect  ../../../EPRITestCircuits/ckt24/Allocated_Loads_ckt24.dss
+Redirect ../../../EPRITestCircuits/ckt24/Other_Load_ckt24.dss
+! set the initial allocation factors based on previousload allocations
+Redirect  ../../../EPRITestCircuits/ckt24/AllocationFactors_Base.Txt  !!! R=7 Vset=123
+
+! Let OpenDSS define the voltage bases
+Set voltagebases=[230,34.5,13.2,0.48,0.415,0.208]   ! Allowable voltage bases for this problem
+Calcvoltagebases
+
+! Define the monitors
+Redirect ../../../EPRITestCircuits/ckt24/Monitors_ckt24.dss
+
+! optional energy meter. this was used to allocate the loads
+! New energymeter.Feeder element=line.fdr_05410 term=1 option=R action=C PhaseVolt=yes peakcurrent=(466,469,452)
+
+! now that we have buses defined, define the bus coordinates so we can draw pictures
+Buscoords ../../../EPRITestCircuits/ckt24/buscoords_ckt24.dss
+set totaltime=0
+set mode=yearly number=100
+solve
+
+get totaltime
