@@ -4,7 +4,9 @@ This repository includes a filtered copy of the [OpenDSS SVN repository](https:/
 
 The upstream copy is on branch `opendss-official-svn`, while the `master` branch will contain specific modifications.
 
-Since June 2024, many duplicated files were removed and either symbolic links or relative `redirect`/`compile` commands are used. Some files were near duplicated. After investigation, many of those were intended to be duplicated but diverged after small changes after several years. This means that if you compare some folders here with the ones from the upstream copy, you will notice small differences (besides file paths), and most of those are intended. When in doubt, both the repo history and `git blame` may expose what happened here.
+Since June 2024, many duplicated files were removed relative `redirect`/`compile` commands (some inside single-line wrapper scripts) are used. Some files were near duplicated. After investigation, many of those were intended to be duplicated but diverged after small changes after several years. This means that if you compare some folders here with the ones from the upstream copy, you will notice small differences (besides file paths), and most of those are intended. When in doubt, both the repo history and `git blame` may expose what happened here.
+
+Initially, we used symbolic links for the duplicate files, but the user experience is worse since the ZIP extraction tools don't work great on Windows.
 
 ---
 
