@@ -1,9 +1,14 @@
 # electricdss-tst
-This includes a filtered copy of the [OpenDSS SVN repository](https://svn.code.sf.net/p/electricdss/code/trunk), including only the most relevant sample DSS scripts (examples and tests) for the [dss_capi](https://github.com/dss-extensions/dss_capi/) and [dss_python](https://github.com/dss-extensions/dss_python/) projects.
+
+This repository includes a filtered copy of the [OpenDSS SVN repository](https://svn.code.sf.net/p/electricdss/code/trunk), including only the most relevant sample DSS scripts (examples and tests) for the [DSS C-API/AltDSS](https://github.com/dss-extensions/dss_capi/) and the downstream projects, like [DSS-Python](https://github.com/dss-extensions/DSS-Python/). There are also some extra samples.
 
 The upstream copy is on branch `opendss-official-svn`, while the `master` branch will contain specific modifications.
 
-This repository was created to more easily track upstream changes without all non-essential files for testing `dss_capi` and `dss_python`, resulting in less than 40 MB in total, including the (almost full) history of the OpenDSS public files. The full history, including binary files and more, is almost 2.3 GB.
+Since June 2024, many duplicated files were removed and either symbolic links or relative `redirect`/`compile` commands are used. Some files were near duplicated. After investigation, many of those were intended to be duplicated but diverged after small changes after several years. This means that if you compare some folders here with the ones from the upstream copy, you will notice small differences (besides file paths), and most of those are intended. When in doubt, both the repo history and `git blame` may expose what happened here.
+
+---
+
+This repository was created to more easily track upstream changes without all non-essential files, originally for testing `dss_capi` and `dss_python`. In comparison to the official SVN, this is lightweight, resulting in less than 40 MB in total, including the (almost full) history of the OpenDSS public files. The full history, including binary files and more, is almost 2.3 GB.
 
 Since the official SVN repository is partially corrupted from revisions 2142 to 2161, we skip those here to avoid further issues.
 If you need to clone the official SVN to reproduce the `opendss-official-svn` branch, you can use [`git-svn`](https://git-scm.com/docs/git-svn) like this:
